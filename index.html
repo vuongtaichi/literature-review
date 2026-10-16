@@ -174,7 +174,47 @@
       <li>There was <strong>no clear relationship</strong> between predictive performance and the number of regionalised parameters.</li>
       <li><strong>The numbers behind those statements, from the full text:</strong> median daily NSE under leave-one-out cross-validation is <span class="num">0.58</span> for spatial proximity and <span class="num">0.66</span> for similarity; by climate, <span class="num">0.54</span> arid, <span class="num">0.64</span> cold, <span class="num">0.66</span> humid; by size, about <span class="num">0.60</span> below 300&nbsp;km<sup>2</sup> rising to about <span class="num">0.80</span> in larger catchments. These are the baseline figures an ungauged-basin result is read against. <span class="srcd">Read in full 17&nbsp;October&nbsp;2026.</span></li>
     </ul>
+    <p><strong>The picture after 2013.</strong> <a href="https://doi.org/10.1002/wat2.1487" target="_blank" rel="noopener">Guo et al. (2020)</a> repeated the comparison on 33 studies published after the decade: median NSE <span class="num">0.75</span> calibrated at the site, <span class="num">0.69</span> regionalised by physical similarity and <span class="num">0.66</span> by regression, with every method worse as aridity rises and better as gauge density rises. Regional deep learning has since closed the gap where data are plentiful: an LSTM never trained on the basin reached median NSE <span class="num">0.69</span> against <span class="num">0.64</span> for a model calibrated at that basin (<a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019WR026065" target="_blank" rel="noopener">Kratzert et al. 2019</a>), and <span class="num">0.78</span> against <span class="num">0.58&ndash;0.63</span> for regionalised models given the same data (<a href="https://hess.copernicus.org/articles/27/139/2023/" target="_blank" rel="noopener">Arsenault et al. 2023</a>). Both need hundreds of gauged catchments, and when whole regions are held out the medians fall to <span class="num">0.55&ndash;0.62</span> (<a href="https://hess.copernicus.org/articles/27/2357/2023/" target="_blank" rel="noopener">Feng et al. 2023</a>). <span class="unv">Read together, the loss of skill is now small where gauges are dense and largest where PUB began: arid, sparsely gauged regions.</span> Where the field stands on the wider list of open problems is set out in the table below.</p>
     <p>One result worth holding onto early: <a href="https://hess.copernicus.org/articles/13/883/2009/" target="_blank" rel="noopener">Seibert and Beven (2009)</a> treated eleven central Swedish catchments (6.6&ndash;950&nbsp;km<sup>2</sup>) as ungauged and asked how few individual discharge measurements would constrain HBV&nbsp;light usefully. <strong>The full text puts numbers on &ldquo;few&rdquo;, and they are worth knowing before leaning on the result.</strong> The weighted ensemble mean is poor below four observations, clearly better from eight, and plateaus around <span class="num">32</span>. Six well-chosen days reached a median efficiency of about <span class="num">0.59</span>, against about <span class="num">0.54</span> for four to eight random days and about <span class="num">0.8</span> for full calibration on the whole ten-year series. So the gap between &ldquo;ungauged&rdquo; and &ldquo;usefully constrained&rdquo; is narrower than it looks &mdash; but it is a gap from roughly 0.8 to roughly 0.6, closed by eight to thirty-two measurements, not by one or two. The authors add that the best-performing strategies assume you can choose the peak-flow day in advance, which real logistics rarely allow. <span class="srcd">Read in full 17&nbsp;October&nbsp;2026; the earlier summary said &ldquo;surprisingly few&rdquo; without the count or the cost in efficiency.</span></p>
+  </div>
+  <div class="card" data-vi="tab_uph23">
+    <h2>The problem restated in 2019: twenty-three unsolved problems</h2>
+    <p>The most recent statement of what hydrology has not solved is the community list of <a href="https://www.tandfonline.com/doi/full/10.1080/02626667.2019.1620507" target="_blank" rel="noopener">Bl&ouml;schl et al. (2019)</a>: 23 questions in seven themes, voted on by 230 scientists (&sect;02 describes how). It covers all of hydrology, not only ungauged prediction, so most of the 23 fall outside this review. The table paraphrases each question and says where the literature reviewed here stands on it.</p>
+    <div class="note">
+      <span class="lbl">How to read the status column</span>
+      <p><span class="unv">The status is this review&rsquo;s reading of the evidence it cites, not a verdict from the 2019 paper or any other source.</span> None of the 23 is solved outright. <span class="gs yes">Progress shown</span>, <span class="gs part">Partly addressed</span> and <span class="gs">Still open</span> are used as in &sect;02; <span class="muted">outside this review</span> means the question is real but this review does not cover the literature that would answer it.</p>
+    </div>
+    <p class="scrollhint">Table scrolls sideways &rarr;</p>
+    <div class="tablewrap">
+      <table class="w5">
+        <thead><tr><th>#</th><th>Question (paraphrased)</th><th>Theme</th><th>Status</th><th>Evidence in this review</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Is the water cycle speeding up or slowing down regionally, and are there tipping points?</td><td>Time variability and change</td><td><span class="muted">outside this review</span></td><td>&mdash;</td></tr>
+          <tr><td>2</td><td>How will runoff and groundwater in cold regions change as glaciers melt and permafrost thaws?</td><td>Time variability and change</td><td><span class="muted">outside this review</span></td><td>&mdash;</td></tr>
+          <tr><td>3</td><td>How do climate change and water use alter ephemeral rivers and groundwater in arid and semi-arid regions?</td><td>Time variability and change</td><td><span class="gs">Still open</span></td><td>Arid catchments are the weakest case in every comparative assessment cited here (Parajka et al. 2013; handbook ch. 5&ndash;10; Guo et al. 2020), transmission losses in dry channels are &ldquo;largely unknown&rdquo; regionally (Smakhtin 2001, &sect;05), and the Budyko scale behind surrogate calibration is compromised in arid regions (Yoon et al. 2025, &sect;08)</td></tr>
+          <tr><td>4</td><td>What do land-cover change and soil disturbance do to land-surface fluxes and recharge?</td><td>Time variability and change</td><td><span class="muted">outside this review</span></td><td>&mdash;</td></tr>
+          <tr><td>5</td><td>What causes spatial heterogeneity, and homogeneity, in runoff and other fluxes?</td><td>Space variability and scaling</td><td><span class="gs part">Partly addressed</span></td><td>Signature-based classification (Sawicz et al. 2011; Kuentz et al. 2017, &sect;06), and the finding that physically similar catchments are often not hydrologically similar (Oudin et al. 2010, &sect;04)</td></tr>
+          <tr><td>6</td><td>What are the hydrological laws at catchment scale, and how do they change with scale?</td><td>Space variability and scaling</td><td><span class="gs part">Partly addressed</span></td><td>Scale-independent transfer functions (MPR, &sect;04&ndash;&sect;06); hydraulic-geometry laws from Leopold and Maddock (1953) to at-many-stations hydraulic geometry (&sect;07, &sect;11)</td></tr>
+          <tr><td>7</td><td>Why is most flow preferential, and how does that co-evolve with the critical zone?</td><td>Space variability and scaling</td><td><span class="muted">outside this review</span></td><td>&mdash;</td></tr>
+          <tr><td>8</td><td>Why do streams respond fast when storm flow is old, and what is the transit-time distribution?</td><td>Space variability and scaling</td><td><span class="muted">outside this review</span></td><td>&mdash;</td></tr>
+          <tr><td>9</td><td>How do flood-rich and drought-rich periods arise, and are they changing?</td><td>Variability of extremes</td><td><span class="muted">outside this review</span></td><td>&mdash;</td></tr>
+          <tr><td>10</td><td>Why are runoff extremes in some catchments more sensitive to land-use and geomorphic change?</td><td>Variability of extremes</td><td><span class="muted">outside this review</span></td><td>&mdash;</td></tr>
+          <tr><td>11</td><td>Why, how and when do rain-on-snow events produce exceptional runoff?</td><td>Variability of extremes</td><td><span class="muted">outside this review</span></td><td>&mdash;</td></tr>
+          <tr><td>12</td><td>What controls hillslope&ndash;riparian&ndash;stream&ndash;groundwater interactions?</td><td>Interfaces in hydrology</td><td><span class="muted">outside this review</span></td><td>&mdash;</td></tr>
+          <tr><td>13</td><td>What controls groundwater fluxes across boundaries, including between catchments?</td><td>Interfaces in hydrology</td><td><span class="muted">outside this review</span></td><td>Touched only as a failure mode: inter-basin groundwater flow is one reason similarity-based transfer fails (Oudin et al. 2010, &sect;04)</td></tr>
+          <tr><td>14</td><td>Why do sources of water-quality degradation persist?</td><td>Interfaces in hydrology</td><td><span class="muted">outside this review</span></td><td>&mdash;</td></tr>
+          <tr><td>15</td><td>What are the extent and fate of emerging contaminants and pathogens?</td><td>Interfaces in hydrology</td><td><span class="muted">outside this review</span></td><td>&mdash;</td></tr>
+          <tr><td>16</td><td>How can new technologies measure properties, states and fluxes across scales?</td><td>Measurements and data</td><td><span class="gs yes">Progress shown</span></td><td>SWOT and gauge-free flow-law inversion (&sect;07), Sentinel-1 SAR water extent (&sect;08), ICESat-2 channel geometry (Chen et al. 2026), and global width, water and bare-earth layers (&sect;11). Water depth is still never observed from space</td></tr>
+          <tr class="hi"><td>17</td><td>What is traditional observation worth against soft data, and when can space substitute for time?</td><td>Measurements and data</td><td><span class="gs part">Partly addressed</span></td><td><strong>The proxy half is Family&nbsp;5 (&sect;08)</strong>, which the paper itself frames as &ldquo;replacing few accurate data by many less accurate data&rdquo; without knowing which proxies help most: calibration on satellite proxies with no discharge record, from the C/M ratio to Sentinel-1 SAR, and the Budyko scale that gives them units. <strong>This is the question the programme in &sect;14 addresses</strong>, by giving a water-extent proxy physical units from channel geometry. The space-for-time half is not covered here</td></tr>
+          <tr><td>18</td><td>How can data on human and water systems inform socio-hydrological models?</td><td>Measurements and data</td><td><span class="muted">outside this review</span></td><td>&mdash;</td></tr>
+          <tr><td>19</td><td>How can models be made to extrapolate to changing conditions?</td><td>Modelling methods</td><td><span class="gs yes">Progress shown</span></td><td>The LSTM&rsquo;s extrapolation ceiling is now measured (Baste et al. 2025), and differentiable process models beat it on unseen extremes (Song et al. 2026) and on high-flow trends under regional holdout (Feng et al. 2023, &sect;09&ndash;&sect;10). Low-flow trends stay weak for every model</td></tr>
+          <tr><td>20</td><td>How can structural, parameter and input uncertainty be disentangled and reduced?</td><td>Modelling methods</td><td><span class="gs part">Partly addressed</span></td><td>Equifinality and incommensurability (Beven 2005), signature and rating-curve uncertainty (Westerberg et al. 2016), precipitation-product error (Beck et al. 2017), and the decomposition behind KGE (Gupta et al. 2009) (&sect;06, &sect;12). Prieto et al. (2019) show that model inadequacy can swamp regionalisation error (&sect;04)</td></tr>
+          <tr><td>21</td><td>How should the uncertainty of predictions be communicated to decision makers and the public?</td><td>Interfaces with society</td><td><span class="muted">outside this review</span></td><td>&mdash;</td></tr>
+          <tr><td>22</td><td>What are the synergies and trade-offs between water-related societal goals?</td><td>Interfaces with society</td><td><span class="muted">outside this review</span></td><td>&mdash;</td></tr>
+          <tr><td>23</td><td>What role does water play in migration, urbanisation and the dynamics of civilisations?</td><td>Interfaces with society</td><td><span class="muted">outside this review</span></td><td>&mdash;</td></tr>
+        </tbody>
+      </table>
+    </div>
   </div>
   <div class="card secrefs">
     <h2>References in this section</h2>
@@ -199,6 +239,40 @@
     <p class="eyebrow">Section 02</p>
     <h1>The PUB Decade and its legacy</h1>
     <div class="rule"></div>
+  </div>
+  <div class="card" data-vi="tab_decades">
+    <h2>The three IAHS decades at a glance</h2>
+    <p>The International Association of Hydrological Sciences has organised its science in three consecutive decades. HELPING&rsquo;s plan calls them a trilogy: from hydrological <em>predictions</em> (PUB), to <em>change</em> and interdisciplinarity (Panta Rhei), to <em>solutions</em> (HELPING). Only the first was about ungauged basins. The rest of this section looks at PUB in detail and at what happened to its question afterwards.</p>
+    <p class="scrollhint">Table scrolls sideways &rarr;</p>
+    <div class="tablewrap">
+      <table class="w5">
+        <thead><tr><th>Decade</th><th>Launch plan</th><th>What it set out to do</th><th>How it closed</th><th>Where ungauged prediction stands in it</th></tr></thead>
+        <tbody>
+          <tr class="hi">
+            <td><strong>PUB</strong> &mdash; Predictions in Ungauged Basins<br><span class="yr">2003&ndash;2012</span></td>
+            <td><a href="https://doi.org/10.1623/hysj.48.6.857.51421" target="_blank" rel="noopener">Sivapalan et al. 2003</a>, <em>HSJ</em> 48(6)</td>
+            <td><ul><li>Reduce predictive uncertainty in basins without adequate records &mdash; the single measure of success</li><li>Six science questions, from knowledge gaps and minimum information to new observation technologies and the value of hard and soft data</li><li>A shift from models built on calibration to models built on understanding</li></ul></td>
+            <td>The closing review (<a href="https://www.tandfonline.com/doi/full/10.1080/02626667.2013.803183" target="_blank" rel="noopener">Hrachowitz et al. 2013</a>) and the handbook (Bl&ouml;schl et al. 2013); three causes of predictive uncertainty diagnosed; no general form-to-function theory</td>
+            <td><strong>The subject of the decade.</strong> The table below follows each of its questions and causes to the present</td>
+          </tr>
+          <tr>
+            <td><strong>Panta Rhei</strong> &mdash; Everything Flows<br><span class="yr">2013&ndash;2022</span></td>
+            <td><a href="https://doi.org/10.1080/02626667.2013.809088" target="_blank" rel="noopener">Montanari et al. 2013</a>, <em>HSJ</em> 58(6), the same issue as the PUB review</td>
+            <td><ul><li>Change in hydrology and society: the coupled human&ndash;water system as the object of study</li><li>Three targets (understanding; estimation and prediction; science in practice) and six deliberately few science questions</li></ul></td>
+            <td>Synthesis by 103 authors (<a href="https://doi.org/10.1080/02626667.2025.2469762" target="_blank" rel="noopener">Kreibich et al. 2025</a>): co-evolution of human&ndash;water systems, new data on human behaviour, and progress on detecting and attributing hydrological change</td>
+            <td>No longer a named priority. The nearest of its questions are SQ4, model prediction including predictability, and SQ5, monitoring and data analysis to predict and manage change</td>
+          </tr>
+          <tr>
+            <td><strong>HELPING</strong> &mdash; Hydrology Engaging Local People IN one Global world<br><span class="yr">2023&ndash;2032</span></td>
+            <td><a href="https://doi.org/10.1080/02626667.2024.2355202" target="_blank" rel="noopener">Arheimer et al. 2024</a>, <em>HSJ</em> 69(11)</td>
+            <td><ul><li>Science for solutions: sustainable answers to too little, too much or too polluted water, co-created with local people</li><li>Three themes: global and local interactions; holistic solutions for water security; cross-cutting methods</li><li>26 working groups formed by the end of 2023</li></ul></td>
+            <td>In progress</td>
+            <td>Not named. The plan credits PUB with tackling data scarcity and the transfer of hydrological knowledge in space and time</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Between the decades sits the community&rsquo;s own restatement of what remains unsolved, the 23 questions of 2019 (<a href="https://www.tandfonline.com/doi/full/10.1080/02626667.2019.1620507" target="_blank" rel="noopener">Bl&ouml;schl et al. 2019</a>). &sect;01 sets out where each of those stands.</p>
   </div>
   <div class="card" data-vi="pub_diag">
     <p class="lede">The IAHS Prediction in Ungauged Basins initiative ran from 2003 to 2012, closing with the PUB Symposium in Delft on 23&ndash;25 October 2012.</p>
@@ -389,6 +463,85 @@
     <div class="note">
       <span class="lbl">A note on reading order</span>
       <p>Hrachowitz et al. (2013) predates essentially all of the machine-learning literature. Treat it as the authoritative statement of the <em>problem</em>, not of the current state of solutions.</p>
+    </div>
+  </div>
+  <div class="card" data-vi="tab_pub_open">
+    <h2>PUB&rsquo;s own problems, and where they stand now</h2>
+    <p>PUB stated its problems twice. The 2003 science plan (<a href="https://doi.org/10.1623/hysj.48.6.857.51421" target="_blank" rel="noopener">Sivapalan et al. 2003</a>) posed six science questions; the 2013 closing review (<a href="https://www.tandfonline.com/doi/full/10.1080/02626667.2013.803183" target="_blank" rel="noopener">Hrachowitz et al. 2013</a>) diagnosed three causes of predictive uncertainty. The table follows each one into the literature this review covers.</p>
+    <div class="note">
+      <span class="lbl">How to read the status column</span>
+      <p><span class="unv">The status is this review&rsquo;s reading of the evidence in the cited rows, not a verdict any source gives.</span> None of these problems has been solved outright. <span class="gs yes">Progress shown</span> means published results now answer a large part of the question; <span class="gs part">Partly addressed</span> means there is real progress but a central part is still open; <span class="gs">Still open</span> means the literature mostly documents the problem rather than answers it.</p>
+    </div>
+    <p class="scrollhint">Table scrolls sideways &rarr;</p>
+    <div class="tablewrap">
+      <table class="w5">
+        <thead><tr><th>Problem</th><th>Stated in</th><th>Status</th><th>What answers it in this review</th><th>What is still open</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>What gaps in knowledge limit reliable prediction in ungauged basins?</td>
+            <td>PUB science question 1 (2003)</td>
+            <td><span class="gs part">Partly addressed</span></td>
+            <td>The gaps were diagnosed at the decade&rsquo;s close (Hrachowitz et al. 2013) and explained afterwards: Sivapalan (2018) names unmappable heterogeneity as the &ldquo;virtual impasse&rdquo; behind physically based prediction</td>
+            <td>No general form-to-function theory emerged (&sect;02, &sect;06)</td>
+          </tr>
+          <tr>
+            <td>What is the minimum information needed to reduce predictive uncertainty?</td>
+            <td>PUB science question 2 (2003)</td>
+            <td><span class="gs yes">Progress shown</span></td>
+            <td><ul><li>Eight to thirty-two discharge measurements lift a model from &ldquo;ungauged&rdquo; to about 0.6 against 0.8 for full calibration (Seibert and Beven 2009, &sect;01)</li><li>One to five years of record beat regionalisation for flow-duration curves and low flows (handbook ch. 7 and 8, &sect;05)</li><li>Given a large regional sample, catchment attributes carry enough information for out-of-sample prediction (Kratzert et al. 2019, &sect;09)</li></ul></td>
+            <td>The answers differ by signature and need a dense regional network; in genuinely data-poor regions the minimum is still unknown</td>
+          </tr>
+          <tr>
+            <td>What experimentation is needed to underpin new knowledge?</td>
+            <td>PUB science question 3 (2003)</td>
+            <td><span class="gs part">Partly addressed</span></td>
+            <td>The comparative, large-sample route rather than field experiments: CAMELS, CAMELS-GB, CAMELS-AUS and Caravan (&sect;12) made controlled cross-catchment comparison routine</td>
+            <td>The field programmes the plan called for are outside this review; large samples are concentrated in well-gauged countries</td>
+          </tr>
+          <tr>
+            <td>How can new observational technologies improve prediction?</td>
+            <td>PUB science question 4 (2003)</td>
+            <td><span class="gs yes">Progress shown</span></td>
+            <td><ul><li>Gauge-free discharge from orbit: real SWOT data give median correlation 0.73 (Andreadis et al. 2025, &sect;07)</li><li>Satellite proxies as calibration targets, from microwave to Sentinel-1 SAR in 19 rivers (&sect;08)</li><li>Global terrain, width and water layers (&sect;11)</li></ul></td>
+            <td>Magnitude: median SWOT bias is 50%, surrogate signals carry no units, and water depth is never observed from space</td>
+          </tr>
+          <tr>
+            <td>How can process descriptions be improved to reduce uncertainty?</td>
+            <td>PUB science question 5 (2003)</td>
+            <td><span class="gs part">Partly addressed</span></td>
+            <td>Differentiable models keep process structure while learning parameters, and predict variables they were never trained on (Feng et al. 2022, 2023, &sect;10); Thyer et al. (2024) propose testing conceptual models against physically resolved ones (&sect;02)</td>
+            <td>Model inadequacy still caps what better regionalisation can deliver: adequate in 1 of 16 catchments (Prieto et al. 2019, &sect;04)</td>
+          </tr>
+          <tr>
+            <td>How can the scientific value of available hard and soft data be maximised?</td>
+            <td>PUB science question 6 (2003)</td>
+            <td><span class="gs yes">Progress shown</span></td>
+            <td><ul><li>Limits of acceptability derived from signatures, separating hard from soft information (Winsemius et al. 2009; Yadav et al. 2007, &sect;04)</li><li>Regional deep learning extracts more from the same data than conventional transfer (Kratzert et al. 2019; Arsenault et al. 2023, &sect;09)</li></ul></td>
+            <td>The worth of a given dataset is still judged case by case; rating-curve error alone puts &plusmn;30&ndash;40% on some signatures (Westerberg et al. 2016, &sect;12)</td>
+          </tr>
+          <tr>
+            <td>Incomplete understanding of the processes behind catchment response, and their feedbacks</td>
+            <td>Cause 1 (Hrachowitz et al. 2013)</td>
+            <td><span class="gs part">Partly addressed</span></td>
+            <td>Process structure now measurably buys extrapolation: hybrid models beat the LSTM on events of 5-year return period and above (Song et al. 2026), and the LSTM has a hard ceiling below its training maximum (Baste et al. 2025, &sect;09&ndash;&sect;10)</td>
+            <td>Low-flow trends stay weak for every model tested (Feng et al. 2023)</td>
+          </tr>
+          <tr>
+            <td>Incomplete understanding of multi-scale heterogeneity across landscapes and climates</td>
+            <td>Cause 2 (Hrachowitz et al. 2013)</td>
+            <td><span class="gs">Still open</span></td>
+            <td>Scale-independent parameter fields from transfer functions (MPR: Samaniego et al. 2010, 2017, &sect;04&ndash;&sect;06); catchment classification (&sect;06)</td>
+            <td>Physically similar catchments were hydrologically similar no better than chance for about 40% of 893 French catchments (Oudin et al. 2010, &sect;04); Sivapalan (2018) calls heterogeneity the blocking problem</td>
+          </tr>
+          <tr>
+            <td>Unsuitable regionalisation techniques, for lack of comparative studies</td>
+            <td>Cause 3 (Hrachowitz et al. 2013)</td>
+            <td><span class="gs yes">Progress shown</span></td>
+            <td><ul><li>Comparative studies now exist: 34 studies pooled (Parajka et al. 2013) and 19 approaches on one sample (Pool et al. 2021, &sect;04)</li><li>Output averaging over several donors is an established gain (Zhang and Chiew 2009; Arsenault and Brissette 2014)</li><li>Regional deep learning and differentiable models beat calibrated models out of sample (&sect;09&ndash;&sect;10)</li></ul></td>
+            <td>Even the best transfer method succeeds in at most 75% of catchments, and no catchment attribute predicts which method will work (Arsenault and Brissette 2014, &sect;12); arid catchments remain the weakest in every handbook chapter</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
   <div class="card" data-vi="tab_pub5">

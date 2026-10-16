@@ -72,7 +72,19 @@ a:hover{color:var(--accent-strong)}
   padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px));
 }
 @media (min-width:1000px){.rail{position:sticky;top:0;height:100vh;overflow-y:auto}}
-@media (max-width:999px){.rail[hidden]{display:none!important}}
+/* Narrow screens: the rail is an off-canvas drawer that slides in from the left over a dimmed backdrop. */
+.railbd{display:none}
+@media (max-width:999px){
+  .rail{position:fixed;top:0;bottom:0;left:0;z-index:50;width:min(320px,86vw);overflow-y:auto;overscroll-behavior:contain;
+        padding-top:max(22px,env(safe-area-inset-top,0px));padding-bottom:max(26px,env(safe-area-inset-bottom,0px));
+        box-shadow:8px 0 32px rgba(0,0,0,.35);transform:translateX(-100%);visibility:hidden;
+        transition:transform .26s ease,visibility 0s linear .26s}
+  .rail.open{transform:none;visibility:visible;transition:transform .26s ease}
+  .railbd{display:block;position:fixed;inset:0;z-index:45;background:rgba(11,21,48,.55);opacity:0;pointer-events:none;transition:opacity .26s ease}
+  .railbd.on{opacity:1;pointer-events:auto}
+  body.rail-open{overflow:hidden}
+}
+@media (max-width:999px) and (prefers-reduced-motion:reduce){.rail,.rail.open,.railbd{transition:none}}
 .rail::-webkit-scrollbar{width:8px}
 .rail::-webkit-scrollbar-thumb{background:rgba(160,180,255,.22);border-radius:99px}
 
@@ -230,6 +242,14 @@ figcaption{font-family:var(--font-ui);font-size:11.5px;color:var(--ink-faint);ma
 .mapwrap svg{display:block;min-width:1000px}
 .mapwrap.big svg{min-width:860px}
 .card.wide{width:auto}
+.maplbl.narrow{display:none}
+/* Narrow screens: maps shrink to the card width so the whole figure is visible; Expand opens it full size. */
+@media (max-width:999px){
+  .stack .mapwrap{overflow-x:visible}
+  .stack .mapwrap svg,.stack .mapwrap.big svg{min-width:0;width:100%}
+  .maplbl.wide{display:none}
+  .maplbl.narrow{display:inline}
+}
 .modalbody .mapwrap{overflow:visible;margin:0;padding:0}
 .modalbody .mapwrap{display:flex;justify-content:center}
 .modalbody .mapwrap svg{width:1000px;min-width:1000px;max-width:1000px;flex:none}

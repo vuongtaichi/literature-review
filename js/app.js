@@ -44,10 +44,21 @@
     }
   }
 
-  function openRail(){ rail.hidden = false; toggle.setAttribute('aria-expanded','true'); }
-  function closeRail(){ if (isNarrow()){ rail.hidden = true; toggle.setAttribute('aria-expanded','false'); } }
+  var railBd = document.createElement('div');
+  railBd.className = 'railbd';
+  rail.parentNode.insertBefore(railBd, rail);
+  function setRail(open){
+    rail.classList.toggle('open', open);
+    railBd.classList.toggle('on', open);
+    document.body.classList.toggle('rail-open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  function openRail(){ setRail(true); }
+  function closeRail(){ if (isNarrow()) setRail(false); }
 
-  toggle.addEventListener('click', function(){ if (rail.hidden) openRail(); else closeRail(); });
+  toggle.addEventListener('click', function(){ if (rail.classList.contains('open')) closeRail(); else openRail(); });
+  railBd.addEventListener('click', closeRail);
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && rail.classList.contains('open')) closeRail(); });
 
   search.addEventListener('input', function(){
     var q = search.value.trim().toLowerCase();
@@ -70,10 +81,7 @@
     if (e.key === 'ArrowRight') show(current + 1, true);
   });
 
-  function resize(){
-    if (isNarrow()){ if (toggle.getAttribute('aria-expanded') !== 'true') rail.hidden = true; }
-    else rail.hidden = false;
-  }
+  function resize(){ if (!isNarrow()) setRail(false); }
   window.addEventListener('resize', resize);
 
   var startId = (location.hash || '').replace('#','');
@@ -327,7 +335,8 @@
       var bar = document.createElement('p');
       bar.className = 'scrollhint';
       var lbl = document.createElement('span');
-      lbl.textContent = 'Map scrolls sideways \u2192';
+      lbl.innerHTML = '<span class="maplbl wide">Map scrolls sideways \u2192</span>' +
+                      '<span class="maplbl narrow">Map shrunk to fit \u00b7 Expand for full size</span>';
       bar.appendChild(lbl); bar.appendChild(btn);
       wrap.parentNode.insertBefore(bar, wrap);
     }

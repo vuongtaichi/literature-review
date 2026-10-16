@@ -116,7 +116,7 @@ section{display:flex;flex-direction:column;gap:20px}
 
 .card{background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow);padding:clamp(20px,3.4vw,34px)}
 .card.head{padding-bottom:clamp(18px,3vw,28px)}
-.eyebrow{font-family:var(--font-ui);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 9px}
+.eyebrow{font-family:var(--font-ui);font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 9px}
 h1{font:700 clamp(28px,4.8vw,38px)/1.18 var(--font-body);margin:0 0 15px;text-wrap:balance;letter-spacing:-.012em;font-variant-numeric:lining-nums}
 .card.head .sub{font-family:var(--font-ui);font-size:14px;color:var(--ink-faint);margin:-4px 0 14px;letter-spacing:.01em}
 .rule{width:62px;height:4px;border-radius:99px;background:var(--accent);margin:0}

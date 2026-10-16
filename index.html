@@ -165,17 +165,15 @@
   </div>
   <div class="card" data-vi="prob_skill">
     <h2>How much skill is actually lost</h2>
-    <p>The most-cited empirical answer comes from the PUB comparative assessment, a meta-analysis of 34 runoff-hydrograph studies spanning 3,874 catchments (<a href="https://hess.copernicus.org/articles/17/1783/2013/" target="_blank" rel="noopener">Parajka et al. 2013</a>). Its findings set the baseline expectations that later work is measured against:</p>
+    <p class="lede">In daily NSE, a model calibrated at the site scores about 0.75; without a gauge, about 0.6&ndash;0.7. The loss is largest in arid, small and sparsely gauged catchments.</p>
     <ul>
-      <li>Predictions are more accurate in <strong>humid</strong> than arid catchments, and in <strong>large</strong> than small ones.</li>
-      <li>In humid catchments, <strong>spatial proximity and similarity</strong> methods performed best; in arid catchments, similarity and parameter regression were slightly better.</li>
-      <li>Where the gauge network is <strong>dense</strong>, spatial proximity and geostatistics outperformed regression and simple parameter averaging.</li>
-      <li>Regression methods tended to perform <strong>somewhat worse</strong> than other methods when compared within the same region.</li>
-      <li>There was <strong>no clear relationship</strong> between predictive performance and the number of regionalised parameters.</li>
-      <li><strong>The numbers behind those statements, from the full text:</strong> median daily NSE under leave-one-out cross-validation is <span class="num">0.58</span> for spatial proximity and <span class="num">0.66</span> for similarity; by climate, <span class="num">0.54</span> arid, <span class="num">0.64</span> cold, <span class="num">0.66</span> humid; by size, about <span class="num">0.60</span> below 300&nbsp;km<sup>2</sup> rising to about <span class="num">0.80</span> in larger catchments. These are the baseline figures an ungauged-basin result is read against. <span class="srcd">Read in full 17&nbsp;October&nbsp;2026.</span></li>
+      <li><strong>The PUB baseline</strong> (<a href="https://hess.copernicus.org/articles/17/1783/2013/" target="_blank" rel="noopener">Parajka et al. 2013</a>; 34 studies, 3,874 catchments): median NSE <span class="num">0.58</span> for spatial proximity and <span class="num">0.66</span> for similarity; <span class="num">0.54</span> arid, <span class="num">0.64</span> cold, <span class="num">0.66</span> humid; about <span class="num">0.60</span> below 300&nbsp;km<sup>2</sup> against about <span class="num">0.80</span> in larger catchments. Proximity and geostatistics win where gauges are dense, regression usually does worse, and the number of regionalised parameters makes no clear difference.</li>
+      <li><strong>After 2013</strong> (<a href="https://doi.org/10.1002/wat2.1487" target="_blank" rel="noopener">Guo et al. 2020</a>; 33 studies): <span class="num">0.75</span> calibrated, <span class="num">0.69</span> by similarity, <span class="num">0.66</span> by regression. Every method gets worse as aridity rises and better as gauge density rises.</li>
+      <li><strong>Regional deep learning</strong>: an LSTM never trained on the basin reached <span class="num">0.69</span> against <span class="num">0.64</span> calibrated (<a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019WR026065" target="_blank" rel="noopener">Kratzert et al. 2019</a>), and <span class="num">0.78</span> against <span class="num">0.58&ndash;0.63</span> regionalised (<a href="https://hess.copernicus.org/articles/27/139/2023/" target="_blank" rel="noopener">Arsenault et al. 2023</a>). It needs hundreds of gauged catchments, and it falls to <span class="num">0.55&ndash;0.62</span> when whole regions are held out (<a href="https://hess.copernicus.org/articles/27/2357/2023/" target="_blank" rel="noopener">Feng et al. 2023</a>).</li>
+      <li><strong>A few measurements recover much of the loss</strong> (<a href="https://hess.copernicus.org/articles/13/883/2009/" target="_blank" rel="noopener">Seibert and Beven 2009</a>; 11 Swedish catchments): poor below four, clearly better from eight, and levelling off near <span class="num">32</span>. Six well-chosen days gave about <span class="num">0.59</span>, against about <span class="num">0.8</span> for full calibration. The best strategies assume the peak-flow day can be picked in advance.</li>
     </ul>
-    <p><strong>The picture after 2013.</strong> <a href="https://doi.org/10.1002/wat2.1487" target="_blank" rel="noopener">Guo et al. (2020)</a> repeated the comparison on 33 studies published after the decade: median NSE <span class="num">0.75</span> calibrated at the site, <span class="num">0.69</span> regionalised by physical similarity and <span class="num">0.66</span> by regression, with every method worse as aridity rises and better as gauge density rises. Regional deep learning has since closed the gap where data are plentiful: an LSTM never trained on the basin reached median NSE <span class="num">0.69</span> against <span class="num">0.64</span> for a model calibrated at that basin (<a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019WR026065" target="_blank" rel="noopener">Kratzert et al. 2019</a>), and <span class="num">0.78</span> against <span class="num">0.58&ndash;0.63</span> for regionalised models given the same data (<a href="https://hess.copernicus.org/articles/27/139/2023/" target="_blank" rel="noopener">Arsenault et al. 2023</a>). Both need hundreds of gauged catchments, and when whole regions are held out the medians fall to <span class="num">0.55&ndash;0.62</span> (<a href="https://hess.copernicus.org/articles/27/2357/2023/" target="_blank" rel="noopener">Feng et al. 2023</a>). <span class="unv">Read together, the loss of skill is now small where gauges are dense and largest where PUB began: arid, sparsely gauged regions.</span> Where the field stands on the wider list of open problems is set out in the table below.</p>
-    <p>One result worth holding onto early: <a href="https://hess.copernicus.org/articles/13/883/2009/" target="_blank" rel="noopener">Seibert and Beven (2009)</a> treated eleven central Swedish catchments (6.6&ndash;950&nbsp;km<sup>2</sup>) as ungauged and asked how few individual discharge measurements would constrain HBV&nbsp;light usefully. <strong>The full text puts numbers on &ldquo;few&rdquo;, and they are worth knowing before leaning on the result.</strong> The weighted ensemble mean is poor below four observations, clearly better from eight, and plateaus around <span class="num">32</span>. Six well-chosen days reached a median efficiency of about <span class="num">0.59</span>, against about <span class="num">0.54</span> for four to eight random days and about <span class="num">0.8</span> for full calibration on the whole ten-year series. So the gap between &ldquo;ungauged&rdquo; and &ldquo;usefully constrained&rdquo; is narrower than it looks &mdash; but it is a gap from roughly 0.8 to roughly 0.6, closed by eight to thirty-two measurements, not by one or two. The authors add that the best-performing strategies assume you can choose the peak-flow day in advance, which real logistics rarely allow. <span class="srcd">Read in full 17&nbsp;October&nbsp;2026; the earlier summary said &ldquo;surprisingly few&rdquo; without the count or the cost in efficiency.</span></p>
+    <p><span class="unv">The upshot: little skill is lost where gauges are dense, and most is lost where PUB began, in arid and sparsely gauged regions.</span> The table below shows where the wider list of open problems stands.</p>
+    <p class="srcd">Parajka et al. 2013 and Seibert and Beven 2009 read in full 17&nbsp;October&nbsp;2026.</p>
   </div>
   <div class="card" data-vi="tab_uph23">
     <h2>The problem restated in 2019: twenty-three unsolved problems</h2>
@@ -245,7 +243,7 @@
     <p>The International Association of Hydrological Sciences has organised its science in three consecutive decades. HELPING&rsquo;s plan calls them a trilogy: from hydrological <em>predictions</em> (PUB), to <em>change</em> and interdisciplinarity (Panta Rhei), to <em>solutions</em> (HELPING). Only the first was about ungauged basins. The rest of this section looks at PUB in detail and at what happened to its question afterwards.</p>
     <p class="scrollhint">Table scrolls sideways &rarr;</p>
     <div class="tablewrap">
-      <table class="w5">
+      <table class="w5 cw-dec">
         <thead><tr><th>Decade</th><th>Launch plan</th><th>What it set out to do</th><th>How it closed</th><th>Where ungauged prediction stands in it</th></tr></thead>
         <tbody>
           <tr class="hi">
@@ -410,7 +408,7 @@
     <h2>What the decade actually produced</h2>
     <p class="scrollhint">Table scrolls sideways &rarr;</p>
     <div class="tablewrap">
-      <table class="w7 ev7">
+      <table class="w7 ev7 cw-pub">
         <thead><tr><th>Output and year</th><th>Journal / publisher</th><th>Research question addressed</th><th>Method</th><th>Data required</th><th>Findings</th><th>Limitations</th></tr></thead>
         <tbody>
           <tr>
@@ -474,7 +472,7 @@
     </div>
     <p class="scrollhint">Table scrolls sideways &rarr;</p>
     <div class="tablewrap">
-      <table class="w5">
+      <table class="w5 cw-pubopen">
         <thead><tr><th>Problem</th><th>Stated in</th><th>Status</th><th>What answers it in this review</th><th>What is still open</th></tr></thead>
         <tbody>
           <tr>
@@ -550,7 +548,7 @@
     <p>Three further strands carry the PUB question forward: a diagnosis of <em>why</em> form-to-function stalled (Sivapalan), the community&rsquo;s own restatement of its open problems (the UPH list), and a dedicated review of what regionalisation achieved in the post-PUB period (Guo et al.).</p>
     <p class="scrollhint">Table scrolls sideways &rarr;</p>
     <div class="tablewrap">
-      <table class="w7 ev7">
+      <table class="w7 ev7 cw-pub">
         <thead><tr><th>Source and year</th><th>Journal</th><th>Research question / gap addressed</th><th>Method</th><th>Data required</th><th>Findings</th><th>Limitations</th></tr></thead>
         <tbody>
           <tr>
@@ -728,7 +726,7 @@
     <blockquote><strong>Read the skill column carefully.</strong> These efficiencies come from different regions, periods, catchment sizes and metrics. They are <strong>not directly comparable</strong> &mdash; they indicate what each family has been shown to achieve in its own published setting, not a ranking from a common experiment.</blockquote>
     <p class="scrollhint">Table scrolls sideways &rarr;</p>
     <div class="tablewrap">
-      <table class="w7">
+      <table class="w7 cw-cmp">
         <thead><tr><th>Family</th><th>Question it answers / gap it addresses</th><th>Method</th><th>Data required</th><th>Reported skill (study, year, journal)</th><th>Strengths</th><th>Failure modes / gaps left</th></tr></thead>
         <tbody>
           <tr>
@@ -3282,6 +3280,45 @@
     <p class="eyebrow">Section 13</p>
     <h1>Open gaps and where the field is heading</h1>
     <div class="rule"></div>
+  </div>
+  <div class="card" data-vi="tab_gapledger">
+    <h2>Research gaps since PUB: which were resolved, and by what</h2>
+    <p class="lede">The gaps the literature named during and after the PUB decade, in one ledger: the ones published work has since closed, the ones it has narrowed, and the ones still open.</p>
+    <div class="note">
+      <span class="lbl">How to read the status column</span>
+      <p><span class="unv">The status is this review&rsquo;s reading of the cited evidence, not a verdict from the sources.</span> <span class="gs yes">Resolved</span> means the gap as it was posed now has a published answer, valid where the conditions of those studies hold. <span class="gs part">Partly resolved</span> means real progress with a central part still missing. <span class="gs">Open</span> means the literature documents the gap but does not yet answer it. The open gaps are discussed in the cards that follow.</p>
+    </div>
+    <p class="scrollhint">Table scrolls sideways &rarr;</p>
+    <div class="tablewrap">
+      <table class="w5 cw-gap">
+        <thead><tr><th>Gap</th><th>Named by</th><th>Resolved or narrowed by</th><th>Status</th><th>What remains</th></tr></thead>
+        <tbody>
+          <tr><td>No comparative evidence on which regionalisation methods work where</td><td>Hrachowitz et al. 2013 (PUB cause 3)</td><td>Parajka et al. 2013 (34 studies, 3,874 catchments); Viglione et al. 2013 (two families on 213 common catchments); Pool et al. 2021 (19 approaches on 671 catchments) (&sect;04&ndash;&sect;05)</td><td><span class="gs yes">Resolved</span></td><td>The ranking depends on climate and gauge density, and no catchment attribute predicts which method will work (Arsenault and Brissette 2014)</td></tr>
+          <tr><td>Regress parameters on attributes, or transfer whole parameter sets?</td><td>Contradictory earlier results (Oudin et al. 2008)</td><td>Merz and Bl&ouml;schl 2004; Parajka et al. 2005; Oudin et al. 2008; Zhang and Chiew 2009: whole-set transfer by proximity or similarity beats regression on three continents (&sect;04)</td><td><span class="gs yes">Resolved</span></td><td>Shown on dense gauge networks; all methods stay well behind calibration at the site</td></tr>
+          <tr><td>Transfer from a single donor is fragile under equifinality</td><td>Beven 2005</td><td>Averaging the outputs of several donors: Zhang and Chiew 2009; Arsenault and Brissette 2014 (four to seven donors); Beck et al. 2016 (ten donors, global) (&sect;04, &sect;12)</td><td><span class="gs yes">Resolved</span></td><td>Even the best method succeeds in at most 75% of catchments</td></tr>
+          <tr><td>Calibrated parameters are tied to the model grid and do not transfer across scales</td><td>Samaniego et al. 2010</td><td>Multiscale Parameter Regionalisation: Samaniego et al. 2010, 2017; global fields from Beck et al. 2020 (&sect;04, &sect;06)</td><td><span class="gs yes">Resolved</span></td><td>The transfer-function form is fixed in advance, and a calibration sample is still needed</td></tr>
+          <tr><td>No reliable measure of catchment similarity for choosing donors</td><td>Gacu et al. 2025</td><td>Tested directly by Oudin et al. 2010: physically similar catchments were hydrologically similar no better than chance for about 40% of 893 French catchments; signature classes (Sawicz et al. 2011) (&sect;04, &sect;06)</td><td><span class="gs">Open</span></td><td>The failures sit in catchments whose geology the descriptors miss</td></tr>
+          <tr><td>How few measurements are enough to constrain an ungauged model?</td><td>PUB science question 2 (Sivapalan et al. 2003)</td><td>Seibert and Beven 2009 (eight to thirty-two measurements); handbook ch. 7 and 8 (one to five years of record beat regionalisation) (&sect;01, &sect;05)</td><td><span class="gs yes">Resolved</span></td><td>Answers differ by signature, and the best strategies assume the peak-flow day can be chosen in advance</td></tr>
+          <tr><td>No shared, consistent large-sample data for comparing methods</td><td>Hrachowitz et al. 2013 (the need for comparative hydrology)</td><td>CAMELS (Newman et al. 2015; Addor et al. 2017), CAMELS-GB, CAMELS-AUS and Caravan (&sect;12)</td><td><span class="gs yes">Resolved</span></td><td>Concentrated in well-gauged countries; Caravan&rsquo;s re-derived forcing degraded calibration (Clerc-Schwarzenbach et al. 2024)</td></tr>
+          <tr><td>Efficiency scores are compared without a common benchmark</td><td>Knoben et al. 2019; Gacu et al. 2025</td><td>The decomposition behind KGE (Gupta et al. 2009) and the mean-flow benchmark KGE&nbsp;&asymp;&nbsp;&minus;0.41 (Knoben et al. 2019) (&sect;12)</td><td><span class="gs part">Partly resolved</span></td><td>No study has compared all seven families on one dataset under one protocol (&sect;13)</td></tr>
+          <tr><td>Can one regional model beat models calibrated in basins it has never seen?</td><td>Kratzert et al. 2019</td><td>Kratzert et al. 2019 (median NSE 0.69 against 0.64); Arsenault et al. 2023 (same data, 93&ndash;97% of catchments); Nearing et al. 2024 (global extreme floods) (&sect;09)</td><td><span class="gs yes">Resolved</span></td><td>Only with hundreds of gauged catchments to train on</td></tr>
+          <tr><td>Do data-driven models extrapolate beyond their training range?</td><td>Bl&ouml;schl et al. 2019 (Question 19)</td><td>Baste et al. 2025 measured the LSTM ceiling (73 against a 183&nbsp;mm&nbsp;d<sup>&minus;1</sup> training maximum); Song et al. 2026 and Feng et al. 2023 show hybrids extrapolate better (&sect;09&ndash;&sect;10)</td><td><span class="gs yes">Resolved</span></td><td>The question is answered; low-flow trends stay weak for every model</td></tr>
+          <tr><td>Keep process structure while matching deep-learning accuracy</td><td>Shen et al. 2023</td><td>Differentiable models: Feng et al. 2022 (NSE 0.732 against 0.748), Feng et al. 2023 (better under regional holdout) (&sect;10)</td><td><span class="gs part">Partly resolved</span></td><td>Numerical compensation can obscure parameter meaning (Song et al. 2024); few independent replications</td></tr>
+          <tr><td>Transfer a trained model to a region with no gauges at all</td><td>Willard et al. 2025</td><td>Few-shot transfer with some target data (Ougahi and Rowan 2026) (&sect;09)</td><td><span class="gs">Open</span></td><td>Zero-shot transfer still rests on expert judgement; models moved as-is lost to local models trained on minimal data</td></tr>
+          <tr><td>Global precipitation error limits every donor-free prediction</td><td>Beck et al. 2017</td><td>Quantified across 22 products, 76,086 gauges and 9,053 catchments (Beck et al. 2017) (&sect;06)</td><td><span class="gs part">Partly resolved</span></td><td>Measured, not reduced; the best product depends on gauges and will not transfer to ungauged regions</td></tr>
+          <tr><td>Discharge from orbit without any gauge</td><td>Smith 1997; Gleason and Durand 2020</td><td>At-many-stations hydraulic geometry (Gleason and Smith 2014); algorithm intercomparison (Durand et al. 2016); first real SWOT assessment, median correlation 0.73 (Andreadis et al. 2025) (&sect;07)</td><td><span class="gs part">Partly resolved</span></td><td>Timing is right but magnitude is not: median bias 50% and median NSE negative; SWOT is designed for rivers wider than 100&nbsp;m</td></tr>
+          <tr><td>Can a satellite signal replace the gauge record for calibration?</td><td>Sun et al. 2010, 2011</td><td>Sun et al. 2010, 2011; Revilla-Romero et al. 2015; Yoon et al. 2022 (NSE 0.54&ndash;0.78 with no discharge data) (&sect;08)</td><td><span class="gs yes">Resolved</span></td><td>Works only where the proxy&ndash;discharge correlation holds at the site</td></tr>
+          <tr><td>Surrogate signals carry no units</td><td>Revilla-Romero et al. 2015; Yoon et al. 2024</td><td>A Budyko mean flow supplies the scale (Yoon et al. 2024), packaged as SRM (Yoon et al. 2025) (&sect;08)</td><td><span class="gs part">Partly resolved</span></td><td>Budyko is compromised in arid and semi-arid regions; the &sect;14 programme supplies the scale from channel geometry instead</td></tr>
+          <tr><td>Small and narrow rivers are below the sensors&rsquo; resolution</td><td>Yu et al. 2023; Biancamaria et al. 2015</td><td>NSE 0.63 and 0.62 on 91 and 132&nbsp;m channels (Yu et al. 2023); Sentinel-1 SAR in 19 rivers (Han et al. 2026) (&sect;08)</td><td><span class="gs part">Partly resolved</span></td><td>Weaker in steep, confined, storage-influenced and persistently low-flow reaches</td></tr>
+          <tr><td>A rating curve where no cross-section was ever surveyed</td><td>Zheng et al. 2018b</td><td>Synthetic rating curves from HAND geometry (Zheng et al. 2018b); channel geometry from ICESat-2 (Chen et al. 2026) (&sect;07, &sect;11)</td><td><span class="gs part">Partly resolved</span></td><td>The HAND curves needed a bottom shift from a calibrated HEC-RAS model and per-site roughness</td></tr>
+          <tr><td>Water depth and bathymetry are not observed from space</td><td>Biancamaria et al. 2015; Bates 2022</td><td>Bankfull depth by regression on drainage area (Andreadis et al. 2013, 24% mean error at two rivers); power-law bed shapes (Dingman 2007) (&sect;11)</td><td><span class="gs">Open</span></td><td>SWOT does not measure depth, and a global bathymetric dataset &ldquo;is unlikely to exist anytime soon&rdquo; (Bates 2022)</td></tr>
+          <tr><td>River-signal proxies and ET or storage constraints have not been combined</td><td>This review (&sect;08, &sect;13)</td><td>Only Hulsman et al. 2020, with altimetry and GRACE in one basin (&sect;08)</td><td><span class="gs">Open</span></td><td>No study pairs an imagery proxy with an ET or storage constraint</td></tr>
+          <tr><td>Arid catchments are predicted worst by every method</td><td>Parajka et al. 2013; handbook ch. 5&ndash;10</td><td>Documented again by Guo et al. 2020 and in every handbook chapter (&sect;01&ndash;&sect;05)</td><td><span class="gs">Open</span></td><td>No family has closed the arid gap; transmission losses remain largely unknown (Smakhtin 2001)</td></tr>
+          <tr><td>Studies concentrate in Asia and North America</td><td>Gacu et al. 2025</td><td>&mdash;</td><td><span class="gs">Open</span></td><td>Africa and Oceania together hold under 5% of the studies reviewed</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Of the 22 gaps, <strong>9 are resolved</strong>, <strong>7 partly resolved</strong> and <strong>6 open</strong>. The resolved ones cluster mostly in Families 1, 2 and 6, where large gauged samples made controlled comparisons possible. The open ones cluster where gauges are absent: arid regions, regions with no gauges at all, and the depth below the water surface. That is also where the &sect;14 programme sits.</p>
   </div>
   <div class="card" data-vi="gaps_named">
     <h2>Gaps the literature names explicitly</h2>

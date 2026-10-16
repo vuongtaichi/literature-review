@@ -180,6 +180,41 @@ table.w5{min-width:1020px}
 .modalbody table.ev7 th:nth-child(6),.modalbody table.ev7 td:nth-child(6){width:340px}
 .tablewrap table.ev7 th:nth-child(7),.tablewrap table.ev7 td:nth-child(7),
 .modalbody table.ev7 th:nth-child(7),.modalbody table.ev7 td:nth-child(7){width:270px}
+/* Per-table column widths (17 Oct 2026): wide columns for long text, so rows do not run very tall. */
+table.cw-dec{table-layout:fixed;min-width:1240px;width:1240px}
+.tablewrap table.cw-dec th:nth-child(1),.tablewrap table.cw-dec td:nth-child(1),.modalbody table.cw-dec th:nth-child(1),.modalbody table.cw-dec td:nth-child(1){width:170px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-dec th:nth-child(2),.tablewrap table.cw-dec td:nth-child(2),.modalbody table.cw-dec th:nth-child(2),.modalbody table.cw-dec td:nth-child(2){width:150px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-dec th:nth-child(3),.tablewrap table.cw-dec td:nth-child(3),.modalbody table.cw-dec th:nth-child(3),.modalbody table.cw-dec td:nth-child(3){width:420px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-dec th:nth-child(4),.tablewrap table.cw-dec td:nth-child(4),.modalbody table.cw-dec th:nth-child(4),.modalbody table.cw-dec td:nth-child(4){width:260px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-dec th:nth-child(5),.tablewrap table.cw-dec td:nth-child(5),.modalbody table.cw-dec th:nth-child(5),.modalbody table.cw-dec td:nth-child(5){width:240px;min-width:0;overflow-wrap:anywhere}
+table.cw-pubopen{table-layout:fixed;min-width:1260px;width:1260px}
+.tablewrap table.cw-pubopen th:nth-child(1),.tablewrap table.cw-pubopen td:nth-child(1),.modalbody table.cw-pubopen th:nth-child(1),.modalbody table.cw-pubopen td:nth-child(1){width:230px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-pubopen th:nth-child(2),.tablewrap table.cw-pubopen td:nth-child(2),.modalbody table.cw-pubopen th:nth-child(2),.modalbody table.cw-pubopen td:nth-child(2){width:130px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-pubopen th:nth-child(3),.tablewrap table.cw-pubopen td:nth-child(3),.modalbody table.cw-pubopen th:nth-child(3),.modalbody table.cw-pubopen td:nth-child(3){width:150px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-pubopen th:nth-child(4),.tablewrap table.cw-pubopen td:nth-child(4),.modalbody table.cw-pubopen th:nth-child(4),.modalbody table.cw-pubopen td:nth-child(4){width:450px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-pubopen th:nth-child(5),.tablewrap table.cw-pubopen td:nth-child(5),.modalbody table.cw-pubopen th:nth-child(5),.modalbody table.cw-pubopen td:nth-child(5){width:300px;min-width:0;overflow-wrap:anywhere}
+table.cw-pub{table-layout:fixed;min-width:1780px;width:1780px}
+.tablewrap table.cw-pub th:nth-child(1),.tablewrap table.cw-pub td:nth-child(1),.modalbody table.cw-pub th:nth-child(1),.modalbody table.cw-pub td:nth-child(1){width:150px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-pub th:nth-child(2),.tablewrap table.cw-pub td:nth-child(2),.modalbody table.cw-pub th:nth-child(2),.modalbody table.cw-pub td:nth-child(2){width:125px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-pub th:nth-child(3),.tablewrap table.cw-pub td:nth-child(3),.modalbody table.cw-pub th:nth-child(3),.modalbody table.cw-pub td:nth-child(3){width:245px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-pub th:nth-child(4),.tablewrap table.cw-pub td:nth-child(4),.modalbody table.cw-pub th:nth-child(4),.modalbody table.cw-pub td:nth-child(4){width:320px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-pub th:nth-child(5),.tablewrap table.cw-pub td:nth-child(5),.modalbody table.cw-pub th:nth-child(5),.modalbody table.cw-pub td:nth-child(5){width:150px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-pub th:nth-child(6),.tablewrap table.cw-pub td:nth-child(6),.modalbody table.cw-pub th:nth-child(6),.modalbody table.cw-pub td:nth-child(6){width:490px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-pub th:nth-child(7),.tablewrap table.cw-pub td:nth-child(7),.modalbody table.cw-pub th:nth-child(7),.modalbody table.cw-pub td:nth-child(7){width:300px;min-width:0;overflow-wrap:anywhere}
+table.cw-gap{table-layout:fixed;min-width:1280px;width:1280px}
+.tablewrap table.cw-gap th:nth-child(1),.tablewrap table.cw-gap td:nth-child(1),.modalbody table.cw-gap th:nth-child(1),.modalbody table.cw-gap td:nth-child(1){width:230px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-gap th:nth-child(2),.tablewrap table.cw-gap td:nth-child(2),.modalbody table.cw-gap th:nth-child(2),.modalbody table.cw-gap td:nth-child(2){width:170px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-gap th:nth-child(3),.tablewrap table.cw-gap td:nth-child(3),.modalbody table.cw-gap th:nth-child(3),.modalbody table.cw-gap td:nth-child(3){width:420px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-gap th:nth-child(4),.tablewrap table.cw-gap td:nth-child(4),.modalbody table.cw-gap th:nth-child(4),.modalbody table.cw-gap td:nth-child(4){width:130px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-gap th:nth-child(5),.tablewrap table.cw-gap td:nth-child(5),.modalbody table.cw-gap th:nth-child(5),.modalbody table.cw-gap td:nth-child(5){width:330px;min-width:0;overflow-wrap:anywhere}
+table.cw-cmp{table-layout:fixed;min-width:1560px;width:1560px}
+.tablewrap table.cw-cmp th:nth-child(1),.tablewrap table.cw-cmp td:nth-child(1),.modalbody table.cw-cmp th:nth-child(1),.modalbody table.cw-cmp td:nth-child(1){width:150px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-cmp th:nth-child(2),.tablewrap table.cw-cmp td:nth-child(2),.modalbody table.cw-cmp th:nth-child(2),.modalbody table.cw-cmp td:nth-child(2){width:210px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-cmp th:nth-child(3),.tablewrap table.cw-cmp td:nth-child(3),.modalbody table.cw-cmp th:nth-child(3),.modalbody table.cw-cmp td:nth-child(3){width:210px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-cmp th:nth-child(4),.tablewrap table.cw-cmp td:nth-child(4),.modalbody table.cw-cmp th:nth-child(4),.modalbody table.cw-cmp td:nth-child(4){width:190px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-cmp th:nth-child(5),.tablewrap table.cw-cmp td:nth-child(5),.modalbody table.cw-cmp th:nth-child(5),.modalbody table.cw-cmp td:nth-child(5){width:260px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-cmp th:nth-child(6),.tablewrap table.cw-cmp td:nth-child(6),.modalbody table.cw-cmp th:nth-child(6),.modalbody table.cw-cmp td:nth-child(6){width:200px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-cmp th:nth-child(7),.tablewrap table.cw-cmp td:nth-child(7),.modalbody table.cw-cmp th:nth-child(7),.modalbody table.cw-cmp td:nth-child(7){width:340px;min-width:0;overflow-wrap:anywhere}
 .gs{display:inline-block;font:700 10px/1.5 var(--font-ui);letter-spacing:.07em;text-transform:uppercase;padding:3px 9px;border-radius:999px;border:1px solid var(--border);color:var(--ink-faint);background:transparent;white-space:nowrap}
 .gs.yes{background:var(--accent-soft-bg);color:var(--accent);border-color:var(--note-border)}
 .gs.part{color:var(--ink);border-color:var(--border)}

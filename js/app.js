@@ -258,16 +258,60 @@
     if (!inner) return;
     var el = inner.querySelector('table') || inner.querySelector('svg') || inner;
     var w;
+    var pad = 34;                                    // .modalbody left + right padding
+    var room = window.innerWidth - 32;               // .modal left + right padding
     if (el.tagName === 'TABLE'){
+      unfitCols(el);
       // a table stretches to whatever panel it is in, so size the panel from its own min-width
       var mw = parseFloat(getComputedStyle(el).minWidth);
       w = (isFinite(mw) && mw > 0) ? mw : el.scrollWidth;
+      // too wide for the window: shrink the columns in proportion so the whole table shows,
+      // down to 60% of its designed width (narrower than that, sideways scrolling is kinder than slivers)
+      if (w + pad > room){
+        var target = Math.max(room - pad, Math.min(w, Math.max(w * 0.6, 640)));
+        fitCols(el, target);
+        w = target;
+      }
     } else {
       w = Math.max(el.getBoundingClientRect().width, el.scrollWidth || 0);
     }
-    var pad = 34;                                    // .modalbody left + right padding
-    var room = window.innerWidth - 32;               // .modal left + right padding
     panel.style.width = Math.min(Math.ceil(w + pad), room) + 'px';
+    if (el.tagName !== 'TABLE') return;
+    // content can still be wider than the declared min-width; widen the panel if the window allows, else shrink
+    var over = bodyEl.scrollWidth - bodyEl.clientWidth;
+    if (over > 1){
+      if (w + over + pad <= room) panel.style.width = Math.ceil(w + over + pad) + 'px';
+      else if (!el.classList.contains('fitcols')){
+        var tg = Math.max(room - pad, Math.min(w + over, Math.max((w + over) * 0.6, 640)));
+        panel.style.width = '';
+        fitCols(el, tg);
+        panel.style.width = Math.min(Math.ceil(tg + pad), room) + 'px';
+      }
+    }
+  }
+  function unfitCols(t){
+    var cg = t.querySelector('colgroup[data-fit]');
+    if (cg) cg.remove();
+    t.classList.remove('fitcols');
+    t.style.width = t.style.minWidth = '';
+  }
+  function fitCols(t, target){
+    var row = t.querySelector('thead tr') || t.querySelector('tr');
+    if (!row) return;
+    var cells = Array.prototype.slice.call(row.children);
+    var ws = cells.map(function(c){ return c.getBoundingClientRect().width; });
+    var sum = ws.reduce(function(a, b){ return a + b; }, 0);
+    if (!sum) return;
+    var cg = document.createElement('colgroup'); cg.setAttribute('data-fit', '');
+    cells.forEach(function(c, i){
+      var col = document.createElement('col');
+      if (c.colSpan > 1) col.span = c.colSpan;
+      col.style.width = (ws[i] / sum * 100).toFixed(3) + '%';
+      cg.appendChild(col);
+    });
+    t.insertBefore(cg, t.firstChild);
+    t.classList.add('fitcols');
+    t.style.width = t.style.minWidth = target + 'px';
   }
   function show(wrap){
     shown = wrap;

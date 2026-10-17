@@ -382,6 +382,9 @@ body.modal-open .hbar{z-index:70;left:0;right:0;margin-inline:auto}
 .hthumb:active{cursor:grabbing}
 @media (min-width:1000px){.hbar{left:304px;max-width:min(372px,calc(100vw - 564px))}}
 @media (max-width:620px){.hbar{bottom:calc(76px + env(safe-area-inset-bottom,0px));left:max(16px,env(safe-area-inset-left,0px));right:max(16px,env(safe-area-inset-right,0px));max-width:none;margin-inline:0}}
+/* while a pop-up is open, the pill sits in a strip below the panel instead of over the table */
+body.modal-open:has(.hbar.on) .modal{padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}
+body.modal-open .hbar{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
 
 .fabs{position:fixed;z-index:35;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));display:flex;gap:10px}
 .fab{font-family:inherit;width:46px;height:46px;border-radius:50%;border:0;cursor:pointer;background:var(--fab-bg);color:var(--fab-fg);box-shadow:var(--fab-shadow);display:grid;place-items:center}

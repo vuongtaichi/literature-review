@@ -241,7 +241,11 @@
   lang.addEventListener('click', function(e){
     e.stopPropagation();
     var t = shown && twinOf(shown);
-    if (t) show(t);
+    if (!t) return;
+    // switching language keeps the reader's place in the table or figure
+    var top = bodyEl.scrollTop, left = bodyEl.scrollLeft;
+    show(t);
+    bodyEl.scrollTop = top; bodyEl.scrollLeft = left;
   });
 
   function labelFor(wrap){

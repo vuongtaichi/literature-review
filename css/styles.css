@@ -201,12 +201,13 @@ table.cw-pub{table-layout:fixed;min-width:1780px;width:1780px}
 .tablewrap table.cw-pub th:nth-child(5),.tablewrap table.cw-pub td:nth-child(5),.modalbody table.cw-pub th:nth-child(5),.modalbody table.cw-pub td:nth-child(5){width:150px;min-width:0;overflow-wrap:anywhere}
 .tablewrap table.cw-pub th:nth-child(6),.tablewrap table.cw-pub td:nth-child(6),.modalbody table.cw-pub th:nth-child(6),.modalbody table.cw-pub td:nth-child(6){width:490px;min-width:0;overflow-wrap:anywhere}
 .tablewrap table.cw-pub th:nth-child(7),.tablewrap table.cw-pub td:nth-child(7),.modalbody table.cw-pub th:nth-child(7),.modalbody table.cw-pub td:nth-child(7){width:300px;min-width:0;overflow-wrap:anywhere}
-table.cw-gap{table-layout:fixed;min-width:1280px;width:1280px}
+table.cw-gap{table-layout:fixed;min-width:1390px;width:1390px}
 .tablewrap table.cw-gap th:nth-child(1),.tablewrap table.cw-gap td:nth-child(1),.modalbody table.cw-gap th:nth-child(1),.modalbody table.cw-gap td:nth-child(1){width:230px;min-width:0;overflow-wrap:anywhere}
-.tablewrap table.cw-gap th:nth-child(2),.tablewrap table.cw-gap td:nth-child(2),.modalbody table.cw-gap th:nth-child(2),.modalbody table.cw-gap td:nth-child(2){width:170px;min-width:0;overflow-wrap:anywhere}
-.tablewrap table.cw-gap th:nth-child(3),.tablewrap table.cw-gap td:nth-child(3),.modalbody table.cw-gap th:nth-child(3),.modalbody table.cw-gap td:nth-child(3){width:420px;min-width:0;overflow-wrap:anywhere}
-.tablewrap table.cw-gap th:nth-child(4),.tablewrap table.cw-gap td:nth-child(4),.modalbody table.cw-gap th:nth-child(4),.modalbody table.cw-gap td:nth-child(4){width:130px;min-width:0;overflow-wrap:anywhere}
-.tablewrap table.cw-gap th:nth-child(5),.tablewrap table.cw-gap td:nth-child(5),.modalbody table.cw-gap th:nth-child(5),.modalbody table.cw-gap td:nth-child(5){width:330px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-gap th:nth-child(2),.tablewrap table.cw-gap td:nth-child(2),.modalbody table.cw-gap th:nth-child(2),.modalbody table.cw-gap td:nth-child(2){width:110px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-gap th:nth-child(3),.tablewrap table.cw-gap td:nth-child(3),.modalbody table.cw-gap th:nth-child(3),.modalbody table.cw-gap td:nth-child(3){width:170px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-gap th:nth-child(4),.tablewrap table.cw-gap td:nth-child(4),.modalbody table.cw-gap th:nth-child(4),.modalbody table.cw-gap td:nth-child(4){width:420px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-gap th:nth-child(5),.tablewrap table.cw-gap td:nth-child(5),.modalbody table.cw-gap th:nth-child(5),.modalbody table.cw-gap td:nth-child(5){width:130px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-gap th:nth-child(6),.tablewrap table.cw-gap td:nth-child(6),.modalbody table.cw-gap th:nth-child(6),.modalbody table.cw-gap td:nth-child(6){width:330px;min-width:0;overflow-wrap:anywhere}
 table.cw-cmp{table-layout:fixed;min-width:1560px;width:1560px}
 .tablewrap table.cw-cmp th:nth-child(1),.tablewrap table.cw-cmp td:nth-child(1),.modalbody table.cw-cmp th:nth-child(1),.modalbody table.cw-cmp td:nth-child(1){width:150px;min-width:0;overflow-wrap:anywhere}
 .tablewrap table.cw-cmp th:nth-child(2),.tablewrap table.cw-cmp td:nth-child(2),.modalbody table.cw-cmp th:nth-child(2),.modalbody table.cw-cmp td:nth-child(2){width:210px;min-width:0;overflow-wrap:anywhere}

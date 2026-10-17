@@ -346,6 +346,10 @@ figcaption{font-family:var(--font-ui);font-size:11.5px;color:var(--ink-faint);ma
 .modalbody .refcard .rc-rank{margin:0 0 10px}
 .modalbody .refcard .rc-rank .vmetric{margin-left:0;margin-right:4px}
 .modalbody .refcard .rc-doi{font:600 13.5px/1.4 var(--font-ui);margin:0 0 4px;overflow-wrap:anywhere}
+.modalbody .refcard .rc-ab{margin:14px 0 0;padding-top:10px;border-top:1px solid var(--border);font-size:13.5px;line-height:1.5;color:var(--ink-soft)}
+.modalbody .refcard .rc-ab span{display:block}
+.modalbody .refcard .rc-ab .rc-ablbl{font:700 11px/1.4 var(--font-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:4px}
+.modalbody .refcard .rc-ab b{color:var(--ink)}
 @media (max-width:560px){
   .rfitem{grid-template-columns:34px minmax(0,1fr)}
   .rfbtn{grid-column:2;justify-self:start}

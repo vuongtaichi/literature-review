@@ -436,7 +436,9 @@
       '<p class="rc-jour"><em>' + esc(d.j) + '</em>' + (d.d ? ' ' + esc(d.d) : '') + '</p>' +
       (badges ? '<p class="rc-rank">' + badges + '</p>' : '') +
       '<p class="rc-doi"><a href="https://doi.org/' + esc(d.doi) + '" target="_blank" rel="noopener">doi:' + esc(d.doi) + '</a></p>' +
-      '<h3>' + L.know + '</h3><p>' + esc(vi ? d.vi : d.en) + '</p>';
+      '<h3>' + L.know + '</h3><p>' + esc(vi ? d.vi : d.en) + '</p>' +
+      ((d.ab && d.ab.length) ? '<p class="rc-ab"><span class="rc-ablbl">' + (vi ? 'Chữ viết tắt' : 'Abbreviations') + '</span>' +
+        d.ab.map(function(x){ return '<span><b>' + esc(x[0]) + '</b> ' + esc(vi ? x[2] : x[1]) + '</span>'; }).join('') + '</p>' : '');
     el.__twin = function(){ return refCard(d, !vi); };
     return el;
   }

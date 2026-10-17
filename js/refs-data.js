@@ -13,7 +13,8 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-13-883-2009",
 "en": "Eight to thirty-two single discharge measurements lift a model from “ungauged” to a median efficiency of about 0.6, against about 0.8 for full calibration, in eleven Swedish catchments.",
-"vi": "Tám đến ba mươi hai lần đo lưu lượng đơn lẻ nâng một mô hình từ “không có trạm đo” lên hiệu quả trung vị khoảng 0,6, so với khoảng 0,8 khi hiệu chỉnh đầy đủ, ở mười một lưu vực Thụy Điển."
+"vi": "Tám đến ba mươi hai lần đo lưu lượng đơn lẻ nâng một mô hình từ “không có trạm đo” lên hiệu quả trung vị khoảng 0,6, so với khoảng 0,8 khi hiệu chỉnh đầy đủ, ở mười một lưu vực Thụy Điển.",
+"ab": []
 },
 "10.5194/hess-15-3539-2011": {
 "r": "R2",
@@ -27,7 +28,8 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-15-3539-2011",
 "en": "A review of regionalisation for continuous streamflow that groups the methods into just two families: distance-based and regression-based.",
-"vi": "Một tổng quan về vùng hóa cho mô phỏng dòng chảy liên tục, gom các phương pháp thành đúng hai họ: dựa trên khoảng cách và dựa trên hồi quy."
+"vi": "Một tổng quan về vùng hóa cho mô phỏng dòng chảy liên tục, gom các phương pháp thành đúng hai họ: dựa trên khoảng cách và dựa trên hồi quy.",
+"ab": []
 },
 "10.1061/(asce)he.1943-5584.0000690": {
 "r": "R3",
@@ -41,7 +43,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1061/(ASCE)HE.1943-5584.0000690",
 "en": "The standard review of two decades of regionalisation, and the source of the Family 1 / Family 2 split this review uses.",
-"vi": "Tổng quan chuẩn về hai thập kỷ vùng hóa, và là nguồn của cách chia Họ 1 / Họ 2 mà bài tổng quan này dùng."
+"vi": "Tổng quan chuẩn về hai thập kỷ vùng hóa, và là nguồn của cách chia Họ 1 / Họ 2 mà bài tổng quan này dùng.",
+"ab": []
 },
 "10.1017/cbo9781139235761": {
 "r": "R4",
@@ -55,7 +58,14 @@ window.REFS = {
 "m": "book",
 "doi": "10.1017/CBO9781139235761",
 "en": "The PUB handbook: comparative assessments organised by flow signature rather than by method, each finding predictions weakest in arid catchments.",
-"vi": "Sổ tay PUB: các đánh giá so sánh được tổ chức theo đặc trưng dòng chảy thay vì theo phương pháp, và chương nào cũng thấy dự báo kém nhất ở lưu vực khô hạn."
+"vi": "Sổ tay PUB: các đánh giá so sánh được tổ chức theo đặc trưng dòng chảy thay vì theo phương pháp, và chương nào cũng thấy dự báo kém nhất ở lưu vực khô hạn.",
+"ab": [
+[
+"PUB",
+"Predictions in Ungauged Basins (IAHS decade 2003–2012)",
+"Dự báo ở lưu vực không có trạm đo (thập niên IAHS 2003–2012)"
+]
+]
 },
 "10.1080/02626667.2013.803183": {
 "r": "R5",
@@ -69,7 +79,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1080/02626667.2013.803183",
 "en": "The PUB decade's closing review, which diagnosed three causes of predictive uncertainty and restated the aim of inferring function from form.",
-"vi": "Bài tổng quan khép lại thập niên PUB, chẩn đoán ba nguyên nhân của độ bất định dự báo và nhắc lại mục tiêu suy chức năng từ hình thái."
+"vi": "Bài tổng quan khép lại thập niên PUB, chẩn đoán ba nguyên nhân của độ bất định dự báo và nhắc lại mục tiêu suy chức năng từ hình thái.",
+"ab": [
+[
+"PUB",
+"Predictions in Ungauged Basins (IAHS decade 2003–2012)",
+"Dự báo ở lưu vực không có trạm đo (thập niên IAHS 2003–2012)"
+]
+]
 },
 "10.5194/hess-17-1783-2013": {
 "r": "R6",
@@ -83,7 +100,19 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-17-1783-2013",
 "en": "The PUB baseline: across 34 studies and 3,874 catchments, median daily NSE was 0.58 for spatial proximity and 0.66 for similarity, and 0.54 in arid catchments.",
-"vi": "Mức nền của PUB: trên 34 nghiên cứu và 3.874 lưu vực, NSE ngày trung vị là 0,58 cho lân cận không gian và 0,66 cho tương tự, và 0,54 ở lưu vực khô hạn."
+"vi": "Mức nền của PUB: trên 34 nghiên cứu và 3.874 lưu vực, NSE ngày trung vị là 0,58 cho lân cận không gian và 0,66 cho tương tự, và 0,54 ở lưu vực khô hạn.",
+"ab": [
+[
+"PUB",
+"Predictions in Ungauged Basins (IAHS decade 2003–2012)",
+"Dự báo ở lưu vực không có trạm đo (thập niên IAHS 2003–2012)"
+],
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
 },
 "10.1002/wat2.1487": {
 "r": "R7",
@@ -97,7 +126,19 @@ window.REFS = {
 "m": "",
 "doi": "10.1002/wat2.1487",
 "en": "Repeats the PUB comparison on 33 later studies: median NSE 0.75 calibrated, 0.69 by similarity and 0.66 by regression, worse as aridity rises.",
-"vi": "Lặp lại so sánh của PUB trên 33 nghiên cứu sau đó: NSE trung vị 0,75 khi hiệu chỉnh, 0,69 theo tương tự và 0,66 theo hồi quy, kém đi khi độ khô hạn tăng."
+"vi": "Lặp lại so sánh của PUB trên 33 nghiên cứu sau đó: NSE trung vị 0,75 khi hiệu chỉnh, 0,69 theo tương tự và 0,66 theo hồi quy, kém đi khi độ khô hạn tăng.",
+"ab": [
+[
+"PUB",
+"Predictions in Ungauged Basins (IAHS decade 2003–2012)",
+"Dự báo ở lưu vực không có trạm đo (thập niên IAHS 2003–2012)"
+],
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
 },
 "10.1017/eds.2024.14": {
 "r": "R8",
@@ -111,7 +152,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1017/eds.2024.14",
 "en": "A survey of machine learning for predictions in unmonitored sites; it finds most transfer learning is few-shot and comparisons between method classes “few and inadequate”.",
-"vi": "Tổng quan học máy cho dự báo tại các vị trí không quan trắc; phần lớn học chuyển giao là ít mẫu, và so sánh giữa các lớp phương pháp còn “ít và chưa đầy đủ”."
+"vi": "Tổng quan học máy cho dự báo tại các vị trí không quan trắc; phần lớn học chuyển giao là ít mẫu, và so sánh giữa các lớp phương pháp còn “ít và chưa đầy đủ”.",
+"ab": []
 },
 "10.3390/w17182722": {
 "r": "R9",
@@ -125,7 +167,14 @@ window.REFS = {
 "m": "",
 "doi": "10.3390/w17182722",
 "en": "A systematic review of AI for streamflow in ungauged watersheds, cited here only for the research gaps it names itself.",
-"vi": "Một tổng quan hệ thống về AI cho dòng chảy ở lưu vực không có trạm đo, được dẫn ở đây chỉ vì danh sách khoảng trống nghiên cứu do chính nó nêu."
+"vi": "Một tổng quan hệ thống về AI cho dòng chảy ở lưu vực không có trạm đo, được dẫn ở đây chỉ vì danh sách khoảng trống nghiên cứu do chính nó nêu.",
+"ab": [
+[
+"AI",
+"artificial intelligence",
+"trí tuệ nhân tạo"
+]
+]
 },
 "10.1038/s44304-026-00237-0": {
 "r": "R10",
@@ -139,7 +188,14 @@ window.REFS = {
 "m": "not yet in JCR",
 "doi": "10.1038/s44304-026-00237-0",
 "en": "A commentary warning that about two-thirds of national hydrological networks are in decline, which “will gradually erode the performance and reliability of AI-based tools”.",
-"vi": "Một bài bình luận cảnh báo rằng khoảng hai phần ba mạng lưới thủy văn quốc gia đang suy giảm, điều sẽ “dần bào mòn hiệu năng và độ tin cậy của các công cụ dựa trên AI”."
+"vi": "Một bài bình luận cảnh báo rằng khoảng hai phần ba mạng lưới thủy văn quốc gia đang suy giảm, điều sẽ “dần bào mòn hiệu năng và độ tin cậy của các công cụ dựa trên AI”.",
+"ab": [
+[
+"AI",
+"artificial intelligence",
+"trí tuệ nhân tạo"
+]
+]
 },
 "10.1017/cbo9781139235761.010": {
 "r": "R11",
@@ -153,7 +209,14 @@ window.REFS = {
 "m": "book",
 "doi": "10.1017/CBO9781139235761.010",
 "en": "The PUB handbook chapter on flow-duration curves; one to five years of record beat regionalisation for this signature.",
-"vi": "Chương sổ tay PUB về đường duy trì lưu lượng; một đến năm năm số liệu đã tốt hơn vùng hóa với đặc trưng này."
+"vi": "Chương sổ tay PUB về đường duy trì lưu lượng; một đến năm năm số liệu đã tốt hơn vùng hóa với đặc trưng này.",
+"ab": [
+[
+"PUB",
+"Predictions in Ungauged Basins (IAHS decade 2003–2012)",
+"Dự báo ở lưu vực không có trạm đo (thập niên IAHS 2003–2012)"
+]
+]
 },
 "10.1017/cbo9781139235761.012": {
 "r": "R12",
@@ -167,7 +230,14 @@ window.REFS = {
 "m": "book",
 "doi": "10.1017/CBO9781139235761.012",
 "en": "The PUB handbook chapter on floods: across 31 studies the R² of the 100-year flood has an interquartile range of only 0.41–0.70, and index methods do poorly in arid regions.",
-"vi": "Chương sổ tay PUB về lũ: trên 31 nghiên cứu, R² của lũ 100 năm có khoảng tứ phân vị chỉ 0,41–0,70, và các phương pháp chỉ số lũ kém ở vùng khô hạn."
+"vi": "Chương sổ tay PUB về lũ: trên 31 nghiên cứu, R² của lũ 100 năm có khoảng tứ phân vị chỉ 0,41–0,70, và các phương pháp chỉ số lũ kém ở vùng khô hạn.",
+"ab": [
+[
+"PUB",
+"Predictions in Ungauged Basins (IAHS decade 2003–2012)",
+"Dự báo ở lưu vực không có trạm đo (thập niên IAHS 2003–2012)"
+]
+]
 },
 "10.1017/cbo9781139235761.013": {
 "r": "R13",
@@ -181,7 +251,14 @@ window.REFS = {
 "m": "book",
 "doi": "10.1017/CBO9781139235761.013",
 "en": "The PUB handbook chapter on runoff hydrographs, which already called in 2013 for “inundation patterns” to constrain models.",
-"vi": "Chương sổ tay PUB về đường quá trình dòng chảy, vốn đã kêu gọi từ năm 2013 dùng “hình thái ngập” để ràng buộc mô hình."
+"vi": "Chương sổ tay PUB về đường quá trình dòng chảy, vốn đã kêu gọi từ năm 2013 dùng “hình thái ngập” để ràng buộc mô hình.",
+"ab": [
+[
+"PUB",
+"Predictions in Ungauged Basins (IAHS decade 2003–2012)",
+"Dự báo ở lưu vực không có trạm đo (thập niên IAHS 2003–2012)"
+]
+]
 },
 "10.1623/hysj.48.6.857.51421": {
 "r": "R124",
@@ -195,7 +272,19 @@ window.REFS = {
 "m": "",
 "doi": "10.1623/hysj.48.6.857.51421",
 "en": "The PUB science plan for 2003–2012: reduce predictive uncertainty in ungauged basins, through six science questions.",
-"vi": "Kế hoạch khoa học PUB cho 2003–2012: giảm độ bất định dự báo ở lưu vực không có trạm đo, qua sáu câu hỏi khoa học."
+"vi": "Kế hoạch khoa học PUB cho 2003–2012: giảm độ bất định dự báo ở lưu vực không có trạm đo, qua sáu câu hỏi khoa học.",
+"ab": [
+[
+"IAHS",
+"International Association of Hydrological Sciences",
+"Hiệp hội Khoa học Thủy văn Quốc tế"
+],
+[
+"PUB",
+"Predictions in Ungauged Basins (IAHS decade 2003–2012)",
+"Dự báo ở lưu vực không có trạm đo (thập niên IAHS 2003–2012)"
+]
+]
 },
 "10.1080/02626667.2013.809088": {
 "r": "R14",
@@ -209,7 +298,19 @@ window.REFS = {
 "m": "",
 "doi": "10.1080/02626667.2013.809088",
 "en": "The launch statement of Panta Rhei, the IAHS decade after PUB, which turned the community toward change and hydrology–society coupling.",
-"vi": "Tuyên bố khởi động Panta Rhei, thập niên IAHS kế tiếp PUB, hướng cộng đồng sang sự thay đổi và mối liên kết thủy văn–xã hội."
+"vi": "Tuyên bố khởi động Panta Rhei, thập niên IAHS kế tiếp PUB, hướng cộng đồng sang sự thay đổi và mối liên kết thủy văn–xã hội.",
+"ab": [
+[
+"IAHS",
+"International Association of Hydrological Sciences",
+"Hiệp hội Khoa học Thủy văn Quốc tế"
+],
+[
+"PUB",
+"Predictions in Ungauged Basins (IAHS decade 2003–2012)",
+"Dự báo ở lưu vực không có trạm đo (thập niên IAHS 2003–2012)"
+]
+]
 },
 "10.5194/hess-22-1665-2018": {
 "r": "R15",
@@ -223,7 +324,8 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-22-1665-2018",
 "en": "A history of hydrologic science that names unmappable heterogeneity as the “virtual impasse” behind physically based prediction.",
-"vi": "Một lịch sử khoa học thủy văn gọi tính không đồng nhất không lập bản đồ được là “bế tắc ảo” đằng sau dự báo dựa trên vật lý."
+"vi": "Một lịch sử khoa học thủy văn gọi tính không đồng nhất không lập bản đồ được là “bế tắc ảo” đằng sau dự báo dựa trên vật lý.",
+"ab": []
 },
 "10.1080/02626667.2019.1620507": {
 "r": "R16",
@@ -237,7 +339,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1080/02626667.2019.1620507",
 "en": "The community list of 23 unsolved problems in hydrology, voted on by 230 scientists; this review tracks where each stands.",
-"vi": "Danh sách cộng đồng gồm 23 vấn đề chưa giải quyết của thủy văn, do 230 nhà khoa học bỏ phiếu; bài tổng quan này theo dõi từng vấn đề đang ở đâu."
+"vi": "Danh sách cộng đồng gồm 23 vấn đề chưa giải quyết của thủy văn, do 230 nhà khoa học bỏ phiếu; bài tổng quan này theo dõi từng vấn đề đang ở đâu.",
+"ab": [
+[
+"UPH",
+"Unsolved Problems in Hydrology",
+"các vấn đề chưa giải quyết của thủy văn"
+]
+]
 },
 "10.1029/2022wr034234": {
 "r": "R17",
@@ -251,7 +360,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2022WR034234",
 "en": "Argues that conceptual models should be tested against physically resolved ones rather than against historical performance, the paper closest to a conceptual modeller's position.",
-"vi": "Lập luận rằng mô hình khái niệm nên được kiểm tra với mô hình phân giải vật lý thay vì với hiệu năng trong quá khứ; bài gần nhất với lập trường của người làm mô hình khái niệm."
+"vi": "Lập luận rằng mô hình khái niệm nên được kiểm tra với mô hình phân giải vật lý thay vì với hiệu năng trong quá khứ; bài gần nhất với lập trường của người làm mô hình khái niệm.",
+"ab": []
 },
 "10.1080/02626667.2024.2355202": {
 "r": "R18",
@@ -265,7 +375,19 @@ window.REFS = {
 "m": "",
 "doi": "10.1080/02626667.2024.2355202",
 "en": "The statement of HELPING, the IAHS Science for Solutions decade that followed Panta Rhei.",
-"vi": "Tuyên bố của HELPING, thập niên Khoa học cho Giải pháp của IAHS tiếp sau Panta Rhei."
+"vi": "Tuyên bố của HELPING, thập niên Khoa học cho Giải pháp của IAHS tiếp sau Panta Rhei.",
+"ab": [
+[
+"IAHS",
+"International Association of Hydrological Sciences",
+"Hiệp hội Khoa học Thủy văn Quốc tế"
+],
+[
+"HELPING",
+"Hydrology Engaging Local People IN one Global world",
+"thủy văn gắn với cộng đồng địa phương trong một thế giới chung"
+]
+]
 },
 "10.1080/02626667.2025.2469762": {
 "r": "R19",
@@ -279,7 +401,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1080/02626667.2025.2469762",
 "en": "Panta Rhei's closing synthesis by 103 authors: co-evolution of human–water systems and progress on attributing hydrological change.",
-"vi": "Bài tổng kết Panta Rhei của 103 tác giả: sự đồng tiến hóa của hệ người–nước và tiến bộ trong việc quy nguyên thay đổi thủy văn."
+"vi": "Bài tổng kết Panta Rhei của 103 tác giả: sự đồng tiến hóa của hệ người–nước và tiến bộ trong việc quy nguyên thay đổi thủy văn.",
+"ab": []
 },
 "10.1016/j.jhydrol.2003.09.028": {
 "r": "R132",
@@ -293,7 +416,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/j.jhydrol.2003.09.028",
 "en": "On 308 Austrian catchments, kriging and nested neighbours beat every attribute regression; attributes explain little of the calibrated parameters.",
-"vi": "Trên 308 lưu vực ở Áo, kriging và lưu vực lân cận lồng nhau vượt mọi hồi quy theo thuộc tính; thuộc tính giải thích được rất ít tham số đã hiệu chỉnh."
+"vi": "Trên 308 lưu vực ở Áo, kriging và lưu vực lân cận lồng nhau vượt mọi hồi quy theo thuộc tính; thuộc tính giải thích được rất ít tham số đã hiệu chỉnh.",
+"ab": []
 },
 "10.1016/j.jhydrol.2005.07.007": {
 "r": "R20",
@@ -307,7 +431,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/j.jhydrol.2005.07.007",
 "en": "The equifinality manifesto; it also introduces incommensurability, where a model prediction and a measurement are different quantities under the same name.",
-"vi": "Tuyên ngôn về tính đồng kết quả; bài cũng đưa ra tính bất khả tương xứng, khi dự báo của mô hình và số đo là hai đại lượng khác nhau dù cùng tên."
+"vi": "Tuyên ngôn về tính đồng kết quả; bài cũng đưa ra tính bất khả tương xứng, khi dự báo của mô hình và số đo là hai đại lượng khác nhau dù cùng tên.",
+"ab": []
 },
 "10.1029/2005wr004289": {
 "r": "R21",
@@ -321,7 +446,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2005WR004289",
 "en": "Ensemble prediction in 127 UK catchments, weighting donor ensembles instead of regressing parameters; one of the practical responses to donor uncertainty.",
-"vi": "Dự báo tổ hợp trên 127 lưu vực ở Anh, lấy trọng số các tổ hợp lưu vực cho thay vì hồi quy tham số; một trong các lời đáp thực tế cho độ bất định của lưu vực cho."
+"vi": "Dự báo tổ hợp trên 127 lưu vực ở Anh, lấy trọng số các tổ hợp lưu vực cho thay vì hồi quy tham số; một trong các lời đáp thực tế cho độ bất định của lưu vực cho.",
+"ab": []
 },
 "10.5194/hess-9-157-2005": {
 "r": "R22",
@@ -335,7 +461,8 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-9-157-2005",
 "en": "The classic controlled comparison: five schemes for transferring the parameters of a conceptual model across 320 Austrian catchments.",
-"vi": "So sánh có kiểm soát kinh điển: năm sơ đồ chuyển tham số của một mô hình khái niệm trên 320 lưu vực ở Áo."
+"vi": "So sánh có kiểm soát kinh điển: năm sơ đồ chuyển tham số của một mô hình khái niệm trên 320 lưu vực ở Áo.",
+"ab": []
 },
 "10.1029/2006wr005271": {
 "r": "R129",
@@ -349,7 +476,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2006WR005271",
 "en": "Calibrating 320 Austrian catchments together cut the loss when a catchment is treated as ungauged from 0.05 to 0.02–0.03 in median NSE.",
-"vi": "Hiệu chỉnh đồng thời 320 lưu vực ở Áo làm mức mất khi coi một lưu vực là không có trạm đo giảm từ 0,05 xuống 0,02–0,03 NSE trung vị."
+"vi": "Hiệu chỉnh đồng thời 320 lưu vực ở Áo làm mức mất khi coi một lưu vực là không có trạm đo giảm từ 0,05 xuống 0,02–0,03 NSE trung vị.",
+"ab": [
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
 },
 "10.1016/j.advwatres.2007.01.005": {
 "r": "R131",
@@ -363,7 +497,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/j.advwatres.2007.01.005",
 "en": "Regionalise signatures, not parameters: carry predicted flow indices to the ungauged site and keep only model runs that match them (30 catchments in England and Wales).",
-"vi": "Vùng hóa đặc trưng dòng chảy thay vì tham số: mang các chỉ số dòng chảy dự báo sang lưu vực không có trạm đo và chỉ giữ các lần chạy mô hình khớp với chúng (30 lưu vực ở Anh và xứ Wales)."
+"vi": "Vùng hóa đặc trưng dòng chảy thay vì tham số: mang các chỉ số dòng chảy dự báo sang lưu vực không có trạm đo và chỉ giữ các lần chạy mô hình khớp với chúng (30 lưu vực ở Anh và xứ Wales).",
+"ab": []
 },
 "10.1029/2007wr006240": {
 "r": "R23",
@@ -377,7 +512,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2007WR006240",
 "en": "Compares regression, spatial proximity and physical similarity on 913 French catchments, and explains why proximity wins where gauges are dense.",
-"vi": "So sánh hồi quy, lân cận không gian và tương tự vật lý trên 913 lưu vực ở Pháp, và giải thích vì sao lân cận thắng nơi mạng trạm dày."
+"vi": "So sánh hồi quy, lân cận không gian và tương tự vật lý trên 913 lưu vực ở Pháp, và giải thích vì sao lân cận thắng nơi mạng trạm dày.",
+"ab": []
 },
 "10.1029/2008wr007504": {
 "r": "R24",
@@ -391,7 +527,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2008WR007504",
 "en": "On 210 Australian catchments, donor choice and averaging several donors' outputs mattered most; also the clearest definition of the three regionalisation strategies.",
-"vi": "Trên 210 lưu vực ở Úc, việc chọn lưu vực cho và lấy trung bình đầu ra của nhiều lưu vực cho là quan trọng nhất; cũng là nơi định nghĩa rõ nhất ba chiến lược vùng hóa."
+"vi": "Trên 210 lưu vực ở Úc, việc chọn lưu vực cho và lấy trung bình đầu ra của nhiều lưu vực cho là quan trọng nhất; cũng là nơi định nghĩa rõ nhất ba chiến lược vùng hóa.",
+"ab": []
 },
 "10.1029/2009wr007706": {
 "r": "R25",
@@ -405,7 +542,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2009WR007706",
 "en": "Calibrates a badly gauged basin on signatures, with limits of acceptability derived from year-to-year variability; 99.94% of three million parameter sets were rejected.",
-"vi": "Hiệu chỉnh một lưu vực đo kém theo các đặc trưng dòng chảy, với ngưỡng chấp nhận suy ra từ biến động giữa các năm; 99,94% trong ba triệu bộ tham số bị loại."
+"vi": "Hiệu chỉnh một lưu vực đo kém theo các đặc trưng dòng chảy, với ngưỡng chấp nhận suy ra từ biến động giữa các năm; 99,94% trong ba triệu bộ tham số bị loại.",
+"ab": []
 },
 "10.1029/2009wr008887": {
 "r": "R128",
@@ -419,7 +557,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2009WR008887",
 "en": "Physically similar catchments were hydrologically similar no better than chance for about 40% of 893 French catchments.",
-"vi": "Các lưu vực tương tự về vật lý tương tự về thủy văn không hơn ngẫu nhiên ở khoảng 40% trong 893 lưu vực Pháp."
+"vi": "Các lưu vực tương tự về vật lý tương tự về thủy văn không hơn ngẫu nhiên ở khoảng 40% trong 893 lưu vực Pháp.",
+"ab": []
 },
 "10.1002/2013wr014898": {
 "r": "R26",
@@ -433,7 +572,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1002/2013WR014898",
 "en": "On 268 Quebec catchments, averaging four to seven donors' outputs works best, even the best method succeeds in at most 75%, and equifinality is not the cause.",
-"vi": "Trên 268 lưu vực ở Quebec, lấy trung bình đầu ra của bốn đến bảy lưu vực cho là tốt nhất, phương pháp tốt nhất cũng chỉ thành công tối đa 75%, và tính đồng kết quả không phải nguyên nhân."
+"vi": "Trên 268 lưu vực ở Quebec, lấy trung bình đầu ra của bốn đến bảy lưu vực cho là tốt nhất, phương pháp tốt nhất cũng chỉ thành công tối đa 75%, và tính đồng kết quả không phải nguyên nhân.",
+"ab": []
 },
 "10.1002/2015wr018247": {
 "r": "R27",
@@ -447,7 +587,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1002/2015WR018247",
 "en": "Global parameter regionalisation using the ten most similar donors per grid cell, confirming output averaging on 1,787 catchments.",
-"vi": "Vùng hóa tham số toàn cầu dùng mười lưu vực cho tương tự nhất cho mỗi ô lưới, xác nhận cách lấy trung bình đầu ra trên 1.787 lưu vực."
+"vi": "Vùng hóa tham số toàn cầu dùng mười lưu vực cho tương tự nhất cho mỗi ô lưới, xác nhận cách lấy trung bình đầu ra trên 1.787 lưu vực.",
+"ab": []
 },
 "10.1029/2018wr023254": {
 "r": "R28",
@@ -461,7 +602,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2018WR023254",
 "en": "Random-forest regionalisation was adequate in 12 of 16 held-out catchments but the hydrological model in only 1: model inadequacy can swamp regionalisation gains.",
-"vi": "Vùng hóa bằng rừng ngẫu nhiên đạt yêu cầu ở 12 trong 16 lưu vực giữ lại nhưng mô hình thủy văn chỉ đạt ở 1: sự chưa phù hợp của mô hình có thể lấn át lợi ích của vùng hóa."
+"vi": "Vùng hóa bằng rừng ngẫu nhiên đạt yêu cầu ở 12 trong 16 lưu vực giữ lại nhưng mô hình thủy văn chỉ đạt ở 1: sự chưa phù hợp của mô hình có thể lấn át lợi ích của vùng hóa.",
+"ab": []
 },
 "10.1029/2021wr030437": {
 "r": "R29",
@@ -475,7 +617,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2021WR030437",
 "en": "The largest comparison of regionalisation on one sample, 19 approaches on 671 catchments: which approach is best depends on the catchment.",
-"vi": "So sánh vùng hóa lớn nhất trên một mẫu, 19 cách tiếp cận trên 671 lưu vực: cách nào tốt nhất phụ thuộc vào lưu vực."
+"vi": "So sánh vùng hóa lớn nhất trên một mẫu, 19 cách tiếp cận trên 671 lưu vực: cách nào tốt nhất phụ thuộc vào lưu vực.",
+"ab": []
 },
 "10.5194/hess-26-505-2022": {
 "r": "R30",
@@ -489,7 +632,8 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-26-505-2022",
 "en": "Uses gradient boosting to regionalise model parameters, because linear regression fails where the parameter–attribute relation is nonlinear.",
-"vi": "Dùng gradient boosting để vùng hóa tham số mô hình, vì hồi quy tuyến tính thất bại khi quan hệ giữa tham số và thuộc tính là phi tuyến."
+"vi": "Dùng gradient boosting để vùng hóa tham số mô hình, vì hồi quy tuyến tính thất bại khi quan hệ giữa tham số và thuộc tính là phi tuyến.",
+"ab": []
 },
 "10.1016/s0022-1694(00)00340-1": {
 "r": "R31",
@@ -503,7 +647,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/S0022-1694(00)00340-1",
 "en": "The low-flow canon; for dry channels it sets out transmission losses, whose regional importance “is largely unknown”.",
-"vi": "Tài liệu kinh điển về dòng chảy kiệt; với lòng dẫn khô, bài trình bày tổn thất dọc lòng dẫn, mà tầm quan trọng theo vùng “phần lớn vẫn chưa được biết”."
+"vi": "Tài liệu kinh điển về dòng chảy kiệt; với lòng dẫn khô, bài trình bày tổn thất dọc lòng dẫn, mà tầm quan trọng theo vùng “phần lớn vẫn chưa được biết”.",
+"ab": []
 },
 "10.5194/hess-10-277-2006": {
 "r": "R32",
@@ -517,7 +662,8 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-10-277-2006",
 "en": "Introduces Top-kriging, geostatistics along the river network weighted by catchment area and nesting, with uncertainty lowest on the main stem.",
-"vi": "Đưa ra Top-kriging, địa thống kê dọc mạng sông có trọng số theo diện tích và quan hệ lồng nhau của lưu vực, với độ bất định thấp nhất trên dòng chính."
+"vi": "Đưa ra Top-kriging, địa thống kê dọc mạng sông có trọng số theo diện tích và quan hệ lồng nhau của lưu vực, với độ bất định thấp nhất trên dòng chính.",
+"ab": []
 },
 "10.1623/hysj.53.4.706": {
 "r": "R33",
@@ -531,7 +677,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1623/hysj.53.4.706",
 "en": "The source of QPPQ: regional flow-duration curves gave daily R² of 0.80–0.86 at three held-out sites, but skill falls with donor distance.",
-"vi": "Nguồn gốc của QPPQ: đường duy trì lưu lượng vùng cho R² ngày 0,80–0,86 tại ba trạm giữ lại, nhưng chất lượng giảm khi lưu vực cho ở xa."
+"vi": "Nguồn gốc của QPPQ: đường duy trì lưu lượng vùng cho R² ngày 0,80–0,86 tại ba trạm giữ lại, nhưng chất lượng giảm khi lưu vực cho ở xa.",
+"ab": [
+[
+"QPPQ",
+"flow-duration transfer: discharge to exceedance probability at the donor, then back to discharge at the target",
+"chuyển qua đường duy trì: lưu lượng sang xác suất vượt ở lưu vực cho, rồi về lưu lượng ở lưu vực đích"
+]
+]
 },
 "10.5194/hess-17-2263-2013": {
 "r": "R34",
@@ -545,7 +698,8 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-17-2263-2013",
 "en": "The only head-to-head test of two families: a regionalised model against Top-kriging on 213 Austrian catchments, over six runoff signatures.",
-"vi": "Phép thử đối đầu duy nhất giữa hai họ: mô hình vùng hóa so với Top-kriging trên 213 lưu vực ở Áo, qua sáu đặc trưng dòng chảy."
+"vi": "Phép thử đối đầu duy nhất giữa hai họ: mô hình vùng hóa so với Top-kriging trên 213 lưu vực ở Áo, qua sáu đặc trưng dòng chảy.",
+"ab": []
 },
 "10.1002/2016wr018716": {
 "r": "R35",
@@ -559,7 +713,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1002/2016WR018716",
 "en": "Top-kriging and geomorphology-based inverse modelling performed similarly across the Loire, and transferring observations avoids transferring a model's errors.",
-"vi": "Top-kriging và mô hình nghịch đảo dựa trên địa mạo cho kết quả tương tự trên lưu vực Loire, và chuyển số liệu quan trắc giúp tránh chuyển theo sai số của mô hình."
+"vi": "Top-kriging và mô hình nghịch đảo dựa trên địa mạo cho kết quả tương tự trên lưu vực Loire, và chuyển số liệu quan trắc giúp tránh chuyển theo sai số của mô hình.",
+"ab": []
 },
 "10.1080/02626667.2020.1797045": {
 "r": "R36",
@@ -573,7 +728,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1080/02626667.2020.1797045",
 "en": "SIMFEN, a web service that predicts hydrographs in ungauged Brittany catchments from up to five donors within 50 km.",
-"vi": "SIMFEN, một dịch vụ web dự báo đường quá trình cho lưu vực không có trạm đo ở Bretagne từ tối đa năm lưu vực cho trong bán kính 50 km."
+"vi": "SIMFEN, một dịch vụ web dự báo đường quá trình cho lưu vực không có trạm đo ở Bretagne từ tối đa năm lưu vực cho trong bán kính 50 km.",
+"ab": []
 },
 "10.1016/j.jhydrol.2020.125861": {
 "r": "R37",
@@ -587,7 +743,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/j.jhydrol.2020.125861",
 "en": "Random forests replace linear regression in regional flood-frequency analysis at ungauged sites, tested on 151 stations in southern Quebec.",
-"vi": "Rừng ngẫu nhiên thay hồi quy tuyến tính trong phân tích tần suất lũ vùng tại vị trí không có trạm đo, kiểm tra trên 151 trạm ở nam Quebec."
+"vi": "Rừng ngẫu nhiên thay hồi quy tuyến tính trong phân tích tần suất lũ vùng tại vị trí không có trạm đo, kiểm tra trên 151 trạm ở nam Quebec.",
+"ab": []
 },
 "10.32614/cran.package.transfr": {
 "r": "R38",
@@ -601,7 +758,8 @@ window.REFS = {
 "m": "software",
 "doi": "10.32614/cran.package.transfr",
 "en": "transfR, the R package for geomorphology-based hydrograph transfer from gauged to ungauged catchments.",
-"vi": "transfR, gói R chuyển đường quá trình dựa trên địa mạo từ lưu vực có trạm đo sang lưu vực không có trạm đo."
+"vi": "transfR, gói R chuyển đường quá trình dựa trên địa mạo từ lưu vực có trạm đo sang lưu vực không có trạm đo.",
+"ab": []
 },
 "10.1029/2008wr007327": {
 "r": "R127",
@@ -615,7 +773,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2008WR007327",
 "en": "Multiscale Parameter Regionalisation: calibrating transfer-function coefficients kept mean NSE 0.80 against 0.64 when the model moved to a finer grid.",
-"vi": "Vùng hóa tham số đa tỷ lệ: hiệu chỉnh hệ số hàm chuyển đổi giữ NSE trung bình 0,80 so với 0,64 khi mô hình chuyển sang lưới mịn hơn."
+"vi": "Vùng hóa tham số đa tỷ lệ: hiệu chỉnh hệ số hàm chuyển đổi giữ NSE trung bình 0,80 so với 0,64 khi mô hình chuyển sang lưới mịn hơn.",
+"ab": [
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
 },
 "10.5194/hess-15-2895-2011": {
 "r": "R39",
@@ -629,7 +794,8 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-15-2895-2011",
 "en": "Sorts 280 eastern-US catchments into nine classes by their flow signatures, the basis for transferring information within a class.",
-"vi": "Phân 280 lưu vực ở miền đông Hoa Kỳ thành chín lớp theo đặc trưng dòng chảy, làm cơ sở chuyển thông tin trong cùng một lớp."
+"vi": "Phân 280 lưu vực ở miền đông Hoa Kỳ thành chín lớp theo đặc trưng dòng chảy, làm cơ sở chuyển thông tin trong cùng một lớp.",
+"ab": []
 },
 "10.1002/2015wr017635": {
 "r": "R40",
@@ -643,7 +809,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1002/2015WR017635",
 "en": "Signatures carry ±10–15% (mean flow) to ±30–40% (high and low flows) uncertainty from rating curves, and ignoring it dropped regionalisation reliability to 18%.",
-"vi": "Các đặc trưng dòng chảy mang độ bất định ±10–15% (lưu lượng trung bình) đến ±30–40% (dòng chảy lớn và nhỏ) từ đường quan hệ, và bỏ qua nó làm độ tin cậy của vùng hóa giảm còn 18%."
+"vi": "Các đặc trưng dòng chảy mang độ bất định ±10–15% (lưu lượng trung bình) đến ±30–40% (dòng chảy lớn và nhỏ) từ đường quan hệ, và bỏ qua nó làm độ tin cậy của vùng hóa giảm còn 18%.",
+"ab": []
 },
 "10.5194/hess-21-6201-2017": {
 "r": "R41",
@@ -657,7 +824,8 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-21-6201-2017",
 "en": "Evaluates 22 global precipitation datasets against 76,086 gauges and through a model in 9,053 catchments: the choice of product often matters more than the model.",
-"vi": "Đánh giá 22 bộ dữ liệu mưa toàn cầu với 76.086 trạm đo và qua mô hình trên 9.053 lưu vực: việc chọn sản phẩm mưa thường quan trọng hơn việc chọn mô hình."
+"vi": "Đánh giá 22 bộ dữ liệu mưa toàn cầu với 76.086 trạm đo và qua mô hình trên 9.053 lưu vực: việc chọn sản phẩm mưa thường quan trọng hơn việc chọn mô hình.",
+"ab": []
 },
 "10.5194/hess-21-2863-2017": {
 "r": "R42",
@@ -671,7 +839,8 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-21-2863-2017",
 "en": "Extends signature-based catchment classification across Europe to explain hydrologic variability.",
-"vi": "Mở rộng phân loại lưu vực theo đặc trưng dòng chảy ra toàn châu Âu để giải thích biến động thủy văn."
+"vi": "Mở rộng phân loại lưu vực theo đặc trưng dòng chảy ra toàn châu Âu để giải thích biến động thủy văn.",
+"ab": []
 },
 "10.5194/hess-21-4323-2017": {
 "r": "R43",
@@ -685,7 +854,8 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-21-4323-2017",
 "en": "Multiscale Parameter Regionalisation at scale: calibrate transfer-function coefficients so one calibration serves every resolution and location.",
-"vi": "Vùng hóa tham số đa tỷ lệ ở quy mô lớn: hiệu chỉnh hệ số của hàm chuyển đổi để một lần hiệu chỉnh dùng được cho mọi độ phân giải và vị trí."
+"vi": "Vùng hóa tham số đa tỷ lệ ở quy mô lớn: hiệu chỉnh hệ số của hàm chuyển đổi để một lần hiệu chỉnh dùng được cho mọi độ phân giải và vị trí.",
+"ab": []
 },
 "10.5194/essd-11-1655-2019": {
 "r": "R44",
@@ -699,7 +869,14 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/essd-11-1655-2019",
 "en": "GRUN, a global runoff reconstruction from observations rather than a model, which beat an ensemble of 13 global models.",
-"vi": "GRUN, bộ tái tạo dòng chảy toàn cầu từ quan trắc thay vì từ mô hình, đã vượt một tổ hợp 13 mô hình toàn cầu."
+"vi": "GRUN, bộ tái tạo dòng chảy toàn cầu từ quan trắc thay vì từ mô hình, đã vượt một tổ hợp 13 mô hình toàn cầu.",
+"ab": [
+[
+"GRUN",
+"Global RUNoff reconstruction",
+"bộ tái tạo dòng chảy toàn cầu"
+]
+]
 },
 "10.1029/2019jd031485": {
 "r": "R45",
@@ -713,7 +890,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2019JD031485",
 "en": "Global fully distributed model parameters derived from 4,229 headwater catchments, usable where no local gauge exists.",
-"vi": "Bộ tham số mô hình phân bố toàn cầu suy ra từ 4.229 lưu vực đầu nguồn, dùng được ở nơi không có trạm đo nào."
+"vi": "Bộ tham số mô hình phân bố toàn cầu suy ra từ 4.229 lưu vực đầu nguồn, dùng được ở nơi không có trạm đo nào.",
+"ab": []
 },
 "10.5194/hess-24-535-2020": {
 "r": "R46",
@@ -727,7 +905,19 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-24-535-2020",
 "en": "World-Wide HYPE: catchment modelling over more than 130,000 catchments covering the land surface, built from open data.",
-"vi": "World-Wide HYPE: mô hình hóa theo lưu vực trên hơn 130.000 lưu vực phủ bề mặt đất liền, xây dựng từ dữ liệu mở."
+"vi": "World-Wide HYPE: mô hình hóa theo lưu vực trên hơn 130.000 lưu vực phủ bề mặt đất liền, xây dựng từ dữ liệu mở.",
+"ab": [
+[
+"HYPE",
+"Hydrological Predictions for the Environment (model)",
+"mô hình dự báo thủy văn cho môi trường"
+],
+[
+"WWH",
+"World-Wide HYPE",
+"HYPE toàn cầu"
+]
+]
 },
 "10.1002/hyp.15044": {
 "r": "R47",
@@ -741,7 +931,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1002/hyp.15044",
 "en": "Uses rectified large-scale model discharge in place of a gauge record to calibrate a regional model, then transfers it to ungauged subbasins.",
-"vi": "Dùng lưu lượng mô phỏng quy mô lớn đã hiệu chỉnh thay cho số liệu trạm đo để hiệu chỉnh một mô hình vùng, rồi chuyển sang các tiểu lưu vực không có trạm đo."
+"vi": "Dùng lưu lượng mô phỏng quy mô lớn đã hiệu chỉnh thay cho số liệu trạm đo để hiệu chỉnh một mô hình vùng, rồi chuyển sang các tiểu lưu vực không có trạm đo.",
+"ab": []
 },
 "10.1029/2006wr005238": {
 "r": "R48",
@@ -755,7 +946,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2006WR005238",
 "en": "Introduces the passive-microwave C/M ratio, a dry-land pixel against a river pixel, the signal most surrogate-discharge work now calibrates on.",
-"vi": "Đưa ra tỷ số C/M từ vi ba thụ động, so một điểm ảnh đất khô với một điểm ảnh trên sông, tín hiệu mà phần lớn nghiên cứu lưu lượng thay thế nay dùng để hiệu chỉnh."
+"vi": "Đưa ra tỷ số C/M từ vi ba thụ động, so một điểm ảnh đất khô với một điểm ảnh trên sông, tín hiệu mà phần lớn nghiên cứu lưu lượng thay thế nay dùng để hiệu chỉnh.",
+"ab": []
 },
 "10.5194/hess-14-2011-2010": {
 "r": "R49",
@@ -769,7 +961,8 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-14-2011-2010",
 "en": "The founding move of surrogate discharge: calibrate a rainfall–runoff model on satellite river width at the outlet instead of discharge (Mekong at Pakse).",
-"vi": "Bước đi khởi đầu của lưu lượng thay thế: hiệu chỉnh mô hình mưa–dòng chảy theo độ rộng sông từ vệ tinh tại cửa ra thay vì lưu lượng (Mekong tại Pakse)."
+"vi": "Bước đi khởi đầu của lưu lượng thay thế: hiệu chỉnh mô hình mưa–dòng chảy theo độ rộng sông từ vệ tinh tại cửa ra thay vì lưu lượng (Mekong tại Pakse).",
+"ab": []
 },
 "10.1002/hyp.8301": {
 "r": "R50",
@@ -783,7 +976,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1002/hyp.8301",
 "en": "Names the idea of satellite river variables as surrogates for discharge measurements, one of the two founding papers of Family 5.",
-"vi": "Đặt tên cho ý tưởng dùng biến sông từ vệ tinh làm đại lượng thay thế cho số đo lưu lượng, một trong hai bài khởi đầu của Họ 5."
+"vi": "Đặt tên cho ý tưởng dùng biến sông từ vệ tinh làm đại lượng thay thế cho số đo lưu lượng, một trong hai bài khởi đầu của Họ 5.",
+"ab": []
 },
 "10.1002/hyp.8429": {
 "r": "R51",
@@ -797,7 +991,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1002/hyp.8429",
 "en": "Calibrated on altimetric water level with no streamflow data, a model still reached NSE 0.65, against 0.79 when calibrated on discharge (Upper Mississippi).",
-"vi": "Hiệu chỉnh theo mực nước đo cao vệ tinh mà không có số liệu dòng chảy, mô hình vẫn đạt NSE 0,65, so với 0,79 khi hiệu chỉnh theo lưu lượng (thượng lưu Mississippi)."
+"vi": "Hiệu chỉnh theo mực nước đo cao vệ tinh mà không có số liệu dòng chảy, mô hình vẫn đạt NSE 0,65, so với 0,79 khi hiệu chỉnh theo lưu lượng (thượng lưu Mississippi).",
+"ab": [
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
 },
 "10.1016/j.rse.2015.10.022": {
 "r": "R52",
@@ -811,7 +1012,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/j.rse.2015.10.022",
 "en": "Calibrates a large-scale model on satellite surface-water extent at 30 sites, making water extent a calibration target.",
-"vi": "Hiệu chỉnh một mô hình quy mô lớn theo phạm vi mặt nước từ vệ tinh tại 30 vị trí, biến phạm vi mặt nước thành mục tiêu hiệu chỉnh."
+"vi": "Hiệu chỉnh một mô hình quy mô lớn theo phạm vi mặt nước từ vệ tinh tại 30 vị trí, biến phạm vi mặt nước thành mục tiêu hiệu chỉnh.",
+"ab": []
 },
 "10.1002/2015wr018545": {
 "r": "R53",
@@ -825,7 +1027,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1002/2015WR018545",
 "en": "River gauging from optical and passive-microwave imagery worldwide, which works poorly in arid regions “where flow pulses are few and recede rapidly”.",
-"vi": "Đo lưu lượng sông từ ảnh quang học và vi ba thụ động trên toàn cầu, cho kết quả kém ở vùng khô hạn “nơi các xung dòng chảy ít và rút nhanh”."
+"vi": "Đo lưu lượng sông từ ảnh quang học và vi ba thụ động trên toàn cầu, cho kết quả kém ở vùng khô hạn “nơi các xung dòng chảy ít và rút nhanh”.",
+"ab": []
 },
 "10.1029/2019wr026085": {
 "r": "R54",
@@ -839,7 +1042,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2019WR026085",
 "en": "Calibrating on satellite spatial patterns in the Volta cost 7% in streamflow but gained 105% for soil moisture; streamflow is necessary but not sufficient.",
-"vi": "Hiệu chỉnh theo hình thái không gian từ vệ tinh ở lưu vực Volta làm giảm 7% chất lượng dòng chảy nhưng tăng 105% cho độ ẩm đất; dòng chảy là cần nhưng chưa đủ."
+"vi": "Hiệu chỉnh theo hình thái không gian từ vệ tinh ở lưu vực Volta làm giảm 7% chất lượng dòng chảy nhưng tăng 105% cho độ ẩm đất; dòng chảy là cần nhưng chưa đủ.",
+"ab": []
 },
 "10.1029/2020wr028205": {
 "r": "R55",
@@ -853,7 +1057,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2020WR028205",
 "en": "Constrains calibration with remotely sensed evapotranspiration and water storage across seven schemes in 30 Yalong River catchments, for ungauged prediction.",
-"vi": "Ràng buộc hiệu chỉnh bằng bốc thoát hơi và trữ nước viễn thám qua bảy sơ đồ trên 30 lưu vực sông Yalong, cho dự báo không có trạm đo."
+"vi": "Ràng buộc hiệu chỉnh bằng bốc thoát hơi và trữ nước viễn thám qua bảy sơ đồ trên 30 lưu vực sông Yalong, cho dự báo không có trạm đo.",
+"ab": []
 },
 "10.5194/hess-24-3331-2020": {
 "r": "R56",
@@ -867,7 +1072,14 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-24-3331-2020",
 "en": "The only study here combining both halves of the surrogate family: GRACE storage, then altimetry, to select parameters in one Zambian basin.",
-"vi": "Nghiên cứu duy nhất ở đây kết hợp cả hai nửa của họ thay thế: trữ nước GRACE, rồi đo cao vệ tinh, để chọn tham số ở một lưu vực ở Zambia."
+"vi": "Nghiên cứu duy nhất ở đây kết hợp cả hai nửa của họ thay thế: trữ nước GRACE, rồi đo cao vệ tinh, để chọn tham số ở một lưu vực ở Zambia.",
+"ab": [
+[
+"GRACE",
+"Gravity Recovery and Climate Experiment (satellite gravimetry)",
+"vệ tinh đo trọng lực GRACE"
+]
+]
 },
 "10.1029/2020wr027309": {
 "r": "R57",
@@ -881,7 +1093,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2020WR027309",
 "en": "Daily discharge in narrow Tibetan rivers from a model calibrated on altimetric level and Landsat widths, with no in-situ discharge, testing SWOT-like data before SWOT flew.",
-"vi": "Lưu lượng ngày trên các sông hẹp ở Tây Tạng từ mô hình hiệu chỉnh theo mực nước đo cao và độ rộng Landsat, không dùng lưu lượng đo tại chỗ, thử dữ liệu kiểu SWOT trước khi SWOT bay."
+"vi": "Lưu lượng ngày trên các sông hẹp ở Tây Tạng từ mô hình hiệu chỉnh theo mực nước đo cao và độ rộng Landsat, không dùng lưu lượng đo tại chỗ, thử dữ liệu kiểu SWOT trước khi SWOT bay.",
+"ab": [
+[
+"SWOT",
+"Surface Water and Ocean Topography (satellite mission)",
+"nhiệm vụ vệ tinh đo địa hình mặt nước và đại dương"
+]
+]
 },
 "10.1016/j.rse.2019.111629": {
 "r": "R142",
@@ -895,7 +1114,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/j.rse.2019.111629",
 "en": "Satellite gauging reaches at about 10,000 gauged and 370,000 ungauged reaches; model-based ones are often similar to gauge-based.",
-"vi": "Các đoạn sông đo bằng vệ tinh tại khoảng 10.000 đoạn có trạm đo và 370.000 đoạn không có trạm đo; các đoạn dựa trên mô hình thường tương tự các đoạn dựa trên trạm đo."
+"vi": "Các đoạn sông đo bằng vệ tinh tại khoảng 10.000 đoạn có trạm đo và 370.000 đoạn không có trạm đo; các đoạn dựa trên mô hình thường tương tự các đoạn dựa trên trạm đo.",
+"ab": []
 },
 "10.1029/2021wr031287": {
 "r": "R58",
@@ -909,7 +1129,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2021WR031287",
 "en": "Bayesian calibration on the C/M surrogate with an estimated mean flow for scale: NSE 0.54–0.78 at Australian reference stations with no discharge record.",
-"vi": "Hiệu chỉnh Bayes theo tín hiệu thay thế C/M với lưu lượng trung bình ước tính làm thang đo: NSE 0,54–0,78 tại các trạm tham chiếu ở Úc mà không có chuỗi lưu lượng."
+"vi": "Hiệu chỉnh Bayes theo tín hiệu thay thế C/M với lưu lượng trung bình ước tính làm thang đo: NSE 0,54–0,78 tại các trạm tham chiếu ở Úc mà không có chuỗi lưu lượng.",
+"ab": [
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
 },
 "10.1016/j.jhydrol.2023.129158": {
 "r": "R59",
@@ -923,7 +1150,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/j.jhydrol.2023.129158",
 "en": "Near-infrared images calibrate a model in small Tibetan Plateau rivers 91 and 132 m wide, reaching NSE 0.63 and 0.62.",
-"vi": "Ảnh cận hồng ngoại hiệu chỉnh một mô hình trên các sông nhỏ ở cao nguyên Tây Tạng rộng 91 và 132 m, đạt NSE 0,63 và 0,62."
+"vi": "Ảnh cận hồng ngoại hiệu chỉnh một mô hình trên các sông nhỏ ở cao nguyên Tây Tạng rộng 91 và 132 m, đạt NSE 0,63 và 0,62.",
+"ab": [
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
 },
 "10.1088/1748-9326/acb8cb": {
 "r": "R135",
@@ -937,7 +1171,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1088/1748-9326/acb8cb",
 "en": "Surrogate calibration from remote sensing alone reached mean NSE 0.54 over 130 Murray–Darling catchments, with 70% above 0.4.",
-"vi": "Hiệu chỉnh thay thế chỉ bằng viễn thám đạt NSE trung bình 0,54 trên 130 lưu vực Murray–Darling, với 70% trên 0,4."
+"vi": "Hiệu chỉnh thay thế chỉ bằng viễn thám đạt NSE trung bình 0,54 trên 130 lưu vực Murray–Darling, với 70% trên 0,4.",
+"ab": [
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
 },
 "10.1016/j.jhydrol.2024.132049": {
 "r": "R60",
@@ -951,7 +1192,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/j.jhydrol.2024.132049",
 "en": "States the unit problem of surrogate signals and supplies the scale from climate through a Budyko mean flow.",
-"vi": "Nêu rõ bài toán đơn vị của tín hiệu thay thế và cung cấp thang đo từ khí hậu qua lưu lượng trung bình theo Budyko."
+"vi": "Nêu rõ bài toán đơn vị của tín hiệu thay thế và cung cấp thang đo từ khí hậu qua lưu lượng trung bình theo Budyko.",
+"ab": []
 },
 "10.1016/j.rse.2025.114919": {
 "r": "R61",
@@ -965,7 +1207,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/j.rse.2025.114919",
 "en": "Merges ten multispectral products into two-decade proxy records at 54 sites; calibrated KGE averages 0.41, uncalibrated 0.29.",
-"vi": "Ghép mười sản phẩm đa phổ thành chuỗi tín hiệu đại diện hai thập kỷ tại 54 vị trí; KGE trung bình 0,41 khi hiệu chỉnh, 0,29 khi không hiệu chỉnh."
+"vi": "Ghép mười sản phẩm đa phổ thành chuỗi tín hiệu đại diện hai thập kỷ tại 54 vị trí; KGE trung bình 0,41 khi hiệu chỉnh, 0,29 khi không hiệu chỉnh.",
+"ab": [
+[
+"KGE",
+"Kling–Gupta efficiency",
+"hệ số hiệu quả Kling–Gupta"
+]
+]
 },
 "10.1016/j.envsoft.2025.106334": {
 "r": "R62",
@@ -979,7 +1228,24 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/j.envsoft.2025.106334",
 "en": "SRM, the packaged surrogate river discharge model (NSE and KGE above 0.6); its Budyko scale is compromised in arid and semi-arid regions.",
-"vi": "SRM, mô hình lưu lượng thay thế đóng gói (NSE và KGE trên 0,6); thang đo Budyko của nó kém tin cậy ở vùng khô hạn và bán khô hạn."
+"vi": "SRM, mô hình lưu lượng thay thế đóng gói (NSE và KGE trên 0,6); thang đo Budyko của nó kém tin cậy ở vùng khô hạn và bán khô hạn.",
+"ab": [
+[
+"SRM",
+"Surrogate River discharge Model",
+"mô hình lưu lượng sông thay thế"
+],
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+],
+[
+"KGE",
+"Kling–Gupta efficiency",
+"hệ số hiệu quả Kling–Gupta"
+]
+]
 },
 "10.1109/jstars.2026.3735355": {
 "r": "R63",
@@ -993,7 +1259,19 @@ window.REFS = {
 "m": "",
 "doi": "10.1109/JSTARS.2026.3735355",
 "en": "Sentinel-1 SAR extent drives streamflow inference in 19 small and complex rivers, with median NSE 0.47 and 0.53, weaker in persistently low-flow reaches.",
-"vi": "Phạm vi ngập Sentinel-1 SAR dùng để suy luận dòng chảy ở 19 sông nhỏ và phức tạp, NSE trung vị 0,47 và 0,53, kém hơn ở các đoạn thường xuyên dòng chảy thấp."
+"vi": "Phạm vi ngập Sentinel-1 SAR dùng để suy luận dòng chảy ở 19 sông nhỏ và phức tạp, NSE trung vị 0,47 và 0,53, kém hơn ở các đoạn thường xuyên dòng chảy thấp.",
+"ab": [
+[
+"SAR",
+"synthetic aperture radar",
+"radar khẩu độ tổng hợp"
+],
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
 },
 "10.1002/(sici)1099-1085(199708)11:10<1427::aid-hyp473>3.0.co;2-s": {
 "r": "R64",
@@ -1007,7 +1285,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1002/(SICI)1099-1085(199708)11:10<1427::AID-HYP473>3.0.CO;2-S",
 "en": "An early review of what satellites can measure about rivers, and of the area–discharge curve this review's §14 programme belongs to.",
-"vi": "Một tổng quan sớm về những gì vệ tinh đo được về dòng sông, và về đường quan hệ diện tích–lưu lượng mà chương trình ở §14 thuộc về."
+"vi": "Một tổng quan sớm về những gì vệ tinh đo được về dòng sông, và về đường quan hệ diện tích–lưu lượng mà chương trình ở §14 thuộc về.",
+"ab": []
 },
 "10.1016/s0022-1694(03)00129-x": {
 "r": "R65",
@@ -1021,7 +1300,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/S0022-1694(03)00129-X",
 "en": "Discharge equations regressed on more than 1,000 measurements, using only the width, slope and velocity a satellite can see.",
-"vi": "Các phương trình lưu lượng hồi quy trên hơn 1.000 số đo, chỉ dùng độ rộng, độ dốc và vận tốc mà vệ tinh có thể thấy."
+"vi": "Các phương trình lưu lượng hồi quy trên hơn 1.000 số đo, chỉ dùng độ rộng, độ dốc và vận tốc mà vệ tinh có thể thấy.",
+"ab": []
 },
 "10.1029/2007wr006133": {
 "r": "R130",
@@ -1035,7 +1315,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2007WR006133",
 "en": "Daily MODIS width on the Lena rated against a single gauge 700 km downstream, the step just before gauge-free calibration.",
-"vi": "Độ rộng MODIS hằng ngày trên sông Lena được lập quan hệ với một trạm đo cách 700 km về hạ lưu, bước ngay trước hiệu chỉnh không cần trạm đo."
+"vi": "Độ rộng MODIS hằng ngày trên sông Lena được lập quan hệ với một trạm đo cách 700 km về hạ lưu, bước ngay trước hiệu chỉnh không cần trạm đo.",
+"ab": [
+[
+"MODIS",
+"Moderate Resolution Imaging Spectroradiometer",
+"máy đo phổ ảnh độ phân giải trung bình"
+]
+]
 },
 "10.1073/pnas.1317606111": {
 "r": "R66",
@@ -1049,7 +1336,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1073/pnas.1317606111",
 "en": "At-many-stations hydraulic geometry (AMHG): discharge from satellite images alone; it failed worst on the semi-arid, anabranching Rio Grande.",
-"vi": "Hình học thủy lực tại nhiều trạm (AMHG): lưu lượng chỉ từ ảnh vệ tinh; thất bại nặng nhất ở sông Rio Grande bán khô hạn, phân nhánh."
+"vi": "Hình học thủy lực tại nhiều trạm (AMHG): lưu lượng chỉ từ ảnh vệ tinh; thất bại nặng nhất ở sông Rio Grande bán khô hạn, phân nhánh.",
+"ab": [
+[
+"AMHG",
+"at-many-stations hydraulic geometry",
+"hình học thủy lực tại nhiều trạm"
+]
+]
 },
 "10.1002/2015gl064935": {
 "r": "R67",
@@ -1063,7 +1357,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1002/2015GL064935",
 "en": "The theory behind AMHG: it arises where at-a-station hydraulic-geometry curves intersect near shared values.",
-"vi": "Lý thuyết của AMHG: nó xuất hiện khi các đường hình học thủy lực tại trạm giao nhau gần những giá trị chung."
+"vi": "Lý thuyết của AMHG: nó xuất hiện khi các đường hình học thủy lực tại trạm giao nhau gần những giá trị chung.",
+"ab": [
+[
+"AMHG",
+"at-many-stations hydraulic geometry",
+"hình học thủy lực tại nhiều trạm"
+]
+]
 },
 "10.1007/s10712-015-9346-y": {
 "r": "R68",
@@ -1077,7 +1378,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1007/s10712-015-9346-y",
 "en": "The standard reference for what SWOT measures; it does not measure water depth and is designed for rivers wider than 100 m.",
-"vi": "Tài liệu tham chiếu chuẩn về những gì SWOT đo; nó không đo độ sâu nước và được thiết kế cho sông rộng hơn 100 m."
+"vi": "Tài liệu tham chiếu chuẩn về những gì SWOT đo; nó không đo độ sâu nước và được thiết kế cho sông rộng hơn 100 m.",
+"ab": [
+[
+"SWOT",
+"Surface Water and Ocean Topography (satellite mission)",
+"nhiệm vụ vệ tinh đo địa hình mặt nước và đại dương"
+]
+]
 },
 "10.1002/2015wr018434": {
 "r": "R69",
@@ -1091,7 +1399,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1002/2015WR018434",
 "en": "Compares five SWOT discharge algorithms on synthetic data for 19 rivers before launch; braided channels failed.",
-"vi": "So sánh năm thuật toán lưu lượng SWOT trên dữ liệu mô phỏng của 19 sông trước khi phóng; sông bện thất bại."
+"vi": "So sánh năm thuật toán lưu lượng SWOT trên dữ liệu mô phỏng của 19 sông trước khi phóng; sông bện thất bại.",
+"ab": [
+[
+"SWOT",
+"Surface Water and Ocean Topography (satellite mission)",
+"nhiệm vụ vệ tinh đo địa hình mặt nước và đại dương"
+]
+]
 },
 "10.1002/2017wr021626": {
 "r": "R70",
@@ -1105,7 +1420,19 @@ window.REFS = {
 "m": "",
 "doi": "10.1002/2017WR021626",
 "en": "BAM: a Bayesian AMHG–Manning inversion that gives the underconstrained satellite discharge problem a statistically defensible treatment.",
-"vi": "BAM: phép nghịch đảo AMHG–Manning theo Bayes, cho bài toán lưu lượng vệ tinh thiếu ràng buộc một cách xử lý có cơ sở thống kê."
+"vi": "BAM: phép nghịch đảo AMHG–Manning theo Bayes, cho bài toán lưu lượng vệ tinh thiếu ràng buộc một cách xử lý có cơ sở thống kê.",
+"ab": [
+[
+"BAM",
+"Bayesian AMHG–Manning (discharge inversion)",
+"nghịch đảo lưu lượng AMHG–Manning theo Bayes"
+],
+[
+"AMHG",
+"at-many-stations hydraulic geometry",
+"hình học thủy lực tại nhiều trạm"
+]
+]
 },
 "10.1002/2017wr021735": {
 "r": "R71",
@@ -1119,7 +1446,19 @@ window.REFS = {
 "m": "",
 "doi": "10.1002/2017WR021735",
 "en": "Variational assimilation inverts discharge, bathymetry and roughness together on synthetic SWOT data, at 12.1% and 11.2% relative RMSE.",
-"vi": "Đồng hóa biến phân nghịch đảo đồng thời lưu lượng, địa hình đáy và độ nhám trên dữ liệu SWOT mô phỏng, với RMSE tương đối 12,1% và 11,2%."
+"vi": "Đồng hóa biến phân nghịch đảo đồng thời lưu lượng, địa hình đáy và độ nhám trên dữ liệu SWOT mô phỏng, với RMSE tương đối 12,1% và 11,2%.",
+"ab": [
+[
+"SWOT",
+"Surface Water and Ocean Topography (satellite mission)",
+"nhiệm vụ vệ tinh đo địa hình mặt nước và đại dương"
+],
+[
+"RMSE",
+"root-mean-square error",
+"sai số căn quân phương"
+]
+]
 },
 "10.1029/2019wr025599": {
 "r": "R141",
@@ -1133,7 +1472,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2019WR025599",
 "en": "Fusing CubeSat with Landsat and Sentinel-2 gives 2–6 times more discharge estimates, but width-based methods still fail below about 40 m.",
-"vi": "Kết hợp CubeSat với Landsat và Sentinel-2 cho số ước tính lưu lượng nhiều hơn 2–6 lần, nhưng phương pháp dựa trên độ rộng vẫn thất bại dưới khoảng 40 m."
+"vi": "Kết hợp CubeSat với Landsat và Sentinel-2 cho số ước tính lưu lượng nhiều hơn 2–6 lần, nhưng phương pháp dựa trên độ rộng vẫn thất bại dưới khoảng 40 m.",
+"ab": [
+[
+"BAM",
+"Bayesian AMHG–Manning (discharge inversion)",
+"nghịch đảo lưu lượng AMHG–Manning theo Bayes"
+]
+]
 },
 "10.3390/rs12071107": {
 "r": "R72",
@@ -1147,7 +1493,8 @@ window.REFS = {
 "m": "",
 "doi": "10.3390/rs12071107",
 "en": "The orienting review of remote sensing of discharge, framed by gauging context and naming “politically ungauged” basins.",
-"vi": "Tổng quan định hướng về đo lưu lượng bằng viễn thám, phân theo bối cảnh trạm đo và đặt tên cho lưu vực “không có trạm đo về mặt chính trị”."
+"vi": "Tổng quan định hướng về đo lưu lượng bằng viễn thám, phân theo bối cảnh trạm đo và đặt tên cho lưu vực “không có trạm đo về mặt chính trị”.",
+"ab": []
 },
 "10.1029/2020wr027949": {
 "r": "R138",
@@ -1161,7 +1508,19 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2020WR027949",
 "en": "geoBAM assigns priors by river type learned from 370,000 field measurements, raising median NSE from −0.05 to 0.26 on the Mackenzie.",
-"vi": "geoBAM gán thông tin tiên nghiệm theo kiểu sông học từ 370.000 số đo thực địa, nâng NSE trung vị từ −0,05 lên 0,26 trên sông Mackenzie."
+"vi": "geoBAM gán thông tin tiên nghiệm theo kiểu sông học từ 370.000 số đo thực địa, nâng NSE trung vị từ −0,05 lên 0,26 trên sông Mackenzie.",
+"ab": [
+[
+"geoBAM",
+"BAM with priors assigned by river type (geomorphology)",
+"BAM với thông tin tiên nghiệm gán theo kiểu sông (địa mạo)"
+],
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
 },
 "10.1029/2021wr031614": {
 "r": "R134",
@@ -1175,7 +1534,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2021WR031614",
 "en": "The SWOT discharge framework: mean flow expected within 30% with no gauge and dynamics within 15% for nearly all reaches, with error dominated by bias.",
-"vi": "Khung lưu lượng SWOT: lưu lượng trung bình kỳ vọng trong phạm vi 30% mà không cần trạm đo và động thái trong phạm vi 15% ở gần như mọi đoạn sông, với sai số chủ yếu do sai lệch hệ thống."
+"vi": "Khung lưu lượng SWOT: lưu lượng trung bình kỳ vọng trong phạm vi 30% mà không cần trạm đo và động thái trong phạm vi 15% ở gần như mọi đoạn sông, với sai số chủ yếu do sai lệch hệ thống.",
+"ab": [
+[
+"SWOT",
+"Surface Water and Ocean Topography (satellite mission)",
+"nhiệm vụ vệ tinh đo địa hình mặt nước và đại dương"
+]
+]
 },
 "10.1016/j.rse.2023.113489": {
 "r": "R137",
@@ -1189,7 +1555,24 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/j.rse.2023.113489",
 "en": "BAM and geoBAM run off the shelf on Landsat widths at 3,078 gauges: positive KGE at 27–39% of sites, 46–65% with richer priors.",
-"vi": "BAM và geoBAM chạy nguyên trạng trên độ rộng Landsat tại 3.078 trạm đo: KGE dương ở 27–39% số vị trí, 46–65% khi có thông tin tiên nghiệm phong phú hơn."
+"vi": "BAM và geoBAM chạy nguyên trạng trên độ rộng Landsat tại 3.078 trạm đo: KGE dương ở 27–39% số vị trí, 46–65% khi có thông tin tiên nghiệm phong phú hơn.",
+"ab": [
+[
+"BAM",
+"Bayesian AMHG–Manning (discharge inversion)",
+"nghịch đảo lưu lượng AMHG–Manning theo Bayes"
+],
+[
+"geoBAM",
+"BAM with priors assigned by river type (geomorphology)",
+"BAM với thông tin tiên nghiệm gán theo kiểu sông (địa mạo)"
+],
+[
+"KGE",
+"Kling–Gupta efficiency",
+"hệ số hiệu quả Kling–Gupta"
+]
+]
 },
 "10.1016/j.rse.2024.114434": {
 "r": "R136",
@@ -1203,7 +1586,19 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/j.rse.2024.114434",
 "en": "Gauge-free Manning discharge on 27 reaches, many under 100 m wide, using altimetry and PlanetScope: median NRMSE 12% and NSE 0.56.",
-"vi": "Lưu lượng theo Manning không cần trạm đo trên 27 đoạn sông, nhiều đoạn hẹp dưới 100 m, dùng đo cao vệ tinh và PlanetScope: NRMSE trung vị 12% và NSE 0,56."
+"vi": "Lưu lượng theo Manning không cần trạm đo trên 27 đoạn sông, nhiều đoạn hẹp dưới 100 m, dùng đo cao vệ tinh và PlanetScope: NRMSE trung vị 12% và NSE 0,56.",
+"ab": [
+[
+"NRMSE",
+"normalised root-mean-square error",
+"sai số căn quân phương chuẩn hóa"
+],
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
 },
 "10.1029/2023wr036880": {
 "r": "R139",
@@ -1217,7 +1612,24 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2023WR036880",
 "en": "A model on time-series reflectance gave positive KGE in 68.6% of ungauged rivers, against 28.4% for BAM and 33.1% for geoBAM, with no loss on braided rivers.",
-"vi": "Một mô hình dựa trên chuỗi phản xạ phổ cho KGE dương ở 68,6% số sông không có trạm đo, so với 28,4% của BAM và 33,1% của geoBAM, không suy giảm với sông bện."
+"vi": "Một mô hình dựa trên chuỗi phản xạ phổ cho KGE dương ở 68,6% số sông không có trạm đo, so với 28,4% của BAM và 33,1% của geoBAM, không suy giảm với sông bện.",
+"ab": [
+[
+"KGE",
+"Kling–Gupta efficiency",
+"hệ số hiệu quả Kling–Gupta"
+],
+[
+"BAM",
+"Bayesian AMHG–Manning (discharge inversion)",
+"nghịch đảo lưu lượng AMHG–Manning theo Bayes"
+],
+[
+"geoBAM",
+"BAM with priors assigned by river type (geomorphology)",
+"BAM với thông tin tiên nghiệm gán theo kiểu sông (địa mạo)"
+]
+]
 },
 "10.1029/2024gl114185": {
 "r": "R73",
@@ -1231,7 +1643,19 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2024GL114185",
 "en": "The first real-data SWOT discharge assessment: median correlation 0.73 with no gauge, but median bias 50% and median NSE below zero.",
-"vi": "Đánh giá lưu lượng SWOT đầu tiên với dữ liệu thực: tương quan trung vị 0,73 mà không cần trạm đo, nhưng sai lệch trung vị 50% và NSE trung vị âm."
+"vi": "Đánh giá lưu lượng SWOT đầu tiên với dữ liệu thực: tương quan trung vị 0,73 mà không cần trạm đo, nhưng sai lệch trung vị 50% và NSE trung vị âm.",
+"ab": [
+[
+"SWOT",
+"Surface Water and Ocean Topography (satellite mission)",
+"nhiệm vụ vệ tinh đo địa hình mặt nước và đại dương"
+],
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
 },
 "10.1029/2024wr038455": {
 "r": "R140",
@@ -1245,7 +1669,19 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2024WR038455",
 "en": "Assimilating SWOT levels into a river-network model infers discharge, bathymetry and friction, with discharge NRMSE 0.05–0.18, 18–71% better than the prior.",
-"vi": "Đồng hóa mực nước SWOT vào mô hình mạng sông suy ra lưu lượng, địa hình đáy và độ nhám, với NRMSE lưu lượng 0,05–0,18, tốt hơn thông tin tiên nghiệm 18–71%."
+"vi": "Đồng hóa mực nước SWOT vào mô hình mạng sông suy ra lưu lượng, địa hình đáy và độ nhám, với NRMSE lưu lượng 0,05–0,18, tốt hơn thông tin tiên nghiệm 18–71%.",
+"ab": [
+[
+"SWOT",
+"Surface Water and Ocean Topography (satellite mission)",
+"nhiệm vụ vệ tinh đo địa hình mặt nước và đại dương"
+],
+[
+"NRMSE",
+"normalised root-mean-square error",
+"sai số căn quân phương chuẩn hóa"
+]
+]
 },
 "10.1016/j.rse.2026.115568": {
 "r": "R74",
@@ -1259,7 +1695,24 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/j.rse.2026.115568",
 "en": "Channel geometry from ICESat-2 and Sentinel-1/2 drives discharge retrieval in ungauged reaches, reaching NSE 0.84 and KGE 0.86.",
-"vi": "Hình học lòng dẫn từ ICESat-2 và Sentinel-1/2 dùng để truy xuất lưu lượng ở các đoạn sông không có trạm đo, đạt NSE 0,84 và KGE 0,86."
+"vi": "Hình học lòng dẫn từ ICESat-2 và Sentinel-1/2 dùng để truy xuất lưu lượng ở các đoạn sông không có trạm đo, đạt NSE 0,84 và KGE 0,86.",
+"ab": [
+[
+"ICESat-2",
+"Ice, Cloud and land Elevation Satellite-2 (laser altimetry)",
+"vệ tinh đo cao laser ICESat-2"
+],
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+],
+[
+"KGE",
+"Kling–Gupta efficiency",
+"hệ số hiệu quả Kling–Gupta"
+]
+]
 },
 "10.5194/hess-22-6005-2018": {
 "r": "R75",
@@ -1273,7 +1726,19 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-22-6005-2018",
 "en": "Proposes the LSTM for rainfall–runoff modelling, tested on 241 CAMELS catchments; the start of the deep-learning strand.",
-"vi": "Đề xuất LSTM cho mô hình mưa–dòng chảy, kiểm tra trên 241 lưu vực CAMELS; khởi đầu của dòng học sâu."
+"vi": "Đề xuất LSTM cho mô hình mưa–dòng chảy, kiểm tra trên 241 lưu vực CAMELS; khởi đầu của dòng học sâu.",
+"ab": [
+[
+"LSTM",
+"long short-term memory (neural network)",
+"mạng nơ-ron bộ nhớ dài–ngắn hạn"
+],
+[
+"CAMELS",
+"Catchment Attributes and MEteorology for Large-sample Studies",
+"bộ dữ liệu thuộc tính lưu vực và khí tượng cho nghiên cứu mẫu lớn"
+]
+]
 },
 "10.1029/2019wr026065": {
 "r": "R76",
@@ -1287,7 +1752,19 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2019WR026065",
 "en": "An LSTM never trained on the basin reached median NSE 0.69, against 0.64 for a model calibrated there, given hundreds of gauged catchments.",
-"vi": "Một LSTM chưa từng huấn luyện trên lưu vực đó đạt NSE trung vị 0,69, so với 0,64 của mô hình hiệu chỉnh tại chỗ, khi có hàng trăm lưu vực có trạm đo."
+"vi": "Một LSTM chưa từng huấn luyện trên lưu vực đó đạt NSE trung vị 0,69, so với 0,64 của mô hình hiệu chỉnh tại chỗ, khi có hàng trăm lưu vực có trạm đo.",
+"ab": [
+[
+"LSTM",
+"long short-term memory (neural network)",
+"mạng nơ-ron bộ nhớ dài–ngắn hạn"
+],
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
 },
 "10.5194/hess-23-5089-2019": {
 "r": "R77",
@@ -1301,7 +1778,19 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-23-5089-2019",
 "en": "The Entity-Aware LSTM uses static attributes to learn catchment similarity; attributes were worth about 0.30–0.44 in mean NSE across 531 basins.",
-"vi": "LSTM nhận biết thực thể dùng thuộc tính tĩnh để học sự tương tự giữa các lưu vực; thuộc tính đóng góp khoảng 0,30–0,44 NSE trung bình trên 531 lưu vực."
+"vi": "LSTM nhận biết thực thể dùng thuộc tính tĩnh để học sự tương tự giữa các lưu vực; thuộc tính đóng góp khoảng 0,30–0,44 NSE trung bình trên 531 lưu vực.",
+"ab": [
+[
+"LSTM",
+"long short-term memory (neural network)",
+"mạng nơ-ron bộ nhớ dài–ngắn hạn"
+],
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
 },
 "10.1029/2020wr028091": {
 "r": "R78",
@@ -1315,7 +1804,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2020WR028091",
 "en": "The strongest case for deep learning: it extracts more from large datasets than hydrologists have turned into theory, and preference for process models is “deeply subjective”.",
-"vi": "Lập luận mạnh nhất cho học sâu: nó khai thác từ dữ liệu lớn nhiều hơn những gì nhà thủy văn đã thành lý thuyết, và sự ưa chuộng mô hình quá trình là “chủ quan sâu sắc”."
+"vi": "Lập luận mạnh nhất cho học sâu: nó khai thác từ dữ liệu lớn nhiều hơn những gì nhà thủy văn đã thành lý thuyết, và sự ưa chuộng mô hình quá trình là “chủ quan sâu sắc”.",
+"ab": []
 },
 "10.1002/hyp.13805": {
 "r": "R79",
@@ -1329,7 +1819,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1002/hyp.13805",
 "en": "The reply to the deep-learning case: catchments are unique places, not interchangeable samples for one regional network.",
-"vi": "Lời đáp cho lập luận học sâu: lưu vực là những nơi chốn độc nhất, không phải các mẫu hoán đổi được cho một mạng vùng duy nhất."
+"vi": "Lời đáp cho lập luận học sâu: lưu vực là những nơi chốn độc nhất, không phải các mẫu hoán đổi được cho một mạng vùng duy nhất.",
+"ab": []
 },
 "10.1111/1752-1688.12964": {
 "r": "R80",
@@ -1343,7 +1834,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1111/1752-1688.12964",
 "en": "An LSTM post-processing the US National Water Model helped a lot, but an LSTM on forcing alone matched it and beat it in ungauged basins.",
-"vi": "Một LSTM hậu xử lý Mô hình Nước Quốc gia Hoa Kỳ cải thiện nhiều, nhưng một LSTM chỉ dùng dữ liệu khí tượng đạt ngang và vượt nó ở lưu vực không có trạm đo."
+"vi": "Một LSTM hậu xử lý Mô hình Nước Quốc gia Hoa Kỳ cải thiện nhiều, nhưng một LSTM chỉ dùng dữ liệu khí tượng đạt ngang và vượt nó ở lưu vực không có trạm đo.",
+"ab": [
+[
+"LSTM",
+"long short-term memory (neural network)",
+"mạng nơ-ron bộ nhớ dài–ngắn hạn"
+]
+]
 },
 "10.1029/2021wr030394": {
 "r": "R81",
@@ -1357,7 +1855,24 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2021WR030394",
 "en": "Benchmarks graph neural networks (ChebNet, GCN, GraphWaveNet) on CAMELS, treating the catchment network as a graph.",
-"vi": "Đánh giá các mạng nơ-ron đồ thị (ChebNet, GCN, GraphWaveNet) trên CAMELS, coi mạng lưu vực như một đồ thị."
+"vi": "Đánh giá các mạng nơ-ron đồ thị (ChebNet, GCN, GraphWaveNet) trên CAMELS, coi mạng lưu vực như một đồ thị.",
+"ab": [
+[
+"ChebNet",
+"Chebyshev spectral graph convolutional network",
+"mạng tích chập đồ thị phổ Chebyshev"
+],
+[
+"GCN",
+"graph convolutional network",
+"mạng tích chập đồ thị"
+],
+[
+"CAMELS",
+"Catchment Attributes and MEteorology for Large-sample Studies",
+"bộ dữ liệu thuộc tính lưu vực và khí tượng cho nghiên cứu mẫu lớn"
+]
+]
 },
 "10.5194/hess-26-5085-2022": {
 "r": "R82",
@@ -1371,7 +1886,24 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-26-5085-2022",
 "en": "Replaces internal flux equations with neural networks inside an ODE model of 569 US catchments; it stays interpretable, but the LSTM remains ahead on NSE.",
-"vi": "Thay các phương trình dòng nội tại bằng mạng nơ-ron bên trong một mô hình ODE trên 569 lưu vực Hoa Kỳ; mô hình vẫn diễn giải được, nhưng LSTM vẫn dẫn trước về NSE."
+"vi": "Thay các phương trình dòng nội tại bằng mạng nơ-ron bên trong một mô hình ODE trên 569 lưu vực Hoa Kỳ; mô hình vẫn diễn giải được, nhưng LSTM vẫn dẫn trước về NSE.",
+"ab": [
+[
+"ODE",
+"ordinary differential equation",
+"phương trình vi phân thường"
+],
+[
+"LSTM",
+"long short-term memory (neural network)",
+"mạng nơ-ron bộ nhớ dài–ngắn hạn"
+],
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
 },
 "10.1029/2022wr032404": {
 "r": "R83",
@@ -1385,7 +1917,24 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2022WR032404",
 "en": "Differentiable process models on an HBV backbone reached median NSE 0.732 across 671 US basins, against 0.748 for an LSTM, while also predicting soil and groundwater.",
-"vi": "Mô hình quá trình khả vi trên nền HBV đạt NSE trung vị 0,732 trên 671 lưu vực Hoa Kỳ, so với 0,748 của LSTM, đồng thời dự báo cả nước trong đất và nước ngầm."
+"vi": "Mô hình quá trình khả vi trên nền HBV đạt NSE trung vị 0,732 trên 671 lưu vực Hoa Kỳ, so với 0,748 của LSTM, đồng thời dự báo cả nước trong đất và nước ngầm.",
+"ab": [
+[
+"HBV",
+"Hydrologiska Byråns Vattenbalansavdelning (conceptual model)",
+"mô hình khái niệm HBV của Thụy Điển"
+],
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+],
+[
+"LSTM",
+"long short-term memory (neural network)",
+"mạng nơ-ron bộ nhớ dài–ngắn hạn"
+]
+]
 },
 "10.5194/hess-27-139-2023": {
 "r": "R84",
@@ -1399,7 +1948,19 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-27-139-2023",
 "en": "Given exactly the same regional data, an LSTM reached median NSE 0.78 against 0.58–0.63 for regionalised hydrological models, the fair comparison of the two.",
-"vi": "Khi được cấp cùng dữ liệu vùng, LSTM đạt NSE trung vị 0,78 so với 0,58–0,63 của các mô hình thủy văn vùng hóa, phép so sánh công bằng giữa hai bên."
+"vi": "Khi được cấp cùng dữ liệu vùng, LSTM đạt NSE trung vị 0,78 so với 0,58–0,63 của các mô hình thủy văn vùng hóa, phép so sánh công bằng giữa hai bên.",
+"ab": [
+[
+"LSTM",
+"long short-term memory (neural network)",
+"mạng nơ-ron bộ nhớ dài–ngắn hạn"
+],
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
 },
 "10.5194/hess-27-2357-2023": {
 "r": "R85",
@@ -1413,7 +1974,14 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-27-2357-2023",
 "en": "Under regional holdout, differentiable models kept high-flow trend R² near 0.77 while the LSTM fell from 0.76 to 0.27, and they predicted untrained evapotranspiration.",
-"vi": "Khi giữ lại cả vùng, mô hình khả vi giữ R² xu thế lũ quanh 0,77 trong khi LSTM giảm từ 0,76 xuống 0,27, và chúng dự báo được bốc thoát hơi chưa từng huấn luyện."
+"vi": "Khi giữ lại cả vùng, mô hình khả vi giữ R² xu thế lũ quanh 0,77 trong khi LSTM giảm từ 0,76 xuống 0,27, và chúng dự báo được bốc thoát hơi chưa từng huấn luyện.",
+"ab": [
+[
+"LSTM",
+"long short-term memory (neural network)",
+"mạng nơ-ron bộ nhớ dài–ngắn hạn"
+]
+]
 },
 "10.1038/s43017-023-00450-9": {
 "r": "R86",
@@ -1427,7 +1995,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1038/s43017-023-00450-9",
 "en": "The field's own statement of what differentiable modelling is for: unifying machine learning and physical models in the geosciences.",
-"vi": "Tuyên bố của chính lĩnh vực về mục đích của mô hình hóa khả vi: hợp nhất học máy và mô hình vật lý trong khoa học Trái Đất."
+"vi": "Tuyên bố của chính lĩnh vực về mục đích của mô hình hóa khả vi: hợp nhất học máy và mô hình vật lý trong khoa học Trái Đất.",
+"ab": []
 },
 "10.1038/s41586-024-07145-1": {
 "r": "R87",
@@ -1441,7 +2010,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1038/s41586-024-07145-1",
 "en": "A global AI model predicting extreme floods in ungauged watersheds, the operational scale the field now works at.",
-"vi": "Một mô hình AI toàn cầu dự báo lũ cực đoan ở lưu vực không có trạm đo, quy mô vận hành mà lĩnh vực này đang hướng tới."
+"vi": "Một mô hình AI toàn cầu dự báo lũ cực đoan ở lưu vực không có trạm đo, quy mô vận hành mà lĩnh vực này đang hướng tới.",
+"ab": [
+[
+"AI",
+"artificial intelligence",
+"trí tuệ nhân tạo"
+]
+]
 },
 "10.5194/hess-28-3051-2024": {
 "r": "R88",
@@ -1455,7 +2031,8 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-28-3051-2024",
 "en": "Adjoint gradients for implicit differentiable models; numerical compensation can obscure what the calibrated parameters mean.",
-"vi": "Gradient liên hợp cho mô hình khả vi ẩn; sự bù trừ số học có thể che mờ ý nghĩa của các tham số được hiệu chỉnh."
+"vi": "Gradient liên hợp cho mô hình khả vi ẩn; sự bù trừ số học có thể che mờ ý nghĩa của các tham số được hiệu chỉnh.",
+"ab": []
 },
 "10.1029/2024wr037544": {
 "r": "R89",
@@ -1469,7 +2046,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2024WR037544",
 "en": "Learns regionalisation inside a differentiable distributed model of 126 French catchments: median NSE 0.6–0.71, about 30% better than a lumped baseline.",
-"vi": "Học vùng hóa ngay bên trong một mô hình phân bố khả vi trên 126 lưu vực Pháp: NSE trung vị 0,6–0,71, tốt hơn khoảng 30% so với mô hình tập trung."
+"vi": "Học vùng hóa ngay bên trong một mô hình phân bố khả vi trên 126 lưu vực Pháp: NSE trung vị 0,6–0,71, tốt hơn khoảng 30% so với mô hình tập trung.",
+"ab": [
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
 },
 "10.1029/2023wr035337": {
 "r": "R90",
@@ -1483,7 +2067,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2023WR035337",
 "en": "A differentiable Muskingum–Cunge routing model that learns Manning's roughness from downstream hydrographs alone.",
-"vi": "Mô hình diễn toán Muskingum–Cunge khả vi học hệ số nhám Manning chỉ từ đường quá trình ở hạ lưu."
+"vi": "Mô hình diễn toán Muskingum–Cunge khả vi học hệ số nhám Manning chỉ từ đường quá trình ở hạ lưu.",
+"ab": []
 },
 "10.5194/hess-29-5871-2025": {
 "r": "R91",
@@ -1497,7 +2082,14 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-29-5871-2025",
 "en": "Measures the LSTM's extrapolation ceiling: a stand-alone LSTM cannot predict above a level below its own training maximum, while a hybrid does better.",
-"vi": "Đo mức trần ngoại suy của LSTM: một LSTM đứng riêng không dự báo được trên một mức thấp hơn cả giá trị lớn nhất khi huấn luyện, trong khi mô hình lai làm tốt hơn."
+"vi": "Đo mức trần ngoại suy của LSTM: một LSTM đứng riêng không dự báo được trên một mức thấp hơn cả giá trị lớn nhất khi huấn luyện, trong khi mô hình lai làm tốt hơn.",
+"ab": [
+[
+"LSTM",
+"long short-term memory (neural network)",
+"mạng nơ-ron bộ nhớ dài–ngắn hạn"
+]
+]
 },
 "10.5194/hess-29-3589-2025": {
 "r": "R92",
@@ -1511,7 +2103,14 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-29-3589-2025",
 "en": "A distributed hybrid physics–AI framework that learns corrections to internal fluxes, aimed at high-resolution regionalised flood modelling.",
-"vi": "Một khung lai vật lý–AI phân bố học cách hiệu chỉnh các dòng nội tại, nhắm tới mô hình lũ vùng hóa độ phân giải cao."
+"vi": "Một khung lai vật lý–AI phân bố học cách hiệu chỉnh các dòng nội tại, nhắm tới mô hình lũ vùng hóa độ phân giải cao.",
+"ab": [
+[
+"AI",
+"artificial intelligence",
+"trí tuệ nhân tạo"
+]
+]
 },
 "10.1029/2024wr038928": {
 "r": "R93",
@@ -1525,7 +2124,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2024WR038928",
 "en": "Differentiable versions of the US National Water Model at about 37 km² resolution across the whole country.",
-"vi": "Các phiên bản khả vi của Mô hình Nước Quốc gia Hoa Kỳ ở độ phân giải khoảng 37 km² trên toàn quốc."
+"vi": "Các phiên bản khả vi của Mô hình Nước Quốc gia Hoa Kỳ ở độ phân giải khoảng 37 km² trên toàn quốc.",
+"ab": []
 },
 "10.1029/2025wr040414": {
 "r": "R94",
@@ -1539,7 +2139,19 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2025WR040414",
 "en": "A differentiable δHBV beat an LSTM on unseen events of 5-year return period and above, by more as events got rarer.",
-"vi": "Mô hình khả vi δHBV vượt LSTM với các trận lũ chưa thấy có chu kỳ lặp từ 5 năm trở lên, cách biệt càng lớn khi lũ càng hiếm."
+"vi": "Mô hình khả vi δHBV vượt LSTM với các trận lũ chưa thấy có chu kỳ lặp từ 5 năm trở lên, cách biệt càng lớn khi lũ càng hiếm.",
+"ab": [
+[
+"HBV",
+"Hydrologiska Byråns Vattenbalansavdelning (conceptual model)",
+"mô hình khái niệm HBV của Thụy Điển"
+],
+[
+"LSTM",
+"long short-term memory (neural network)",
+"mạng nơ-ron bộ nhớ dài–ngắn hạn"
+]
+]
 },
 "10.1029/2025wr041194": {
 "r": "R95",
@@ -1553,7 +2165,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2025WR041194",
 "en": "LSTMs pre-trained on 441 basins and fine-tuned on 36 data-poor ones: few-shot transfer learning, which still needs some target data.",
-"vi": "LSTM huấn luyện trước trên 441 lưu vực rồi tinh chỉnh trên 36 lưu vực thiếu dữ liệu: học chuyển giao ít mẫu, vẫn cần một phần dữ liệu đích."
+"vi": "LSTM huấn luyện trước trên 441 lưu vực rồi tinh chỉnh trên 36 lưu vực thiếu dữ liệu: học chuyển giao ít mẫu, vẫn cần một phần dữ liệu đích.",
+"ab": [
+[
+"LSTM",
+"long short-term memory (neural network)",
+"mạng nơ-ron bộ nhớ dài–ngắn hạn"
+]
+]
 },
 "10.5194/hess-30-757-2026": {
 "r": "R96",
@@ -1567,7 +2186,14 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-30-757-2026",
 "en": "On 218 Australian catchments, compares an LSTM post-processing a land-surface model with a standalone LSTM, including a spatially out-of-sample test.",
-"vi": "Trên 218 lưu vực ở Úc, so sánh LSTM hậu xử lý một mô hình bề mặt đất với LSTM đứng riêng, kể cả phép thử ngoài mẫu theo không gian."
+"vi": "Trên 218 lưu vực ở Úc, so sánh LSTM hậu xử lý một mô hình bề mặt đất với LSTM đứng riêng, kể cả phép thử ngoài mẫu theo không gian.",
+"ab": [
+[
+"LSTM",
+"long short-term memory (neural network)",
+"mạng nơ-ron bộ nhớ dài–ngắn hạn"
+]
+]
 },
 "10.3133/pp252": {
 "r": "R97",
@@ -1581,7 +2207,8 @@ window.REFS = {
 "m": "report",
 "doi": "10.3133/pp252",
 "en": "The origin of hydraulic geometry: width, depth and velocity vary with discharge as power functions, at a cross-section and downstream.",
-"vi": "Nguồn gốc của hình học thủy lực: độ rộng, độ sâu và vận tốc thay đổi theo lưu lượng dưới dạng hàm lũy thừa, tại một mặt cắt và dọc xuôi dòng."
+"vi": "Nguồn gốc của hình học thủy lực: độ rộng, độ sâu và vận tốc thay đổi theo lưu lượng dưới dạng hàm lũy thừa, tại một mặt cắt và dọc xuôi dòng.",
+"ab": []
 },
 "10.1061/jyceaj.0005119": {
 "r": "R98",
@@ -1595,7 +2222,8 @@ window.REFS = {
 "m": "journal discontinued",
 "doi": "10.1061/JYCEAJ.0005119",
 "en": "Variable-parameter Muskingum–Cunge routing, with parameters recomputed as discharge changes, at a small cost in mass conservation.",
-"vi": "Diễn toán Muskingum–Cunge tham số biến đổi, với tham số được tính lại khi lưu lượng thay đổi, đánh đổi một phần nhỏ khả năng bảo toàn khối lượng."
+"vi": "Diễn toán Muskingum–Cunge tham số biến đổi, với tham số được tính lại khi lưu lượng thay đổi, đánh đổi một phần nhỏ khả năng bảo toàn khối lượng.",
+"ab": []
 },
 "10.1016/s0022-1694(00)00278-x": {
 "r": "R99",
@@ -1609,7 +2237,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/S0022-1694(00)00278-X",
 "en": "A simple raster-based flood inundation model on a DEM, which still needs an inflow hydrograph, the very thing an ungauged basin lacks.",
-"vi": "Một mô hình ngập lụt dạng raster đơn giản trên DEM, vẫn cần đường quá trình dòng vào, chính là thứ lưu vực không có trạm đo thiếu."
+"vi": "Một mô hình ngập lụt dạng raster đơn giản trên DEM, vẫn cần đường quá trình dòng vào, chính là thứ lưu vực không có trạm đo thiếu.",
+"ab": [
+[
+"DEM",
+"digital elevation model",
+"mô hình số độ cao"
+]
+]
 },
 "10.1016/j.jhydrol.2006.09.021": {
 "r": "R100",
@@ -1623,7 +2258,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/j.jhydrol.2006.09.021",
 "en": "Derives at-a-station hydraulic geometry analytically for a power-law channel section, so a bed can be described by one shape exponent.",
-"vi": "Suy ra giải tích hình học thủy lực tại trạm cho mặt cắt lòng dẫn dạng lũy thừa, nên đáy sông có thể mô tả bằng một số mũ hình dạng."
+"vi": "Suy ra giải tích hình học thủy lực tại trạm cho mặt cắt lòng dẫn dạng lũy thừa, nên đáy sông có thể mô tả bằng một số mũ hình dạng.",
+"ab": []
 },
 "10.1016/j.rse.2008.03.018": {
 "r": "R101",
@@ -1637,7 +2273,24 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/j.rse.2008.03.018",
 "en": "Introduces HAND, height above the nearest drainage, as a terrain descriptor from SRTM in Amazonia.",
-"vi": "Đưa ra HAND, độ cao so với mạng tiêu thoát gần nhất, như một chỉ số địa hình từ SRTM ở Amazon."
+"vi": "Đưa ra HAND, độ cao so với mạng tiêu thoát gần nhất, như một chỉ số địa hình từ SRTM ở Amazon.",
+"ab": [
+[
+"HAND",
+"Height Above Nearest Drainage",
+"độ cao so với mạng tiêu thoát gần nhất"
+],
+[
+"SRTM",
+"Shuttle Radar Topography Mission",
+"nhiệm vụ đo địa hình bằng radar từ tàu con thoi"
+],
+[
+"DEM",
+"digital elevation model",
+"mô hình số độ cao"
+]
+]
 },
 "10.1016/j.jhydrol.2011.03.051": {
 "r": "R102",
@@ -1651,7 +2304,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/j.jhydrol.2011.03.051",
 "en": "Formalises HAND as a hydrologically relevant terrain model, normalising each cell's elevation to the drainage it flows to.",
-"vi": "Chính thức hóa HAND thành một mô hình địa hình có ý nghĩa thủy văn, chuẩn hóa cao độ mỗi ô theo ô tiêu thoát mà nó chảy về."
+"vi": "Chính thức hóa HAND thành một mô hình địa hình có ý nghĩa thủy văn, chuẩn hóa cao độ mỗi ô theo ô tiêu thoát mà nó chảy về.",
+"ab": [
+[
+"HAND",
+"Height Above Nearest Drainage",
+"độ cao so với mạng tiêu thoát gần nhất"
+]
+]
 },
 "10.1002/wrcr.20440": {
 "r": "R103",
@@ -1665,7 +2325,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1002/wrcr.20440",
 "en": "A global bankfull width and depth database from drainage-area regression: width was 8–62% off at nine rivers and depth 24% at two.",
-"vi": "Cơ sở dữ liệu toàn cầu về độ rộng và độ sâu bờ đầy từ hồi quy theo diện tích lưu vực: độ rộng lệch 8–62% ở chín sông và độ sâu lệch 24% ở hai sông."
+"vi": "Cơ sở dữ liệu toàn cầu về độ rộng và độ sâu bờ đầy từ hồi quy theo diện tích lưu vực: độ rộng lệch 8–62% ở chín sông và độ sâu lệch 24% ở hai sông.",
+"ab": []
 },
 "10.1002/hyp.10581": {
 "r": "R104",
@@ -1679,7 +2340,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1002/hyp.10581",
 "en": "A single HAND contour predicts inundation extent from terrain alone, with no flood observations.",
-"vi": "Một đường đồng mức HAND dự báo phạm vi ngập chỉ từ địa hình, không cần quan trắc lũ."
+"vi": "Một đường đồng mức HAND dự báo phạm vi ngập chỉ từ địa hình, không cần quan trắc lũ.",
+"ab": [
+[
+"HAND",
+"Height Above Nearest Drainage",
+"độ cao so với mạng tiêu thoát gần nhất"
+]
+]
 },
 "10.1038/nature20584": {
 "r": "R105",
@@ -1693,7 +2361,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1038/nature20584",
 "en": "The global surface-water occurrence map (the JRC layer); it gives occurrence, not bankfull extent.",
-"vi": "Bản đồ tần suất xuất hiện mặt nước toàn cầu (lớp JRC); nó cho tần suất xuất hiện, không phải phạm vi bờ đầy."
+"vi": "Bản đồ tần suất xuất hiện mặt nước toàn cầu (lớp JRC); nó cho tần suất xuất hiện, không phải phạm vi bờ đầy.",
+"ab": [
+[
+"JRC",
+"Joint Research Centre of the European Commission",
+"Trung tâm Nghiên cứu Chung của Ủy ban châu Âu"
+]
+]
 },
 "10.1016/j.envsoft.2017.01.006": {
 "r": "R106",
@@ -1707,7 +2382,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/j.envsoft.2017.01.006",
 "en": "A review of flood inundation models, empirical, hydrodynamic and simple conceptual, and of how their uncertainty is analysed.",
-"vi": "Tổng quan các mô hình ngập lụt, gồm thực nghiệm, thủy động lực và khái niệm đơn giản, cùng cách phân tích độ bất định của chúng."
+"vi": "Tổng quan các mô hình ngập lụt, gồm thực nghiệm, thủy động lực và khái niệm đơn giản, cùng cách phân tích độ bất định của chúng.",
+"ab": []
 },
 "10.1126/science.aat0636": {
 "r": "R107",
@@ -1721,7 +2397,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1126/science.aat0636",
 "en": "Maps the global extent of rivers and streams, the river-width layer used by gauge-free methods.",
-"vi": "Lập bản đồ phạm vi sông suối toàn cầu, lớp độ rộng sông mà các phương pháp không cần trạm đo sử dụng."
+"vi": "Lập bản đồ phạm vi sông suối toàn cầu, lớp độ rộng sông mà các phương pháp không cần trạm đo sử dụng.",
+"ab": []
 },
 "10.1016/j.jhydrol.2018.07.020": {
 "r": "R108",
@@ -1735,7 +2412,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/j.jhydrol.2018.07.020",
 "en": "Verifies the analytical bed-shape relations on 109 surveyed sections at 34 New Zealand reaches, and shows what one exponent can and cannot claim.",
-"vi": "Kiểm chứng các quan hệ hình dạng đáy giải tích trên 109 mặt cắt khảo sát tại 34 đoạn sông ở New Zealand, và cho thấy một số mũ có thể và không thể khẳng định điều gì."
+"vi": "Kiểm chứng các quan hệ hình dạng đáy giải tích trên 109 mặt cắt khảo sát tại 34 đoạn sông ở New Zealand, và cho thấy một số mũ có thể và không thể khẳng định điều gì.",
+"ab": []
 },
 "10.1029/2018wr023457": {
 "r": "R109",
@@ -1749,7 +2427,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2018WR023457",
 "en": "GeoFlood: fast HAND-based inundation mapping from lidar terrain, built for emergency response.",
-"vi": "GeoFlood: lập bản đồ ngập nhanh dựa trên HAND từ địa hình lidar, xây dựng cho ứng phó khẩn cấp."
+"vi": "GeoFlood: lập bản đồ ngập nhanh dựa trên HAND từ địa hình lidar, xây dựng cho ứng phó khẩn cấp.",
+"ab": [
+[
+"HAND",
+"Height Above Nearest Drainage",
+"độ cao so với mạng tiêu thoát gần nhất"
+]
+]
 },
 "10.1111/1752-1688.12661": {
 "r": "R110",
@@ -1763,7 +2448,19 @@ window.REFS = {
 "m": "",
 "doi": "10.1111/1752-1688.12661",
 "en": "Synthetic rating curves from HAND reach geometry, the closest precedent for turning terrain into flow, though it needed a calibrated HEC-RAS bottom shift and per-site roughness.",
-"vi": "Đường quan hệ tổng hợp từ hình học đoạn sông HAND, tiền lệ gần nhất cho việc biến địa hình thành dòng chảy, dù cần dịch đáy từ HEC-RAS đã hiệu chỉnh và độ nhám riêng từng vị trí."
+"vi": "Đường quan hệ tổng hợp từ hình học đoạn sông HAND, tiền lệ gần nhất cho việc biến địa hình thành dòng chảy, dù cần dịch đáy từ HEC-RAS đã hiệu chỉnh và độ nhám riêng từng vị trí.",
+"ab": [
+[
+"HAND",
+"Height Above Nearest Drainage",
+"độ cao so với mạng tiêu thoát gần nhất"
+],
+[
+"HEC-RAS",
+"Hydrologic Engineering Center's River Analysis System",
+"hệ thống phân tích sông của HEC (Hoa Kỳ)"
+]
+]
 },
 "10.1029/2019wr024837": {
 "r": "R111",
@@ -1777,7 +2474,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2019WR024837",
 "en": "Terrain-analysis enhancements to HAND inundation mapping, showing where its errors come from.",
-"vi": "Các cải tiến phân tích địa hình cho lập bản đồ ngập bằng HAND, chỉ ra sai số của nó đến từ đâu."
+"vi": "Các cải tiến phân tích địa hình cho lập bản đồ ngập bằng HAND, chỉ ra sai số của nó đến từ đâu.",
+"ab": [
+[
+"HAND",
+"Height Above Nearest Drainage",
+"độ cao so với mạng tiêu thoát gần nhất"
+]
+]
 },
 "10.1029/2019gl086405": {
 "r": "R112",
@@ -1791,7 +2495,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2019GL086405",
 "en": "Global reach-level bankfull width from machine learning reaches R² 0.81, where standard parameterisations capture only 30–40% of the variance.",
-"vi": "Độ rộng bờ đầy toàn cầu theo đoạn sông từ học máy đạt R² 0,81, trong khi các cách tham số hóa tiêu chuẩn chỉ giải thích 30–40% phương sai."
+"vi": "Độ rộng bờ đầy toàn cầu theo đoạn sông từ học máy đạt R² 0,81, trong khi các cách tham số hóa tiêu chuẩn chỉ giải thích 30–40% phương sai.",
+"ab": []
 },
 "10.1146/annurev-fluid-030121-113138": {
 "r": "R113",
@@ -1805,7 +2510,8 @@ window.REFS = {
 "m": "",
 "doi": "10.1146/annurev-fluid-030121-113138",
 "en": "The state of flood inundation prediction; ground discharge carries ±10–20% error in bank and up to ±40% out of bank.",
-"vi": "Hiện trạng dự báo ngập lụt; lưu lượng đo tại trạm mang sai số ±10–20% trong lòng dẫn và tới ±40% khi tràn bờ."
+"vi": "Hiện trạng dự báo ngập lụt; lưu lượng đo tại trạm mang sai số ±10–20% trong lòng dẫn và tới ±40% khi tràn bờ.",
+"ab": []
 },
 "10.1088/1748-9326/ac4d4f": {
 "r": "R114",
@@ -1819,7 +2525,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1088/1748-9326/ac4d4f",
 "en": "FABDEM, a 30 m global elevation map with forests and buildings removed.",
-"vi": "FABDEM, bản đồ cao độ toàn cầu 30 m đã loại bỏ rừng và nhà cửa."
+"vi": "FABDEM, bản đồ cao độ toàn cầu 30 m đã loại bỏ rừng và nhà cửa.",
+"ab": [
+[
+"FABDEM",
+"Forest And Buildings removed Copernicus DEM",
+"DEM Copernicus đã loại bỏ rừng và nhà cửa"
+]
+]
 },
 "10.1016/j.envsoft.2022.105565": {
 "r": "R115",
@@ -1833,7 +2546,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/j.envsoft.2022.105565",
 "en": "Compares two HAND implementations in two Iowa watersheds; raising the drainage threshold shrinks the mapped extent.",
-"vi": "So sánh hai cách triển khai HAND ở hai lưu vực tại Iowa; tăng ngưỡng tiêu thoát làm thu hẹp phạm vi ngập trên bản đồ."
+"vi": "So sánh hai cách triển khai HAND ở hai lưu vực tại Iowa; tăng ngưỡng tiêu thoát làm thu hẹp phạm vi ngập trên bản đồ.",
+"ab": [
+[
+"HAND",
+"Height Above Nearest Drainage",
+"độ cao so với mạng tiêu thoát gần nhất"
+]
+]
 },
 "10.5194/hess-28-1287-2024": {
 "r": "R116",
@@ -1847,7 +2567,19 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-28-1287-2024",
 "en": "For HAND flood mapping, DEM resolution from 3 to 20 m made no significant difference, but better elevation data improved about 80% of catchments.",
-"vi": "Với lập bản đồ ngập bằng HAND, độ phân giải DEM từ 3 đến 20 m không tạo khác biệt đáng kể, nhưng dữ liệu cao độ tốt hơn cải thiện khoảng 80% số lưu vực."
+"vi": "Với lập bản đồ ngập bằng HAND, độ phân giải DEM từ 3 đến 20 m không tạo khác biệt đáng kể, nhưng dữ liệu cao độ tốt hơn cải thiện khoảng 80% số lưu vực.",
+"ab": [
+[
+"HAND",
+"Height Above Nearest Drainage",
+"độ cao so với mạng tiêu thoát gần nhất"
+],
+[
+"DEM",
+"digital elevation model",
+"mô hình số độ cao"
+]
+]
 },
 "10.1029/2024wr038308": {
 "r": "R117",
@@ -1861,7 +2593,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1029/2024WR038308",
 "en": "GRIT, the first global river network to represent bifurcations, multi-threaded channels and deltas.",
-"vi": "GRIT, mạng sông toàn cầu đầu tiên thể hiện được các nhánh rẽ, lòng dẫn nhiều nhánh và châu thổ."
+"vi": "GRIT, mạng sông toàn cầu đầu tiên thể hiện được các nhánh rẽ, lòng dẫn nhiều nhánh và châu thổ.",
+"ab": [
+[
+"GRIT",
+"Global River Topology",
+"cấu trúc mạng sông toàn cầu"
+]
+]
 },
 "10.1016/j.jhydrol.2009.08.003": {
 "r": "R133",
@@ -1875,7 +2614,19 @@ window.REFS = {
 "m": "",
 "doi": "10.1016/j.jhydrol.2009.08.003",
 "en": "Decomposes NSE into correlation, variability and bias, showing why NSE calibration under-predicts peaks; the origin of KGE.",
-"vi": "Phân tách NSE thành tương quan, biến động và sai lệch, cho thấy vì sao hiệu chỉnh theo NSE dự báo thiếu đỉnh lũ; nguồn gốc của KGE."
+"vi": "Phân tách NSE thành tương quan, biến động và sai lệch, cho thấy vì sao hiệu chỉnh theo NSE dự báo thiếu đỉnh lũ; nguồn gốc của KGE.",
+"ab": [
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+],
+[
+"KGE",
+"Kling–Gupta efficiency",
+"hệ số hiệu quả Kling–Gupta"
+]
+]
 },
 "10.5194/hess-19-209-2015": {
 "r": "R125",
@@ -1889,7 +2640,14 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-19-209-2015",
 "en": "The original CAMELS hydrometeorology: 671 minimally disturbed US basins with daily forcing and a published model benchmark.",
-"vi": "Dữ liệu khí tượng thủy văn CAMELS gốc: 671 lưu vực Hoa Kỳ ít bị tác động, kèm dữ liệu khí tượng ngày và một mốc so sánh mô hình đã công bố."
+"vi": "Dữ liệu khí tượng thủy văn CAMELS gốc: 671 lưu vực Hoa Kỳ ít bị tác động, kèm dữ liệu khí tượng ngày và một mốc so sánh mô hình đã công bố.",
+"ab": [
+[
+"CAMELS",
+"Catchment Attributes and MEteorology for Large-sample Studies",
+"bộ dữ liệu thuộc tính lưu vực và khí tượng cho nghiên cứu mẫu lớn"
+]
+]
 },
 "10.5194/hess-21-5293-2017": {
 "r": "R126",
@@ -1903,7 +2661,14 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-21-5293-2017",
 "en": "The CAMELS catchment attributes for 671 US basins, the dataset behind most deep-learning and differentiable results.",
-"vi": "Bộ thuộc tính lưu vực CAMELS cho 671 lưu vực Hoa Kỳ, bộ dữ liệu đằng sau phần lớn kết quả học sâu và mô hình khả vi."
+"vi": "Bộ thuộc tính lưu vực CAMELS cho 671 lưu vực Hoa Kỳ, bộ dữ liệu đằng sau phần lớn kết quả học sâu và mô hình khả vi.",
+"ab": [
+[
+"CAMELS",
+"Catchment Attributes and MEteorology for Large-sample Studies",
+"bộ dữ liệu thuộc tính lưu vực và khí tượng cho nghiên cứu mẫu lớn"
+]
+]
 },
 "10.5194/hess-23-4323-2019": {
 "r": "R118",
@@ -1917,7 +2682,19 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-23-4323-2019",
 "en": "NSE and KGE cannot be compared directly: the mean-flow benchmark scores NSE 0 but KGE about −0.41.",
-"vi": "NSE và KGE không so sánh trực tiếp được: mốc lưu lượng trung bình cho NSE bằng 0 nhưng KGE khoảng −0,41."
+"vi": "NSE và KGE không so sánh trực tiếp được: mốc lưu lượng trung bình cho NSE bằng 0 nhưng KGE khoảng −0,41.",
+"ab": [
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+],
+[
+"KGE",
+"Kling–Gupta efficiency",
+"hệ số hiệu quả Kling–Gupta"
+]
+]
 },
 "10.5194/hess-23-4011-2019": {
 "r": "R119",
@@ -1931,7 +2708,14 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-23-4011-2019",
 "en": "Simple models on more than 1,100 British catchments reach median NSE 0.72–0.78, the bar a new method has to beat.",
-"vi": "Các mô hình đơn giản trên hơn 1.100 lưu vực ở Anh đạt NSE trung vị 0,72–0,78, mức mà một phương pháp mới phải vượt."
+"vi": "Các mô hình đơn giản trên hơn 1.100 lưu vực ở Anh đạt NSE trung vị 0,72–0,78, mức mà một phương pháp mới phải vượt.",
+"ab": [
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
 },
 "10.5194/essd-12-2459-2020": {
 "r": "R120",
@@ -1945,7 +2729,19 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/essd-12-2459-2020",
 "en": "CAMELS-GB: 671 British catchments with attributes for human management and discharge uncertainty.",
-"vi": "CAMELS-GB: 671 lưu vực ở Anh kèm các thuộc tính về quản lý của con người và độ bất định lưu lượng."
+"vi": "CAMELS-GB: 671 lưu vực ở Anh kèm các thuộc tính về quản lý của con người và độ bất định lưu lượng.",
+"ab": [
+[
+"CAMELS",
+"Catchment Attributes and MEteorology for Large-sample Studies",
+"bộ dữ liệu thuộc tính lưu vực và khí tượng cho nghiên cứu mẫu lớn"
+],
+[
+"CAMELS-GB",
+"CAMELS for Great Britain",
+"CAMELS cho Anh"
+]
+]
 },
 "10.5194/essd-13-3847-2021": {
 "r": "R121",
@@ -1959,7 +2755,19 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/essd-13-3847-2021",
 "en": "CAMELS-AUS: 222 Australian catchments, with rating-curve uncertainty for three-quarters of them; the default dataset for an Australian study.",
-"vi": "CAMELS-AUS: 222 lưu vực ở Úc, có độ bất định đường quan hệ cho ba phần tư số lưu vực; bộ dữ liệu mặc định cho một nghiên cứu ở Úc."
+"vi": "CAMELS-AUS: 222 lưu vực ở Úc, có độ bất định đường quan hệ cho ba phần tư số lưu vực; bộ dữ liệu mặc định cho một nghiên cứu ở Úc.",
+"ab": [
+[
+"CAMELS",
+"Catchment Attributes and MEteorology for Large-sample Studies",
+"bộ dữ liệu thuộc tính lưu vực và khí tượng cho nghiên cứu mẫu lớn"
+],
+[
+"CAMELS-AUS",
+"CAMELS for Australia",
+"CAMELS cho Úc"
+]
+]
 },
 "10.1038/s41597-023-01975-w": {
 "r": "R122",
@@ -1973,7 +2781,14 @@ window.REFS = {
 "m": "",
 "doi": "10.1038/s41597-023-01975-w",
 "en": "Caravan: 6,830 catchments from seven large-sample datasets in one format, with forcing re-derived from ERA5-Land.",
-"vi": "Caravan: 6.830 lưu vực từ bảy bộ dữ liệu mẫu lớn trong một định dạng, với dữ liệu khí tượng tái tạo từ ERA5-Land."
+"vi": "Caravan: 6.830 lưu vực từ bảy bộ dữ liệu mẫu lớn trong một định dạng, với dữ liệu khí tượng tái tạo từ ERA5-Land.",
+"ab": [
+[
+"ERA5-Land",
+"ECMWF Reanalysis v5, land component",
+"tái phân tích ECMWF thế hệ 5, thành phần đất liền"
+]
+]
 },
 "10.5194/hess-28-4219-2024": {
 "r": "R123",
@@ -1987,6 +2802,7 @@ window.REFS = {
 "m": "",
 "doi": "10.5194/hess-28-4219-2024",
 "en": "On 1,252 catchments, Caravan's re-derived forcing degraded calibration compared with the original national data.",
-"vi": "Trên 1.252 lưu vực, dữ liệu khí tượng tái tạo của Caravan làm giảm chất lượng hiệu chỉnh so với dữ liệu quốc gia gốc."
+"vi": "Trên 1.252 lưu vực, dữ liệu khí tượng tái tạo của Caravan làm giảm chất lượng hiệu chỉnh so với dữ liệu quốc gia gốc.",
+"ab": []
 }
 };

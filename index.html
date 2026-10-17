@@ -125,7 +125,7 @@
       <li><strong>&sect;3</strong> &mdash; all seven families side by side &mdash; read it before the family sections.</li>
       <li><strong>&sect;4&ndash;&sect;10</strong> &mdash; one section per family, in the order shown above.</li>
       <li><strong>&sect;11</strong> &mdash; the geometry layer: terrain, channel shape and the global datasets both satellite families depend on.</li>
-      <li><strong>&sect;12</strong> &mdash; the cross-cutting issues: large-sample data, benchmarking, metrics, uncertainty.</li>
+      <li><strong>&sect;12</strong> &mdash; data, benchmarks and uncertainty: large-sample datasets, metrics and uncertainty, which apply to every family.</li>
       <li><strong>&sect;13</strong> &mdash; open gaps, including where a conceptual inundation model fits.</li>
       <li><strong>&sect;14</strong> &mdash; where one particular research programme sits in all of this, and what to watch out for.</li>
       <li><strong>&sect;15&ndash;&sect;16</strong> &mdash; a ten-paper reading path, then the full reference list.</li>
@@ -143,7 +143,7 @@
 <section id="problem" data-title="The problem" data-n="01" hidden>
   <div class="card head">
     <p class="eyebrow">Section 01</p>
-    <h1>Discharge where there is no record</h1>
+    <h1>The problem: discharge where there is no record</h1>
     <div class="rule"></div>
   </div>
   <div class="card" data-vi="prob_lede">
@@ -1663,7 +1663,7 @@
 <section id="f4" data-title="Family 4 &middot; Remote sensing of the river" data-n="07" hidden>
   <div class="card head">
     <p class="eyebrow">Section 07 &middot; Family 4</p>
-    <h1>Observing the river from space</h1>
+    <h1>Remote sensing of the river from space</h1>
     <div class="rule"></div>
   </div>
   <div class="card" data-vi="f4_lede">
@@ -2844,10 +2844,10 @@
 </section>
 
 <!-- ============ 10 ============ -->
-<section id="geom" data-title="The geometry layer" data-n="11" hidden>
+<section id="geom" data-title="The geometry layer: terrain and channel shape" data-n="11" hidden>
   <div class="card head">
-    <p class="eyebrow">Section 11 &middot; Supporting layer</p>
-    <h1>The geometry layer</h1>
+    <p class="eyebrow">Section 11 &middot; Shared by Families 4 and 5</p>
+    <h1>The geometry layer: terrain and channel shape</h1>
     <div class="rule"></div>
   </div>
   <div class="card" data-vi="geom_lede">
@@ -3063,9 +3063,11 @@
   </div>
   <div class="card" data-vi="geom_outside">
     <h2>Why this sits outside the seven families</h2>
-    <p>The seven families are sorted by <em>what information reaches the ungauged basin</em>: a donor catchment, a regional relation, a physical prior, a satellite observation of the river, a proxy signal, a trained network. Geometry is information too, but it is of a different kind &mdash; it is static, it is global, and <strong>on its own it produces nothing</strong>. HAND plus a bed exponent plus a bankfull depth will not tell you the discharge of any river. Add one water observation and the same geometry converts it into an area, a depth and a volume.</p>
-    <p>That is exactly why it belongs in a review of ungauged-basin discharge rather than in a footnote. The limiting factor for Family&nbsp;5 is not the signal &mdash; optical and SAR water extent are now abundant &mdash; but the absence of units. The limiting factor for Family&nbsp;4 is not the flow law but the unobservable terms in it. Both constraints are geometric, and both are addressed by the same five layers.</p>
-    <p>It also marks where a <strong>conceptual inundation model</strong> sits, which &sect;13 takes up in full: such a model is built almost entirely from this layer &mdash; a HAND grid, a reach network, a bankfull geometry, a routing scheme &mdash; and uses it in the opposite direction, generating inundation from discharge rather than inferring discharge from inundation. The same prior, read backwards.</p>
+    <ul>
+      <li><strong>The families are sorted by what reaches the ungauged basin</strong>: a donor, a regional relation, a physical prior, a satellite view of the river, a proxy, a trained network. Geometry is static and global, and <strong>on its own it produces no discharge</strong>. Add one water observation and it gives an area, a depth and a volume.</li>
+      <li><strong>It removes the bottleneck of two families.</strong> Family&nbsp;5 has plenty of signal but no units; Family&nbsp;4 has a flow law with terms it cannot observe. Both gaps are geometric.</li>
+      <li><strong>It is what a conceptual inundation model is built from</strong> (HAND, reach network, bankfull geometry, routing), used in reverse: inundation from discharge rather than discharge from inundation (&sect;13).</li>
+    </ul>
   </div>
   <div class="card" data-vi="tab_geom3">
     <h2>The evidence</h2>
@@ -3101,10 +3103,13 @@
   </div>
   <div class="card" data-vi="geom_acc">
     <h2>How accurate is the prior, really?</h2>
-    <p>This is the question the section exists to answer, because every gauge-free geometry method inherits these errors whole. The honest answer is that the <em>horizontal</em> layers are good and the <em>vertical</em> ones are not.</p>
-    <p>Width is observable from space and has been checked: <a href="https://doi.org/10.1002/wrcr.20440" target="_blank" rel="noopener">Andreadis et al. 2013</a> reported errors of <span class="num">8&ndash;62%</span> against Landsat widths on nine major rivers at correlation <span class="num">0.88</span>, and <a href="https://doi.org/10.1029/2019GL086405" target="_blank" rel="noopener">Lin et al. 2020</a> found that state-of-the-art parameterisations capture only <span class="num">30&ndash;40%</span> of global width variance before machine learning raised that to R<sup>2</sup> <span class="num">0.81</span>. Depth is a different matter: <strong>it is never observed from space at all</strong>, so the bankfull depth in every global database is itself a hydraulic-geometry inference, and the confidence bounds that come with it are the only honest statement of what is known.</p>
-    <p>Terrain resolution turns out to matter less than one would expect. <a href="https://doi.org/10.5194/hess-28-1287-2024" target="_blank" rel="noopener">Aristizabal et al. 2024</a> varied DEM resolution across 3, 5, 10, 15 and 20&nbsp;m and found <strong>no significant overall effect on flood-extent quality</strong>, while higher-quality elevation data (lidar-derived 3DEP rather than NHDPlus HR) improved results in about <span class="num">80%</span> of catchments. The lesson is that <em>source quality</em> beats <em>grid spacing</em> &mdash; useful, because it means a geometry-based method does not need lidar everywhere to be defensible, and because it predicts that a resolution sensitivity test will come back flat.</p>
-    <p><a href="https://doi.org/10.1029/2019WR024837" target="_blank" rel="noopener">Garousi-Nejad et al. 2019</a> and <a href="https://doi.org/10.1016/j.envsoft.2022.105565" target="_blank" rel="noopener">Li et al. 2023</a> between them bound the terrain route from the other side: when HAND-based mapping is wrong, the error divides between a wrong discharge and a wrong synthetic rating curve, and there are identifiable configurations in which the curve misstates depth.</p>
+    <p>Every gauge-free geometry method inherits these errors. In short: <strong>the horizontal layers are good, the vertical ones are not.</strong></p>
+    <ul>
+      <li><strong>Width is checked against satellites.</strong> Global bankfull width was 8&ndash;62% off on nine major rivers, at correlation <span class="num">0.88</span> (<a href="https://doi.org/10.1002/wrcr.20440" target="_blank" rel="noopener">Andreadis et al. 2013</a>). Standard parameterisations capture only <span class="num">30&ndash;40%</span> of global width variance; machine learning raised that to R<sup>2</sup> <span class="num">0.81</span> (<a href="https://doi.org/10.1029/2019GL086405" target="_blank" rel="noopener">Lin et al. 2020</a>).</li>
+      <li><strong>Depth is never observed from space.</strong> Every global bankfull depth is itself an inference; its confidence bounds are all that is known.</li>
+      <li><strong>DEM source matters more than grid size.</strong> Resolution from 3 to 20&nbsp;m had no significant effect on flood-extent quality, while better elevation data (lidar 3DEP rather than NHDPlus HR) improved about <span class="num">80%</span> of catchments (<a href="https://doi.org/10.5194/hess-28-1287-2024" target="_blank" rel="noopener">Aristizabal et al. 2024</a>). Lidar is not needed everywhere, and a resolution test should come back flat.</li>
+      <li><strong>When HAND mapping is wrong</strong>, the error splits between a wrong discharge and a wrong synthetic rating curve, and some configurations reliably misstate depth (<a href="https://doi.org/10.1029/2019WR024837" target="_blank" rel="noopener">Garousi-Nejad et al. 2019</a>; <a href="https://doi.org/10.1016/j.envsoft.2022.105565" target="_blank" rel="noopener">Li et al. 2023</a>).</li>
+    </ul>
   </div>
   <div class="card" data-vi="geom_led">
     <h2>Where this layer stands</h2>
@@ -3161,10 +3166,10 @@
 </section>
 
 <!-- ============ 10 ============ -->
-<section id="crosscut" data-title="Cross-cutting: data, benchmarking, uncertainty" data-n="12" hidden>
+<section id="crosscut" data-title="Data, benchmarks and uncertainty" data-n="12" hidden>
   <div class="card head">
-    <p class="eyebrow">Section 12 &middot; Cross-cutting</p>
-    <h1>Cross-cutting: data, benchmarking, uncertainty</h1>
+    <p class="eyebrow">Section 12 &middot; Shared by all seven families</p>
+    <h1>Data, benchmarks and uncertainty</h1>
     <p class="sub">Data, benchmarking and uncertainty</p>
     <div class="rule"></div>
   </div>
@@ -3226,25 +3231,17 @@
   <div class="card" data-vi="cross_bench">
     <h2>Benchmarking and metrics</h2>
     <ul>
-      <li><strong>Where KGE came from</strong> (<a href="https://doi.org/10.1016/j.jhydrol.2009.08.003" target="_blank" rel="noopener">Gupta et al. 2009</a>). NSE combines correlation r, variability ratio &alpha; and bias. It peaks when &alpha; = r &lt; 1, so NSE calibration under-simulates variability and peaks. On 49 Austrian basins, NSE calibration kept &alpha; within 10% of one in <span class="num">18%</span> of basins; KGE calibration did so in all, at almost no cost in r. Report r, &alpha; and &beta; alongside NSE, because equal scores can hide different errors.</li>
-      <li><strong>NSE and KGE are not comparable</strong> (<a href="https://hess.copernicus.org/articles/23/4323/2019/" target="_blank" rel="noopener">Knoben et al. 2019</a>). The mean-flow predictor scores NSE = 0 but KGE &asymp; <strong><span class="num">&minus;0.41</span></strong>, so a KGE between &minus;0.41 and 0 still beats the benchmark. Evaluate against an explicit benchmark: &ldquo;better than <em>what</em>&rdquo; is the whole PUB question.</li>
-      <li><strong>What &ldquo;good&rdquo; looks like</strong> (<a href="https://hess.copernicus.org/articles/23/4011/2019/" target="_blank" rel="noopener">Lane et al. 2019</a>). Four simple FUSE structures on over <strong>1,100</strong> British catchments gave median NSE <span class="num">0.72&ndash;0.78</span>, better in the wetter west. A new method has to beat that.</li>
-      <li><strong>Same data for every method</strong> (<a href="https://hess.copernicus.org/articles/27/139/2023/" target="_blank" rel="noopener">Arsenault et al. 2023</a>). A comparison that gives one method more information is not informative.</li>
+      <li><strong>NSE under-predicts peaks; report its parts</strong> (<a href="https://doi.org/10.1016/j.jhydrol.2009.08.003" target="_blank" rel="noopener">Gupta et al. 2009</a>). NSE peaks when variability ratio &alpha; = r &lt; 1. On 49 Austrian basins, NSE calibration kept &alpha; near one in <span class="num">18%</span> of basins, KGE calibration in all. Give r, &alpha; and &beta; with any score. <span class="srcd">Read in full 17&nbsp;October&nbsp;2026.</span></li>
+      <li><strong>NSE and KGE are not comparable</strong> (<a href="https://hess.copernicus.org/articles/23/4323/2019/" target="_blank" rel="noopener">Knoben et al. 2019</a>). The mean-flow benchmark is NSE = 0 but KGE &asymp; <strong><span class="num">&minus;0.41</span></strong>. Always say &ldquo;better than <em>what</em>&rdquo;.</li>
+      <li><strong>The bar to beat</strong>: simple models on 1,100+ British catchments reach median NSE <span class="num">0.72&ndash;0.78</span> (<a href="https://hess.copernicus.org/articles/23/4011/2019/" target="_blank" rel="noopener">Lane et al. 2019</a>), and every method must get the same data (<a href="https://hess.copernicus.org/articles/27/139/2023/" target="_blank" rel="noopener">Arsenault et al. 2023</a>).</li>
     </ul>
-    <p class="srcd">Gupta et al. 2009 read in full 17&nbsp;October&nbsp;2026.</p>
     <h2>Uncertainty and equifinality</h2>
-    <p><strong>Signatures are uncertain, and averaging does not fix it</strong> (<a href="https://doi.org/10.1002/2015wr017635" target="_blank" rel="noopener">Westerberg et al. 2016</a>; 43 UK catchments, 40,000 sampled rating curves each). Median uncertainty is about <span class="num">&plusmn;10&ndash;15%</span> for base-flow index and mean flow and <span class="num">&plusmn;30&ndash;40%</span> for high- and low-flow signatures (Q<sub>99</sub> up to <span class="num">87%</span>). Rating-curve error is systematic, so a long record does not cancel it: mean flow carried <span class="num">&plusmn;30&ndash;40%</span> at three catchments. Leaving gauging uncertainty out of a regionalisation dropped reliability to <span class="num">18%</span>, against <span class="num">83&ndash;93%</span> with it, because <strong>gauging differences get read as differences in catchment behaviour</strong>. <span class="srcd">Read in full 17&nbsp;October&nbsp;2026.</span></p>
-    <p><strong>Donor choice matters; equifinality is not the cause</strong> (<a href="https://doi.org/10.1002/2013wr014898" target="_blank" rel="noopener">Arsenault and Brissette 2014</a>; 268 Quebec catchments, ten equal calibrations each). The paper states that &ldquo;equifinality does not contribute significantly to the overall uncertainty&rdquo;. What it does show:</p>
     <ul>
-      <li><strong>Average model outputs, not parameters</strong>; this also narrows the spread from parameter-set choice.</li>
-      <li><strong>Use four to seven donors.</strong> One donor is about 20 percentage points worse than two.</li>
-      <li><strong>Fewer descriptors are better.</strong> Four were optimal (water fraction, latitude, mean annual precipitation, longitude); basin area hurt.</li>
-      <li>Similarity beat proximity, which beat regression (median success at most <span class="num">0.38</span>).</li>
-      <li><strong>The ceiling is a <span class="num">75%</span> success rate</strong> (validation within 85% of calibration efficiency), and no basin attribute predicts which method works (all correlations below 0.3).</li>
+      <li><strong>The benchmark itself is uncertain</strong> (<a href="https://doi.org/10.1002/2015wr017635" target="_blank" rel="noopener">Westerberg et al. 2016</a>; 43 UK catchments). Signatures carry <span class="num">&plusmn;10&ndash;15%</span> (mean flow) to <span class="num">&plusmn;30&ndash;40%</span> (high and low flows), and a long record does not cancel it because rating error is systematic. Ignoring it dropped regionalisation reliability to <span class="num">18%</span> from <span class="num">83&ndash;93%</span>: <strong>gauging error gets read as catchment behaviour</strong>. <span class="srcd">Read in full 17&nbsp;October&nbsp;2026.</span></li>
+      <li><strong>Donor choice matters; equifinality does not</strong> (<a href="https://doi.org/10.1002/2013wr014898" target="_blank" rel="noopener">Arsenault and Brissette 2014</a>; 268 Quebec catchments: &ldquo;equifinality does not contribute significantly&rdquo;). Average model <em>outputs</em> from four to seven donors, use few descriptors (four was optimal), and expect at most <span class="num">75%</span> success. No basin attribute predicts which method works. <span class="srcd">Corrected 17&nbsp;October&nbsp;2026 from the full text.</span></li>
     </ul>
-    <p>Output averaging (<a href="https://doi.org/10.1029/2005wr004289" target="_blank" rel="noopener">McIntyre et al. 2005</a>; Zhang and Chiew 2009) is the practical response. <span class="srcd">Corrected 17&nbsp;October&nbsp;2026 from the full text; an earlier version named equifinality as the cause, which the paper argues against.</span></p>
     <h2>Incommensurability: the concept this review was missing</h2>
-    <p><a href="https://doi.org/10.1016/j.jhydrol.2005.07.007" target="_blank" rel="noopener">Beven (2005)</a>: what a model predicts and what an instrument measures are often <strong>not the same quantity</strong>, even under the same name, because of scale, support and heterogeneity. An inundation-derived signal and a gauged discharge are different quantities, not one quantity with different errors. Beven judges models against an <strong>effective observation error</strong> that absorbs this, which &ldquo;need not have zero mean or constant variance, nor need it be Gaussian&rdquo;. If no model falls inside it, that is itself the finding: structural, conceptual or data error. He also notes that distributed observations &ldquo;disappointingly&rdquo; do little to remove equifinality. <span class="srcd">Read in full 17&nbsp;October&nbsp;2026.</span></p>
+    <p>A model prediction and a measurement are often <strong>different quantities</strong> under the same name, because of scale, support and heterogeneity (<a href="https://doi.org/10.1016/j.jhydrol.2005.07.007" target="_blank" rel="noopener">Beven 2005</a>). An inundation-derived signal and gauged discharge are such a pair. Judge models against an <strong>effective observation error</strong> that need not be zero-mean or Gaussian; if no model fits inside it, that itself points to structural, conceptual or data error. <span class="srcd">Read in full 17&nbsp;October&nbsp;2026.</span></p>
   </div>
   <div class="card secrefs">
     <h2>References in this section</h2>
@@ -3381,10 +3378,10 @@
 
 <!-- ============ 13 ============ -->
 <!-- ============ 14 ============ -->
-<section id="stand" data-title="Where this work stands" data-n="14" hidden>
+<section id="stand" data-title="Where this research programme stands" data-n="14" hidden>
   <div class="card head">
     <p class="eyebrow">Section 14 &middot; Positioning</p>
-    <h1>Where this work stands, and what to watch</h1>
+    <h1>Where this research programme stands, and what to watch</h1>
     <div class="rule"></div>
   </div>
   <div class="card" data-vi="stand_lede">

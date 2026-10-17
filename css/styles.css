@@ -319,6 +319,28 @@ figcaption{font-family:var(--font-ui);font-size:11.5px;color:var(--ink-faint);ma
 .card.secrefs{background:var(--note-bg);border-color:var(--note-border)}
 .card.secrefs h2{font:700 11.5px/1.4 var(--font-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 11px}
 .refs.tight li{padding:8px 0;font-size:12.5px;grid-template-columns:34px minmax(0,1fr)}
+/* "Read these first" card and its pop-up summaries */
+.card.readfirst{border-color:var(--note-border);box-shadow:var(--note-shadow)}
+.card.readfirst h2{font:700 11.5px/1.4 var(--font-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 6px}
+.rflist{list-style:none;margin:6px 0 0;padding:0}
+.rfitem{display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:12px;align-items:center;padding:11px 0;border-bottom:1px solid var(--border);font-family:var(--font-ui);font-size:14px;line-height:1.5;margin:0}
+.rfitem:last-child{border-bottom:0}
+.rfitem .rn{font-size:12px;color:var(--ink-faint);font-variant-numeric:tabular-nums}
+.rfmain a{font-weight:700}
+.rfmain cite{color:var(--ink-faint);font-size:12.5px}
+.rfwhy{display:block;color:var(--ink-soft);font-size:13px}
+.rfbtn{flex:none;background:var(--accent-soft-bg);color:var(--accent);border:1px solid var(--note-border);border-radius:999px;cursor:pointer;font:600 10.5px/1 var(--font-ui);letter-spacing:.08em;text-transform:uppercase;padding:7px 12px;white-space:nowrap}
+.rfbtn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.modalbody .rfsum{padding:2px 6px 6px;font-size:16px;line-height:1.62;color:var(--ink)}
+.modalbody .rfsum h3{font:700 11.5px/1.4 var(--font-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:14px 0 8px}
+.modalbody .rfsum h3:first-child{margin-top:4px}
+.modalbody .rfsum ul{margin:0 0 6px;padding-left:1.2rem}
+.modalbody .rfsum li{margin-bottom:8px}
+.modalbody .rfsum p{margin:0;text-align:left}
+@media (max-width:560px){
+  .rfitem{grid-template-columns:34px minmax(0,1fr)}
+  .rfbtn{grid-column:2;justify-self:start}
+}
 
 .modal{position:fixed;inset:0;z-index:60;display:flex;align-items:center;justify-content:center;
   padding-top:max(14px,env(safe-area-inset-top,0px));padding-bottom:max(14px,env(safe-area-inset-bottom,0px));

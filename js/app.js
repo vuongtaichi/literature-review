@@ -230,7 +230,7 @@
     var card  = pane.parentNode;
     var other = pane.classList.contains('en') ? card.querySelector('.vi') : card.querySelector('.en');
     if (!other) return null;
-    var SEL = '.tablewrap, .mapwrap';
+    var SEL = '.tablewrap, .mapwrap, .rfsum';
     var mine   = Array.prototype.slice.call(pane.querySelectorAll(SEL));
     var theirs = Array.prototype.slice.call(other.querySelectorAll(SEL));
     var i = mine.indexOf(wrap);
@@ -244,6 +244,7 @@
   });
 
   function labelFor(wrap){
+    if (wrap.dataset.title) return wrap.dataset.title;
     var card = wrap.closest('.card');
     var h = card ? card.querySelector('h2') : null;
     var sec = wrap.closest('section');
@@ -256,6 +257,10 @@
     panel.style.width = '';
     var inner = bodyEl.firstElementChild;
     if (!inner) return;
+    if (inner.classList.contains('rfsum')){            // a read-first summary: reading width, not content width
+      panel.style.width = Math.min(720, window.innerWidth - 32) + 'px';
+      return;
+    }
     var el = inner.querySelector('table') || inner.querySelector('svg') || inner;
     var w;
     var pad = 34;                                    // .modalbody left + right padding
@@ -317,7 +322,9 @@
     shown = wrap;
     ttl.textContent = labelFor(wrap);
     bodyEl.innerHTML = '';
-    bodyEl.appendChild(wrap.cloneNode(true));
+    var copy = wrap.cloneNode(true);
+    copy.hidden = false;                              // .rfsum is hidden in the page
+    bodyEl.appendChild(copy);
     if (!modal.hidden) fit();
     var t = twinOf(wrap);
     lang.hidden = !t;
@@ -389,4 +396,12 @@
   }
   bind(document);
   window.__zoomBind = bind;
+
+  /* "Key points" on a read-first item opens that paper's summary. */
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest && e.target.closest('.rfbtn');
+    if (!btn) return;
+    var sum = btn.parentNode.querySelector('.rfsum');
+    if (sum) open(sum, btn);
+  });
 })();

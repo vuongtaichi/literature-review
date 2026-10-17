@@ -695,9 +695,9 @@
           <tr class="hi">
             <td><strong>5 &middot; Surrogate discharge</strong><br><span class="muted">&sect;08</span></td>
             <td>A <strong>proxy signal that merely correlates</strong> with discharge, used as the calibration target</td>
-            <td>A correlated satellite signal, climate forcing, and one mean-flow estimate</td>
+            <td>A satellite signal that tracks flow at the outlet, climate forcing, and a source of scale: a mean-flow estimate (C/M-ratio studies) or hydraulic geometry (width and altimetry studies)</td>
             <td>NSE <span class="num">0.54&ndash;0.78</span>; NSE and KGE both &gt;<span class="num">0.6</span> with no discharge data at all</td>
-            <td>Unitless signal; frozen or cloudy regions; the correlation failing at the site</td>
+            <td>Unitless signal; clouds blind optical sensors and ice distorts water-extent signals; no gauge at the outlet to confirm the signal tracks flow</td>
           </tr>
           <tr>
             <td><strong>6 &middot; Deep learning</strong><br><span class="muted">&sect;09</span></td>
@@ -768,11 +768,11 @@
           <tr class="hi">
             <td><strong>5. Surrogate discharge</strong></td>
             <td>Can a satellite signal that merely correlates with discharge replace the gauge record used for calibration?</td>
-            <td>Calibrate a conceptual model against a unitless satellite proxy &mdash; C/M ratio, width, altimetric level or inundation extent &mdash; with a hydrological signature supplying the missing scale</td>
-            <td>A satellite signal correlated with discharge at the site; climate forcing; a mean-flow estimate, e.g. from Budyko</td>
+            <td>Calibrate a conceptual model against a unitless satellite proxy &mdash; C/M ratio, width, altimetric level or inundation extent &mdash; with a mean-flow estimate or a hydraulic-geometry relation supplying the missing scale</td>
+            <td>A satellite signal that tracks flow at the basin outlet; climate forcing; a source of scale: a mean-flow estimate, e.g. from Budyko (C/M-ratio studies), or hydraulic geometry at the outlet (width and altimetry studies)</td>
             <td><ul><li>NSE <span class="num">0.54&ndash;0.78</span> (Yoon et al. 2022, <em>WRR</em>)</li><li>NSE and KGE both &gt; <span class="num">0.6</span> (Yoon et al. 2025, <em>EMS</em>)</li><li>NSE <span class="num">0.63/0.62</span> in small Tibetan rivers (Yu et al. 2023)</li></ul></td>
             <td>Needs no donor, no regional training sample and no rating curve &mdash; the widest applicability of any family here</td>
-            <td><ul><li>The signal is unitless</li><li>Coarse pixels relative to river width</li><li>Fails over frozen or cloud-covered regions</li><li>Depends on the proxy&ndash;discharge correlation actually holding at the site</li></ul></td>
+            <td><ul><li>The signal is unitless</li><li>Coarse pixels relative to river width</li><li>Clouds blind optical sensors (Landsat, MODIS); ice distorts water-extent and reflectance signals. SAR, passive microwave and altimetry see through cloud</li><li>Depends on the signal tracking flow at the outlet, which an ungauged basin has no gauge to confirm; the published tests were all run at gauged sites, and some screened sites on the correlation first</li></ul></td>
           </tr>
           <tr>
             <td><strong>6. Deep learning (LSTM)</strong></td>

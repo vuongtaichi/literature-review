@@ -363,6 +363,8 @@ figcaption{font-family:var(--font-ui);font-size:11.5px;color:var(--ink-faint);ma
 .modalbody tbody td:first-child{position:sticky;left:0;z-index:4;background:var(--card);box-shadow:inset -1px 0 0 var(--border)}
 .modalbody thead th:first-child{position:sticky;left:0;top:0;z-index:7;background:var(--accent-soft-bg);box-shadow:inset -1px 0 0 var(--border),inset 0 -1px 0 var(--border),0 1px 6px rgba(15,27,51,.10)}
 .modalbody thead th:first-child{z-index:6;left:0;position:sticky}
+/* the body has 16px side padding; pin the frozen first column to the panel edge so nothing shows through that strip */
+.modalbody tbody td:first-child,.modalbody thead th:first-child{left:-16px}
 .modalbody table{font-size:14.5px}
 .modalbody table.fitcols{table-layout:fixed;font-size:13.5px}
 .modalbody table.fitcols th,.modalbody table.fitcols td{min-width:0;overflow-wrap:anywhere;hyphens:auto}

@@ -270,12 +270,12 @@
       // a table stretches to whatever panel it is in, so size the panel from its own min-width
       var mw = parseFloat(getComputedStyle(el).minWidth);
       w = (isFinite(mw) && mw > 0) ? mw : el.scrollWidth;
-      // too wide for the window: shrink the columns in proportion so the whole table shows,
-      // down to 60% of its designed width (narrower than that, sideways scrolling is kinder than slivers)
-      if (w + pad > room){
-        var target = Math.max(room - pad, Math.min(w, Math.max(w * 0.6, 640)));
-        fitCols(el, target);
-        w = target;
+      // too wide for the window: shrink the columns in proportion so the whole table shows, but only
+      // when that makes it fit and keeps 60% of its designed width (and 640px). Otherwise (phones) it would
+      // scroll anyway, and squeezed columns only break words mid-word, so it keeps its designed widths.
+      if (w + pad > room && room - pad >= Math.max(w * 0.6, 640)){
+        fitCols(el, room - pad);
+        w = room - pad;
       }
     } else {
       w = Math.max(el.getBoundingClientRect().width, el.scrollWidth || 0);
@@ -286,8 +286,8 @@
     var over = bodyEl.scrollWidth - bodyEl.clientWidth;
     if (over > 1){
       if (w + over + pad <= room) panel.style.width = Math.ceil(w + over + pad) + 'px';
-      else if (!el.classList.contains('fitcols')){
-        var tg = Math.max(room - pad, Math.min(w + over, Math.max((w + over) * 0.6, 640)));
+      else if (!el.classList.contains('fitcols') && room - pad >= Math.max((w + over) * 0.6, 640)){
+        var tg = room - pad;
         panel.style.width = '';
         fitCols(el, tg);
         panel.style.width = Math.min(Math.ceil(tg + pad), room) + 'px';

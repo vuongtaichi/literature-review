@@ -85,7 +85,7 @@ a:hover{color:var(--accent-strong)}
   body.rail-open{overflow:hidden}
 }
 @media (max-width:999px) and (prefers-reduced-motion:reduce){.rail,.rail.open,.railbd{transition:none}}
-@media (max-width:999px){.navlist button{font-size:15px}.navlist button .n{font-size:13px}.topbar .now{font-size:14.5px}}
+@media (max-width:999px){.navlist button{font-size:15px;color:var(--sidebar-active-text)}.navlist button .n{font-size:13px}.topbar .now{font-size:14.5px;color:var(--sidebar-active-text)}}
 .rail::-webkit-scrollbar{width:8px}
 .rail::-webkit-scrollbar-thumb{background:rgba(160,180,255,.22);border-radius:99px}
 

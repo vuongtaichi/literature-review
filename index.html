@@ -825,6 +825,19 @@
     <h2>The decision in one paragraph</h2>
     <p>If a large regional training sample exists and you only need discharge, Family 6 or 7 will most likely win &mdash; and Family 7 if you also need internal states or extrapolation beyond the training climate. If the gauge network is sparse but the river is wide, Family 4 gives you an observation where nothing else does. If there is no donor, no training sample and no rating curve &mdash; the common case across much of Africa, central Asia and South America &mdash; Family 5 is the one that still functions. If you have a handful of neighbouring gauges and need an interpretable model with internal states, Family 1 remains the workhorse. Family 2 is the right choice when you need a flow statistic rather than a hydrograph, and neighbours are nested.</p>
   </div>
+
+  <div class="card" data-vi="cmp_f45">
+    <h2>Where Families 4 and 5 lead, and where they lag</h2>
+    <p class="lede">Families 4 and 5 observe the river itself, so they need no donor, no training sample and no gauge at the target. Their weakness is magnitude, not timing. &sect;07 and &sect;08 give the evidence in full.</p>
+    <p><span class="unv">These comparisons set results from different experiments side by side, as the tables above do. They show orders of magnitude, not a ranking.</span></p>
+    <ul>
+      <li><strong>Lead: skill with nothing borrowed.</strong> Real SWOT gives median correlation <span class="num">0.73</span> with no gauge (Andreadis et al. 2025), and remote sensing alone gave mean NSE <span class="num">0.54</span> over 130 catchments (Yoon et al. 2023). Family 1 reaches similar numbers only with donors, Family 6 only with hundreds of gauged catchments.</li>
+      <li><strong>Lead: the target river&rsquo;s own events</strong>, including floods and droughts, without extrapolating beyond a training range.</li>
+      <li><strong>Catching up: large samples and narrow rivers.</strong> Tests at 3,078 gauges (Lin et al. 2023); gauge-free estimates on rivers under 100&nbsp;m (Scherer et al. 2024; Hao et al. 2024).</li>
+      <li><strong>Lag: magnitude, priors, sampling, sample size.</strong> Median SWOT bias is 50%; success depends on the prior; small and flashy rivers may be under-sampled; Family 5&rsquo;s largest test is 130 catchments in one basin system.</li>
+      <li><strong>Converging.</strong> <span class="unv">Family 4 now borrows priors from Family 3 models, Family 1&rsquo;s regionalisation logic (geoBAM), Family 6 networks (Hao et al. 2024) and points toward Family 7 (Larnier et al. 2025).</span></li>
+    </ul>
+  </div>
   <!-- rf:start -->
   <div class="card readfirst" data-vi="rf_compare">
     <h2>Read these first</h2>
@@ -2080,6 +2093,19 @@
       <p>The observations that constrain discharge here (SAR extent, altimetric water level) are also what an inundation model predicts, so extent becomes a calibration target in basins with no rating curve.</p>
     </div>
   </div>
+  <div class="card" data-vi="f4_edge">
+    <h2>What Family 4 does that the other families cannot</h2>
+    <p class="lede">Family 4 is the only family that measures the target river itself, with no donor, no training sample and no gauge. That gives it four advantages over Families 1&ndash;3 and 6&ndash;7, and one large weakness.</p>
+    <p><span class="unv">Comparisons with other families set results from different experiments side by side (&sect;03). They show orders of magnitude, not a ranking.</span></p>
+    <ol class="whyq1">
+      <li><strong>It needs nothing borrowed.</strong> SWOT discharge is expected to get mean flow within 30% with no gauge (Alaska example) and flow dynamics within 15% for nearly all reaches (<a href="https://doi.org/10.1029/2021WR031614" target="_blank" rel="noopener">Durand et al. 2023</a>). Real SWOT data give median correlation <span class="num">0.73</span> with no gauge information (<a href="https://doi.org/10.1029/2024GL114185" target="_blank" rel="noopener">Andreadis et al. 2025</a>). Family 1 needs donor gauges nearby; Family 6 needs hundreds of gauged catchments to train on.</li>
+      <li><strong>It sees the target&rsquo;s own events.</strong> SWOT will give &ldquo;the event flow hydrographs for all of the world&rsquo;s ungaged basins&rdquo; (Durand et al. 2023). <span class="unv">An observation does not extrapolate beyond a training range, which is where a stand-alone LSTM has a measured ceiling (Baste et al. 2025, &sect;09); and it does not assume a donor relation still holds after land-use or climate change. That last point is untested (&sect;13).</span></li>
+      <li><strong>It recovers the channel, not only the flow.</strong> Assimilating SWOT levels into a river-network model infers &ldquo;inflow hydrographs, effective bathymetry, and spatially distributed friction&rdquo;, with discharge NRMSE 0.05&ndash;0.18, 18&ndash;71% better than the prior (<a href="https://doi.org/10.1029/2024WR038455" target="_blank" rel="noopener">Larnier et al. 2025</a>). No regionalisation or deep-learning method produces channel geometry.</li>
+      <li><strong>It now has large samples and reaches narrow rivers.</strong> At <span class="num">3,078</span> gauges, off-the-shelf inversion gave positive KGE at 27% (BAM) and 39% (geoBAM) of sites, 46&ndash;65% with richer priors (<a href="https://doi.org/10.1016/j.rse.2023.113489" target="_blank" rel="noopener">Lin et al. 2023</a>). Width alone fails below about 40&nbsp;m (<a href="https://doi.org/10.1029/2019WR025599" target="_blank" rel="noopener">Feng et al. 2019</a>), but gauge-free Manning with altimetry and PlanetScope reached median NRMSE 12% and NSE 0.56 on 27 reaches, many under 100&nbsp;m (<a href="https://doi.org/10.1016/j.rse.2024.114434" target="_blank" rel="noopener">Scherer et al. 2024</a>), and a reflectance model gave positive KGE in <span class="num">68.6%</span> of ungauged rivers, with no loss on braided ones (<a href="https://doi.org/10.1029/2023WR036880" target="_blank" rel="noopener">Hao et al. 2024</a>).</li>
+    </ol>
+    <p><strong>The weakness is magnitude.</strong> Real SWOT has median bias 50% and median NSE below zero (Andreadis et al. 2025), and the expected error is &ldquo;dominated by bias&rdquo; (Durand et al. 2023). Accuracy also depends on the prior (Lin et al. 2023), and hydrographs of &ldquo;smaller and flashier rivers&rdquo; may not be resolved. Where a large gauged sample exists, Family 6 still gives better discharge.</p>
+  </div>
+
   <div class="card" data-vi="f4_led">
     <h2>Where this family stands</h2>
     <div class="ledger">
@@ -2090,10 +2116,13 @@
         <li>Showed discharge, bathymetry and roughness can be inverted <strong>simultaneously</strong> &mdash; the actual ungauged condition &mdash; at 11&ndash;12% relative RMSE.</li>
         <li>Moved from synthetic to real: SWOT data give <strong>median correlation 0.73 using no gauge information</strong>, across roughly 11,274 ungauged locations already measurable.</li>
         <li>Reconstructed the submerged geometry that Manning-based retrieval assumes, from satellite morphology alone, at mean R<sup>2</sup> 0.87.</li>
+        <li><strong>Large-sample evaluation</strong>: 3,078 gauges, positive KGE at 27&ndash;39% of sites off the shelf and 46&ndash;65% with richer priors (Lin et al. 2023).</li>
+        <li><strong>Narrow rivers without a gauge</strong>: median NRMSE 12% and NSE 0.56 on reaches many under 100&nbsp;m (Scherer et al. 2024); positive KGE in 68.6% of ungauged rivers from reflectance (Hao et al. 2024).</li>
+        <li><strong>Network-scale assimilation</strong> of SWOT levels that also infers bathymetry and friction, 18&ndash;71% better than the prior (Larnier et al. 2025).</li>
       </ul></section>
       <section class="lim"><h3>LIMITATIONS SO FAR</h3><ul>
         <li><strong>Timing is good; magnitude is not.</strong> Median bias on real SWOT data is 50%, and bias dominated total error even in the synthetic benchmarks.</li>
-        <li>Rivers must be <strong>wide enough to resolve</strong>. Braided channels fail outright.</li>
+        <li><strong>Width-based methods need wide rivers</strong>: they fail below about 40&nbsp;m (Feng et al. 2019) and in braided channels. Altimetry with high-resolution imagery (Scherer et al. 2024) or reflectance (Hao et al. 2024, no loss on braided rivers) narrows this.</li>
         <li>The real-data record is short &mdash; SWOT contributes about three years so far.</li>
         <li>Accuracy depends more on the <strong>prior information</strong> supplied than on which algorithm is chosen, and those priors come from other rivers.</li>
         <li>Results are not comparable across studies; the field's own review deliberately declines to tabulate accuracies.</li>
@@ -2495,6 +2524,19 @@
     </ul>
     <p><span class="unv">My reading, not a stated result: the two halves fail in opposite directions. River signals track <em>shape</em> without magnitude; ET and storage pin <em>volume</em> without timing. That is the case for combining them.</span></p>
   </div>
+  <div class="card" data-vi="sur_edge">
+    <h2>What Family 5 does that the other families cannot</h2>
+    <p class="lede">Family 5 is the only family that calibrates a process model where no discharge record exists anywhere nearby, using a signal from the target river itself. That gives it four advantages, and its own set of limits.</p>
+    <p><span class="unv">Comparisons with other families set results from different experiments side by side (&sect;03). They show orders of magnitude, not a ranking.</span></p>
+    <ol class="whyq1">
+      <li><strong>Calibration without any gauge.</strong> SRM &ldquo;only uses remotely sensed data&rdquo; and reached mean NSE <span class="num">0.54</span> over 130 Murray&ndash;Darling catchments, with 70% above 0.4 (<a href="https://doi.org/10.1088/1748-9326/acb8cb" target="_blank" rel="noopener">Yoon et al. 2023</a>); the Bayesian version gave NSE 0.54&ndash;0.78 at reference stations (Yoon et al. 2022). Family 1 reaches a median of 0.54 in arid catchments only with donor gauges (Parajka et al. 2013), and Family 6 needs hundreds of gauged catchments.</li>
+      <li><strong>Extremes at the target.</strong> SRM &ldquo;effectively predicts high-flow and low-flow events related to flood and drought&rdquo; (Yoon et al. 2023). <span class="unv">The signal is observed, not learned from other basins, so it does not meet the training-range ceiling of a stand-alone LSTM (Baste et al. 2025).</span></li>
+      <li><strong>A full model, not just a number.</strong> <span class="unv">Because the satellite signal calibrates a conceptual model, the result is a continuous daily series with internal states, where Family 4 gives discharge only on overpass days and may miss &ldquo;smaller and flashier rivers&rdquo; (Durand et al. 2023).</span></li>
+      <li><strong>Scale without a gauge.</strong> The missing unit comes from climate through a Budyko mean flow (Yoon et al. 2024) rather than from a rating curve, and satellite gauging reaches now cover about 10,000 gauged and 370,000 ungauged reaches, with model-based ones &ldquo;often similar to gauge-based&rdquo; (<a href="https://doi.org/10.1016/j.rse.2019.111629" target="_blank" rel="noopener">Hou et al. 2020</a>).</li>
+    </ol>
+    <p><strong>The limits.</strong> The signal has no unit, and Budyko is compromised in arid regions (&sect;08 above). It works only where the proxy tracks flow at the site. And the evidence is thin beside Families 1 and 6: the largest test is 130 catchments in one basin system.</p>
+  </div>
+
   <div class="card" data-vi="sur_led">
     <h2>Where this family stands</h2>
     <div class="ledger">
@@ -2502,6 +2544,7 @@
         <li>Changed the <strong>calibration objective</strong> from discharge to an observable hydraulic variable, so a model needs no discharge record.</li>
         <li>Settled on a <strong>unitless, daily, all-weather signal</strong>, the C/M ratio.</li>
         <li>Bayesian calibration with quantified uncertainty: <strong>NSE 0.54&ndash;0.78</strong> at Australian reference stations.</li>
+        <li><strong>Tested at scale from remote sensing alone</strong>: mean NSE 0.54 over 130 Murray&ndash;Darling catchments, 70% above 0.4, including flood and drought events (Yoon et al. 2023).</li>
         <li>Reached <strong>small mountain rivers</strong> (NSE 0.63 and 0.62) with rank correlation and a water-balance filter.</li>
         <li>Took the unit <strong>from climate, not a gauge</strong>: a Budyko mean flow from long-term precipitation and PET.</li>
         <li>Became software (NSE and KGE above 0.6) and spread to ten multispectral products, SAR in 19 rivers in 13 countries, and altimetry on narrow rivers.</li>
@@ -2512,8 +2555,8 @@
         <li>Coarse pixels: the L-band product behind the packaged model is about 25&nbsp;km.</li>
         <li>Fails on <strong>frozen rivers, cloudy regions</strong> and rivers narrow relative to the pixel.</li>
         <li>Depends on the <strong>proxy&ndash;discharge correlation holding</strong> at the site; the most careful study screens for it first.</li>
-        <li>Small validation samples (three catchments in several key papers), mostly Australian.</li>
-        <li><strong>The two halves are barely combined</strong>: only <a href="https://doi.org/10.5194/hess-24-3331-2020" target="_blank" rel="noopener">Hulsman et al. (2020)</a> uses both, in one basin.</li>
+        <li><strong>Small samples beside Families 1 and 6</strong>: the largest test is 130 catchments in one basin system, several key papers use three, and the evidence is mostly Australian.</li>
+        <li><strong>The two halves are barely combined</strong>: only Hulsman et al. (2020) uses both, in one basin.</li>
       </ul></section>
     </div>
   </div>
@@ -3604,13 +3647,14 @@
     </div>
   </div>
   <div class="card" data-vi="gaps_five">
-    <h2>Five gaps I would add from this reading</h2>
+    <h2>Six gaps I would add from this reading</h2>
     <ul>
       <li><strong>The data paradox.</strong> The best methods (LSTM, differentiable) need CAMELS-scale samples from well-gauged countries, and the gauges behind them are shrinking: about <strong>two-thirds of national networks are in decline</strong>, a loss that &ldquo;will gradually erode the performance and reliability of AI-based tools&rdquo; (<a href="https://www.nature.com/articles/s44304-026-00237-0" target="_blank" rel="noopener">Olsson et al. 2026</a>). Transfer learning (&sect;09) and surrogate discharge (&sect;08) are two answers, never benchmarked against each other.</li>
       <li><strong>Discharge is not the only ungauged variable.</strong> The literature scores discharge at a point. Depth, velocity, inundation extent and flood timing are what applications need, and a discharge-trained network predicts none of them.</li>
       <li><strong>The two halves of the surrogate family are rarely combined.</strong> River signals get hydrograph <em>shape</em>; ET and storage constraints get <em>volume</em>. Only <a href="https://hess.copernicus.org/articles/24/3331/2020/" target="_blank" rel="noopener">Hulsman et al. (2020)</a> use both (GRACE, then altimetry, one Zambian basin). An imagery proxy plus an ET or storage constraint is untested.</li>
-      <li><strong>Satellites and models are loosely coupled.</strong> SWOT gets the dynamics with about 50% median bias (<a href="https://doi.org/10.1029/2024GL114185" target="_blank" rel="noopener">Andreadis et al. 2025</a>); assimilation is not yet routine.</li>
+      <li><strong>Satellites and models are loosely coupled.</strong> SWOT gets the dynamics with about 50% median bias (<a href="https://doi.org/10.1029/2024GL114185" target="_blank" rel="noopener">Andreadis et al. 2025</a>); network-scale assimilation now exists (Larnier et al. 2025, &sect;07) but is not yet routine.</li>
       <li><strong>No cross-family benchmark.</strong> No study compares all seven families on one dataset under one protocol; &sect;03 had to be assembled from incompatible experiments.</li>
+      <li><strong>Observation-based skill under change is untested.</strong> <span class="unv">Families 4 and 5 observe the river rather than transfer a relation from donors or training basins, so in principle they should hold up after land-use or climate change, where Families 1, 2 and 6 assume the relation still holds. No study in this review tests that.</span></li>
     </ul>
   </div>
   <div class="card" data-vi="gaps_niche">
@@ -3676,6 +3720,7 @@
     <h2>Where it sits</h2>
     <p>The programme is <strong>Family&nbsp;5 crossed with the geometry layer</strong>. It takes Family&nbsp;5&rsquo;s unitless satellite signal and supplies the scale from channel geometry (HAND, bankfull width and depth, a power-law bed), turning water area into a volume in m&sup3;, where <a href="https://doi.org/10.1016/j.jhydrol.2024.132049" target="_blank" rel="noopener">Yoon et al. (2024)</a> take it from climate through Budyko.</p>
     <p>It joins two published points: <a href="https://doi.org/10.1109/JSTARS.2026.3735355" target="_blank" rel="noopener">Han et al. (2026)</a> turn SAR extent into a streamflow inference but stop at the pixel count; <a href="https://doi.org/10.1111/1752-1688.12661" target="_blank" rel="noopener">Zheng et al. (2018b)</a> turn HAND geometry into a rating curve but use no satellite. Satellite extent in, terrain geometry as the transfer function, volume out: the join is the contribution.</p>
+    <p><strong>Geometry as the source of scale is gaining ground.</strong> <span class="unv">Magnitude is the main weakness of Families 4 and 5 (&sect;07, &sect;08), and the recent fixes for it all add geometry:</span> priors by river type (<a href="https://doi.org/10.1029/2020WR027949" target="_blank" rel="noopener">Brinkerhoff et al. 2020</a>), bathymetry from altimetry and imagery with a width-to-depth function (<a href="https://doi.org/10.1016/j.rse.2024.114434" target="_blank" rel="noopener">Scherer et al. 2024</a>), and bathymetry inferred along a river network (<a href="https://doi.org/10.1029/2024WR038455" target="_blank" rel="noopener">Larnier et al. 2025</a>). <span class="unv">That supports this programme&rsquo;s claim that geometry can replace climate as the source of scale. Scherer et al. 2024 is now the closest gauge-free precedent and the one to position against. For a SAR-area signal at low flow, where Han et al. 2026 report weak discrimination, note that reflectance beat width on narrow rivers (<a href="https://doi.org/10.1029/2023WR036880" target="_blank" rel="noopener">Hao et al. 2024</a>).</span></p>
     <p>It is also a <strong>conceptual inundation model</strong> (HAND, a reach network, bankfull geometry, variable-parameter Muskingum&ndash;Cunge routing) run forwards from discharge to inundation; the surrogate analysis runs it backwards. Keep the two directions distinct in the paper, because the synthetic validation depends on it.</p>
   </div>
   <div class="card" data-vi="tab_stand2">
@@ -3698,7 +3743,7 @@
     <h2>What this contributes to the gaps the literature names</h2>
     <p class="lede">The claims above are about whether the work holds up. This table is about whether it <em>matters</em> &mdash; each open gap the literature states, what this programme does about it, and how far that actually gets.</p>
     <p>Of the thirteen gaps below, the work <strong>addresses three directly</strong>, <strong>narrows four</strong>, <strong>opens a route into two</strong>, leaves <strong>one untested</strong> &mdash; and <strong>does not touch three</strong>. One of those three it currently makes worse, which is said plainly in the table rather than left out of it.</p>
-    <p>The gaps come from three places: the community&rsquo;s own list of unsolved problems (&sect;02), the AI-for-PUB review&rsquo;s stated gaps and the five this review adds to them (&sect;13), and limitations the surrogate papers write about themselves (&sect;08). Every source the gaps rest on has now been read in full, and the cells say so.</p>
+    <p>The gaps come from three places: the community&rsquo;s own list of unsolved problems (&sect;02), the AI-for-PUB review&rsquo;s stated gaps and the ones this review adds to them (&sect;13), and limitations the surrogate papers write about themselves (&sect;08). Every source the gaps rest on has now been read in full, and the cells say so.</p>
     <p class="scrollhint">Table scrolls sideways &rarr;</p>
   </div>
   <div class="card" data-vi="tab_gapmap">

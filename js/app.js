@@ -423,8 +423,8 @@
     return window.REFS[key.toLowerCase()] || null;
   }
   function refCard(d, vi){
-    var L = vi ? { lbl: 'Tài liệu tham khảo', know: 'Điều cần biết', rank: 'Xếp hạng', open: 'Mở bài báo' }
-               : { lbl: 'Reference', know: 'What to know', rank: 'Ranking', open: 'Open the paper' };
+    var L = vi ? { lbl: 'Tài liệu tham khảo', know: 'Điều cần biết' }
+               : { lbl: 'Reference', know: 'What to know' };
     var el = document.createElement('div');
     el.className = 'rfsum refcard';
     el.dataset.title = L.lbl + ' ' + d.r;

@@ -390,6 +390,8 @@ body.modal-open .hbar{z-index:70;left:0;right:0;margin-inline:auto}
 /* while a pop-up is open, the pill sits in a strip below the panel instead of over the table */
 body.modal-open:has(.hbar.on) .modal{padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}
 body.modal-open .hbar{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+/* phones and tablets: swiping scrolls tables, so no pill, and no strip reserved for it under a pop-up */
+@media (max-width:999px){.hbar,.hbar.on{display:none!important}body.modal-open:has(.hbar.on) .modal{padding-bottom:max(14px,env(safe-area-inset-bottom,0px))}}
 
 .fabs{position:fixed;z-index:35;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));display:flex;gap:10px}
 .fab{font-family:inherit;width:46px;height:46px;border-radius:50%;border:0;cursor:pointer;background:var(--fab-bg);color:var(--fab-fg);box-shadow:var(--fab-shadow);display:grid;place-items:center}

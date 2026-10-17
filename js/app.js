@@ -329,13 +329,20 @@
     var t = twinOf(wrap);
     lang.hidden = !t;
     if (t) lang.textContent = wrap.closest('.vi') ? 'English' : 'Ti\u1ebfng Vi\u1ec7t';
-    bodyEl.scrollLeft = wrap.scrollLeft;
+    if (!modal.hidden) resetScroll(wrap);
+  }
+  // figures always open at their top-left corner; tables keep the inline sideways position.
+  // Runs only while the pop-up is visible: a hidden element ignores scroll changes and keeps the old position.
+  function resetScroll(wrap){
+    bodyEl.scrollTop = 0;
+    bodyEl.scrollLeft = wrap.classList.contains('mapwrap') ? 0 : wrap.scrollLeft;
   }
   function open(wrap, trigger){
     opener = trigger || null;
     show(wrap);
     modal.hidden = false;
     fit();
+    resetScroll(wrap);
     document.body.classList.add('modal-open');
     if (window.__hbarSync) window.__hbarSync();
     xbtn.focus();

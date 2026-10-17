@@ -225,6 +225,7 @@
   xbtn.parentNode.insertBefore(lang, xbtn);
 
   function twinOf(wrap){
+    if (wrap.__twin) return wrap.__twin();            // a citation card builds its other-language twin
     var pane = wrap.closest('.en') || wrap.closest('.vi');
     if (!pane || !pane.parentNode) return null;
     var card  = pane.parentNode;
@@ -410,5 +411,45 @@
     if (!btn) return;
     var sum = btn.parentNode.querySelector('.rfsum');
     if (sum) open(sum, btn);
+  });
+
+  /* An in-text citation opens a card about the paper (window.REFS, js/refs-data.js) instead of leaving
+     the page. The DOI link inside the card, the §16 reference list and modified clicks still navigate. */
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function refFor(a){
+    var m = /^https:\/\/doi\.org\/(.+)$/.exec(a.getAttribute('href') || '');
+    if (!m || !window.REFS) return null;
+    var key; try { key = decodeURIComponent(m[1]); } catch (err) { key = m[1]; }
+    return window.REFS[key.toLowerCase()] || null;
+  }
+  function refCard(d, vi){
+    var L = vi ? { lbl: 'Tài liệu tham khảo', know: 'Điều cần biết', rank: 'Xếp hạng', open: 'Mở bài báo' }
+               : { lbl: 'Reference', know: 'What to know', rank: 'Ranking', open: 'Open the paper' };
+    var el = document.createElement('div');
+    el.className = 'rfsum refcard';
+    el.dataset.title = L.lbl + ' ' + d.r;
+    var badges = d.q ? '<span class="vmetric">' + esc(d.q) + '</span> <span class="vmetric">IF ' + esc(d.f) + '</span>'
+                     : (d.m ? '<span class="vmetric vneutral">' + esc(d.m) + '</span>' : '');
+    el.innerHTML =
+      '<p class="rc-title">' + esc(d.t) + '</p>' +
+      '<p class="rc-auth">' + esc(d.a) + ' (' + esc(d.y) + ')</p>' +
+      '<p class="rc-jour"><em>' + esc(d.j) + '</em>' + (d.d ? ' ' + esc(d.d) : '') + '</p>' +
+      (badges ? '<p class="rc-rank">' + badges + '</p>' : '') +
+      '<p class="rc-doi"><a href="https://doi.org/' + esc(d.doi) + '" target="_blank" rel="noopener">' + L.open + ' ↗ doi:' + esc(d.doi) + '</a></p>' +
+      '<h3>' + L.know + '</h3><p>' + esc(vi ? d.vi : d.en) + '</p>';
+    el.__twin = function(){ return refCard(d, !vi); };
+    return el;
+  }
+  document.addEventListener('click', function(e){
+    if (e.defaultPrevented || e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
+    var a = e.target.closest && e.target.closest('a[href^="https://doi.org/"]');
+    if (!a || a.closest('#refs') || a.closest('.refcard')) return;
+    var d = refFor(a);
+    if (!d) return;
+    e.preventDefault();
+    e.stopPropagation();
+    // inside the pop-up the table is a copy, so take the language from the card it was copied from
+    var vi = a.closest('#modalbody') ? !!(shown && shown.closest && shown.closest('.vi')) : !!a.closest('.vi');
+    open(refCard(d, vi), a);
   });
 })();

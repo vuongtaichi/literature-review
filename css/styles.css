@@ -339,6 +339,13 @@ figcaption{font-family:var(--font-ui);font-size:11.5px;color:var(--ink-faint);ma
 .modalbody .rfsum ul{margin:0 0 6px;padding-left:1.2rem}
 .modalbody .rfsum li{margin-bottom:8px}
 .modalbody .rfsum p{margin:0;text-align:left}
+/* citation card (js/app.js refCard) */
+.modalbody .refcard .rc-title{font-size:19px;font-weight:700;line-height:1.35;color:var(--ink);margin:2px 0 8px}
+.modalbody .refcard .rc-auth{color:var(--ink-soft);font-size:14.5px;margin:0 0 4px}
+.modalbody .refcard .rc-jour{font-size:15px;margin:0 0 8px}
+.modalbody .refcard .rc-rank{margin:0 0 10px}
+.modalbody .refcard .rc-rank .vmetric{margin-left:0;margin-right:4px}
+.modalbody .refcard .rc-doi{font:600 13.5px/1.4 var(--font-ui);margin:0 0 4px;overflow-wrap:anywhere}
 @media (max-width:560px){
   .rfitem{grid-template-columns:34px minmax(0,1fr)}
   .rfbtn{grid-column:2;justify-self:start}

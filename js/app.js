@@ -435,7 +435,7 @@
       '<p class="rc-auth">' + esc(d.a) + ' (' + esc(d.y) + ')</p>' +
       '<p class="rc-jour"><em>' + esc(d.j) + '</em>' + (d.d ? ' ' + esc(d.d) : '') + '</p>' +
       (badges ? '<p class="rc-rank">' + badges + '</p>' : '') +
-      '<p class="rc-doi"><a href="https://doi.org/' + esc(d.doi) + '" target="_blank" rel="noopener">' + L.open + ' ↗ doi:' + esc(d.doi) + '</a></p>' +
+      '<p class="rc-doi"><a href="https://doi.org/' + esc(d.doi) + '" target="_blank" rel="noopener">doi:' + esc(d.doi) + '</a></p>' +
       '<h3>' + L.know + '</h3><p>' + esc(vi ? d.vi : d.en) + '</p>';
     el.__twin = function(){ return refCard(d, !vi); };
     return el;

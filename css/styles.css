@@ -455,3 +455,5 @@ body.modal-open .hbar{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .dfree{background:#173a24;color:#8fe0a8;border-color:#2c6b40}:root:not([data-theme="light"]) .dpaid{background:#45300f;color:#ffc879;border-color:#7a5520}}
 :root[data-theme="dark"] .dfree{background:#173a24;color:#8fe0a8;border-color:#2c6b40}
 :root[data-theme="dark"] .dpaid{background:#45300f;color:#ffc879;border-color:#7a5520}
+/* KaTeX inline equations: keep them on one line and at the cell's text size */
+.katex{font-size:1em}

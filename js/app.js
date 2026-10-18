@@ -342,13 +342,7 @@
     bodyEl.scrollTop = 0;
     bodyEl.scrollLeft = wrap.classList.contains('mapwrap') ? 0 : wrap.scrollLeft;
   }
-  // A citation clicked inside an open pop-up stacks its card on top; Close (or Escape) then
-  // returns to the table or figure underneath, at the same scroll position.
-  var back = [];
-  var xLabel = xbtn.textContent;
-  function setX(){ xbtn.textContent = back.length ? 'Back' : xLabel; }
   function open(wrap, trigger){
-    if (!modal.hidden && shown) back.push({ wrap: shown, opener: opener, top: bodyEl.scrollTop, left: bodyEl.scrollLeft });
     opener = trigger || null;
     show(wrap);
     modal.hidden = false;
@@ -356,23 +350,12 @@
     resetScroll(wrap);
     document.body.classList.add('modal-open');
     if (window.__hbarSync) window.__hbarSync();
-    setX();
     xbtn.focus();
   }
   function close(){
-    if (back.length){                                 // step back to the pop-up underneath
-      var p = back.pop();
-      opener = p.opener;
-      show(p.wrap);
-      fit();
-      bodyEl.scrollTop = p.top; bodyEl.scrollLeft = p.left;
-      setX();
-      if (window.__hbarSync) window.__hbarSync();
-      return;
-    }
     modal.hidden = true;
     bodyEl.innerHTML = '';
-    document.body.classList.remove('modal-open');
+    if (rm.hidden) document.body.classList.remove('modal-open');
     if (window.__hbarSync) window.__hbarSync();
     if (opener && opener.focus) opener.focus();
     opener = null; shown = null; lang.hidden = true;
@@ -380,10 +363,12 @@
   }
 
   xbtn.addEventListener('click', close);
-  bd.addEventListener('click', function(){ back = []; close(); setX(); });
+  bd.addEventListener('click', close);
   window.addEventListener('resize', function(){ if (!modal.hidden) fit(); }, { passive: true });
   document.addEventListener('keydown', function(e){
-    if (e.key === 'Escape' && !modal.hidden){ e.preventDefault(); close(); }
+    if (e.key !== 'Escape') return;
+    if (!rm.hidden){ e.preventDefault(); closeRef(); }       // the citation window on top closes first
+    else if (!modal.hidden){ e.preventDefault(); close(); }
   });
   if (panel){
     panel.addEventListener('keydown', function(e){
@@ -426,6 +411,40 @@
   bind(document);
   window.__zoomBind = bind;
 
+  /* A citation opens its card in a second, smaller window. Over an open table or figure it sits on top,
+     and closing it leaves the pop-up underneath exactly where it was. */
+  var rm = document.createElement('div');
+  rm.className = 'modal refmodal'; rm.id = 'refmodal'; rm.hidden = true;
+  rm.innerHTML = '<div class="modalbd"></div><div class="modalpanel" role="dialog" aria-modal="true" aria-labelledby="refmodalttl">' +
+    '<div class="modalhead"><span id="refmodalttl"></span><button class="modallang" type="button"></button>' +
+    '<button class="modalx" type="button">' + xbtn.textContent + '</button></div><div class="modalbody" id="refmodalbody"></div></div>';
+  document.body.appendChild(rm);
+  var rmTtl = rm.querySelector('#refmodalttl'), rmBody = rm.querySelector('.modalbody');
+  var rmLang = rm.querySelector('.modallang'), rmX = rm.querySelector('.modalx');
+  var rmCard = null, rmOpener = null;
+  function showRef(card){
+    rmCard = card;
+    rmTtl.textContent = card.dataset.title;
+    rmBody.innerHTML = ''; rmBody.appendChild(card); rmBody.scrollTop = 0;
+    rmLang.textContent = card.__vi ? 'English' : 'Tiếng Việt';
+  }
+  function openRef(card, trigger){
+    rmOpener = trigger || null;
+    showRef(card);
+    rm.hidden = false;
+    document.body.classList.add('modal-open');
+    rmX.focus();
+  }
+  function closeRef(){
+    rm.hidden = true; rmBody.innerHTML = ''; rmCard = null;
+    if (modal.hidden) document.body.classList.remove('modal-open');
+    if (rmOpener && rmOpener.focus) rmOpener.focus({ preventScroll: true });   // keep the table where the reader left it
+    rmOpener = null;
+  }
+  rmLang.addEventListener('click', function(e){ e.stopPropagation(); if (rmCard) showRef(rmCard.__twin()); });
+  rmX.addEventListener('click', closeRef);
+  rm.querySelector('.modalbd').addEventListener('click', closeRef);
+
   /* "Key points" on a read-first item opens that paper's summary. */
   document.addEventListener('click', function(e){
     var btn = e.target.closest && e.target.closest('.rfbtn');
@@ -460,6 +479,7 @@
       '<h3>' + L.know + '</h3><p>' + esc(vi ? d.vi : d.en) + '</p>' +
       ((d.ab && d.ab.length) ? '<p class="rc-ab"><span class="rc-ablbl">' + (vi ? 'Chữ viết tắt' : 'Abbreviations') + '</span>' +
         d.ab.map(function(x){ return '<span><b>' + esc(x[0]) + '</b> ' + esc(vi ? x[2] : x[1]) + '</span>'; }).join('') + '</p>' : '');
+    el.__vi = vi;
     el.__twin = function(){ return refCard(d, !vi); };
     return el;
   }
@@ -473,6 +493,6 @@
     e.stopPropagation();
     // inside the pop-up the table is a copy, so take the language from the card it was copied from
     var vi = a.closest('#modalbody') ? !!(shown && shown.closest && shown.closest('.vi')) : !!a.closest('.vi');
-    open(refCard(d, vi), a);
+    openRef(refCard(d, vi), a);
   });
 })();

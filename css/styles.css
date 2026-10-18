@@ -443,3 +443,7 @@ body.modal-open .hbar{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
   section{animation:rise .24s ease-out}
   @keyframes rise{from{opacity:.35;transform:translateY(4px)}to{opacity:1;transform:none}}
 }
+/* citation card: its own smaller window, on top of any open table or figure pop-up */
+.modal.refmodal{z-index:80}
+.refmodal .modalbd{background:rgba(11,21,48,.38)}
+.refmodal .modalpanel{width:min(720px,100%)}

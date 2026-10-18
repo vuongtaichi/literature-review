@@ -457,3 +457,8 @@ body.modal-open .hbar{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
 :root[data-theme="dark"] .dpaid{background:#45300f;color:#ffc879;border-color:#7a5520}
 /* KaTeX inline equations: keep them on one line and at the cell's text size */
 .katex{font-size:1em}
+/* summary note under each §08 comparison table */
+.note.tblsum{margin-top:14px}
+.note.tblsum ul{margin:0;padding-left:1.15rem}
+.note.tblsum li{margin-bottom:7px;text-align:left}
+.note.tblsum li:last-child{margin-bottom:0}

@@ -462,3 +462,6 @@ body.modal-open .hbar{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
 .note.tblsum ul{margin:0;padding-left:1.15rem}
 .note.tblsum li{margin-bottom:7px;text-align:left}
 .note.tblsum li:last-child{margin-bottom:0}
+.note.tblsum > ul > li{margin-bottom:10px}
+.note.tblsum ul ul{margin:5px 0 0;padding-left:1.1rem;list-style:circle}
+.note.tblsum ul ul li{margin-bottom:4px}

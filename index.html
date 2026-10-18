@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&amp;display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
-<link rel="stylesheet" href="css/styles.css?v=20261018e">
+<link rel="stylesheet" href="css/styles.css?v=20261018f">
 </head>
 <body>
 
@@ -2539,11 +2539,10 @@
     <p><strong>The limits.</strong> The signal has no unit, and Budyko is compromised in arid regions (&sect;08 above). It works only where the proxy tracks flow at the site. And the evidence is thin beside Families 1 and 6: 130 catchments in one basin system is the largest test with good skill, and when Landsat water extent was tried on 671 Brazilian catchments, only 76 had a usable signal and 30% of those beat the benchmark (<a href="https://doi.org/10.1029/2023WR034875" target="_blank" rel="noopener">Meyer Oliveira et al. 2023</a>).</p>
   </div>
 
-  <div class="card wide" data-vi="sur_compare">
-    <h2>Comparing surrogates: river width, water extent and other signals</h2>
-    <p>The Family 5 papers whose main data source is satellite, grouped by what they use in place of measured discharge. The surrogate was checked in each paper’s full text; quartile and impact factor as in §16.</p>
+  <div class="card wide" data-vi="sur_cmp_width">
+    <h2>Comparing surrogates (1 of 3): river width</h2>
+    <p>The Family 5 papers whose main data source is satellite, grouped into three cards by what they use in place of measured discharge. The surrogate was checked in each paper’s full text; quartile and impact factor as in §16.</p>
     <p class="dlegend">Beside each satellite dataset: <span class="dcost dfree">free</span> can be downloaded at no cost today; <span class="dcost dpaid">paid</span> commercial images that must be bought.</p>
-    <h3>River width</h3>
     <p class="scrollhint">Table scrolls sideways &rarr;</p>
     <div class="tablewrap">
       <table class="w5 cw-sc8">
@@ -2557,8 +2556,12 @@
         </tbody>
       </table>
     </div>
-    <div class="note tblsum"><span class="lbl">Summary of this table</span><ul><li><strong>How the surrogate is derived.</strong> All five turn water area into a width. Sun et al. 2010, 2015 and 2018 trace the water by eye or by hand on JERS-1 radar or sub-metre optical images and divide the area by the reach length (effective width). Huang et al. 2020 and 2022 map water with MNDWI or NDWI and an Otsu threshold, then measure width at a cross-section (RivWidth or hand-drawn cross-sections).</li><li><strong>How it becomes discharge.</strong> No study fits width to a gauge. The Sun papers turn model flow into width with \(W = a\,Q^{b}\); Huang et al. 2022 turn width into flow with \(Q = a\,W^{b}\) (from Manning, \(b\) left free); Huang et al. 2020 combine width with water level, \(Q = c\,W\,(H + z)^{5/3}\). In every case the formula’s parameters are calibrated together with the hydrological model.</li><li><strong>Used to calibrate a hydrological model?</strong> Yes, all five: HYMOD (Sun 2010, 2015), a hydrological model coupled to hydraulic geometry under GLUE (Sun 2018), and CREST-RS (Huang 2020, 2022).</li><li><strong>Main limitations.</strong> Few images (four to sixteen per site), one cross-section per basin and one to four rivers per study. Width changes little with flow, so most model parameters stay loose (4 of 5 in Sun 2010) and low flow is underestimated (Sun 2015). Optical images are cut by cloud, so widths come mostly from the dry season (Huang 2020, 2022), and Huang 2020’s SWOT-like test still uses gauged water levels.</li></ul></div>
-    <h3>Surface water extent</h3>
+    <div class="note tblsum"><span class="lbl">Summary of this table</span><ul><li><strong>How the surrogate is derived.</strong> All five turn water area into a width:<ul><li>Sun et al. 2010, 2015 and 2018 trace the water by eye or by hand on JERS-1 radar or sub-metre optical images, then divide the area by the reach length (effective width).</li><li>Huang et al. 2020 and 2022 map water with MNDWI or NDWI and an Otsu threshold, then measure width at a cross-section (RivWidth or hand-drawn cross-sections).</li></ul></li><li><strong>How it becomes discharge.</strong> No study fits width to a gauge; the formula’s parameters are calibrated together with the hydrological model:<ul><li>Sun papers: model flow turned into width, \(W = a\,Q^{b}\).</li><li>Huang et al. 2022: width turned into flow, \(Q = a\,W^{b}\) (from Manning, \(b\) left free).</li><li>Huang et al. 2020: width combined with water level, \(Q = c\,W\,(H + z)^{5/3}\).</li></ul></li><li><strong>Used to calibrate a hydrological model?</strong> Yes, all five:<ul><li>HYMOD (Sun 2010, 2015).</li><li>A hydrological model coupled to hydraulic geometry under GLUE (Sun 2018).</li><li>CREST-RS (Huang 2020, 2022).</li></ul></li><li><strong>Main limitations.</strong><ul><li>Few images (four to sixteen per site), one cross-section per basin, one to four rivers per study.</li><li>Width changes little with flow, so most model parameters stay loose (4 of 5 in Sun 2010) and low flow is underestimated (Sun 2015).</li><li>Optical images are cut by cloud, so widths come mostly from the dry season (Huang 2020, 2022).</li><li>Huang 2020’s SWOT-like test still uses gauged water levels.</li></ul></li></ul></div>
+  </div>
+
+  <div class="card wide" data-vi="sur_cmp_extent">
+    <h2>Comparing surrogates (2 of 3): surface water extent</h2>
+    <p class="dlegend">Beside each satellite dataset: <span class="dcost dfree">free</span> can be downloaded at no cost today; <span class="dcost dpaid">paid</span> commercial images that must be bought.</p>
     <p class="scrollhint">Table scrolls sideways &rarr;</p>
     <div class="tablewrap">
       <table class="w5 cw-sc8">
@@ -2575,8 +2578,12 @@
         </tbody>
       </table>
     </div>
-    <div class="note tblsum"><span class="lbl">Summary of this table</span><ul><li><strong>How the surrogate is derived.</strong> Three routes. A threshold map of water pixels on Sentinel-1 radar (Ahmad and Kim 2019; Han et al. 2026). A water fraction in coarse cells with no threshold: GFDS passive microwave (Revilla-Romero et al. 2015, 2016) or MODIS band 7 (van Dijk et al. 2016; Hou et al. 2020). A ready-made Landsat water map, Global Surface Water (Meyer Oliveira et al. 2023). Liu et al. 2015 do not say how they mapped water.</li><li><strong>How it becomes discharge.</strong> No common method. A rating fitted to a gauge (Ahmad and Kim: \(Q = a\,N^{b}\); one variant of Revilla-Romero 2015; van Dijk’s reaches chosen by correlation with gauged flow). Cumulative distribution matching against gauged or global-model flow (Hou). A scaling calibrated with the model, with the scale from climate (Han). Manning from model flow to water area, the other way round (Liu). Rescaling into the range of simulated flow for assimilation (Revilla-Romero 2016). No conversion at all, only ranks or correlation (Meyer Oliveira; the raw-signal variant of Revilla-Romero 2015).</li><li><strong>Used to calibrate a hydrological model?</strong> Four of eight: LISFLOOD (Revilla-Romero 2015), SWAT (Liu 2015), HBV (Meyer Oliveira 2023) and GR4J inside SRM (Han 2026). Revilla-Romero 2016 assimilates the signal to update LISFLOOD’s states instead. Van Dijk 2016, Ahmad and Kim 2019 and Hou 2020 calibrate no model: they build a direct extent–discharge relation, which Hou can train on global-model flow where there is no gauge.</li><li><strong>Main limitations.</strong> The signal has no unit, so the size of the flow must come from somewhere else: a gauge, a global model or climate. Coarse pixels miss narrow rivers (only 76 of 671 Brazilian catchments usable; R below 0.7 for 86% of van Dijk’s rivers). Forest canopy (Revilla-Romero 2016), dams and levees (Ahmad and Kim; Han), low-flow and steep reaches (Han) and cloud on optical images all weaken it. Ahmad and Kim and van Dijk need gauged flow, as does one variant of Revilla-Romero 2015.</li></ul></div>
-    <h3>Other signals: microwave and reflectance ratios, water level, evaporation and storage</h3>
+    <div class="note tblsum"><span class="lbl">Summary of this table</span><ul><li><strong>How the surrogate is derived.</strong> Three routes, plus one paper that does not say:<ul><li>Threshold map of water pixels on Sentinel-1 radar: Ahmad and Kim 2019; Han et al. 2026.</li><li>Water fraction in coarse cells, no threshold: GFDS passive microwave (Revilla-Romero et al. 2015, 2016) or MODIS band 7 (van Dijk et al. 2016; Hou et al. 2020).</li><li>Ready-made Landsat water map, Global Surface Water: Meyer Oliveira et al. 2023.</li><li>Not stated: Liu et al. 2015.</li></ul></li><li><strong>How it becomes discharge.</strong> No common method:<ul><li>Rating fitted to a gauge: Ahmad and Kim (\(Q = a\,N^{b}\)); one variant of Revilla-Romero 2015; van Dijk’s reaches, chosen by correlation with gauged flow.</li><li>Cumulative distribution matching against gauged or global-model flow: Hou.</li><li>Scaling calibrated with the model, the scale from climate: Han.</li><li>Manning from model flow to water area, the other way round: Liu.</li><li>Rescaling into the range of simulated flow, for assimilation: Revilla-Romero 2016.</li><li>No conversion, only ranks or correlation: Meyer Oliveira; the raw-signal variant of Revilla-Romero 2015.</li></ul></li><li><strong>Used to calibrate a hydrological model?</strong> Four of eight:<ul><li>Calibrate a model: LISFLOOD (Revilla-Romero 2015), SWAT (Liu 2015), HBV (Meyer Oliveira 2023), GR4J inside SRM (Han 2026).</li><li>Assimilate instead, updating LISFLOOD’s states: Revilla-Romero 2016.</li><li>No model, a direct extent–discharge relation: van Dijk 2016, Ahmad and Kim 2019, Hou 2020 (Hou can train it on global-model flow where there is no gauge).</li></ul></li><li><strong>Main limitations.</strong><ul><li>The signal has no unit, so the size of the flow must come from elsewhere: a gauge, a global model or climate.</li><li>Coarse pixels miss narrow rivers: only 76 of 671 Brazilian catchments usable; R below 0.7 for 86% of van Dijk’s rivers.</li><li>Weakened by forest canopy (Revilla-Romero 2016), dams and levees (Ahmad and Kim; Han), low-flow and steep reaches (Han), and cloud on optical images.</li><li>Still need gauged flow: Ahmad and Kim, van Dijk, and one variant of Revilla-Romero 2015.</li></ul></li></ul></div>
+  </div>
+
+  <div class="card wide" data-vi="sur_cmp_other">
+    <h2>Comparing surrogates (3 of 3): other signals</h2>
+    <p class="dlegend">Beside each satellite dataset: <span class="dcost dfree">free</span> can be downloaded at no cost today; <span class="dcost dpaid">paid</span> commercial images that must be bought.</p>
     <p class="scrollhint">Table scrolls sideways &rarr;</p>
     <div class="tablewrap">
       <table class="w5 cw-sc8">
@@ -2595,7 +2602,7 @@
         </tbody>
       </table>
     </div>
-    <div class="note tblsum"><span class="lbl">Summary of this table</span><ul><li><strong>How the surrogate is derived.</strong> Ratio signals compare the river with a reference: passive-microwave C/M, a dry-land pixel over a river pixel (Brakenridge et al. 2007; Yoon et al. 2022); SMOS L-band SR, each day against the record’s own extremes (Yoon et al. 2023, 2024, 2025); Landsat near-infrared multiple pixel ratio (Yu et al. 2023); multispectral CM and CMW indices (Filippucci et al. 2025). Radar altimetry gives water level directly (Sun et al. 2011; Hulsman et al. 2020). Huang et al. 2020 use no river signal at all, only evaporation and GRACE storage.</li><li><strong>How it becomes discharge.</strong> A linear rating \(Q = a\cdot SR + b\) calibrated with the model, with the scale from a Budyko mean flow (Yoon 2023, 2024, 2025) or a prior on flow magnitude (Yoon 2022). A rating curve or cumulative distribution matching against gauged flow (Brakenridge; Filippucci). Model flow turned into water level by \(H = c\,Q^{f} + H_{0}\) (Sun 2011) or by Manning with terrain cross-sections (Hulsman). No conversion: rank correlation with a water-balance filter (Yu), or calibration on evaporation (Huang 2020).</li><li><strong>Used to calibrate a hydrological model?</strong> Eight of ten. Brakenridge 2007 and Filippucci 2025 calibrate no model: they turn the ratio into discharge directly, with a gauge rating or distribution matching.</li><li><strong>Main limitations.</strong> Ratio signals have no unit, so the size of the flow comes from Budyko, a prior or a gauge. Microwave pixels are about 25 km. Tests are small or in one region (three catchments; Australia only; one basin). Altimetry sees only large rivers where a track crosses. Optical ratios fail on frozen, cloudy and narrow rivers. Several still need a gauge (Brakenridge; Huang 2020; the calibrated variant of Filippucci).</li></ul></div>
+    <div class="note tblsum"><span class="lbl">Summary of this table</span><ul><li><strong>How the surrogate is derived.</strong> Three kinds of signal:<ul><li>Ratios that compare the river with a reference: passive-microwave C/M, a dry-land pixel over a river pixel (Brakenridge et al. 2007; Yoon et al. 2022); SMOS L-band SR, each day against the record’s own extremes (Yoon et al. 2023, 2024, 2025); Landsat near-infrared multiple pixel ratio (Yu et al. 2023); multispectral CM and CMW indices (Filippucci et al. 2025).</li><li>Water level straight from radar altimetry: Sun et al. 2011; Hulsman et al. 2020.</li><li>No river signal, only evaporation and GRACE storage: Huang et al. 2020.</li></ul></li><li><strong>How it becomes discharge.</strong> Four routes:<ul><li>Linear rating \(Q = a\cdot SR + b\) calibrated with the model, the scale from a Budyko mean flow (Yoon 2023, 2024, 2025) or a prior on flow magnitude (Yoon 2022).</li><li>Rating curve or cumulative distribution matching against gauged flow: Brakenridge; Filippucci.</li><li>Model flow turned into water level: \(H = c\,Q^{f} + H_{0}\) (Sun 2011), or Manning with terrain cross-sections (Hulsman).</li><li>No conversion: rank correlation with a water-balance filter (Yu); calibration on evaporation (Huang 2020).</li></ul></li><li><strong>Used to calibrate a hydrological model?</strong> Eight of ten:<ul><li>Calibrate a model: Yoon 2022, 2023, 2024, 2025; Yu 2023; Sun 2011; Hulsman 2020; Huang 2020.</li><li>No model, the ratio turned into discharge directly by a gauge rating or distribution matching: Brakenridge 2007; Filippucci 2025.</li></ul></li><li><strong>Main limitations.</strong><ul><li>Ratio signals have no unit, so the size of the flow comes from Budyko, a prior or a gauge.</li><li>Microwave pixels are about 25 km.</li><li>Small or single-region tests: three catchments; Australia only; one basin.</li><li>Altimetry sees only large rivers, where a track crosses.</li><li>Optical ratios fail on frozen, cloudy and narrow rivers.</li><li>Still need a gauge: Brakenridge; Huang 2020; the calibrated variant of Filippucci.</li></ul></li></ul></div>
   </div>
 
   <div class="card readfirst" data-vi="sur_ranked">
@@ -4399,12 +4406,12 @@
   </button>
 </div>
 
-<script src="js/app.js?v=20261018e"></script>
-<script src="js/vi-data.js?v=20261018e"></script>
-<script src="js/vi.js?v=20261018e"></script>
-<script src="js/refs-data.js?v=20261018e"></script>
+<script src="js/app.js?v=20261018f"></script>
+<script src="js/vi-data.js?v=20261018f"></script>
+<script src="js/vi.js?v=20261018f"></script>
+<script src="js/refs-data.js?v=20261018f"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
-<script defer src="js/math.js?v=20261018e"></script>
+<script defer src="js/math.js?v=20261018f"></script>
 </body>
 </html>

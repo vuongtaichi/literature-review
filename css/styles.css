@@ -465,3 +465,13 @@ body.modal-open .hbar{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
 .note.tblsum > ul > li{margin-bottom:10px}
 .note.tblsum ul ul{margin:5px 0 0;padding-left:1.1rem;list-style:circle}
 .note.tblsum ul ul li{margin-bottom:4px}
+/* is gauged discharge still needed? §08 comparison tables */
+.gcost{display:inline-block;padding:0 7px;border-radius:999px;font:700 10.5px/1.6 var(--font-ui);letter-spacing:.03em;white-space:nowrap;vertical-align:1px;margin-bottom:3px}
+.gnone{background:#dff1f6;color:#0b5f73;border:1px solid #9fd3e1}
+.gpart{background:#ece4fb;color:#5b3a9a;border:1px solid #c7b4ee}
+.gneed{background:#fde2e1;color:#a3261d;border:1px solid #f0aaa5}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gnone{background:#0f3540;color:#8fd6e8;border-color:#245d6c}:root:not([data-theme="light"]) .gpart{background:#2e2347;color:#c9b6f5;border-color:#55427f}:root:not([data-theme="light"]) .gneed{background:#46191a;color:#ffaaa3;border-color:#7d2f2b}}
+:root[data-theme="dark"] .gnone{background:#0f3540;color:#8fd6e8;border-color:#245d6c}
+:root[data-theme="dark"] .gpart{background:#2e2347;color:#c9b6f5;border-color:#55427f}
+:root[data-theme="dark"] .gneed{background:#46191a;color:#ffaaa3;border-color:#7d2f2b}
+td > .gcost{display:table;margin-bottom:5px}

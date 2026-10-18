@@ -218,6 +218,13 @@ table.cw-sur{table-layout:fixed;min-width:1865px;width:1865px}
 .tablewrap table.cw-sur th:nth-child(6),.tablewrap table.cw-sur td:nth-child(6),.modalbody table.cw-sur th:nth-child(6),.modalbody table.cw-sur td:nth-child(6){width:190px;min-width:0;overflow-wrap:anywhere}
 .tablewrap table.cw-sur th:nth-child(7),.tablewrap table.cw-sur td:nth-child(7),.modalbody table.cw-sur th:nth-child(7),.modalbody table.cw-sur td:nth-child(7){width:330px;min-width:0;overflow-wrap:anywhere}
 .tablewrap table.cw-sur th:nth-child(8),.tablewrap table.cw-sur td:nth-child(8),.modalbody table.cw-sur th:nth-child(8),.modalbody table.cw-sur td:nth-child(8){width:300px;min-width:0;overflow-wrap:anywhere}
+table.cw-sc{table-layout:fixed;min-width:1370px;width:1370px}
+.tablewrap table.cw-sc th:nth-child(1),.tablewrap table.cw-sc td:nth-child(1),.modalbody table.cw-sc th:nth-child(1),.modalbody table.cw-sc td:nth-child(1){width:170px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-sc th:nth-child(2),.tablewrap table.cw-sc td:nth-child(2),.modalbody table.cw-sc th:nth-child(2),.modalbody table.cw-sc td:nth-child(2){width:260px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-sc th:nth-child(3),.tablewrap table.cw-sc td:nth-child(3),.modalbody table.cw-sc th:nth-child(3),.modalbody table.cw-sc td:nth-child(3){width:240px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-sc th:nth-child(4),.tablewrap table.cw-sc td:nth-child(4),.modalbody table.cw-sc th:nth-child(4),.modalbody table.cw-sc td:nth-child(4){width:190px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-sc th:nth-child(5),.tablewrap table.cw-sc td:nth-child(5),.modalbody table.cw-sc th:nth-child(5),.modalbody table.cw-sc td:nth-child(5){width:270px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-sc th:nth-child(6),.tablewrap table.cw-sc td:nth-child(6),.modalbody table.cw-sc th:nth-child(6),.modalbody table.cw-sc td:nth-child(6){width:240px;min-width:0;overflow-wrap:anywhere}
 table.cw-cmp{table-layout:fixed;min-width:1560px;width:1560px}
 .tablewrap table.cw-cmp th:nth-child(1),.tablewrap table.cw-cmp td:nth-child(1),.modalbody table.cw-cmp th:nth-child(1),.modalbody table.cw-cmp td:nth-child(1){width:150px;min-width:0;overflow-wrap:anywhere}
 .tablewrap table.cw-cmp th:nth-child(2),.tablewrap table.cw-cmp td:nth-child(2),.modalbody table.cw-cmp th:nth-child(2),.modalbody table.cw-cmp td:nth-child(2){width:210px;min-width:0;overflow-wrap:anywhere}

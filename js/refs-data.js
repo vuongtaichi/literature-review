@@ -1015,6 +1015,53 @@ window.REFS = {
 "vi": "Hiệu chỉnh một mô hình quy mô lớn theo phạm vi mặt nước từ vệ tinh tại 30 vị trí, biến phạm vi mặt nước thành mục tiêu hiệu chỉnh.",
 "ab": []
 },
+"10.1016/j.envres.2015.01.002": {
+"r": "R143",
+"a": "Sun, W., Ishidaira, H., Bastola, S. and Yu, J.",
+"y": "2015",
+"t": "Estimating daily time series of streamflow using hydrological model calibrated based on satellite observations of river water surface width: Toward real world applications",
+"j": "Environmental Research",
+"d": "139, 36–45",
+"q": "Q1",
+"f": "7.7",
+"m": "",
+"doi": "10.1016/j.envres.2015.01.002",
+"en": "Calibrates HYMOD on river width from six JERS-1 radar images in the ungauged Irrawaddy; simulated monthly flow matched the 10-year average at NSE 0.957, but low flow was underestimated.",
+"vi": "Hiệu chỉnh HYMOD theo độ rộng sông từ sáu ảnh radar JERS-1 ở lưu vực Irrawaddy không có trạm đo; dòng chảy tháng mô phỏng khớp với trung bình 10 năm với NSE 0,957, nhưng dòng chảy thấp bị ước tính thiếu.",
+"ab": [
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
+},
+"10.1002/2015wr016971": {
+"r": "R146",
+"a": "Liu, G., Schwartz, F.W., Tseng, K.-H. and Shum, C.K.",
+"y": "2015",
+"t": "Discharge and water-depth estimates for ungauged rivers: Combining hydrologic, hydraulic, and inverse modeling with stage and water-area measurements from satellites",
+"j": "Water Resources Research",
+"d": "51(8), 6017–6035",
+"q": "Q1",
+"f": "6.3",
+"m": "",
+"doi": "10.1002/2015WR016971",
+"en": "Calibrates SWAT on ENVISAT water level and Landsat water area through a Manning channel model on the Red River: daily NSE 0.758, against 0.469 with area alone, 0.717 with level alone and 0.845 with gauged flow.",
+"vi": "Hiệu chỉnh SWAT theo mực nước ENVISAT và diện tích mặt nước Landsat qua một mô hình lòng dẫn Manning trên sông Red River: NSE ngày 0,758, so với 0,469 khi chỉ dùng diện tích, 0,717 khi chỉ dùng mực nước và 0,845 khi dùng lưu lượng đo.",
+"ab": [
+[
+"SWAT",
+"Soil and Water Assessment Tool",
+"công cụ đánh giá đất và nước SWAT"
+],
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
+},
 "10.1002/2015wr018545": {
 "r": "R53",
 "a": "van Dijk, A.I.J.M., Brakenridge, G.R., Kettner, A.J., Beck, H.E., De Groeve, T. and Schellekens, J.",
@@ -1029,6 +1076,74 @@ window.REFS = {
 "en": "River gauging from optical and passive-microwave imagery worldwide, which works poorly in arid regions “where flow pulses are few and recede rapidly”.",
 "vi": "Đo lưu lượng sông từ ảnh quang học và vi ba thụ động trên toàn cầu, cho kết quả kém ở vùng khô hạn “nơi các xung dòng chảy ít và rút nhanh”.",
 "ab": []
+},
+"10.1016/j.jhydrol.2016.10.041": {
+"r": "R149",
+"a": "Revilla-Romero, B., Wanders, N., Burek, P., Salamon, P. and de Roo, A.",
+"y": "2016",
+"t": "Integrating remotely sensed surface water extent into continental scale hydrology",
+"j": "Journal of Hydrology",
+"d": "543, 659–670",
+"q": "Q1",
+"f": "7.3",
+"m": "",
+"doi": "10.1016/j.jhydrol.2016.10.041",
+"en": "Assimilates GFDS surface-water extent into LISFLOOD with an ensemble Kalman filter across Africa and South America: NSE improved at 61 of 101 stations, worst under closed forest.",
+"vi": "Đồng hóa diện tích mặt nước GFDS vào LISFLOOD bằng bộ lọc Kalman tổ hợp trên châu Phi và Nam Mỹ: NSE cải thiện ở 61 trong 101 trạm, kém nhất dưới tán rừng kín.",
+"ab": [
+[
+"GFDS",
+"Global Flood Detection System",
+"Hệ thống Phát hiện Lũ Toàn cầu"
+],
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
+},
+"10.1016/j.rse.2018.05.020": {
+"r": "R144",
+"a": "Sun, W., Fan, J., Wang, G., Ishidaira, H., Bastola, S., Yu, J. and 4 co-authors",
+"y": "2018",
+"t": "Calibrating a hydrological model in a regional river of the Qinghai–Tibet plateau using river water width determined from high spatial resolution satellite images",
+"j": "Remote Sensing of Environment",
+"d": "214, 100–114",
+"q": "Q1",
+"f": "12.3",
+"m": "",
+"doi": "10.1016/j.rse.2018.05.020",
+"en": "Calibrates a model on river width from four high-resolution commercial images on the upper Yalongjiang, with no gauge data: NSE 0.643 in calibration and 0.558 in validation.",
+"vi": "Hiệu chỉnh mô hình theo độ rộng sông từ bốn ảnh thương mại độ phân giải cao trên thượng nguồn Yalongjiang, không dùng số liệu trạm đo: NSE 0,643 khi hiệu chỉnh và 0,558 khi kiểm định.",
+"ab": [
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
+},
+"10.1016/j.jag.2019.101930": {
+"r": "R148",
+"a": "Ahmad, W. and Kim, D.",
+"y": "2019",
+"t": "Estimation of flow in various sizes of streams using the Sentinel-1 Synthetic Aperture Radar (SAR) data in Han River Basin, Korea",
+"j": "International Journal of Applied Earth Observation and Geoinformation",
+"d": "83, 101930",
+"q": "Q1",
+"f": "8.6",
+"m": "",
+"doi": "10.1016/j.jag.2019.101930",
+"en": "Relates Sentinel-1 water area to flow at 15 Korean stations: a power law with R 0.68–0.98 (mean 0.89) at 13 of them, failing where dams control the flow.",
+"vi": "Liên hệ diện tích mặt nước Sentinel-1 với dòng chảy tại 15 trạm ở Hàn Quốc: luật lũy thừa với R 0,68–0,98 (trung bình 0,89) tại 13 trạm, thất bại nơi đập điều tiết dòng chảy.",
+"ab": [
+[
+"SAR",
+"synthetic aperture radar",
+"radar khẩu độ tổng hợp"
+]
+]
 },
 "10.1029/2019wr026085": {
 "r": "R54",
@@ -1138,6 +1253,27 @@ window.REFS = {
 ]
 ]
 },
+"10.1016/j.rse.2022.113030": {
+"r": "R145",
+"a": "Huang, Q., Long, D., Han, Z. and Han, P.",
+"y": "2022",
+"t": "High-resolution satellite images combined with hydrological modeling derive river discharge for headwaters: A step toward discharge estimation in ungauged basins",
+"j": "Remote Sensing of Environment",
+"d": "277, 113030",
+"q": "Q1",
+"f": "12.3",
+"m": "",
+"doi": "10.1016/j.rse.2022.113030",
+"en": "Calibrates CREST-RS on river widths from high-resolution and Landsat images in four Tibetan Plateau headwaters about 100 m wide: NSE up to 0.8, above 0.5 overall.",
+"vi": "Hiệu chỉnh CREST-RS theo độ rộng sông từ ảnh độ phân giải cao và Landsat ở bốn sông đầu nguồn trên cao nguyên Tây Tạng rộng khoảng 100 m: NSE tới 0,8, nhìn chung trên 0,5.",
+"ab": [
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
+},
 "10.1016/j.jhydrol.2023.129158": {
 "r": "R59",
 "a": "Yu, Z., Wu, J., Yao, H., Chen, X. and Cai, Y.",
@@ -1177,6 +1313,27 @@ window.REFS = {
 "NSE",
 "Nash–Sutcliffe efficiency",
 "hệ số hiệu quả Nash–Sutcliffe"
+]
+]
+},
+"10.1029/2023wr034875": {
+"r": "R147",
+"a": "Meyer Oliveira, A., van Meerveld, H.J., Vis, M. and Seibert, J.",
+"y": "2023",
+"t": "Assessment of the Value of Remotely Sensed Surface Water Extent Data for the Calibration of a Lumped Hydrological Model",
+"j": "Water Resources Research",
+"d": "59(11), e2023WR034875",
+"q": "Q1",
+"f": "6.3",
+"m": "",
+"doi": "10.1029/2023WR034875",
+"en": "Tests Landsat water extent for calibrating HBV at 671 Brazilian catchments: only 76 had extent large and variable enough, and 30% of those beat the benchmark, limited mainly by coarse pixels.",
+"vi": "Thử diện tích mặt nước Landsat để hiệu chỉnh HBV trên 671 lưu vực ở Brazil: chỉ 76 lưu vực có diện tích đủ lớn và đủ biến động, và 30% trong số đó vượt mốc chuẩn, bị giới hạn chủ yếu bởi điểm ảnh thô.",
+"ab": [
+[
+"HBV",
+"Hydrologiska Byråns Vattenbalansavdelning (conceptual model)",
+"mô hình khái niệm HBV của Thụy Điển"
 ]
 ]
 },

@@ -1258,8 +1258,8 @@ window.REFS = {
 "f": "6.3",
 "m": "",
 "doi": "10.1109/JSTARS.2026.3735355",
-"en": "Sentinel-1 SAR extent drives streamflow inference in 19 small and complex rivers, with median NSE 0.47 and 0.53, weaker in persistently low-flow reaches.",
-"vi": "Phạm vi ngập Sentinel-1 SAR dùng để suy luận dòng chảy ở 19 sông nhỏ và phức tạp, NSE trung vị 0,47 và 0,53, kém hơn ở các đoạn thường xuyên dòng chảy thấp.",
+"en": "Sentinel-1 water extent tracks flow across 19 rivers (median correlation 0.71, but only 0.28 for changes between images); driving a model gave NSE 0.47 and 0.53 in two basins.",
+"vi": "Phạm vi nước Sentinel-1 bám theo dòng chảy trên 19 sông (tương quan trung vị 0,71, nhưng chỉ 0,28 với biến đổi giữa các ảnh); dùng để điều khiển mô hình cho NSE 0,47 và 0,53 ở hai lưu vực.",
 "ab": [
 [
 "SAR",

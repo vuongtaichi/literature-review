@@ -474,4 +474,4 @@ body.modal-open .hbar{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
 :root[data-theme="dark"] .gnone{background:#0f3540;color:#8fd6e8;border-color:#245d6c}
 :root[data-theme="dark"] .gpart{background:#2e2347;color:#c9b6f5;border-color:#55427f}
 :root[data-theme="dark"] .gneed{background:#46191a;color:#ffaaa3;border-color:#7d2f2b}
-td > .gcost{display:table;margin-bottom:5px}
+td > .gcost{display:block;width:fit-content;margin-bottom:5px}

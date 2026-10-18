@@ -342,7 +342,13 @@
     bodyEl.scrollTop = 0;
     bodyEl.scrollLeft = wrap.classList.contains('mapwrap') ? 0 : wrap.scrollLeft;
   }
+  // A citation clicked inside an open pop-up stacks its card on top; Close (or Escape) then
+  // returns to the table or figure underneath, at the same scroll position.
+  var back = [];
+  var xLabel = xbtn.textContent;
+  function setX(){ xbtn.textContent = back.length ? 'Back' : xLabel; }
   function open(wrap, trigger){
+    if (!modal.hidden && shown) back.push({ wrap: shown, opener: opener, top: bodyEl.scrollTop, left: bodyEl.scrollLeft });
     opener = trigger || null;
     show(wrap);
     modal.hidden = false;
@@ -350,9 +356,20 @@
     resetScroll(wrap);
     document.body.classList.add('modal-open');
     if (window.__hbarSync) window.__hbarSync();
+    setX();
     xbtn.focus();
   }
   function close(){
+    if (back.length){                                 // step back to the pop-up underneath
+      var p = back.pop();
+      opener = p.opener;
+      show(p.wrap);
+      fit();
+      bodyEl.scrollTop = p.top; bodyEl.scrollLeft = p.left;
+      setX();
+      if (window.__hbarSync) window.__hbarSync();
+      return;
+    }
     modal.hidden = true;
     bodyEl.innerHTML = '';
     document.body.classList.remove('modal-open');
@@ -363,7 +380,7 @@
   }
 
   xbtn.addEventListener('click', close);
-  bd.addEventListener('click', close);
+  bd.addEventListener('click', function(){ back = []; close(); setX(); });
   window.addEventListener('resize', function(){ if (!modal.hidden) fit(); }, { passive: true });
   document.addEventListener('keydown', function(e){
     if (e.key === 'Escape' && !modal.hidden){ e.preventDefault(); close(); }

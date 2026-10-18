@@ -447,3 +447,11 @@ body.modal-open .hbar{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
 .modal.refmodal{z-index:80}
 .refmodal .modalbd{background:rgba(11,21,48,.38)}
 .refmodal .modalpanel{width:min(720px,100%)}
+/* free or paid satellite data, §08 comparison tables */
+.dcost{display:inline-block;padding:0 7px;border-radius:999px;font:700 10.5px/1.6 var(--font-ui);letter-spacing:.03em;white-space:nowrap;vertical-align:1px}
+.dfree{background:#dff3e4;color:#1d6b35;border:1px solid #a9dbb6}
+.dpaid{background:#fde8c8;color:#8a4b00;border:1px solid #f1c27d}
+.dlegend{font-size:14px;color:var(--ink-soft)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .dfree{background:#173a24;color:#8fe0a8;border-color:#2c6b40}:root:not([data-theme="light"]) .dpaid{background:#45300f;color:#ffc879;border-color:#7a5520}}
+:root[data-theme="dark"] .dfree{background:#173a24;color:#8fe0a8;border-color:#2c6b40}
+:root[data-theme="dark"] .dpaid{background:#45300f;color:#ffc879;border-color:#7a5520}

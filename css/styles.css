@@ -218,6 +218,8 @@ table.cw-sur{table-layout:fixed;min-width:1865px;width:1865px}
 .tablewrap table.cw-sur th:nth-child(6),.tablewrap table.cw-sur td:nth-child(6),.modalbody table.cw-sur th:nth-child(6),.modalbody table.cw-sur td:nth-child(6){width:190px;min-width:0;overflow-wrap:anywhere}
 .tablewrap table.cw-sur th:nth-child(7),.tablewrap table.cw-sur td:nth-child(7),.modalbody table.cw-sur th:nth-child(7),.modalbody table.cw-sur td:nth-child(7){width:330px;min-width:0;overflow-wrap:anywhere}
 .tablewrap table.cw-sur th:nth-child(8),.tablewrap table.cw-sur td:nth-child(8),.modalbody table.cw-sur th:nth-child(8),.modalbody table.cw-sur td:nth-child(8){width:300px;min-width:0;overflow-wrap:anywhere}
+/* KaTeX keeps a hidden MathML copy at position:absolute; without a positioned scroll container it escapes the table and widens the page (19 Oct 2026) */
+.tablewrap,.modalbody{position:relative}
 table.cw-sc{table-layout:fixed;min-width:1370px;width:1370px}
 .tablewrap table.cw-sc th:nth-child(1),.tablewrap table.cw-sc td:nth-child(1),.modalbody table.cw-sc th:nth-child(1),.modalbody table.cw-sc td:nth-child(1){width:72px;min-width:0;overflow-wrap:anywhere}
 .tablewrap table.cw-sc th:nth-child(2),.tablewrap table.cw-sc td:nth-child(2),.modalbody table.cw-sc th:nth-child(2),.modalbody table.cw-sc td:nth-child(2){width:190px;min-width:0;overflow-wrap:anywhere}
@@ -227,6 +229,16 @@ table.cw-sc{table-layout:fixed;min-width:1370px;width:1370px}
 .tablewrap table.cw-sc th:nth-child(6),.tablewrap table.cw-sc td:nth-child(6),.modalbody table.cw-sc th:nth-child(6),.modalbody table.cw-sc td:nth-child(6){width:240px;min-width:0;overflow-wrap:anywhere}
 .tablewrap table.cw-sc th:nth-child(7),.tablewrap table.cw-sc td:nth-child(7),.modalbody table.cw-sc th:nth-child(7),.modalbody table.cw-sc td:nth-child(7){width:228px;min-width:0;overflow-wrap:anywhere}
 table.cw-sc td.rn{white-space:nowrap;overflow-wrap:normal}
+/* §14 stand_vs: this programme against the closest methods (8 columns) */
+table.cw-vs{table-layout:fixed;min-width:1700px;width:1700px}
+.tablewrap table.cw-vs th:nth-child(1),.tablewrap table.cw-vs td:nth-child(1),.modalbody table.cw-vs th:nth-child(1),.modalbody table.cw-vs td:nth-child(1){width:200px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-vs th:nth-child(2),.tablewrap table.cw-vs td:nth-child(2),.modalbody table.cw-vs th:nth-child(2),.modalbody table.cw-vs td:nth-child(2){width:190px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-vs th:nth-child(3),.tablewrap table.cw-vs td:nth-child(3),.modalbody table.cw-vs th:nth-child(3),.modalbody table.cw-vs td:nth-child(3){width:230px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-vs th:nth-child(4),.tablewrap table.cw-vs td:nth-child(4),.modalbody table.cw-vs th:nth-child(4),.modalbody table.cw-vs td:nth-child(4){width:250px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-vs th:nth-child(5),.tablewrap table.cw-vs td:nth-child(5),.modalbody table.cw-vs th:nth-child(5),.modalbody table.cw-vs td:nth-child(5){width:150px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-vs th:nth-child(6),.tablewrap table.cw-vs td:nth-child(6),.modalbody table.cw-vs th:nth-child(6),.modalbody table.cw-vs td:nth-child(6){width:200px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-vs th:nth-child(7),.tablewrap table.cw-vs td:nth-child(7),.modalbody table.cw-vs th:nth-child(7),.modalbody table.cw-vs td:nth-child(7){width:210px;min-width:0;overflow-wrap:anywhere}
+.tablewrap table.cw-vs th:nth-child(8),.tablewrap table.cw-vs td:nth-child(8),.modalbody table.cw-vs th:nth-child(8),.modalbody table.cw-vs td:nth-child(8){width:270px;min-width:0;overflow-wrap:anywhere}
 table.cw-sc8{table-layout:fixed;min-width:1462px;width:1462px}
 .tablewrap table.cw-sc8 th:nth-child(1),.tablewrap table.cw-sc8 td:nth-child(1),.modalbody table.cw-sc8 th:nth-child(1),.modalbody table.cw-sc8 td:nth-child(1){width:72px;min-width:0;overflow-wrap:anywhere}
 .tablewrap table.cw-sc8 th:nth-child(2),.tablewrap table.cw-sc8 td:nth-child(2),.modalbody table.cw-sc8 th:nth-child(2),.modalbody table.cw-sc8 td:nth-child(2){width:180px;min-width:0;overflow-wrap:anywhere}

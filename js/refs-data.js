@@ -1825,8 +1825,8 @@ window.REFS = {
 "f": "6.3",
 "m": "",
 "doi": "10.1029/2024WR038455",
-"en": "Assimilating SWOT levels into a river-network model infers discharge, bathymetry and friction, with discharge NRMSE 0.05–0.18, 18–71% better than the prior.",
-"vi": "Đồng hóa mực nước SWOT vào mô hình mạng sông suy ra lưu lượng, địa hình đáy và độ nhám, với NRMSE lưu lượng 0,05–0,18, tốt hơn thông tin tiên nghiệm 18–71%.",
+"en": "Assimilating SWOT levels into a river-network model infers discharge, bathymetry and friction, with discharge NRMSE 0.05–0.18, 18–71% better than the prior; that prior comes from a hydrological model calibrated on the validation gauges.",
+"vi": "Đồng hóa mực nước SWOT vào mô hình mạng sông suy ra lưu lượng, địa hình đáy và độ nhám, với NRMSE lưu lượng 0,05–0,18, tốt hơn thông tin tiên nghiệm 18–71%; thông tin tiên nghiệm đó lấy từ một mô hình thủy văn hiệu chỉnh theo các trạm kiểm định.",
 "ab": [
 [
 "SWOT",

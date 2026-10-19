@@ -1721,21 +1721,6 @@ window.REFS = {
 ]
 ]
 },
-"10.1029/2019gl082027": {
-"r": "R162",
-"a": "Frasson, R.P.M., Pavelsky, T.M., Fonstad, M.A., Durand, M.T., Allen, G.H., Schumann, G., Lion, C., Beighley, R.E. and Yang, X.",
-"y": "2019",
-"t": "Global relationships between river width, slope, catchment area, meander wavelength, sinuosity, and discharge",
-"j": "Geophysical Research Letters",
-"d": "46(6), 3252–3262",
-"q": "Q1",
-"f": "5.0",
-"m": "",
-"doi": "10.1029/2019GL082027",
-"en": "Global maps of river width, slope, sinuosity and meander wavelength; one width–discharge power law predicts width to −35% to +81%.",
-"vi": "Bản đồ toàn cầu về độ rộng, độ dốc, độ uốn khúc và bước sóng khúc uốn; một luật lũy thừa độ rộng–lưu lượng dự báo độ rộng trong khoảng −35% đến +81%.",
-"ab": []
-},
 "10.3390/rs12071107": {
 "r": "R72",
 "a": "Gleason, C.J. and Durand, M.T.",
@@ -3032,6 +3017,21 @@ window.REFS = {
 "nhiệm vụ vệ tinh đo địa hình mặt nước và đại dương"
 ]
 ]
+},
+"10.1029/2019gl082027": {
+"r": "R162",
+"a": "Frasson, R.P.M., Pavelsky, T.M., Fonstad, M.A., Durand, M.T., Allen, G.H., Schumann, G., Lion, C., Beighley, R.E. and Yang, X.",
+"y": "2019",
+"t": "Global relationships between river width, slope, catchment area, meander wavelength, sinuosity, and discharge",
+"j": "Geophysical Research Letters",
+"d": "46(6), 3252–3262",
+"q": "Q1",
+"f": "5.0",
+"m": "",
+"doi": "10.1029/2019GL082027",
+"en": "Global maps of river width, slope, sinuosity and meander wavelength; one width–discharge power law predicts width to −35% to +81%.",
+"vi": "Bản đồ toàn cầu về độ rộng, độ dốc, độ uốn khúc và bước sóng khúc uốn; một luật lũy thừa độ rộng–lưu lượng dự báo độ rộng trong khoảng −35% đến +81%.",
+"ab": []
 },
 "10.1016/j.jhydrol.2009.08.003": {
 "r": "R133",

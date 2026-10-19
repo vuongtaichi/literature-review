@@ -1565,6 +1565,27 @@ window.REFS = {
 ]
 ]
 },
+"10.1002/2014wr016618": {
+"r": "R158",
+"a": "Paris, A., Dias de Paiva, R., Santos da Silva, J., Medeiros Moreira, D., Calmant, S., Garambois, P.-A., Collischonn, W., Bonnet, M.-P. and Seyler, F.",
+"y": "2016",
+"t": "Stage-discharge rating curves based on satellite altimetry and modeled discharge in the Amazon basin",
+"j": "Water Resources Research",
+"d": "52(5), 3787–3814",
+"q": "Q1",
+"f": "6.3",
+"m": "",
+"doi": "10.1002/2014WR016618",
+"en": "Altimetry rating curves for about 920 virtual stations in the Amazon, fitted to modelled discharge; NSE 0.71 against gauges, and the cease-to-flow parameter tracks bed elevation.",
+"vi": "Đường quan hệ đo cao cho khoảng 920 trạm ảo ở Amazon, khớp với lưu lượng mô hình; NSE 0,71 so với trạm đo, và tham số ngừng chảy phản ánh cao độ đáy.",
+"ab": [
+[
+"NSE",
+"Nash–Sutcliffe efficiency",
+"hệ số hiệu quả Nash–Sutcliffe"
+]
+]
+},
 "10.1002/2017wr021626": {
 "r": "R70",
 "a": "Hagemann, M.W., Gleason, C.J. and Durand, M.T.",
@@ -1617,6 +1638,21 @@ window.REFS = {
 ]
 ]
 },
+"10.1016/j.jhydrol.2018.04.005": {
+"r": "R159",
+"a": "Bjerklie, D.M., Birkett, C.M., Jones, J.W., Carabajal, C., Rover, J.A., Fulton, J.W. and Garambois, P.-A.",
+"y": "2018",
+"t": "Satellite remote sensing estimation of river discharge: Application to the Yukon River Alaska",
+"j": "Journal of Hydrology",
+"d": "561, 1000–1018",
+"q": "Q1",
+"f": "7.3",
+"m": "",
+"doi": "10.1016/j.jhydrol.2018.04.005",
+"en": "Manning and velocity-profile equations with Landsat width and Jason-2 level and slope on the Yukon; uncalibrated mean discharge within about 20%, biased at low and high flow.",
+"vi": "Phương trình Manning và phân bố vận tốc với độ rộng Landsat và mực nước, độ dốc Jason-2 trên sông Yukon; lưu lượng trung bình không hiệu chỉnh lệch khoảng 20%, có sai lệch ở dòng thấp và dòng cao.",
+"ab": []
+},
 "10.1029/2019wr025599": {
 "r": "R141",
 "a": "Feng, D., Gleason, C.J., Yang, X. and Pavelsky, T.M.",
@@ -1637,6 +1673,68 @@ window.REFS = {
 "nghịch đảo lưu lượng AMHG–Manning theo Bayes"
 ]
 ]
+},
+"10.1029/2018wr024220": {
+"r": "R151",
+"a": "Moramarco, T., Barbetta, S., Bjerklie, D.M., Fulton, J.W. and Tarpanelli, A.",
+"y": "2019",
+"t": "River bathymetry estimate and discharge assessment from remote sensing",
+"j": "Water Resources Research",
+"d": "55(8), 6692–6711",
+"q": "Q1",
+"f": "6.3",
+"m": "",
+"doi": "10.1029/2018WR024220",
+"en": "Entropy theory turns surface velocity (MODIS) and water level (ENVISAT) into bathymetry and discharge without a hydraulic model; with satellite data the discharge error exceeds 30% at the median.",
+"vi": "Lý thuyết entropy đổi vận tốc mặt (MODIS) và mực nước (ENVISAT) thành địa hình đáy và lưu lượng mà không cần mô hình thủy lực; với số liệu vệ tinh, sai số lưu lượng trung vị trên 30%.",
+"ab": [
+[
+"MODIS",
+"Moderate Resolution Imaging Spectroradiometer",
+"máy đo phổ ảnh độ phân giải trung bình"
+]
+]
+},
+"10.1029/2018gl080771": {
+"r": "R161",
+"a": "Tuozzolo, S., Lind, G., Overstreet, B., Mangano, J., Fonstad, M., Hagemann, M., Frasson, R.P.M., Larnier, K., Garambois, P.-A., Monnier, J. and Durand, M.",
+"y": "2019",
+"t": "Estimating river discharge with swath altimetry: A proof of concept using AirSWOT observations",
+"j": "Geophysical Research Letters",
+"d": "46(3), 1459–1466",
+"q": "Q1",
+"f": "5.0",
+"m": "",
+"doi": "10.1029/2018GL080771",
+"en": "First discharge from SWOT-like airborne swath altimetry (AirSWOT, Willamette): NRMSE 10–31%, but sensitive to the prior mean annual discharge.",
+"vi": "Lưu lượng đầu tiên từ đo cao dải rộng kiểu SWOT trên máy bay (AirSWOT, sông Willamette): NRMSE 10–31%, nhưng nhạy với tiên nghiệm lưu lượng trung bình năm.",
+"ab": [
+[
+"SWOT",
+"Surface Water and Ocean Topography (satellite mission)",
+"nhiệm vụ vệ tinh đo địa hình mặt nước và đại dương"
+],
+[
+"NRMSE",
+"normalised root-mean-square error",
+"sai số căn quân phương chuẩn hóa"
+]
+]
+},
+"10.1029/2019gl082027": {
+"r": "R162",
+"a": "Frasson, R.P.M., Pavelsky, T.M., Fonstad, M.A., Durand, M.T., Allen, G.H., Schumann, G., Lion, C., Beighley, R.E. and Yang, X.",
+"y": "2019",
+"t": "Global relationships between river width, slope, catchment area, meander wavelength, sinuosity, and discharge",
+"j": "Geophysical Research Letters",
+"d": "46(6), 3252–3262",
+"q": "Q1",
+"f": "5.0",
+"m": "",
+"doi": "10.1029/2019GL082027",
+"en": "Global maps of river width, slope, sinuosity and meander wavelength; one width–discharge power law predicts width to −35% to +81%.",
+"vi": "Bản đồ toàn cầu về độ rộng, độ dốc, độ uốn khúc và bước sóng khúc uốn; một luật lũy thừa độ rộng–lưu lượng dự báo độ rộng trong khoảng −35% đến +81%.",
+"ab": []
 },
 "10.3390/rs12071107": {
 "r": "R72",
@@ -1731,6 +1829,63 @@ window.REFS = {
 ]
 ]
 },
+"10.5194/hess-27-1011-2023": {
+"r": "R153",
+"a": "Coppo Frias, M., Liu, S., Mo, X., Nielsen, K., Ranndal, H., Jiang, L., Ma, J. and Bauer-Gottwein, P.",
+"y": "2023",
+"t": "River hydraulic modeling with ICESat-2 land and water surface elevation",
+"j": "Hydrology and Earth System Sciences",
+"d": "27(5), 1011–1032",
+"q": "Q1",
+"f": "7.0",
+"m": "",
+"doi": "10.5194/hess-27-1011-2023",
+"en": "Calibrates a hydraulic model on ICESat-2 bank and water elevations to get depth, roughness and bed shape at Jimai and Mentang; the model is driven by gauged discharge, so it is not gauge-free.",
+"vi": "Hiệu chỉnh một mô hình thủy lực theo cao độ bờ và mặt nước ICESat-2 để có độ sâu, độ nhám và hình dạng đáy tại Jimai và Mentang; mô hình được cấp lưu lượng đo, nên không phải không cần trạm.",
+"ab": [
+[
+"ICESat-2",
+"Ice, Cloud and land Elevation Satellite-2 (laser altimetry)",
+"vệ tinh đo cao laser ICESat-2"
+]
+]
+},
+"10.1029/2023gl105839": {
+"r": "R160",
+"a": "Masafu, C., Williams, R. and Hurst, M.D.",
+"y": "2023",
+"t": "Satellite video remote sensing for estimation of river discharge",
+"j": "Geophysical Research Letters",
+"d": "50(24), e2023GL105839",
+"q": "Q1",
+"f": "5.0",
+"m": "",
+"doi": "10.1029/2023GL105839",
+"en": "Surface velocity from 28 s of satellite video plus surveyed topography gives flood discharge on the Darling River within 0.3–15% of the gauge.",
+"vi": "Vận tốc mặt từ 28 giây video vệ tinh cộng địa hình khảo sát cho lưu lượng lũ trên sông Darling lệch 0,3–15% so với trạm.",
+"ab": []
+},
+"10.1088/1748-9326/acd407": {
+"r": "R163",
+"a": "Riggs, R.M., Allen, G.H., Wang, J., Pavelsky, T.M., Gleason, C.J., David, C.H. and Durand, M.",
+"y": "2023",
+"t": "Extending global river gauge records using satellite observations",
+"j": "Environmental Research Letters",
+"d": "18(6), 064027",
+"q": "Q2",
+"f": "5.4",
+"m": "",
+"doi": "10.1088/1748-9326/acd407",
+"en": "Satellite width rating curves fill gaps at 2,168 gauges with more than 275,000 daily estimates: median bias 1.4%, median KGE 0.46, but each curve needs the gauge.",
+"vi": "Đường quan hệ độ rộng vệ tinh lấp chỗ trống tại 2.168 trạm với hơn 275.000 ước tính ngày: sai lệch trung vị 1,4%, KGE trung vị 0,46, nhưng mỗi đường cần chính trạm đó.",
+"ab": [
+[
+"KGE",
+"Kling–Gupta efficiency",
+"hệ số hiệu quả Kling–Gupta"
+]
+]
+},
 "10.1016/j.rse.2024.114434": {
 "r": "R136",
 "a": "Scherer, D., Schwatke, C., Dettmering, D. and Seitz, F.",
@@ -1785,6 +1940,32 @@ window.REFS = {
 "geoBAM",
 "BAM with priors assigned by river type (geomorphology)",
 "BAM với thông tin tiên nghiệm gán theo kiểu sông (địa mạo)"
+]
+]
+},
+"10.1029/2023wr036428": {
+"r": "R154",
+"a": "Musaeus, A.F., Kittel, C.M.M., Luchner, J., Coppo Frias, M. and Bauer-Gottwein, P.",
+"y": "2024",
+"t": "Hydraulic river models from ICESat-2 elevation and water surface slope",
+"j": "Water Resources Research",
+"d": "60(6), e2023WR036428",
+"q": "Q1",
+"f": "6.3",
+"m": "",
+"doi": "10.1029/2023WR036428",
+"en": "Builds full Mekong cross-sections from ICESat-2 terrain and slope, filling the submerged part with the diffusive-wave equation and the best available discharge; KGE 0.880 against gauged water levels.",
+"vi": "Dựng mặt cắt đầy đủ cho sông Mekong từ địa hình và độ dốc ICESat-2, bù phần ngập bằng phương trình sóng khuếch tán và lưu lượng tốt nhất hiện có; KGE 0,880 so với mực nước đo.",
+"ab": [
+[
+"ICESat-2",
+"Ice, Cloud and land Elevation Satellite-2 (laser altimetry)",
+"vệ tinh đo cao laser ICESat-2"
+],
+[
+"KGE",
+"Kling–Gupta efficiency",
+"hệ số hiệu quả Kling–Gupta"
 ]
 ]
 },
@@ -1864,6 +2045,27 @@ window.REFS = {
 "Nash–Sutcliffe efficiency",
 "hệ số hiệu quả Nash–Sutcliffe"
 ],
+[
+"KGE",
+"Kling–Gupta efficiency",
+"hệ số hiệu quả Kling–Gupta"
+]
+]
+},
+"10.1038/s41467-026-78275-5": {
+"r": "R157",
+"a": "Paris, A., Garambois, P.-A., Gal, L., Cerbelaud, A., Larnier, K., David, C.H., Jucá Oliveira, R.A., Wongchuig Correa, S., Tourian, M.J. and Calmant, S.",
+"y": "2026",
+"t": "Global scale river discharge and mean depth from radar altimetry and model",
+"j": "Nature Communications",
+"d": ", article in press",
+"q": "Q1",
+"f": "18.1",
+"m": "",
+"doi": "10.1038/s41467-026-78275-5",
+"en": "Rating curves at over 26,000 altimetry stations fitted to a 30-year global reanalysis, giving discharge and mean depth worldwide; median KGE 0.41 against the modelled discharge.",
+"vi": "Đường quan hệ tại hơn 26.000 trạm đo cao khớp với một tái phân tích toàn cầu 30 năm, cho lưu lượng và độ sâu trung bình trên toàn cầu; KGE trung vị 0,41 so với lưu lượng mô hình.",
+"ab": [
 [
 "KGE",
 "Kling–Gupta efficiency",
@@ -2640,6 +2842,27 @@ window.REFS = {
 ]
 ]
 },
+"10.1029/2019wr024938": {
+"r": "R150",
+"a": "Schaperow, J.R., Li, D., Margulis, S.A. and Lettenmaier, D.P.",
+"y": "2019",
+"t": "A curve-fitting method for estimating bathymetry from water surface height and width",
+"j": "Water Resources Research",
+"d": "55(5), 4288–4303",
+"q": "Q1",
+"f": "6.3",
+"m": "",
+"doi": "10.1029/2019WR024938",
+"en": "Fits water-height–width curves to SWOT-like data to estimate the unseen bed: depth within a median 1.1% and low-flow area within 13% on the Upper Mississippi, at channel exposure as low as 40%.",
+"vi": "Khớp đường cong mực nước–độ rộng với số liệu kiểu SWOT để ước tính phần đáy không thấy: độ sâu lệch trung vị 1,1% và diện tích dòng thấp lệch 13% trên thượng lưu Mississippi, khi phần lòng dẫn lộ ra chỉ còn 40%.",
+"ab": [
+[
+"SWOT",
+"Surface Water and Ocean Topography (satellite mission)",
+"nhiệm vụ vệ tinh đo địa hình mặt nước và đại dương"
+]
+]
+},
 "10.1029/2019gl086405": {
 "r": "R112",
 "a": "Lin, P., Pan, M., Allen, G.H., de Frasson, R.P., Zeng, Z., Yamazaki, D. and Wood, E.F.",
@@ -2712,6 +2935,21 @@ window.REFS = {
 ]
 ]
 },
+"10.1016/j.jhydrol.2023.129567": {
+"r": "R152",
+"a": "Wu, J., Li, W., Du, H., Wan, Y., Yang, S. and Xiao, Y.",
+"y": "2023",
+"t": "Estimating river bathymetry from multisource remote sensing data",
+"j": "Journal of Hydrology",
+"d": "620, 129567",
+"q": "Q1",
+"f": "7.3",
+"m": "",
+"doi": "10.1016/j.jhydrol.2023.129567",
+"en": "Fits a power-law cross-section (shape r 4.1–7.7) to satellite water level and width on the upper Yangtze; bed-elevation errors of 3–11 m, reported as 1.25–6.18% of absolute elevation.",
+"vi": "Khớp mặt cắt dạng lũy thừa (hình dạng r 4,1–7,7) với mực nước và độ rộng vệ tinh trên thượng lưu Dương Tử; sai số cao độ đáy 3–11 m, được báo cáo là 1,25–6,18% của cao độ tuyệt đối.",
+"ab": []
+},
 "10.5194/hess-28-1287-2024": {
 "r": "R116",
 "a": "Aristizabal, F., Chegini, T., Petrochenkov, G., Salas, F. and Judge, J.",
@@ -2756,6 +2994,42 @@ window.REFS = {
 "GRIT",
 "Global River Topology",
 "cấu trúc mạng sông toàn cầu"
+]
+]
+},
+"10.1029/2025wr041177": {
+"r": "R155",
+"a": "Legleiter, C.J. and Kinzel, P.J.",
+"y": "2026",
+"t": "Evaluating approximations of river channel shape using a national cross-section database",
+"j": "Water Resources Research",
+"d": "62(5), e2025WR041177",
+"q": "Q1",
+"f": "6.3",
+"m": "",
+"doi": "10.1029/2025WR041177",
+"en": "Tests four channel-shape models on 46,971 surveyed US cross-sections: the single-exponent Dingman shape is less reliable for depth than asymmetric ones, and accuracy falls when only the shallow part is seen.",
+"vi": "Kiểm tra bốn mô hình hình dạng lòng dẫn trên 46.971 mặt cắt khảo sát ở Hoa Kỳ: hình dạng một số mũ của Dingman kém tin cậy hơn về độ sâu so với các dạng bất đối xứng, và độ chính xác giảm khi chỉ thấy phần nông.",
+"ab": []
+},
+"10.1038/s41586-026-10218-y": {
+"r": "R156",
+"a": "Cerbelaud, A., Wade, J., David, C.H., Durand, M., Frasson, R.P.M., Pavelsky, T. and Oubanas, H.",
+"y": "2026",
+"t": "Wide-swath altimetry maps bank shapes and storage changes in global rivers",
+"j": "Nature",
+"d": "651, 666–671",
+"q": "Q1",
+"f": "56.1",
+"m": "",
+"doi": "10.1038/s41586-026-10218-y",
+"en": "Fits hypsometric curves to SWOT width and elevation at 126,674 reaches to map active bank shapes and river storage change; global annual storage variability about 28% below the lowest model estimates.",
+"vi": "Khớp đường cong hypsometric với độ rộng và cao độ SWOT tại 126.674 đoạn để lập bản đồ hình dạng bờ và biến động trữ nước sông; biến động trữ nước năm toàn cầu thấp hơn khoảng 28% so với ước tính mô hình thấp nhất.",
+"ab": [
+[
+"SWOT",
+"Surface Water and Ocean Topography (satellite mission)",
+"nhiệm vụ vệ tinh đo địa hình mặt nước và đại dương"
 ]
 ]
 },

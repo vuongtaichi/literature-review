@@ -81,6 +81,15 @@
     if (e.key === 'ArrowRight') show(current + 1, true);
   });
 
+  /* A link to "#<section id>" (for example "&sect;07" in the decision chart) opens that section. */
+  document.addEventListener('click', function(e){
+    if (e.defaultPrevented || e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
+    var a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    for (var k = 0; k < sections.length; k++) if (sections[k].id === id){ e.preventDefault(); show(k, true); return; }
+  });
+
   function resize(){ if (!isNarrow()) setRail(false); }
   window.addEventListener('resize', resize);
 
@@ -441,6 +450,7 @@
     if (rmOpener && rmOpener.focus) rmOpener.focus({ preventScroll: true });   // keep the table where the reader left it
     rmOpener = null;
   }
+  window.__openCard = openRef;                         // js/glossary.js opens definitions here
   rmLang.addEventListener('click', function(e){ e.stopPropagation(); if (rmCard) showRef(rmCard.__twin()); });
   rmX.addEventListener('click', closeRef);
   rm.querySelector('.modalbd').addEventListener('click', closeRef);

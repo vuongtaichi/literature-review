@@ -487,3 +487,23 @@ body.modal-open .hbar{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
 :root[data-theme="dark"] .gpart{background:#2e2347;color:#c9b6f5;border-color:#55427f}
 :root[data-theme="dark"] .gneed{background:#46191a;color:#ffaaa3;border-color:#7d2f2b}
 td > .gcost{display:block;width:fit-content;margin-bottom:5px}
+
+/* Readability Phase 1 (20 Oct 2026): key points, reading paths, decision chart, glossary. */
+.kp ul{margin:0;padding-left:0;list-style:none}
+.kp li{margin:0 0 9px;text-align:left}
+.kp li:last-child{margin-bottom:0}
+.kp .lbl{margin-right:6px}
+.kpsrc{font-size:13px;color:var(--ink-faint);margin:10px 0 0;text-align:left}
+.paths li{margin:0 0 10px;text-align:left}
+.decide{list-style:none;counter-reset:dq;padding:0;margin:14px 0}
+.decide li{counter-increment:dq;position:relative;border:1px solid var(--note-border);background:var(--note-bg);border-radius:12px;padding:12px 16px 12px 50px;margin:0 0 10px}
+.decide li::before{content:counter(dq);position:absolute;left:14px;top:12px;width:24px;height:24px;border-radius:50%;background:var(--accent);color:var(--card);font:700 12.5px/24px var(--font-ui);text-align:center}
+.decide .dq{font-weight:600;margin:0 0 4px;text-align:left}
+.decide .da{margin:0;text-align:left;color:var(--ink-soft)}
+.decide .go{display:inline-block;font-family:var(--font-ui);font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-right:8px}
+dl.gloss{display:grid;grid-template-columns:minmax(130px,max-content) 1fr;gap:8px 18px;margin:12px 0 0}
+dl.gloss dt{font-weight:700;color:var(--ink)}
+dl.gloss dd{margin:0;text-align:left}
+@media (max-width:600px){dl.gloss{grid-template-columns:1fr;gap:2px}dl.gloss dd{margin-bottom:10px}}
+.gterm{border-bottom:1px dotted var(--ink-faint);cursor:help}
+.gterm:hover,.gterm:focus-visible{border-bottom-color:var(--accent);color:var(--accent-strong);outline:none}

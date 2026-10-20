@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&amp;display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
-<link rel="stylesheet" href="css/styles.css?v=20261019i">
+<link rel="stylesheet" href="css/styles.css?v=20261020a">
 </head>
 <body>
 
@@ -118,6 +118,16 @@
     </figure>
   </div>
 
+  <div class="card" data-vi="read_paths">
+    <h2>Three ways through this review</h2>
+    <ol class="paths">
+      <li><strong>The overview, about 15 minutes.</strong> The map above, then <a href="#compare">&sect;03</a> &ldquo;The short version&rdquo; and &ldquo;Which family fits your basin?&rdquo;, then the gaps ledger at the top of <a href="#gaps">&sect;13</a>.</li>
+      <li><strong>Choosing a method for one basin, 15&ndash;25 minutes.</strong> The decision chart in <a href="#compare">&sect;03</a> points to a family. In that family, read the Key points box at the top, its comparison tables, and &ldquo;Read these first&rdquo;. Families 4 and 5 are the longest.</li>
+      <li><strong>Where this research programme stands, about an hour.</strong> <a href="#geom">&sect;11</a> (terrain and channel shape), then <a href="#stand">&sect;14</a>, then the comparison tables in <a href="#f4">&sect;07</a> and <a href="#surrogate">&sect;08</a> for the closest methods.</li>
+    </ol>
+    <p>Wherever you are: a table or figure opens full size when clicked; a citation opens a card about the paper; every card has a Ti&#7871;ng Vi&#7879;t button; a dotted underline marks a term explained in the glossary below.</p>
+</div>
+
   <div class="card" data-vi="read_where">
     <p>The families are not rivals so much as different bets about where the recoverable information lives &mdash; and they fail in different places, which is why the choice depends on your region rather than on a league table.</p>
     <h2>Where things are</h2>
@@ -138,6 +148,64 @@
       <p>Every quantitative claim here was taken from the source paper&rsquo;s own abstract or full text, opened during the writing of this review &mdash; not from memory and not from another paper&rsquo;s description of it.</p>
       <p>&sect;16 sets out how each source was checked. Since 17&nbsp;October&nbsp;2026 every one of the 163 has been read in full, and &sect;16 records the two partial cases. Statements that are general method knowledge rather than sourced claims are marked <span class="dag">&dagger;</span>, and the parts of &sect;13 that are synthesis rather than published findings say so.</p>
     </div>
+  </div>
+
+  <div class="card" data-vi="read_built">
+    <h2>How this review was built</h2>
+    <ul>
+      <li><strong>Scope.</strong> Estimating river discharge where there is no gauge record: seven families of methods, the terrain and channel-shape layer that several of them share (&sect;11), and the data, benchmarks and uncertainty that cut across them (&sect;12).</li>
+      <li><strong>Kind of review.</strong> Narrative, not systematic: papers were added topic by topic rather than through one fixed database search, so there are no search-count tables. The aim is to explain the methods and their evidence, not to count studies.</li>
+      <li><strong>References.</strong> 163, grouped in eleven themes in <a href="#refs">&sect;16</a>; 131 are in Q1 journals, the other 32 are in lower-quartile journals or are books and chapters. Every entry was checked against the publisher&rsquo;s page or the paper.</li>
+      <li><strong>Full text.</strong> All 163 are held as full text and were read in full, not only their abstracts.</li>
+      <li><strong>Claims check.</strong> A script ties every quoted phrase and distinctive number in the English text to the papers cited beside it and searches their full text. Of 428 such claims, those it could not match were read by hand and given a recorded verdict; none is left open.</li>
+      <li><strong>Comparison tables.</strong> The badges show whether a method needs ground data at the target river (gauged discharge, water level measured on the ground, or surveyed channel geometry). Validation data do not count. Skill numbers come from different tests and are not directly comparable across rows.</li>
+      <li><strong>Two languages.</strong> Every card has a Vietnamese twin, reviewed for academic usage.</li>
+      <li><strong>Where the author speaks.</strong> &sect;14 describes the author&rsquo;s own research programme; its first table row comes from the programme&rsquo;s analysis logs and has not been checked independently.</li>
+    </ul>
+</div>
+
+  <div class="card" data-vi="read_gloss">
+    <h2>Glossary and abbreviations</h2>
+    <p>Terms used across the review. In the text, the first use of each term in a section has a dotted underline; click it for the definition.</p>
+    <dl class="gloss">
+      <dt>A priori parameters</dt><dd>Model parameters set from physical properties read off maps, without calibration on flow.</dd>
+      <dt>AMHG</dt><dd>At-many-stations hydraulic geometry: the hydraulic-geometry coefficients and exponents along a river are related, so widths at many sections constrain discharge (Gleason and Smith 2014).</dd>
+      <dt>BAM</dt><dd>Bayesian AMHG–Manning, a McFLI algorithm that estimates discharge from width (and level and slope) with priors; geoBAM adds geomorphic priors by river type.</dd>
+      <dt>Bankfull</dt><dd>The flow, width or depth at which the channel is just full, before water spills onto the floodplain.</dd>
+      <dt>Bathymetry</dt><dd>The shape and elevation of the river bed below the water surface.</dd>
+      <dt>Budyko framework</dt><dd>The relation between aridity and the share of rainfall that evaporates; it gives a long-term mean runoff from climate alone.</dd>
+      <dt>C/M ratio</dt><dd>Passive-microwave brightness at a dry calibration pixel (C) divided by that at a measurement pixel over the river (M); more water lowers M, so the ratio rises with flow.</dd>
+      <dt>CAMELS</dt><dd>Large-sample datasets of catchment attributes, meteorology and streamflow, first for 671 US basins, now with national versions.</dd>
+      <dt>Data assimilation</dt><dd>Updating a model’s states or parameters with observations as they arrive, rather than calibrating once.</dd>
+      <dt>Differentiable model</dt><dd>A process model written so that gradients pass through it, letting a neural network learn its parameters end to end (Family 7).</dd>
+      <dt>Donor catchment</dt><dd>A gauged catchment whose parameters or flow are transferred to the ungauged one.</dd>
+      <dt>Flow duration curve</dt><dd>The share of time each discharge is equalled or exceeded at a site.</dd>
+      <dt>GRADES</dt><dd>Global Reach-level A priori Discharge Estimates for SWOT: modelled daily discharge for about 2.94 million reaches, often used as a prior.</dd>
+      <dt>Ground data (badges)</dt><dd>Gauged discharge, water level measured on the ground, or surveyed channel geometry at the target river. The comparison-table badges show whether a method needs them; validation data do not count.</dd>
+      <dt>Hydraulic geometry</dt><dd>Power laws linking width, depth and velocity to discharge at a cross-section, for example W = aQ^b (at-a-station hydraulic geometry, AHG).</dd>
+      <dt>Hydrological signature</dt><dd>A statistic that summarises how a catchment behaves, such as mean flow, the baseflow index or the slope of the flow duration curve.</dd>
+      <dt>ICESat-2</dt><dd>NASA’s photon-counting laser altimeter; its photons over water and exposed banks give fine elevation profiles across rivers.</dd>
+      <dt>KGE</dt><dd>Kling–Gupta efficiency: combines correlation, the ratio of variability and the ratio of means. 1 is perfect; about −0.41 equals predicting the observed mean (Knoben et al. 2019).</dd>
+      <dt>LSTM</dt><dd>Long short-term memory network, a recurrent neural network that maps weather series and catchment attributes to daily discharge, trained across many basins at once.</dd>
+      <dt>Manning’s equation</dt><dd>Q = (1/n) A R^(2/3) S^(1/2): discharge from flow area A, hydraulic radius R, slope S and roughness n.</dd>
+      <dt>McFLI</dt><dd>Mass-conserved flow law inversion: solving a flow law (Manning or hydraulic geometry) for its unknowns along a reach where discharge is assumed the same at every section.</dd>
+      <dt>NRMSE</dt><dd>Root mean square error divided by the mean (or range) of observed discharge, given as a percentage.</dd>
+      <dt>NSE</dt><dd>Nash–Sutcliffe efficiency: one minus the error variance divided by the variance of the observations. 1 is perfect; 0 is no better than the observed mean.</dd>
+      <dt>Physical similarity</dt><dd>Choosing donors by catchment attributes (climate, soils, terrain, land cover), regardless of distance.</dd>
+      <dt>Politically ungauged</dt><dd>A basin where gauges exist but their data are not shared (Gleason and Durand 2020).</dd>
+      <dt>Prior</dt><dd>What is assumed about an unknown before the data are used, such as a range for mean annual discharge taken from a global model.</dd>
+      <dt>PUB</dt><dd>Predictions in Ungauged Basins, the IAHS science decade 2003–2012 on predicting river flow and other responses where there is no record (§02).</dd>
+      <dt>Rainfall–runoff model</dt><dd>A model that turns rainfall and evaporation into discharge through stores of water, such as HBV, GR4J or HYMOD.</dd>
+      <dt>Rating curve</dt><dd>The relation between water level and discharge at a site, usually Q = a(H − z)^b, where z is the level of zero flow.</dd>
+      <dt>Regionalisation</dt><dd>Moving hydrological information (model parameters, flow statistics or flow series) from gauged catchments to an ungauged one.</dd>
+      <dt>Saint-Venant equations</dt><dd>The one-dimensional equations of mass and momentum for river flow, the basis of hydraulic models.</dd>
+      <dt>Spatial proximity</dt><dd>Choosing donors by distance: the nearest gauged catchments give their parameters.</dd>
+      <dt>Surrogate discharge</dt><dd>A satellite signal that correlates with discharge and is used in place of a gauge record, as a calibration target or converted to discharge (Family 5).</dd>
+      <dt>SWOT</dt><dd>Surface Water and Ocean Topography, a swath-altimetry satellite (launched December 2022) that measures water level, width and slope of rivers wider than about 100 m.</dd>
+      <dt>Top-kriging</dt><dd>Geostatistical interpolation of streamflow along the river network that accounts for nested catchment areas (Skøien et al. 2006).</dd>
+      <dt>Transfer learning</dt><dd>Reusing a network trained where data are plentiful in a basin or region where they are scarce, with or without fine-tuning.</dd>
+      <dt>Virtual station</dt><dd>The point where a nadir altimeter’s ground track crosses a river, giving a water-level series there.</dd>
+    </dl>
   </div>
 </section>
 
@@ -747,6 +815,20 @@
       <p>Families 1 and 2 need a <strong>neighbour</strong>. Families 6 and 7 need a <strong>regional sample</strong>. Families 3, 4 and 5 need <strong>neither</strong> &mdash; which is why, in a genuinely data-poor basin, the real choice is between a global product, a wide-enough river, and a satellite signal that happens to correlate with flow.</p>
     </div>
   </div>
+  <div class="card" data-vi="cmp_decide">
+    <h2>Which family fits your basin?</h2>
+    <p class="lede">Go down the questions; the first &ldquo;yes&rdquo; is the family to start with. As in the decision chart of <a href="https://doi.org/10.3390/rs12071107" target="_blank" rel="noopener">Gleason and Durand (2020)</a>, the questions ask which data exist, because that decides what can work more than the choice of method does.</p>
+    <ol class="decide">
+      <li><p class="dq">Are there gauged catchments nearby, on the same river network?</p><p class="da"><span class="go">Yes</span><a href="#f2">Family 2</a>, streamflow regionalisation (&sect;05): interpolate the observed flow along the network.</p></li>
+      <li><p class="dq">Is there a regional gauge network with catchment attributes, but no connected neighbour?</p><p class="da"><span class="go">Yes</span><a href="#f1">Family 1</a>, parameter regionalisation (&sect;04): give the basin a whole parameter set from a similar or nearby donor.</p></li>
+      <li><p class="dq">Are hundreds of gauged catchments available in the region, to train on?</p><p class="da"><span class="go">Yes</span><a href="#f5">Family 6</a>, deep learning (&sect;09); <a href="#f6">Family 7</a> (&sect;10) when internal states or rare events matter.</p></li>
+      <li><p class="dq">No usable gauges. Is the river wide enough for a satellite to resolve: over about 100&nbsp;m for SWOT, narrower with optical images or ICESat-2?</p><p class="da"><span class="go">Yes</span><a href="#f4">Family 4</a>, remote sensing of the river (&sect;07). Prefer the methods badged &ldquo;no gauge needed&rdquo;; the size of the flow still comes from priors or the rebuilt channel.</p></li>
+      <li><p class="dq">Is there a satellite signal that tracks flow at the outlet, plus climate forcing?</p><p class="da"><span class="go">Yes</span><a href="#surrogate">Family 5</a>, surrogate discharge (&sect;08). It also needs a source of scale: a mean-flow estimate or hydraulic geometry.</p></li>
+      <li><p class="dq">None of these?</p><p class="da"><span class="go">Then</span><a href="#f3">Family 3</a>, donor-free routes (&sect;06): parameters read from global maps, or a global product. Expect weaker skill at small catchments.</p></li>
+    </ol>
+    <p>The answers are where to start, not where to stop. In a genuinely data-poor basin, Families 3, 4 and 5 are often used together, and the table above shows where each one breaks.</p>
+</div>
+
   <div class="card" data-vi="tab_compare2">
     <h2>The long version</h2>
     <blockquote><strong>Read the skill column carefully.</strong> These efficiencies come from different regions, periods, catchment sizes and metrics. They are <strong>not directly comparable</strong> &mdash; they indicate what each family has been shown to achieve in its own published setting, not a ranking from a common experiment.</blockquote>
@@ -859,6 +941,19 @@
     <p class="eyebrow">Section 04 &middot; Family 1</p>
     <h1>Regionalising model parameters</h1>
     <div class="rule"></div>
+  </div>
+
+  <div class="card" data-vi="kp_f1">
+    <h2>Key points</h2>
+    <div class="note kp">
+      <ul>
+        <li><span class="lbl">Moves into the basin</span> A calibrated model&rsquo;s <strong>parameters</strong>, from a donor catchment</li>
+        <li><span class="lbl">Must have</span> A regional gauge network and catchment attributes</li>
+        <li><span class="lbl">Best reported skill</span> Median daily NSE <span class="num">0.62&ndash;0.67</span> vs <span class="num">0.72</span> at-site</li>
+        <li><span class="lbl">Where it breaks</span> No donor; arid or small catchments; reliance on a single donor</li>
+      </ul>
+    </div>
+    <p class="kpsrc">From the side-by-side table in <a href="#compare">&sect;03</a>; the evidence is in this section.</p>
   </div>
   <div class="card">
     <p class="lede">The classical approach, and still the default in engineering practice.</p>
@@ -1244,6 +1339,19 @@
     <h1>Regionalising the streamflow itself</h1>
     <div class="rule"></div>
   </div>
+
+  <div class="card" data-vi="kp_f2">
+    <h2>Key points</h2>
+    <div class="note kp">
+      <ul>
+        <li><span class="lbl">Moves into the basin</span> The <strong>observed flow</strong> itself, interpolated along the network</li>
+        <li><span class="lbl">Must have</span> Dense gauges nearby, observing the same variable</li>
+        <li><span class="lbl">Best reported skill</span> Generally beats a regionalised rainfall&ndash;runoff model on common data</li>
+        <li><span class="lbl">Where it breaks</span> No connected neighbours; headwaters; any change in climate or land use</li>
+      </ul>
+    </div>
+    <p class="kpsrc">From the side-by-side table in <a href="#compare">&sect;03</a>; the evidence is in this section.</p>
+  </div>
   <div class="card" data-vi="f2_lede">
     <p class="lede">Instead of transferring model parameters, transfer the flow.</p>
     <p>These methods interpolate observed discharge or its statistics directly across the river network, and never calibrate a rainfall&ndash;runoff model at the target site.</p>
@@ -1501,6 +1609,19 @@
     <p class="sub">A priori parameters, classification, global models</p>
     <div class="rule"></div>
   </div>
+
+  <div class="card" data-vi="kp_f3">
+    <h2>Key points</h2>
+    <div class="note kp">
+      <ul>
+        <li><span class="lbl">Moves into the basin</span> <strong>Physical properties read from maps</strong>, or a model that already covers everywhere</li>
+        <li><span class="lbl">Must have</span> Global physiographic and climate layers</li>
+        <li><span class="lbl">Best reported skill</span> Global parameters from 4,229 headwaters; GRUN beats 13 global models</li>
+        <li><span class="lbl">Where it breaks</span> Local skill at small catchments; precipitation-product error dominates</li>
+      </ul>
+    </div>
+    <p class="kpsrc">From the side-by-side table in <a href="#compare">&sect;03</a>; the evidence is in this section.</p>
+  </div>
   <div class="card" data-vi="f3_lede">
     <p class="lede">If no donor is available, the information has to come from somewhere else: from physical reasoning about what the landscape implies, or from a model built to run everywhere at once.</p>
   </div>
@@ -1755,6 +1876,19 @@
     <p class="eyebrow">Section 07 &middot; Family 4</p>
     <h1>Remote sensing of the river from space</h1>
     <div class="rule"></div>
+  </div>
+
+  <div class="card" data-vi="kp_f4">
+    <h2>Key points</h2>
+    <div class="note kp">
+      <ul>
+        <li><span class="lbl">Moves into the basin</span> <strong>Measured hydraulics</strong> &mdash; width, elevation, slope &mdash; inverted for discharge</li>
+        <li><span class="lbl">Must have</span> A river wide enough for the sensor to resolve</li>
+        <li><span class="lbl">Best reported skill</span> Real SWOT: median correlation <span class="num">0.73</span>, no gauge used</li>
+        <li><span class="lbl">Where it breaks</span> Magnitude bias ~<span class="num">50%</span>; narrow and braided rivers; short records</li>
+      </ul>
+    </div>
+    <p class="kpsrc">From the side-by-side table in <a href="#compare">&sect;03</a>; the evidence is in this section.</p>
   </div>
   <div class="card" data-vi="f4_lede">
     <p class="lede">This family changes the question.</p>
@@ -2307,6 +2441,19 @@
     <p class="sub">Calibrating on a proxy</p>
     <div class="rule"></div>
   </div>
+
+  <div class="card" data-vi="kp_f5">
+    <h2>Key points</h2>
+    <div class="note kp">
+      <ul>
+        <li><span class="lbl">Moves into the basin</span> A <strong>proxy signal that merely correlates</strong> with discharge, used as the calibration target</li>
+        <li><span class="lbl">Must have</span> A satellite signal that tracks flow at the outlet, climate forcing, and a source of scale: a mean-flow estimate (C/M-ratio studies) or hydraulic geometry (width and altimetry studies)</li>
+        <li><span class="lbl">Best reported skill</span> NSE <span class="num">0.54&ndash;0.78</span>; NSE and KGE both &gt;<span class="num">0.6</span> with no discharge data at all</li>
+        <li><span class="lbl">Where it breaks</span> Unitless signal; clouds blind optical sensors and ice distorts water-extent signals; no gauge at the outlet to confirm the signal tracks flow</li>
+      </ul>
+    </div>
+    <p class="kpsrc">From the side-by-side table in <a href="#compare">&sect;03</a>; the evidence is in this section.</p>
+  </div>
   <div class="card" data-vi="sur_lede">
     <p class="lede">This family is easy to confuse with &sect;07, and the difference matters.</p>
     <p>Family 4 <strong>inverts hydraulics</strong> to recover discharge: width, elevation and slope go into Manning&rsquo;s equation and m&sup3;/s comes out. Family 5 does something weaker and, in ungauged basins, often more useful.</p>
@@ -2813,7 +2960,7 @@
 <text x='829.7' y='1179' text-anchor='middle' font-size='13' font-weight='700' fill='var(--ink)'>Yoon et al. 2023</text>
 <text x='829.7' y='1193' text-anchor='middle' font-size='10' fill='var(--ink-faint)' letter-spacing='.03em'>Q2, IF 5.4</text>
 <text x='829.7' y='1210' text-anchor='middle' font-size='11.5' font-weight='700' fill='var(--accent)' letter-spacing='.015em'>remote sensing only</text>
-<text x='829.7' y='1231' text-anchor='middle' font-size='11.5' fill='var(--ink-soft)'>SMOS L-band surrogate + Budyko mean; 130</text>
+<text x='829.7' y='1231' text-anchor='middle' font-size='11.2' fill='var(--ink-soft)'>SMOS L-band surrogate + Budyko mean; 130</text>
 <text x='829.7' y='1245' text-anchor='middle' font-size='11.5' fill='var(--ink-soft)'>catchments, mean NSE 0.54</text>
 <rect x='706.7' y='1278' width='246.0' height='108' rx='9' fill='var(--card)' stroke='var(--border)' stroke-width='1'/>
 <text x='829.7' y='1297' text-anchor='middle' font-size='13' font-weight='700' fill='var(--ink)'>Yu et al. 2023</text>
@@ -3043,6 +3190,19 @@
     <p class="eyebrow">Section 09 &middot; Family 6</p>
     <h1>The deep learning turn</h1>
     <div class="rule"></div>
+  </div>
+
+  <div class="card" data-vi="kp_f6">
+    <h2>Key points</h2>
+    <div class="note kp">
+      <ul>
+        <li><span class="lbl">Moves into the basin</span> A <strong>learned attribute-to-behaviour mapping</strong>, trained across hundreds of basins</li>
+        <li><span class="lbl">Must have</span> A large regional sample of gauged catchments</li>
+        <li><span class="lbl">Best reported skill</span> Out-of-sample median NSE <span class="num">0.69</span> vs <span class="num">0.64</span> locally calibrated</li>
+        <li><span class="lbl">Where it breaks</span> Small gauge networks; no internal states; a hard extrapolation ceiling</li>
+      </ul>
+    </div>
+    <p class="kpsrc">From the side-by-side table in <a href="#compare">&sect;03</a>; the evidence is in this section.</p>
   </div>
   <div class="card" data-vi="f5_lede">
     <p class="lede">This is where the field changed.</p>
@@ -3319,6 +3479,19 @@
     <p class="eyebrow">Section 10 &middot; Family 7</p>
     <h1>Hybrid and differentiable models</h1>
     <div class="rule"></div>
+  </div>
+
+  <div class="card" data-vi="kp_f7">
+    <h2>Key points</h2>
+    <div class="note kp">
+      <ul>
+        <li><span class="lbl">Moves into the basin</span> The same learned mapping, but <strong>inside a process model</strong></li>
+        <li><span class="lbl">Must have</span> A large sample <em>and</em> a differentiable model implementation</li>
+        <li><span class="lbl">Best reported skill</span> Beats LSTM under regional holdout, and on events rarer than 5-year</li>
+        <li><span class="lbl">Where it breaks</span> Still data-hungry; high build cost; few independent replications</li>
+      </ul>
+    </div>
+    <p class="kpsrc">From the side-by-side table in <a href="#compare">&sect;03</a>; the evidence is in this section.</p>
   </div>
   <div class="card">
     <p class="lede">The most active frontier, and the one most relevant to anyone who has built a conceptual model and does not want to abandon it.</p>
@@ -4810,12 +4983,14 @@
   </button>
 </div>
 
-<script src="js/app.js?v=20261019i"></script>
-<script src="js/vi-data.js?v=20261019i"></script>
-<script src="js/vi.js?v=20261019i"></script>
-<script src="js/refs-data.js?v=20261019i"></script>
+<script src="js/app.js?v=20261020a"></script>
+<script src="js/vi-data.js?v=20261020a"></script>
+<script src="js/vi.js?v=20261020a"></script>
+<script src="js/glossary-data.js?v=20261020a"></script>
+<script src="js/glossary.js?v=20261020a"></script>
+<script src="js/refs-data.js?v=20261020a"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
-<script defer src="js/math.js?v=20261019i"></script>
+<script defer src="js/math.js?v=20261020a"></script>
 </body>
 </html>

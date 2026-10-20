@@ -507,3 +507,16 @@ dl.gloss dd{margin:0;text-align:left}
 @media (max-width:600px){dl.gloss{grid-template-columns:1fr;gap:2px}dl.gloss dd{margin-bottom:10px}}
 .gterm{border-bottom:1px dotted var(--ink-faint);cursor:help}
 .gterm:hover,.gterm:focus-visible{border-bottom-color:var(--accent);color:var(--accent-strong);outline:none}
+
+/* Readability Phase 2 (20 Oct 2026): role labels, folds in §07 and §08, NSE figure. */
+.role{font-family:var(--font-ui);font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 6px;text-align:left}
+.role + h2{margin-top:0}
+.foldlede{text-align:left}
+details.fold{margin:12px 0}
+details.fold > summary{display:inline-flex;align-items:center;gap:8px;cursor:pointer;list-style:none;font-family:var(--font-ui);font-size:13px;font-weight:600;color:var(--accent-strong);background:var(--accent-soft-bg);border:1px solid var(--note-border);border-radius:999px;padding:6px 14px;user-select:none}
+details.fold > summary::-webkit-details-marker{display:none}
+details.fold > summary::before{content:"▸";font-size:11px}
+details.fold[open] > summary::before{content:"▾"}
+details.fold[open] > summary{margin-bottom:12px}
+details.fold > summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+details.fold[open] .sh, details.fold:not([open]) .hd{display:none}

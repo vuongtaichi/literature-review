@@ -17,7 +17,7 @@
   }
   var M = { en: matcher('en'), vi: matcher('vi') };
 
-  var SKIP = 'a, button, h1, h2, h3, h4, table, svg, figure, code, pre, .rfsum, .gterm, .eyebrow, .vibar, .katex, .scrollhint, [data-vi="read_gloss"]';
+  var SKIP = 'a, button, h1, h2, h3, h4, table, svg, figure, code, pre, .rfsum, .gterm, .eyebrow, .vibar, .katex, .scrollhint, summary, .role, [data-vi="read_gloss"]';
   function mark(root, lang, used){
     var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
       acceptNode: function(n){

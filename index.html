@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&amp;display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
-<link rel="stylesheet" href="css/styles.css?v=20261020a">
+<link rel="stylesheet" href="css/styles.css?v=20261020b">
 </head>
 <body>
 
@@ -169,7 +169,7 @@
     <p>Terms used across the review. In the text, the first use of each term in a section has a dotted underline; click it for the definition.</p>
     <dl class="gloss">
       <dt>A priori parameters</dt><dd>Model parameters set from physical properties read off maps, without calibration on flow.</dd>
-      <dt>AMHG</dt><dd>At-many-stations hydraulic geometry: the hydraulic-geometry coefficients and exponents along a river are related, so widths at many sections constrain discharge (Gleason and Smith 2014).</dd>
+      <dt>AMHG</dt><dd>At-many-stations hydraulic geometry: the hydraulic-geometry coefficients and exponents along a river are related, so widths at many sections constrain discharge (<a href="https://doi.org/10.1073/pnas.1317606111" target="_blank" rel="noopener">Gleason and Smith 2014</a>).</dd>
       <dt>BAM</dt><dd>Bayesian AMHG–Manning, a McFLI algorithm that estimates discharge from width (and level and slope) with priors; geoBAM adds geomorphic priors by river type.</dd>
       <dt>Bankfull</dt><dd>The flow, width or depth at which the channel is just full, before water spills onto the floodplain.</dd>
       <dt>Bathymetry</dt><dd>The shape and elevation of the river bed below the water surface.</dd>
@@ -185,14 +185,14 @@
       <dt>Hydraulic geometry</dt><dd>Power laws linking width, depth and velocity to discharge at a cross-section, for example W = aQ^b (at-a-station hydraulic geometry, AHG).</dd>
       <dt>Hydrological signature</dt><dd>A statistic that summarises how a catchment behaves, such as mean flow, the baseflow index or the slope of the flow duration curve.</dd>
       <dt>ICESat-2</dt><dd>NASA’s photon-counting laser altimeter; its photons over water and exposed banks give fine elevation profiles across rivers.</dd>
-      <dt>KGE</dt><dd>Kling–Gupta efficiency: combines correlation, the ratio of variability and the ratio of means. 1 is perfect; about −0.41 equals predicting the observed mean (Knoben et al. 2019).</dd>
+      <dt>KGE</dt><dd>Kling–Gupta efficiency: combines correlation, the ratio of variability and the ratio of means. 1 is perfect; about −0.41 equals predicting the observed mean (<a href="https://doi.org/10.5194/hess-23-4323-2019" target="_blank" rel="noopener">Knoben et al. 2019</a>).</dd>
       <dt>LSTM</dt><dd>Long short-term memory network, a recurrent neural network that maps weather series and catchment attributes to daily discharge, trained across many basins at once.</dd>
       <dt>Manning’s equation</dt><dd>Q = (1/n) A R^(2/3) S^(1/2): discharge from flow area A, hydraulic radius R, slope S and roughness n.</dd>
       <dt>McFLI</dt><dd>Mass-conserved flow law inversion: solving a flow law (Manning or hydraulic geometry) for its unknowns along a reach where discharge is assumed the same at every section.</dd>
       <dt>NRMSE</dt><dd>Root mean square error divided by the mean (or range) of observed discharge, given as a percentage.</dd>
       <dt>NSE</dt><dd>Nash–Sutcliffe efficiency: one minus the error variance divided by the variance of the observations. 1 is perfect; 0 is no better than the observed mean.</dd>
       <dt>Physical similarity</dt><dd>Choosing donors by catchment attributes (climate, soils, terrain, land cover), regardless of distance.</dd>
-      <dt>Politically ungauged</dt><dd>A basin where gauges exist but their data are not shared (Gleason and Durand 2020).</dd>
+      <dt>Politically ungauged</dt><dd>A basin where gauges exist but their data are not shared (<a href="https://doi.org/10.3390/rs12071107" target="_blank" rel="noopener">Gleason and Durand 2020</a>).</dd>
       <dt>Prior</dt><dd>What is assumed about an unknown before the data are used, such as a range for mean annual discharge taken from a global model.</dd>
       <dt>PUB</dt><dd>Predictions in Ungauged Basins, the IAHS science decade 2003–2012 on predicting river flow and other responses where there is no record (§02).</dd>
       <dt>Rainfall–runoff model</dt><dd>A model that turns rainfall and evaporation into discharge through stores of water, such as HBV, GR4J or HYMOD.</dd>
@@ -202,7 +202,7 @@
       <dt>Spatial proximity</dt><dd>Choosing donors by distance: the nearest gauged catchments give their parameters.</dd>
       <dt>Surrogate discharge</dt><dd>A satellite signal that correlates with discharge and is used in place of a gauge record, as a calibration target or converted to discharge (Family 5).</dd>
       <dt>SWOT</dt><dd>Surface Water and Ocean Topography, a swath-altimetry satellite (launched December 2022) that measures water level, width and slope of rivers wider than about 100 m.</dd>
-      <dt>Top-kriging</dt><dd>Geostatistical interpolation of streamflow along the river network that accounts for nested catchment areas (Skøien et al. 2006).</dd>
+      <dt>Top-kriging</dt><dd>Geostatistical interpolation of streamflow along the river network that accounts for nested catchment areas (<a href="https://doi.org/10.5194/hess-10-277-2006" target="_blank" rel="noopener">Skøien et al. 2006</a>).</dd>
       <dt>Transfer learning</dt><dd>Reusing a network trained where data are plentiful in a basin or region where they are scarce, with or without fine-tuning.</dd>
       <dt>Virtual station</dt><dd>The point where a nadir altimeter’s ground track crosses a river, giving a water-level series there.</dd>
     </dl>
@@ -904,6 +904,17 @@
       </table>
     </div>
   </div>
+
+  <div class="card wide" data-vi="cmp_nse">
+    <h2>Reported NSE, family by family</h2>
+    <p>Only results reported as Nash&ndash;Sutcliffe efficiency are plotted, one mark per published test; a bar is a range across sites or variants. Correlation, KGE and NRMSE results are in the tables above and in each family&rsquo;s evidence table.</p>
+    <figure>
+      <div class="mapwrap">
+        <svg viewBox="0 0 760 454" role="img" aria-label="Reported NSE, one mark per published test" font-family="Source Serif 4, Source Serif Pro, Charter, Georgia, serif" font-size="12.6"><text x="24" y="34" font-size="16.5" font-weight="600" fill="var(--ink)">Reported NSE, one mark per published test</text><text x="24" y="57" font-size="10.9" fill="var(--ink-faint)">Each test has its own region, period and design; read across families with care</text><rect x="232.0" y="70" width="42.3" height="334" fill="var(--flag-bg)"></rect><path d="M274.3 70V404" stroke="var(--border)" stroke-width="1.4"></path><text x="274.3" y="422" font-size="10.9" text-anchor="middle" fill="var(--ink-faint)">0.0</text><path d="M316.7 70V404" stroke="var(--border)" stroke-width="1" stroke-dasharray="2 3"></path><text x="316.7" y="422" font-size="10.9" text-anchor="middle" fill="var(--ink-faint)">0.2</text><path d="M359.0 70V404" stroke="var(--border)" stroke-width="1" stroke-dasharray="2 3"></path><text x="359.0" y="422" font-size="10.9" text-anchor="middle" fill="var(--ink-faint)">0.4</text><path d="M401.3 70V404" stroke="var(--border)" stroke-width="1" stroke-dasharray="2 3"></path><text x="401.3" y="422" font-size="10.9" text-anchor="middle" fill="var(--ink-faint)">0.6</text><path d="M443.7 70V404" stroke="var(--border)" stroke-width="1" stroke-dasharray="2 3"></path><text x="443.7" y="422" font-size="10.9" text-anchor="middle" fill="var(--ink-faint)">0.8</text><path d="M486.0 70V404" stroke="var(--border)" stroke-width="1" stroke-dasharray="2 3"></path><text x="486.0" y="422" font-size="10.9" text-anchor="middle" fill="var(--ink-faint)">1.0</text><text x="24" y="96" font-weight="600" fill="var(--ink)">1 · Parameter regionalisation</text><path d="M405.6 92H416.2" stroke="var(--accent)" stroke-width="5" stroke-linecap="round"></path><text x="498" y="96" font-size="10.9" fill="var(--ink-soft)">320 Austrian catchments (Parajka 2005)</text><path d="M24 106H736" stroke="var(--border)" stroke-width="1"></path><text x="24" y="126" font-weight="600" fill="var(--ink)">2 · Streamflow regionalisation</text><path d="M388.6 122H414.0" stroke="var(--accent)" stroke-width="5" stroke-linecap="round"></path><text x="498" y="126" font-size="10.9" fill="var(--ink-soft)">33 studies, arid to humid (Parajka 2013)</text><path d="M24 136H736" stroke="var(--border)" stroke-width="1"></path><text x="24" y="156" font-weight="600" fill="var(--ink)">3 · Donor-free routes</text><circle cx="386.5" cy="152" r="4.6" fill="var(--accent)"></circle><text x="498" y="156" font-size="10.9" fill="var(--ink-soft)">MPR + mHM on CAMELS (Feng 2023)</text><path d="M24 166H736" stroke="var(--border)" stroke-width="1"></path><text x="24" y="186" font-weight="600" fill="var(--ink)">4 · Remote sensing of the river</text><circle cx="452.1" cy="182" r="4.6" fill="var(--accent)"></circle><text x="498" y="186" font-size="10.9" fill="var(--ink-soft)">12 reaches, ICESat-2 bed (Chen 2026)</text><circle cx="392.9" cy="204" r="4.6" fill="var(--accent)"></circle><text x="498" y="208" font-size="10.9" fill="var(--ink-soft)">27 reaches, many narrow (Scherer 2024)</text><path d="M263.8 226H329.4" stroke="var(--accent)" stroke-width="5" stroke-linecap="round"></path><text x="498" y="230" font-size="10.9" fill="var(--ink-soft)">Real Landsat widths (Brinkerhoff 2020)</text><path d="M244.8 248l-7 -5v10z" fill="var(--flag)"></path><text x="498" y="252" font-size="10.9" fill="var(--ink-soft)">Real SWOT, median below 0 (Andreadis 2025)</text><path d="M24 262H736" stroke="var(--border)" stroke-width="1"></path><text x="24" y="282" font-weight="600" fill="var(--ink)">5 · Surrogate discharge</text><path d="M388.6 278H439.4" stroke="var(--accent)" stroke-width="5" stroke-linecap="round"></path><text x="498" y="282" font-size="10.9" fill="var(--ink-soft)">3 Australian stations (Yoon 2022)</text><circle cx="388.6" cy="300" r="4.6" fill="var(--accent)"></circle><text x="498" y="304" font-size="10.9" fill="var(--ink-soft)">130 catchments, mean (Yoon 2023)</text><path d="M405.6 322H407.7" stroke="var(--accent)" stroke-width="5" stroke-linecap="round"></path><text x="498" y="326" font-size="10.9" fill="var(--ink-soft)">2 Tibetan rivers (Yu 2023)</text><path d="M24 336H736" stroke="var(--border)" stroke-width="1"></path><text x="24" y="356" font-weight="600" fill="var(--ink)">6 · Deep learning (LSTM)</text><circle cx="420.4" cy="352" r="4.6" fill="var(--accent)"></circle><text x="498" y="356" font-size="10.9" fill="var(--ink-soft)">531 US basins, out of sample (Kratzert 2019)</text><path d="M24 366H736" stroke="var(--border)" stroke-width="1"></path><text x="24" y="386" font-weight="600" fill="var(--ink)">7 · Hybrid / differentiable</text><path d="M392.9 382H405.6" stroke="var(--accent)" stroke-width="5" stroke-linecap="round"></path><text x="498" y="386" font-size="10.9" fill="var(--ink-soft)">Whole regions held out (Feng 2023)</text><path d="M24 396H736" stroke="var(--border)" stroke-width="1"></path><text x="359.0" y="440" font-size="10.9" text-anchor="middle" fill="var(--ink-faint)">NSE</text></svg>
+      </div>
+    </figure>
+    <div class="note"><span class="lbl">Read this before comparing rows</span><p>The tests differ in region, period, catchment size, and whether the basin was truly ungauged or only held out, so the figure is not a ranking. The shaded strip is below 0: an estimate there is worse than simply using the observed mean flow. Family 4&rsquo;s spread is real: the same family ranges from fitted channel geometry at a dozen reaches to a median below 0 on real SWOT data.</p></div>
+  </div>
   <div class="card" data-vi="cmp_decision">
     <h2>The decision in one paragraph</h2>
     <p>If a large regional training sample exists and you only need discharge, Family 6 or 7 will most likely win &mdash; and Family 7 if you also need internal states or extrapolation beyond the training climate. If the gauge network is sparse but the river is wide, Family 4 gives you an observation where nothing else does. If there is no donor, no training sample and no rating curve &mdash; the common case across much of Africa, central Asia and South America &mdash; Family 5 is the one that still functions. If you have a handful of neighbouring gauges and need an interpretable model with internal states, Family 1 remains the workhorse. Family 2 is the right choice when you need a flow statistic rather than a hydrograph, and neighbours are nested.</p>
@@ -955,7 +966,8 @@
     </div>
     <p class="kpsrc">From the side-by-side table in <a href="#compare">&sect;03</a>; the evidence is in this section.</p>
   </div>
-  <div class="card">
+  <div class="card" data-vi="f1_lede">
+    <p class="role">How it works</p>
     <p class="lede">The classical approach, and still the default in engineering practice.</p>
     <p>Calibrate a conceptual rainfall&ndash;runoff model at gauged sites, then decide which parameter values to give the ungauged one. Three strategies dominate, defined clearly in <a href="https://doi.org/10.1029/2008WR007504" target="_blank" rel="noopener">Zhang and Chiew (2009)</a>:</p>
     <ul>
@@ -968,6 +980,8 @@
       <span class="lbl">Where the family boundary comes from</span>
       <p>The split between this family and the next is not this review&rsquo;s invention. <a href="https://doi.org/10.1061/%28asce%29he.1943-5584.0000690" target="_blank" rel="noopener">Razavi and Coulibaly (2012)</a>, reviewing two decades of regionalisation (1990&ndash;2011) in the <em>Journal of Hydrologic Engineering</em>, draw it explicitly: continuous streamflow regionalisation proceeds either <strong>through rainfall&ndash;runoff models</strong>, where &ldquo;model parameters are used as instruments to transfer hydrological information from gauged to ungauged basins&rdquo;, or through <strong>hydrologic model&ndash;independent methods</strong>, where streamflow is transferred directly by data-driven means. That is Family 1 and Family 2 respectively. Their review is also the best single account of where the field stood immediately before the machine-learning turn. It stops short of a ranking: model-independent methods had been tried in only a few cases, and the authors find &ldquo;no clear indication from the literature on which regionalization approach should be preferred for a given case&rdquo;, so they recommend comparing both families at each site. They also note that there was no standard method for regionalisation uncertainty, and that most methods assume stationarity. <span class="srcd">Read in full 17&nbsp;October&nbsp;2026.</span></p>
     </div>
+  </div>
+
   <div class="card wide" data-vi="map_f1">
     <h2>Family 1 at a glance</h2>
     <p>Four ways of answering the same question, and the order they arrived in. The left column is the one that won empirically; the right column holds the papers that framed the problem or set limits on it.</p>
@@ -1166,14 +1180,14 @@
     </div>
     <p class="mapnote">Solid arrows mark a documented build-on or extension; dashed arrows mark a study that tests, benchmarks or limits another. Where an arrow reflects this review&rsquo;s reading rather than an explicit statement in the papers, the text below says so.</p>
   </div>
-  </div>
   <div class="card" data-vi="tab_f12">
+    <p class="role">Evidence</p>
     <h2>The consistent result: transfer whole parameter sets, don&rsquo;t regress them</h2>
     <p>Across three independent large-sample studies on three continents, regression came last. The reason is structural rather than regional: regression fits each parameter separately, ignoring the cross-correlations between them, and calibration produces many different parameter sets that fit equally well &mdash; the equifinality problem set out in <a href="https://doi.org/10.1016/j.jhydrol.2005.07.007" target="_blank" rel="noopener">Beven&rsquo;s (2005) manifesto</a> and still the reference point for it.</p>
     <p class="scrollhint">Table scrolls sideways &rarr;</p>
     <div class="tablewrap">
       <table class="w7 ev7">
-        <thead><tr><th>Study and year</th><th>Journal</th><th>Research question addressed</th><th>Method</th><th>Data required</th><th>Key finding</th><th>Limitation</th></tr></thead>
+        <thead><tr><th>Study and year</th><th>Journal</th><th>Research question addressed</th><th>Method</th><th>Data required</th><th>Finding</th><th>Limitation</th></tr></thead>
         <tbody>
           <tr>
             <td><a href="https://doi.org/10.1016/j.jhydrol.2003.09.028" target="_blank" rel="noopener">Merz and Bl&ouml;schl</a> <span class="yr">2004</span></td><td><em>Journal of Hydrology</em> 287, 95&ndash;123</td>
@@ -1244,12 +1258,14 @@
     </div>
   </div>
   <div class="card" data-vi="f1_refine">
+    <p class="role">In depth</p>
     <h2>Three refinements worth knowing</h2>
     <p><strong>Output averaging.</strong> Run the model with several donors&rsquo; parameter sets and average the <em>simulated hydrographs</em>, not the parameters. Zhang and Chiew ranked it among the two biggest gains; <a href="https://doi.org/10.1002/2015WR018247" target="_blank" rel="noopener">Beck et al. (2016)</a> confirmed it globally with ten donors per cell on 1,787 catchments.</p>
     <p><strong>Regionalise the parameterisation, not the parameters</strong> (<a href="https://doi.org/10.1029/2008WR007327" target="_blank" rel="noopener">Samaniego et al. 2010</a>, MPR). Transfer functions turn fine-scale physiographic data into parameters, which are upscaled to the grid; only 62 coefficients are calibrated instead of 28 parameters per cell. On the Upper Neckar (about 4,000&nbsp;km<sup>2</sup>), both approaches fit equally well at a fixed grid. Moved to a finer grid, MPR kept mean NSE <span class="num">0.80</span> against <span class="num">0.64</span>, and 2.5% of cells broke the water balance against 53%. Its &ldquo;ungauged&rdquo; test is ten internal gauges. Extended by <a href="https://doi.org/10.5194/hess-21-4323-2017" target="_blank" rel="noopener">Samaniego et al. (2017)</a> and globally by <a href="https://doi.org/10.1029/2019jd031485" target="_blank" rel="noopener">Beck et al. (2020)</a> (4,229 headwater catchments). <span class="srcd">2010 paper read in full 17&nbsp;October&nbsp;2026.</span></p>
     <p><strong>Calibrate the region, not each catchment</strong> (<a href="https://doi.org/10.1029/2006WR005271" target="_blank" rel="noopener">Parajka et al. 2007</a>; 320 Austrian catchments). Each iteration kriges every parameter from neighbours and pulls the next calibration toward it. Gauged fit held (median NSE <span class="num">0.71&ndash;0.73</span>), parameters became more stable between periods (degree-day factor r<sup>2</sup> <span class="num">0.30</span> &rarr; <span class="num">0.56</span>), and the ungauged loss fell from <span class="num">0.05</span> to <span class="num">0.02&ndash;0.03</span>. The authors call the gain small, and it relies on about 31 gauges within 50&nbsp;km. <span class="srcd">Read in full 17&nbsp;October&nbsp;2026.</span></p>
   </div>
   <div class="card" data-vi="f1_fourth">
+    <p class="role">In depth</p>
     <h2>A fourth option the three-way framing misses</h2>
     <p>Proximity, similarity and regression assume the parameter&ndash;attribute relation is either ignored or linear. Machine learning can learn the mapping without assuming its form.</p>
     <ul>
@@ -1266,6 +1282,13 @@
     </ul>
     <p><strong>Where the transfer-function line goes next.</strong> MPR (<a href="https://doi.org/10.5194/hess-21-4323-2017" target="_blank" rel="noopener">Samaniego et al. 2017</a>) and <a href="https://doi.org/10.1029/2019JD031485" target="_blank" rel="noopener">Beck et al. (2020)</a> fit functions from attributes to parameters; differentiable models (&sect;10) learn that function by gradient descent inside the model (<a href="https://doi.org/10.1029/2022WR032404" target="_blank" rel="noopener">Feng et al. 2022</a>; <a href="https://doi.org/10.1029/2024WR037544" target="_blank" rel="noopener">Huynh et al. 2024</a>).</p>
   </div>
+  <div class="card" data-vi="edge_f1">
+    <p class="role">Strengths</p>
+    <h2>Where Family 1 is strongest</h2>
+    <p><strong>The question it answers:</strong> Which gauged catchment&rsquo;s calibrated model should stand in for this ungauged one?</p>
+    <div class="note"><span class="lbl">Strengths, from the long version in <a href="#compare">&sect;03</a></span><ul><li>Interpretable; gives internal states</li><li>Mature and well documented</li><li>Modest computing needs</li></ul></div>
+  </div>
+
   <div class="card" data-vi="f1_led">
     <h2>Where this family stands</h2>
     <div class="ledger">
@@ -1353,6 +1376,7 @@
     <p class="kpsrc">From the side-by-side table in <a href="#compare">&sect;03</a>; the evidence is in this section.</p>
   </div>
   <div class="card" data-vi="f2_lede">
+    <p class="role">How it works</p>
     <p class="lede">Instead of transferring model parameters, transfer the flow.</p>
     <p>These methods interpolate observed discharge or its statistics directly across the river network, and never calibrate a rainfall&ndash;runoff model at the target site.</p>
     <p><a href="https://doi.org/10.1002/2016WR018716" target="_blank" rel="noopener">de Lavenne et al. (2016)</a> state the trade-off cleanly. Transferring parameters also transfers everything wrong with the model &mdash; its simplifying assumptions, its parameter identification problems, its rainfall-input errors. Regionalising observations avoids that. The cost is that observed runoff also carries human influence &mdash; dams, abstractions, irrigation &mdash; which is hard to separate out, and that the method is useless where rainfall is the real unknown.</p>
@@ -1454,11 +1478,12 @@
     <p class="mapnote">Solid arrows mark a documented build-on or extension; dashed arrows mark a study that tests, benchmarks or limits another. Where an arrow reflects this review&rsquo;s reading rather than an explicit statement in the papers, the text below says so.</p>
   </div>
   <div class="card" data-vi="tab_f23">
+    <p class="role">Evidence</p>
     <h2>The main techniques</h2>
     <p class="scrollhint">Table scrolls sideways &rarr;</p>
     <div class="tablewrap">
       <table class="w7 ev7">
-        <thead><tr><th>Technique and year</th><th>Key reference / journal</th><th>Research question / gap addressed</th><th>Method</th><th>Data required</th><th>Findings</th><th>Limitations</th></tr></thead>
+        <thead><tr><th>Technique and year</th><th>Key reference / journal</th><th>Research question / gap addressed</th><th>Method</th><th>Data required</th><th>Finding</th><th>Limitation</th></tr></thead>
         <tbody>
           <tr>
             <td>Top-kriging <span class="yr">2006</span></td><td><a href="https://doi.org/10.5194/hess-10-277-2006" target="_blank" rel="noopener">Sk&oslash;ien, Merz and Bl&ouml;schl</a>, <em>HESS</em> 10, 277&ndash;287</td>
@@ -1510,6 +1535,7 @@
     </div>
   </div>
   <div class="card" data-vi="f2_topk">
+    <p class="role">In depth</p>
     <h2>Top-kriging is the standout</h2>
     <p><a href="https://doi.org/10.5194/hess-10-277-2006" target="_blank" rel="noopener">Sk&oslash;ien, Merz and Bl&ouml;schl (2006)</a> introduced topological kriging, a best linear unbiased estimator adapted to stream networks that accounts for both catchment area and the nested structure of the network. Tested on the 100-year flood in two Austrian regions, it gave more plausible and more accurate estimates than ordinary kriging, and &mdash; usefully &mdash; returns uncertainty that is lowest on the main stem and grows toward the headwaters.</p>
     <p>Subsequent comparisons, as summarised by <a href="https://doi.org/10.1002/2016WR018716" target="_blank" rel="noopener">de Lavenne et al. (2016)</a>, found it competitive or better than the alternatives:</p>
@@ -1520,6 +1546,7 @@
     </ul>
   </div>
   <div class="card" data-vi="f2_head">
+    <p class="role">In depth</p>
     <h2>The head-to-head test against Family 1</h2>
     <p>Most of this review compares families through separate studies in separate places. One paper puts Families 1 and 2 on the same catchments, the same data and the same metrics &mdash; and it is the third part of the PUB comparative assessment, the companion to the Parajka et al. paper cited throughout &sect;04.</p>
     <p><a href="https://doi.org/10.5194/hess-17-2263-2013" target="_blank" rel="noopener">Viglione, Parajka, Rogger, Salinas, Laaha, Sivapalan and Bl&ouml;schl (2013)</a>, <em>HESS</em> 17(6), 2263, predict daily runoff for <strong>213 Austrian catchments</strong> two ways &mdash; by a <em>regionalised rainfall&ndash;runoff model</em> (Family 1) and by <em>Top-kriging</em> (Family 2) &mdash; then extract six runoff signatures from each: annual runoff, seasonal runoff, flow duration curves, low flows, high flows and the hydrograph. Performance is scored in cross-validation by bias, error spread and the proportion of unexplained spatial variance.</p>
@@ -1532,18 +1559,27 @@
     <p>Read against <a href="https://doi.org/10.5194/hess-17-1783-2013" target="_blank" rel="noopener">Parajka et al. (2013)</a> Part 1, which found dense networks favour proximity and geostatistics, this is the same conclusion arrived at by a different route. The caveat is the same one that applies to all of Family 2: Austria has an unusually dense gauge network, and Top-kriging needs it.</p>
   </div>
   <div class="card" data-vi="f2_rffa">
+    <p class="role">In depth</p>
     <h2>A strand this review otherwise treats only through the handbook: regional flood frequency</h2>
     <p>&sect;05&rsquo;s table covers flood estimation through the Rosbjerg et al. handbook chapter, which scopes the problem but predates the machine-learning literature on it. Regional flood frequency analysis (RFFA) has since become one of the most active applications of statistical learning to ungauged sites &mdash; estimating a flood quantile at an unmonitored location from regional data, without any rainfall&ndash;runoff model at all.</p>
     <p><a href="https://doi.org/10.1016/j.jhydrol.2020.125861" target="_blank" rel="noopener">Desai and Ouarda (2020)</a>, <em>Journal of Hydrology</em> 594, 125861, apply random forest regression to regional hydrological frequency analysis at ungauged sites, replacing the linear regression on catchment descriptors that RFFA has traditionally used. The case study is 151 hydrometric stations in southern Quebec. Applied within neighbourhoods delineated by canonical correlation analysis (CCA-RFR, 30 trees), random forests gave the lowest errors of any model tested: relative RMSE <span class="num">29&ndash;35%</span> across the 10-, 50- and 100-year quantiles, where every other model was at about 34% or above. Two cautions come with that. Applied to all stations without the neighbourhoods, random forests were the worst model (relative RMSE <span class="num">81&ndash;96%</span>). And CCA-RFR had the <em>lowest</em> Nash criterion of all (<span class="num">0.51&ndash;0.58</span>, against <span class="num">0.64&ndash;0.84</span> for the others), which the authors put down to small basins and the smaller samples inside neighbourhoods &mdash; so which model is &ldquo;best&rdquo; depends on the metric. <span class="srcd">Read in full 17&nbsp;October&nbsp;2026, from the accepted manuscript.</span></p>
     <p>The structural point is the one Razavi and Coulibaly made in 2012 and that &sect;04 borrows: regionalising a <em>flow statistic</em> directly is a model-independent route, and it inherits the strengths and weaknesses of this family rather than of Family 1. If your target is a design flood rather than a hydrograph, this is where to look.</p>
   </div>
   <div class="card" data-vi="f2_twosrc">
+    <p class="role">In depth</p>
     <h2>Two sources this section should not be without</h2>
     <p><strong>The low-flow canon</strong> (<a href="https://doi.org/10.1016/s0022-1694(00)00340-1" target="_blank" rel="noopener">Smakhtin 2001</a>, <em>J. Hydrology</em> 240, 147&ndash;186; over 1,700 citations): low-flow mechanisms, estimation from records (FDCs, frequency analysis, baseflow separation, recessions) and estimation in ungauged catchments. For a dryland reach, the key part is <strong>transmission losses</strong> between a reach and a downstream gauge: evaporation, riparian ET, recharge and <strong>bed losses through alluvium</strong>, which &ldquo;can be substantial not only during low flows but also during the early stages of flood events&rdquo;. They break the assumption that flow at one reach equals flow at a distant gauge, and their regional importance &ldquo;is largely unknown&rdquo;. <span class="srcd">Read in full 17&nbsp;October&nbsp;2026.</span></p>
     <p><strong>The source of QPPQ</strong> (<a href="https://doi.org/10.1623/hysj.53.4.706" target="_blank" rel="noopener">Mohamoud 2008</a>, <em>HSJ</em> 53(4), 706): regional FDCs by step-wise regression on 29 Mid-Atlantic catchments, tested on three held-out sites. Over 21 years, daily R<sup>2</sup> was <span class="num">0.80&ndash;0.86</span> (monthly <span class="num">0.88&ndash;0.98</span>), about equal to the drainage-area ratio. Skill falls with donor distance; with no nearby gauge the method &ldquo;may not accurately predict streamflow&rdquo;. <span class="srcd">Read in full 17&nbsp;October&nbsp;2026.</span></p>
     <p><strong>The PUB handbook names inundation as a constraint (2013).</strong> The chapter summary calls for using &ldquo;the enormous amounts of spatial information becoming available as proxy data, such as snow, remotely sensed soil moisture and <strong>inundation patterns</strong>&rdquo;, compared against simulated patterns rather than becoming &ldquo;grist to optimisation schemes aimed at curve fitting&rdquo;. Worth quoting in an inundation-modelling introduction.</p>
     <p><strong>The geomorphological method as software.</strong> <a href="https://doi.org/10.32614/cran.package.transfr" target="_blank" rel="noopener"><code>transfR</code></a> (R, CRAN 1.1.18, July 2026; INRAE) inverts a donor&rsquo;s streamflow to net rainfall (<a href="https://doi.org/10.1080/02626667.2018.1425801" target="_blank" rel="noopener">Boudhra&acirc; et al. 2018</a>), interpolates it to the ungauged catchment and convolves it with that catchment&rsquo;s geomorphological unit hydrograph; several donors add robustness. It also runs as the <a href="https://doi.org/10.1080/02626667.2020.1797045" target="_blank" rel="noopener">SIMFEN web service</a> (Dallery et al., <em>HSJ</em> 67(16)), Brittany only, with up to five donors within 50&nbsp;km. It reports no skill scores of its own. <span class="srcd">Read in full 17&nbsp;October&nbsp;2026.</span></p>
   </div>
+  <div class="card" data-vi="edge_f2">
+    <p class="role">Strengths</p>
+    <h2>Where Family 2 is strongest</h2>
+    <p><strong>The question it answers:</strong> Can flow be estimated without transferring a model&rsquo;s errors along with it?</p>
+    <div class="note"><span class="lbl">Strengths, from the long version in <a href="#compare">&sect;03</a></span>Avoids transferring model error</div>
+  </div>
+
   <div class="card" data-vi="f2_led">
     <h2>Where this family stands</h2>
     <div class="ledger">
@@ -1623,6 +1659,7 @@
     <p class="kpsrc">From the side-by-side table in <a href="#compare">&sect;03</a>; the evidence is in this section.</p>
   </div>
   <div class="card" data-vi="f3_lede">
+    <p class="role">How it works</p>
     <p class="lede">If no donor is available, the information has to come from somewhere else: from physical reasoning about what the landscape implies, or from a model built to run everywhere at once.</p>
   </div>
   <div class="card wide" data-vi="map_f3">
@@ -1735,23 +1772,26 @@
     <p class="mapnote">Solid arrows mark a documented build-on or extension; dashed arrows mark a study that tests, benchmarks or limits another. Where an arrow reflects this review&rsquo;s reading rather than an explicit statement in the papers, the text below says so.</p>
   </div>
   <div class="card" data-vi="f3_apriori">
+    <p class="role">In depth</p>
     <h2>A priori and physically constrained parameters</h2>
     <p>The idea is to estimate parameters from mapped physical properties &mdash; soil depth and texture, geology, topography, vegetation &mdash; rather than by calibration, so the model can be applied anywhere the maps exist. This was PUB&rsquo;s declared ambition: infer function from form (<a href="https://doi.org/10.1080/02626667.2013.803183" target="_blank" rel="noopener">Hrachowitz et al. 2013</a>).</p>
     <p>In practice it has worked best as a <em>constraint</em> rather than a replacement. Physically derived parameter ranges with explicit uncertainty bounds narrow the feasible parameter space; calibration or regional information then does the rest. Hughes and colleagues&rsquo; long-running work on the Pitman model in southern Africa is the clearest sustained example, and the Hrachowitz review treats it as the model case of a practical tool refined under scientific scrutiny.</p>
     <p>The most scalable version is <strong>Multiscale Parameter Regionalisation</strong> (<a href="https://doi.org/10.1029/2008WR007327" target="_blank" rel="noopener">Samaniego, Kumar and Attinger 2010</a>), which calibrates the coefficients of transfer functions from physiographic data to parameters, rather than the parameters themselves. In its first test, streamflow at the outlet could not separate it from the standard approach; soil-moisture patterns and the water balance across grid sizes could. One calibration then serves multiple resolutions and locations (<a href="https://doi.org/10.5194/hess-21-4323-2017" target="_blank" rel="noopener">Samaniego et al. 2017</a>), and <a href="https://doi.org/10.1029/2019jd031485" target="_blank" rel="noopener">Beck et al. (2020)</a> applied the idea globally using observed streamflow from 4,229 headwater catchments.</p>
   </div>
   <div class="card" data-vi="f3_class">
+    <p class="role">In depth</p>
     <h2>Catchment classification</h2>
     <p>Classification is the scientific companion to regionalisation: if catchments can be sorted into functional classes, transfer within a class should be defensible. <a href="https://doi.org/10.5194/hess-15-2895-2011" target="_blank" rel="noopener">Sawicz et al. (2011)</a> analysed 280 catchments in the eastern USA in a six-dimensional signature space and found nine homogeneous classes via Bayesian clustering, then interpreted those classes against climatic and landscape attributes. <a href="https://doi.org/10.5194/hess-21-2863-2017" target="_blank" rel="noopener">Kuentz et al. (2017)</a> extended the approach across Europe.</p>
     <p>A caution for anyone building on signatures: <a href="https://doi.org/10.1002/2015wr017635" target="_blank" rel="noopener">Westerberg et al. (2016)</a> quantified the uncertainty in hydrological signatures themselves for gauged and ungauged catchments. Signature uncertainty is not negligible, and a classification built on noisy signatures inherits that noise.</p>
   </div>
   <div class="card" data-vi="tab_f35">
+    <p class="role">Evidence</p>
     <h2>The large-domain routes, compared</h2>
     <p>This family had no evidence table in earlier drafts, which flattered it. Below are the six studies that carry its weight &mdash; three on how to get parameters without donors, two on the global products that result, and one on the forcing error that limits all of them.</p>
     <p class="scrollhint">Table scrolls sideways &rarr;</p>
     <div class="tablewrap">
       <table class="w7 ev7">
-        <thead><tr><th>Study and year</th><th>Journal</th><th>Research question / gap addressed</th><th>Method</th><th>Data required</th><th>Findings</th><th>Limitations</th></tr></thead>
+        <thead><tr><th>Study and year</th><th>Journal</th><th>Research question / gap addressed</th><th>Method</th><th>Data required</th><th>Finding</th><th>Limitation</th></tr></thead>
         <tbody>
           <tr>
             <td><a href="https://doi.org/10.5194/hess-21-4323-2017" target="_blank" rel="noopener">Samaniego et al.</a><br><span class="muted">MPR</span> <span class="yr">2017</span></td><td><em>HESS</em> 21(9), 4323&ndash;4346</td>
@@ -1806,6 +1846,7 @@
     </div>
   </div>
   <div class="card" data-vi="f3_global">
+    <p class="role">In depth</p>
     <h2>Large-domain and global models</h2>
     <p>Global models put a number everywhere. Two developments since 2019 matter: <a href="https://doi.org/10.5194/essd-11-1655-2019" target="_blank" rel="noopener">GRUN</a> reconstructed global runoff from <em>observations</em> and beat 13 global models, and <a href="https://doi.org/10.5194/hess-24-535-2020" target="_blank" rel="noopener">World-Wide HYPE</a> scaled catchment modelling to the whole landmass. They are now a standard baseline and can be a <em>calibration target</em>: <a href="https://doi.org/10.1002/hyp.15044" target="_blank" rel="noopener">Skoulikaris and Piliouras (2023)</a> rectified 30 years of large-scale model discharge against sparse observations, tuned a regional lumped model on it and transferred it by similarity (R<sup>2</sup> <span class="num">0.654&ndash;0.949</span>, KGE <span class="num">0.759&ndash;0.790</span>, NSE <span class="num">0.649&ndash;0.745</span> where observed).</p>
     <div class="note">
@@ -1814,6 +1855,13 @@
     </div>
     <p><strong>The weakness is local skill.</strong> Coarse resolution, generic parameters and precipitation error make the number at a small catchment often poor. <a href="https://doi.org/10.5194/hess-21-6201-2017" target="_blank" rel="noopener">Beck et al. (2017)</a> tested 22 precipitation products against 76,086 gauges and through HBV in 9,053 catchments and found marked differences: the choice of precipitation product often matters more than the choice of model.</p>
   </div>
+  <div class="card" data-vi="edge_f3">
+    <p class="role">Strengths</p>
+    <h2>Where Family 3 is strongest</h2>
+    <p><strong>The question it answers:</strong> What can be predicted where there is no donor gauge at all?</p>
+    <div class="note"><span class="lbl">Strengths, from the long version in <a href="#compare">&sect;03</a></span>Works with no local gauge at all</div>
+  </div>
+
   <div class="card" data-vi="f3_led">
     <h2>Where this family stands</h2>
     <div class="ledger">
@@ -1891,8 +1939,10 @@
     <p class="kpsrc">From the side-by-side table in <a href="#compare">&sect;03</a>; the evidence is in this section.</p>
   </div>
   <div class="card" data-vi="f4_lede">
+    <p class="role">How it works</p>
     <p class="lede">This family changes the question.</p>
     <p>Instead of predicting discharge from rainfall, it <em>measures</em> the river&rsquo;s observable hydraulics &mdash; width, water-surface elevation, slope and, in a few studies, surface velocity &mdash; and turns them into discharge through a rating curve, a flow-law inversion, a rebuilt channel or a hydraulic model. The basin stays ungauged on the ground; the river is gauged from orbit.</p>
+    <p class="rolerule">The observation plays the part of a gauge <em>reading</em>: each one becomes a discharge for its date. Where the same kind of signal, such as width or water level, serves only as the record a rainfall&ndash;runoff model is calibrated to, the paper is in Family 5 (<a href="#surrogate">&sect;08</a>).</p>
   </div>
   <div class="card wide" data-vi="map_f4">
     <h2>Family 4 at a glance</h2>
@@ -2045,7 +2095,19 @@
     </div>
     <p class="mapnote">Solid arrows mark a documented build-on or extension; dashed arrows mark a study that tests, benchmarks or limits another. Where an arrow reflects this review&rsquo;s reading rather than an explicit statement in the papers, the text below says so.</p>
   </div>
+
+  <div class="card" data-vi="pair_f4">
+    <p class="role">In depth</p>
+    <h2>Same signal, two families</h2>
+    <p>Width and water level appear in both Family 4 and Family 5. What decides the family is the role of the observation, not the signal.</p>
+    <ul>
+      <li><strong>Width.</strong> Family 4: <a href="https://doi.org/10.1073/pnas.1317606111" target="_blank" rel="noopener">Gleason and Smith 2014</a> turn each set of widths into a discharge for that date, through at-many-stations hydraulic geometry. Family 5: <a href="https://doi.org/10.5194/hess-14-2011-2010" target="_blank" rel="noopener">Sun et al. 2010</a> use the width series only to calibrate a rainfall&ndash;runoff model (HYMOD) through \(W = a\,Q^{b}\); the model then gives discharge every day.</li>
+      <li><strong>Water level.</strong> Family 4: <a href="https://doi.org/10.1002/2014WR016618" target="_blank" rel="noopener">Paris et al. 2016</a> fit a rating curve at each altimetry virtual station, so each level becomes a discharge. Family 5: Sun et al. 2011 calibrate a model through \(H = c\,Q^{f} + H_{0}\), and <a href="https://doi.org/10.5194/hess-24-3331-2020" target="_blank" rel="noopener">Hulsman et al. 2020</a> through Manning&rsquo;s equation with cross-sections from terrain data.</li>
+    </ul>
+    <p>So the observation is the gauge <em>reading</em> in Family 4 and the gauge <em>record</em> in Family 5. In practice, Family 4 gives discharge on the dates the satellite sees the river and takes the size of the flow from priors or the channel; Family 5 gives a continuous series and takes the size of the flow from the model&rsquo;s water balance, a climate estimate or a gauge.</p>
+  </div>
   <div class="card" data-vi="f4_org">
+    <p class="role">In depth</p>
     <h2>How the field is organised</h2>
     <p><a href="https://doi.org/10.3390/rs12071107" target="_blank" rel="noopener">Gleason and Durand (2020)</a> is the orienting review, and its framing is unusually useful: it classifies work by <strong>gauging context</strong> &mdash; gauged, semi-gauged, regionally gauged, <em>politically</em> ungauged, and totally ungauged &mdash; rather than by sensor. &ldquo;Politically ungauged&rdquo; names basins where gauges exist but data are not shared, which is a large share of the real-world problem.</p>
     <p>The method categories they identify:</p>
@@ -2057,7 +2119,10 @@
     <p>The first category is what this review treats as Family 5 (&sect;08); it is listed here only to give the review&rsquo;s whole scheme. Family 4 covers the other two, plus methods that turn another observable, such as surface velocity, into discharge. The comparison tables below group the Family 4 papers by a different question: where the size of the flow comes from &mdash; priors (flow-law inversion), the rebuilt channel, a model&rsquo;s inflows, or another observable such as surface velocity. A fifth route, rating curves fitted to a reference discharge, appears only in the evidence table, because every such method uses gauged discharge. Two routes have grown since that review: altimetry rating curves at global scale (<a href="https://doi.org/10.1002/2014WR016618" target="_blank" rel="noopener">Paris et al. 2016</a>; <a href="https://doi.org/10.1038/s41467-026-78275-5" target="_blank" rel="noopener">Paris et al. 2026</a>) and channel geometry rebuilt from ICESat-2 and SWOT (<a href="https://doi.org/10.1016/j.rse.2026.115568" target="_blank" rel="noopener">Chen et al. 2026</a>; for channel shape alone, &sect;11).</p>
   </div>
   <div class="card" data-vi="tab_f44">
+    <p class="role">Evidence</p>
     <h2>What the accuracy actually looks like</h2>
+    <p class="foldlede">Every Family 4 study in this review, one row each, including the methods that need ground data at the target river and so are left out of the comparison tables below.</p>
+    <details class="fold"><summary><span class="sh">Show the table (18 studies)</span><span class="hd">Hide the table</span></summary>
     <p class="scrollhint">Table scrolls sideways &rarr;</p>
     <div class="tablewrap">
       <table class="w7 ev7">
@@ -2210,8 +2275,10 @@
         </tbody>
       </table>
     </div>
+    </details>
   </div>
   <div class="card" data-vi="f4_honest">
+    <p class="role">In depth</p>
     <h2>The honest reading</h2>
     <p>Satellite discharge gets the <strong>shape</strong> of the hydrograph roughly right and the <strong>magnitude</strong> often wrong. Gleason and Durand&rsquo;s pragmatic case: where nothing is known, a factor-of-two error can still be an improvement.</p>
     <p><strong>What SWOT is</strong> (<a href="https://doi.org/10.1007/s10712-015-9346-y" target="_blank" rel="noopener">Biancamaria et al. 2015</a>, <cite>Surveys in Geophysics</cite> 37(2), 307&ndash;337, the standard reference). A Ka-band interferometer imaging two 50&nbsp;km swaths either side of a <span class="num">20&nbsp;km</span> nadir gap, on a <span class="num">20.86-day</span> repeat. Native pixels are metres across but only metric-to-decametric in height; the <span class="num">10&nbsp;cm</span> (1&sigma;) figure holds when averaged over 1&nbsp;km<sup>2</sup>.</p>
@@ -2229,6 +2296,7 @@
     </div>
   </div>
   <div class="card" data-vi="f4_edge">
+    <p class="role">Strengths</p>
     <h2>What Family 4 does that the other families cannot</h2>
     <p class="lede">Family 4 is the only family that measures the target river itself, and at its gauge-free end it needs no donor, no training sample and no gauge. Not every Family 4 method is at that end: five need gauged discharge (<a href="https://doi.org/10.1029/2007WR006133" target="_blank" rel="noopener">Smith and Pavelsky 2008</a>; <a href="https://doi.org/10.1088/1748-9326/acd407" target="_blank" rel="noopener">Riggs et al. 2023</a>; Coppo Frias et al. 2023; <a href="https://doi.org/10.1029/2023WR036428" target="_blank" rel="noopener">Musaeus et al. 2024</a>; <a href="https://doi.org/10.1029/2024WR038455" target="_blank" rel="noopener">Larnier et al. 2025</a>), and two need other ground data at the river: a bed surveyed by airborne LiDAR (<a href="https://doi.org/10.1029/2023GL105839" target="_blank" rel="noopener">Masafu et al. 2023</a>) or field-measured depth and velocity (<a href="https://doi.org/10.1016/S0022-1694(03)00129-X" target="_blank" rel="noopener">Bjerklie et al. 2003</a>); seven more use gauged discharge or water level measured on the ground in some variants (<a href="https://doi.org/10.1029/2019WR025599" target="_blank" rel="noopener">Feng et al. 2019</a>; <a href="https://doi.org/10.1016/j.jhydrol.2018.04.005" target="_blank" rel="noopener">Bjerklie et al. 2018</a>; <a href="https://doi.org/10.1029/2021WR031614" target="_blank" rel="noopener">Durand et al. 2023</a>; <a href="https://doi.org/10.1002/2014WR016618" target="_blank" rel="noopener">Paris et al. 2016</a>, 2026; <a href="https://doi.org/10.1029/2018GL080771" target="_blank" rel="noopener">Tuozzolo et al. 2019</a>; <a href="https://doi.org/10.1029/2018WR024220" target="_blank" rel="noopener">Moramarco et al. 2019</a>); the comparison tables below keep the 10 that need no ground data at the target river, plus Feng, Bjerklie, Tuozzolo and Moramarco, which report results both with and without it. The gauge-free end has four advantages over Families 1&ndash;3 and 6&ndash;7, and one large weakness.</p>
     <p><span class="unv">Comparisons with other families set results from different experiments side by side (&sect;03). They show orders of magnitude, not a ranking.</span></p>
@@ -2243,6 +2311,7 @@
 
 
   <div class="card wide" data-vi="f4_cmp_mcfli">
+    <p class="role">Comparing methods</p>
     <h2>Comparing Family 4 methods (1 of 4): flow-law inversion: the scale from priors</h2>
     <p>The 10 Family 4 methods that need no ground data at the target river (no gauged discharge, no water level measured on the ground, no surveyed channel geometry), plus four that report results both with and without such data (<a href="https://doi.org/10.1029/2019WR025599" target="_blank" rel="noopener">Feng et al. 2019</a>; <a href="https://doi.org/10.1016/j.jhydrol.2018.04.005" target="_blank" rel="noopener">Bjerklie et al. 2018</a>; <a href="https://doi.org/10.1029/2018GL080771" target="_blank" rel="noopener">Tuozzolo et al. 2019</a>; <a href="https://doi.org/10.1029/2018WR024220" target="_blank" rel="noopener">Moramarco et al. 2019</a>), grouped by where the size of the flow comes from: priors, the rebuilt channel, a model’s inflows, or another observable such as velocity. Other methods that need such data, or use it in some variants without comparing (every rating-curve method, satellite video over a LiDAR-surveyed bed, and regressions tested on field hydraulics), are left out; they are in the evidence table above. Each cell was checked in the paper’s full text; quartile and impact factor as in §16. The third table is the one closest to a geometry-based method.</p>
     <p class="dlegend">Beside each satellite dataset: <span class="dcost dfree">free</span> can be downloaded at no cost today; <span class="dcost dpaid">paid</span> commercial images that must be bought.</p>
@@ -2263,10 +2332,13 @@
         </tbody>
       </table>
     </div>
+    <details class="fold"><summary><span class="sh">Show the summary of this table</span><span class="hd">Hide the summary</span></summary>
     <div class="note tblsum"><span class="lbl">Summary of this table</span><ul><li><strong>How the observation is made.</strong> Width alone, or width with water level and slope:<ul><li>Width from Landsat, Sentinel-2 or CubeSats (<a href="https://doi.org/10.1073/pnas.1317606111" target="_blank" rel="noopener">Gleason and Smith 2014</a>; <a href="https://doi.org/10.1029/2019WR025599" target="_blank" rel="noopener">Feng et al. 2019</a>; <a href="https://doi.org/10.1029/2020WR027949" target="_blank" rel="noopener">Brinkerhoff et al. 2020</a>; <a href="https://doi.org/10.1016/j.rse.2023.113489" target="_blank" rel="noopener">Lin et al. 2023</a>).</li><li>Level, width and slope from SWOT, AirSWOT or simulation (<a href="https://doi.org/10.1002/2015WR018434" target="_blank" rel="noopener">Durand et al. 2016</a>; <a href="https://doi.org/10.1002/2017WR021626" target="_blank" rel="noopener">Hagemann et al. 2017</a>; <a href="https://doi.org/10.1029/2018GL080771" target="_blank" rel="noopener">Tuozzolo et al. 2019</a>; <a href="https://doi.org/10.1029/2024GL114185" target="_blank" rel="noopener">Andreadis et al. 2025</a>).</li></ul></li><li><strong>How it becomes discharge.</strong> A flow law solved along a mass-conserving reach:<ul><li>At-many-stations hydraulic geometry, which ties the width curves of all cross-sections together (AMHG, BAM, geoBAM).</li><li>\(Q = \tfrac{1}{n}\,A^{5/3}\,W^{-2/3}\,S^{1/2}\), with the unseen baseline area \(A_0\) and roughness \(n\) inverted (MetroMan, BAM, the SWOT algorithms).</li></ul></li><li><strong>Where the scale comes from.</strong> From priors: the problem has more unknowns than observations.<ul><li>A prior on mean annual flow from a water-balance model, a global model (GRADES) or reanalysis.</li><li>Geomorphic priors by river type, including bankfull depth and bed shape r (Brinkerhoff).</li><li>The bias follows the prior: 62% prior bias, 50% median bias on real SWOT data (Andreadis); AirSWOT results moved with the prior (Tuozzolo).</li></ul></li><li><strong>Main limitations.</strong><ul><li>Timing is good, magnitude often is not: median NSE below 0 on real SWOT data.</li><li>Width-only inversion fails below about 40 m and works worst in low-b, dry and very wide rivers (Feng; Lin).</li><li>Most SWOT tests are simulated; SWOT sees rivers over 100 m on about 10-day sampling.</li><li><a href="https://doi.org/10.1029/2019WR025599" target="_blank" rel="noopener">Feng et al. 2019</a> run the same inversion with gauge priors and with reanalysis priors (ungauged), so the cost of losing the gauge can be read directly; <a href="https://doi.org/10.1029/2018GL080771" target="_blank" rel="noopener">Tuozzolo et al. 2019</a> rerun the AirSWOT case on in-situ water surface profiles to see how much the airborne errors limit the result.</li></ul></li></ul></div>
+    </details>
   </div>
 
   <div class="card wide" data-vi="f4_cmp_geom">
+    <p class="role">Comparing methods</p>
     <h2>Comparing Family 4 methods (2 of 4): rebuilt channel geometry, then Manning: the scale from the channel</h2>
     <p class="dlegend">Beside each satellite dataset: <span class="dcost dfree">free</span> can be downloaded at no cost today; <span class="dcost dpaid">paid</span> commercial images that must be bought.</p>
     <p class="dlegend">In the conversion column: <span class="gcost gnone">no gauge needed</span> <span class="gcost gpart">gauge in some variants</span> <span class="gcost gneed">gauge needed</span> (whether ground data are still needed to get discharge at the target river: gauged discharge, water level measured on the ground, or surveyed channel geometry; validation data and relations built on other rivers do not count).</p>
@@ -2281,10 +2353,13 @@
         </tbody>
       </table>
     </div>
+    <details class="fold"><summary><span class="sh">Show the summary of this table</span><span class="hd">Hide the summary</span></summary>
     <div class="note tblsum"><span class="lbl">Summary of this table</span><ul><li><strong>How the observation is made.</strong> Paired water level and width or area, or bank points:<ul><li>Altimetry level and slope with Landsat width (<a href="https://doi.org/10.1016/j.jhydrol.2018.04.005" target="_blank" rel="noopener">Bjerklie et al. 2018</a>).</li><li>Altimetry level with PlanetScope area (<a href="https://doi.org/10.1016/j.rse.2024.114434" target="_blank" rel="noopener">Scherer et al. 2024</a>).</li><li>ICESat-2 bank photons with Sentinel width (<a href="https://doi.org/10.1016/j.rse.2026.115568" target="_blank" rel="noopener">Chen et al. 2026</a>).</li></ul></li><li><strong>How it becomes discharge.</strong> The section is rebuilt, then Manning gives discharge:<ul><li>The bed from width–level pairs (Bjerklie), a hypsometric curve plus a width-to-depth rule (Scherer), or \(y = k\,x^{r} + z\) fitted to bank photons (Chen).</li><li>Manning–Strickler with roughness from mass conservation (Scherer) or from channel morphology and meander length (Bjerklie; Chen).</li><li>Methods that estimate only the bed, with no discharge, are in §11.</li></ul></li><li><strong>Where the scale comes from.</strong> From the channel itself: the one group where no mean-flow prior is needed.<ul><li>Observed bed shape and bed level set the flow area (Bjerklie; Scherer; Chen).</li><li><a href="https://doi.org/10.1016/j.jhydrol.2018.04.005" target="_blank" rel="noopener">Bjerklie et al. 2018</a> compare: uncalibrated mean discharge within about 20%, about 5% after calibration on three gauged discharges.</li></ul></li><li><strong>Main limitations.</strong><ul><li>The never-seen part of the bed is assumed: a width-to-depth rule (Scherer) or the extension of the bank curve, with r and z searched in set ranges (Chen).</li><li>Bed fitting weakens when little of the channel is exposed (§11).</li><li>Flow area is the largest error source (Chen); needs an altimetry or ICESat-2 track at the reach; small samples (two to 27 reaches).</li></ul></li></ul></div>
+    </details>
   </div>
 
   <div class="card wide" data-vi="f4_cmp_hyd">
+    <p class="role">Comparing methods</p>
     <h2>Comparing Family 4 methods (3 of 4): hydraulic models and assimilation: the scale from model inflows</h2>
     <p class="dlegend">Beside each satellite dataset: <span class="dcost dfree">free</span> can be downloaded at no cost today; <span class="dcost dpaid">paid</span> commercial images that must be bought.</p>
     <p class="dlegend">In the conversion column: <span class="gcost gnone">no gauge needed</span> <span class="gcost gpart">gauge in some variants</span> <span class="gcost gneed">gauge needed</span> (whether ground data are still needed to get discharge at the target river: gauged discharge, water level measured on the ground, or surveyed channel geometry; validation data and relations built on other rivers do not count).</p>
@@ -2297,10 +2372,13 @@
         </tbody>
       </table>
     </div>
+    <details class="fold"><summary><span class="sh">Show the summary of this table</span><span class="hd">Hide the summary</span></summary>
     <div class="note tblsum"><span class="lbl">Summary of this table</span><ul><li><strong>How the observation is made.</strong> Water levels along the river:<ul><li>Simulated SWOT levels and widths every 200 m (<a href="https://doi.org/10.1002/2017WR021735" target="_blank" rel="noopener">Oubanas et al. 2018</a>).</li></ul></li><li><strong>How it becomes discharge.</strong> A hydraulic model is tuned to the observed levels:<ul><li>Full Saint-Venant with inflow, bed and friction inverted together by variational assimilation.</li></ul></li><li><strong>Where the scale comes from.</strong> From SWOT data and global information alone, in a simulated test.<ul><li>The real-data network test (<a href="https://doi.org/10.1029/2024WR038455" target="_blank" rel="noopener">Larnier et al. 2025</a>) and the ICESat-2 hydraulic models (Coppo Frias et al. 2023; <a href="https://doi.org/10.1029/2023WR036428" target="_blank" rel="noopener">Musaeus et al. 2024</a>) run on gauged discharge, so they are left out of this table; they are in the evidence table above.</li></ul></li><li><strong>Main limitations.</strong><ul><li>Synthetic data only; bed level and roughness trade off, so the recovered values do not transfer.</li><li>Assimilation is where gauge dependence creeps back in: every real-data test here needed gauged discharge.</li></ul></li></ul></div>
+    </details>
   </div>
 
   <div class="card wide" data-vi="f4_cmp_other">
+    <p class="role">Comparing methods</p>
     <h2>Comparing Family 4 methods (4 of 4): other observables: surface velocity, learned reflectance</h2>
     <p class="dlegend">Beside each satellite dataset: <span class="dcost dfree">free</span> can be downloaded at no cost today; <span class="dcost dpaid">paid</span> commercial images that must be bought.</p>
     <p class="dlegend">In the conversion column: <span class="gcost gnone">no gauge needed</span> <span class="gcost gpart">gauge in some variants</span> <span class="gcost gneed">gauge needed</span> (whether ground data are still needed to get discharge at the target river: gauged discharge, water level measured on the ground, or surveyed channel geometry; validation data and relations built on other rivers do not count).</p>
@@ -2314,11 +2392,15 @@
         </tbody>
       </table>
     </div>
+    <details class="fold"><summary><span class="sh">Show the summary of this table</span><span class="hd">Hide the summary</span></summary>
     <div class="note tblsum"><span class="lbl">Summary of this table</span><ul><li><strong>How the observation is made.</strong> Something other than width or level:<ul><li>Surface velocity from MODIS (<a href="https://doi.org/10.1029/2018WR024220" target="_blank" rel="noopener">Moramarco et al. 2019</a>).</li><li>Landsat reflectance with no water mask (<a href="https://doi.org/10.1029/2023WR036880" target="_blank" rel="noopener">Hao et al. 2024</a>).</li></ul></li><li><strong>How it becomes discharge.</strong> Two different conversions:<ul><li>Velocity times area: an entropy velocity profile that also gives the bed (Moramarco).</li><li>A Transformer that predicts the change from mean flow (Hao).</li></ul></li><li><strong>Where the scale comes from.</strong> Velocity gives the magnitude directly; reflectance borrows it.<ul><li>Measured velocity sets the size of the flow, with the section fitted from it (Moramarco); satellite video over a LiDAR-surveyed bed (<a href="https://doi.org/10.1029/2023GL105839" target="_blank" rel="noopener">Masafu et al. 2023</a>) needs surveyed geometry, so it is in the evidence table, not here.</li><li>Hao scales to a global model’s long-term mean.</li><li><a href="https://doi.org/10.1016/S0022-1694(03)00129-X" target="_blank" rel="noopener">Bjerklie et al. 2003</a> test their regressions only on field-measured width, depth, velocity and slope, so they are in the evidence table, not here.</li></ul></li><li><strong>Main limitations.</strong><ul><li>Satellite velocity only on large rivers; one satellite site.</li><li>Compared with ground data in the same method: area and discharge errors about 10% with ground water level and velocity, discharge error above 30% with satellite data (Moramarco).</li><li>Reflectance needs a large gauged training set (on other rivers).</li></ul></li></ul></div>
+    </details>
   </div>
   <div class="card readfirst" data-vi="f4_ranked">
+    <p class="role">All papers, ranked</p>
     <h2>All 24 Family 4 papers, ranked for this research programme</h2>
     <p class="muted"><span class="unv">The order is this review’s judgement for a programme that uses Sentinel-1 water extent and takes its scale from channel geometry, not a ranking by the sources. <strong>Key points</strong> opens each paper’s research question, what the satellite observes and how that becomes discharge, method, advance, findings and limitations, in plain language.</span></p>
+    <details class="fold"><summary><span class="sh">Show all 24 papers, in 3 tiers</span><span class="hd">Hide the list</span></summary>
     <h3 class="rftier">Must know: the papers this work builds on or answers to</h3>
     <ol class="rflist">
       <li class="rfitem"><span class="rn">1</span><span class="rfmain"><a href="https://doi.org/10.1016/j.rse.2026.115568" target="_blank" rel="noopener">Chen et al. 2026</a> <cite>RSE</cite><span class="rfwhy">Rebuilds the riverbed as a power-law curve from satellite laser points on the banks, the same idea as a parabolic bed.</span></span><button type="button" class="rfbtn" aria-haspopup="dialog">Key points</button><div class="rfsum" hidden data-title="Chen et al. 2026 · Key points"><h3>Research question</h3><p>Can the hidden underwater part of a river channel be rebuilt from satellites well enough to compute discharge with Manning’s equation, with no gauge?</p><h3>What is observed, and how it becomes discharge</h3><p>River width from Sentinel-2 (optical) and Sentinel-1 (radar) images, averaged over 2 km. Bank elevations and water-surface slope from ICESat-2 laser photons. The bank points are fitted with a bed curve y = k·x^r + z (r sets the shape, z the bed level); width then gives water depth and flow area on that curve, and Manning’s equation gives discharge. Roughness comes from a published formula using the river’s meander length and slope.</p><h3>How they did it</h3><p>Twelve reaches, 30 to 500 m wide, on the Qinghai–Tibet Plateau, 2019–2024. Every ICESat-2 track within 2 km of each gauge is projected onto one cross-section; r and z are searched within set ranges and the best fit is kept. Braided or abrupt channels get piecewise fits. Results are compared with a width rating curve that is calibrated on the gauge.</p><h3>What it advanced</h3><p>Gets bed shape and bed level from the satellite itself instead of assuming them, and turns width into discharge in m³/s with no gauge.</p><h3>Findings</h3><p>Daily discharge: mean R² 0.87, NSE 0.84 and KGE 0.86, better than the gauge-calibrated width rating at 10 of 12 reaches. The fitted bed level was within 0.00–1.20 m of the surveyed bed, cross-sections within 3–15%, and roughness within 10% of gauge-derived values at most reaches. The fitted shape r ranged from 1.0 to 9.8, so a plain parabola (r = 2) rarely fitted. Flow area was the largest source of error.</p><h3>Limitations</h3><p>All twelve reaches are at stable gauged sites on one plateau. The search ranges for r and z were set by trial, braided reaches needed hand-chosen piecewise fits, and at one site the tracks were more than 2 km away. ICESat-2 passes rarely, so slope is a long-term average. Frozen months give no width.</p><h3>Why it matters here</h3><p>Rebuilds the riverbed as a power-law curve from satellite laser points on the banks, the same idea as a parabolic bed.</p></div></li>
@@ -2352,6 +2434,7 @@
       <li class="rfitem"><span class="rn">23</span><span class="rfmain"><a href="https://doi.org/10.1029/2023GL105839" target="_blank" rel="noopener">Masafu et al. 2023</a> <cite>GRL</cite><span class="rfwhy">Surface velocity from satellite video: a different observable, tested on an Australian river.</span></span><button type="button" class="rfbtn" aria-haspopup="dialog">Key points</button><div class="rfsum" hidden data-title="Masafu et al. 2023 · Key points"><h3>Research question</h3><p>Can satellite video measure river surface velocity well enough to give discharge?</p><h3>What is observed, and how it becomes discharge</h3><p>28 seconds of 5 Hz commercial satellite video at 1.2 m over the Darling River during a 1-in-5-year flood. Particle image velocimetry gives surface velocity; times a depth-averaging coefficient and high-resolution channel topography, it gives discharge.</p><h3>How they did it</h3><p>Platform motion stabilised and its residual error assessed; velocities checked against a calibrated 2D model.</p><h3>What it advanced</h3><p>Discharge from a satellite without a rating curve, during a flood.</p><h3>Findings</h3><p>Discharge within 0.3–15% of gauge measurements.</p><h3>Limitations</h3><p>Cloud-free video only; the coefficient α and the channel topography, which does not come from the satellite, drive the error; one flood.</p><h3>Why it matters here</h3><p>Surface velocity from satellite video: a different observable, tested on an Australian river.</p></div></li>
       <li class="rfitem"><span class="rn">24</span><span class="rfmain"><a href="https://doi.org/10.1029/2018GL080771" target="_blank" rel="noopener">Tuozzolo et al. 2019</a> <cite>GRL</cite><span class="rfwhy">The first real test of SWOT-style discharge, and the first warning that the prior sets the bias.</span></span><button type="button" class="rfbtn" aria-haspopup="dialog">Key points</button><div class="rfsum" hidden data-title="Tuozzolo et al. 2019 · Key points"><h3>Research question</h3><p>Do SWOT discharge algorithms work on real swath-altimetry data, before SWOT existed?</p><h3>What is observed, and how it becomes discharge</h3><p>AirSWOT, an airborne Ka-band radar like SWOT, measured water level, width and slope on six days over 40 km of the Willamette. Three algorithms (MetroMan, BAM and a variational method) turned them into discharge, each with a prior on mean annual discharge.</p><h3>How they did it</h3><p>Compared with in-situ gauges; sensitivity to the prior tested.</p><h3>What it advanced</h3><p>Moved SWOT algorithms from simulation to real observations.</p><h3>Findings</h3><p>NRMSE 10–31%.</p><h3>Limitations</h3><p>Sensitive to the prior mean annual discharge; clouds removed width data; six days only.</p><h3>Why it matters here</h3><p>The first real test of SWOT-style discharge, and the first warning that the prior sets the bias.</p></div></li>
     </ol>
+    </details>
   </div>
 
   <div class="card" data-vi="f4_led">
@@ -2455,9 +2538,11 @@
     <p class="kpsrc">From the side-by-side table in <a href="#compare">&sect;03</a>; the evidence is in this section.</p>
   </div>
   <div class="card" data-vi="sur_lede">
+    <p class="role">How it works</p>
     <p class="lede">This family is easy to confuse with &sect;07, and the difference matters.</p>
     <p>Family 4 <strong>inverts hydraulics</strong> to recover discharge: width, elevation and slope go into Manning&rsquo;s equation and m&sup3;/s comes out. Family 5 does something weaker and, in ungauged basins, often more useful.</p>
     <p>It takes a satellite signal that merely <em>correlates</em> with discharge &mdash; one that may carry no physical units at all &mdash; and uses it as the <strong>calibration target</strong> for a conceptual rainfall&ndash;runoff model. The model still produces the discharge. The satellite signal replaces the gauge <em>record</em>, not the gauge reading.</p>
+    <p class="rolerule">Width and water level also appear in Family 4 (<a href="#f4">&sect;07</a>), where each observation becomes a discharge through the river&rsquo;s hydraulics; here the same signals are only the record the model is fitted to. A few papers in this family skip the model and convert the signal to discharge with a statistical relation, such as a regression or distribution matching (<a href="https://doi.org/10.1016/j.rse.2019.111629" target="_blank" rel="noopener">Hou et al. 2020</a>; <a href="https://doi.org/10.1016/j.rse.2025.114919" target="_blank" rel="noopener">Filippucci et al. 2025</a>).</p>
   </div>
   <div class="card wide" data-vi="map_f5">
     <h2>Family 5 at a glance</h2>
@@ -2630,7 +2715,19 @@
     </div>
     <p class="mapnote">Solid arrows mark a documented build-on or extension; dashed arrows mark a study that tests, benchmarks or limits another. Where an arrow reflects this review&rsquo;s reading rather than an explicit statement in the papers, the text below says so.</p>
   </div>
+
+  <div class="card" data-vi="pair_f5">
+    <p class="role">In depth</p>
+    <h2>Same signal, two families</h2>
+    <p>Width and water level appear in both Family 4 and Family 5. What decides the family is the role of the observation, not the signal.</p>
+    <ul>
+      <li><strong>Width.</strong> Family 4: <a href="https://doi.org/10.1073/pnas.1317606111" target="_blank" rel="noopener">Gleason and Smith 2014</a> turn each set of widths into a discharge for that date, through at-many-stations hydraulic geometry. Family 5: <a href="https://doi.org/10.5194/hess-14-2011-2010" target="_blank" rel="noopener">Sun et al. 2010</a> use the width series only to calibrate a rainfall&ndash;runoff model (HYMOD) through \(W = a\,Q^{b}\); the model then gives discharge every day.</li>
+      <li><strong>Water level.</strong> Family 4: <a href="https://doi.org/10.1002/2014WR016618" target="_blank" rel="noopener">Paris et al. 2016</a> fit a rating curve at each altimetry virtual station, so each level becomes a discharge. Family 5: Sun et al. 2011 calibrate a model through \(H = c\,Q^{f} + H_{0}\), and <a href="https://doi.org/10.5194/hess-24-3331-2020" target="_blank" rel="noopener">Hulsman et al. 2020</a> through Manning&rsquo;s equation with cross-sections from terrain data.</li>
+    </ul>
+    <p>So the observation is the gauge <em>reading</em> in Family 4 and the gauge <em>record</em> in Family 5. In practice, Family 4 gives discharge on the dates the satellite sees the river and takes the size of the flow from priors or the channel; Family 5 gives a continuous series and takes the size of the flow from the model&rsquo;s water balance, a climate estimate or a gauge.</p>
+  </div>
   <div class="card" data-vi="sur_found">
+    <p class="role">In depth</p>
     <h2>The founding move</h2>
     <p><a href="https://doi.org/10.1002/hyp.8301" target="_blank" rel="noopener">Sun et al. (2011)</a> named the idea: satellite river variables <strong>as surrogates for</strong> discharge measurements. The change is in the calibration objective:</p>
     <ul>
@@ -2647,7 +2744,10 @@
     </div>
   </div>
   <div class="card" data-vi="tab_surrogate4">
+    <p class="role">Evidence</p>
     <h2>The evidence</h2>
+    <p class="foldlede">Every Family 5 study in this review, one row each, including the methods that need ground data at the target river and so are left out of the comparison tables below.</p>
+    <details class="fold"><summary><span class="sh">Show the table (15 studies)</span><span class="hd">Hide the table</span></summary>
     <p class="scrollhint">Table scrolls sideways &rarr;</p>
     <div class="tablewrap">
       <table class="w7 cw-sur">
@@ -2784,8 +2884,10 @@
         </tbody>
       </table>
     </div>
+    </details>
   </div>
   <div class="card" data-vi="sur_unit">
+    <p class="role">In depth</p>
     <h2>The unit problem, and the fix</h2>
     <p>The recurring obstacle in this family is stated most clearly by <a href="https://doi.org/10.1016/j.jhydrol.2024.132049" target="_blank" rel="noopener">Yoon et al. (2024)</a>: the surrogate signal <strong>has no defined unit</strong>. A C/M or reflectance ratio tracks the shape of the hydrograph but says nothing about magnitude, so calibrating on it alone leaves the model&rsquo;s water balance unconstrained.</p>
     <p>The UNSW answer is to supply the missing scale from climate rather than from a gauge. Mean catchment discharge is estimated from the <strong>Budyko</strong> relationship &mdash; which needs only long-term average precipitation and potential evapotranspiration &mdash; and that single number converts the unitless series into a quantified one. It is an elegant move: the two things an ungauged basin does have are a satellite signal and a climatology.</p>
@@ -2797,6 +2899,7 @@
     </div>
   </div>
   <div class="card" data-vi="sur_beyond">
+    <p class="role">In depth</p>
     <h2>Beyond river signals: calibrating on other satellite variables</h2>
     <p>A parallel strand constrains other parts of the water balance (evapotranspiration, storage, land-surface temperature or their spatial <em>patterns</em>). Not every paper replaces the gauge; some add to it.</p>
     <ul>
@@ -2808,6 +2911,7 @@
     <p><span class="unv">My reading, not a stated result: the two halves fail in opposite directions. River signals track <em>shape</em> without magnitude; ET and storage pin <em>volume</em> without timing. That is the case for combining them.</span></p>
   </div>
   <div class="card" data-vi="sur_edge">
+    <p class="role">Strengths</p>
     <h2>What Family 5 does that the other families cannot</h2>
     <p class="lede">Family 5 is the only family that calibrates a process model where no discharge record exists anywhere nearby, using a signal from the target river itself. That gives it four advantages, and its own set of limits.</p>
     <p><span class="unv">Comparisons with other families set results from different experiments side by side (&sect;03). They show orders of magnitude, not a ranking.</span></p>
@@ -2821,6 +2925,7 @@
   </div>
 
   <div class="card wide" data-vi="sur_cmp_map">
+    <p class="role">Comparing methods</p>
     <h2>The comparison at a glance</h2>
     <p>The papers in the three comparison cards below, one column per card: river width, surface water extent and other signals. Rows are years; arrows link a paper to an earlier one it cites and builds on.</p>
     <div class="mapwrap">
@@ -2996,10 +3101,11 @@
 <text x='292' y='1980' font-size='11' fill='var(--ink-soft)'>tests, benchmarks or limits</text>
 </svg>
     </div>
-    <p class="mapnote">Solid arrows mark a documented build-on or extension, each backed by a citation in the later paper. Arrows that cross columns show a method moving to a new surrogate, such as the surrogate-discharge model of Yoon et al. moving from SMOS to Sentinel-1 extent in Han et al. 2026.</p>
+    <p class="mapnote">Solid arrows mark a documented build-on or extension, each backed by a citation in the later paper. Arrows that cross columns show a method moving to a new surrogate, such as the surrogate-discharge model of Yoon et al. moving from SMOS to Sentinel-1 extent in <a href="https://doi.org/10.1109/JSTARS.2026.3735355" target="_blank" rel="noopener">Han et al. 2026</a>.</p>
   </div>
 
   <div class="card wide" data-vi="sur_cmp_width">
+    <p class="role">Comparing methods</p>
     <h2>Comparing surrogates (1 of 3): river width</h2>
     <p>The Family 5 papers whose main data source is satellite and that need no ground data at the target river (no gauged discharge, no water level measured on the ground, no surveyed channel geometry), plus five that report results both with and without such data (<a href="https://doi.org/10.1016/j.rse.2015.10.022" target="_blank" rel="noopener">Revilla-Romero et al. 2015</a>; <a href="https://doi.org/10.1016/j.rse.2019.111629" target="_blank" rel="noopener">Hou et al. 2020</a>; <a href="https://doi.org/10.1016/j.rse.2025.114919" target="_blank" rel="noopener">Filippucci et al. 2025</a>; <a href="https://doi.org/10.1029/2020WR027309" target="_blank" rel="noopener">Huang and Long 2020</a>; <a href="https://doi.org/10.5194/hess-24-3331-2020" target="_blank" rel="noopener">Hulsman et al. 2020</a>), grouped into three cards by what they use in place of measured discharge. Methods that need such data (<a href="https://doi.org/10.1002/2015WR018545" target="_blank" rel="noopener">van Dijk et al. 2016</a>; <a href="https://doi.org/10.1016/j.jag.2019.101930" target="_blank" rel="noopener">Ahmad and Kim 2019</a>; <a href="https://doi.org/10.1029/2006WR005238" target="_blank" rel="noopener">Brakenridge et al. 2007</a>; <a href="https://doi.org/10.1029/2020WR028205" target="_blank" rel="noopener">Huang et al. 2020</a>, evaporation and storage) are left out; they are in the evidence table above. The surrogate was checked in each paper’s full text; quartile and impact factor as in §16.</p>
     <p class="dlegend">Beside each satellite dataset: <span class="dcost dfree">free</span> can be downloaded at no cost today; <span class="dcost dpaid">paid</span> commercial images that must be bought.</p>
@@ -3017,10 +3123,13 @@
         </tbody>
       </table>
     </div>
+    <details class="fold"><summary><span class="sh">Show the summary of this table</span><span class="hd">Hide the summary</span></summary>
     <div class="note tblsum"><span class="lbl">Summary of this table</span><ul><li><strong>How the surrogate is derived.</strong> Water area turned into a width, with water level in one study:<ul><li><a href="https://doi.org/10.5194/hess-14-2011-2010" target="_blank" rel="noopener">Sun et al. 2010</a>, 2015 and 2018 trace the water by eye or by hand on JERS-1 radar or sub-metre optical images, then divide the area by the reach length (effective width).</li><li><a href="https://doi.org/10.1016/j.rse.2022.113030" target="_blank" rel="noopener">Huang et al. 2022</a> map water with NDWI and an Otsu threshold, then measure width at hand-drawn cross-sections.</li><li><a href="https://doi.org/10.1029/2020WR027309" target="_blank" rel="noopener">Huang and Long 2020</a> use Jason-2 water level, alone or with Landsat width.</li></ul></li><li><strong>How it becomes discharge.</strong> No study fits width to a gauge; the formula’s parameters are calibrated together with the hydrological model:<ul><li>Sun papers: model flow turned into width, \(W = a\,Q^{b}\).</li><li><a href="https://doi.org/10.1016/j.rse.2022.113030" target="_blank" rel="noopener">Huang et al. 2022</a>: width turned into flow, \(Q = a\,W^{b}\) (from Manning, \(b\) left free).</li><li><a href="https://doi.org/10.1029/2020WR027309" target="_blank" rel="noopener">Huang and Long 2020</a>: two empirical formulas turn level, or width with level, into flow.</li></ul></li><li><strong>Used to calibrate a hydrological model?</strong> Yes, all five:<ul><li>HYMOD (<a href="https://doi.org/10.5194/hess-14-2011-2010" target="_blank" rel="noopener">Sun 2010</a>, 2015).</li><li>A hydrological model coupled to hydraulic geometry under GLUE (<a href="https://doi.org/10.1016/j.rse.2018.05.020" target="_blank" rel="noopener">Sun 2018</a>).</li><li>CREST-RS (<a href="https://doi.org/10.1029/2020WR027309" target="_blank" rel="noopener">Huang and Long 2020</a>; <a href="https://doi.org/10.1016/j.rse.2022.113030" target="_blank" rel="noopener">Huang 2022</a>).</li></ul></li><li><strong>Main limitations.</strong><ul><li>Few images (four to sixteen per site), one cross-section per basin, one to four rivers per study.</li><li>Width changes little with flow, so most model parameters stay loose (4 of 5 in <a href="https://doi.org/10.5194/hess-14-2011-2010" target="_blank" rel="noopener">Sun 2010</a>) and low flow is underestimated (<a href="https://doi.org/10.1016/j.envres.2015.01.002" target="_blank" rel="noopener">Sun 2015</a>).</li><li>Optical images are cut by cloud, so widths come mostly from the dry season (<a href="https://doi.org/10.1016/j.rse.2022.113030" target="_blank" rel="noopener">Huang 2022</a>).</li><li>Compared with and without ground data: NSE 0.85 with Jason-2 levels alone, and 0.85 (Upper Brahmaputra) and 0.75 (Lhasa) when Landsat widths are paired with gauged water levels as SWOT-like data (<a href="https://doi.org/10.1029/2020WR027309" target="_blank" rel="noopener">Huang and Long 2020</a>).</li></ul></li></ul></div>
+    </details>
   </div>
 
   <div class="card wide" data-vi="sur_cmp_extent">
+    <p class="role">Comparing methods</p>
     <h2>Comparing surrogates (2 of 3): surface water extent</h2>
     <p class="dlegend">Beside each satellite dataset: <span class="dcost dfree">free</span> can be downloaded at no cost today; <span class="dcost dpaid">paid</span> commercial images that must be bought.</p>
     <p class="dlegend">In the conversion column: <span class="gcost gnone">no gauge needed</span> <span class="gcost gpart">gauge in some variants</span> <span class="gcost gneed">gauge needed</span> (whether ground data are still needed to get discharge: gauged discharge, water level measured on the ground, or surveyed channel geometry; validation data and relations built on other rivers do not count).</p>
@@ -3038,10 +3147,13 @@
         </tbody>
       </table>
     </div>
+    <details class="fold"><summary><span class="sh">Show the summary of this table</span><span class="hd">Hide the summary</span></summary>
     <div class="note tblsum"><span class="lbl">Summary of this table</span><ul><li><strong>How the surrogate is derived.</strong> Three routes, plus one paper that does not say:<ul><li>Threshold map of water pixels on Sentinel-1 radar: <a href="https://doi.org/10.1109/JSTARS.2026.3735355" target="_blank" rel="noopener">Han et al. 2026</a>.</li><li>Water fraction in coarse cells, no threshold: GFDS passive microwave (<a href="https://doi.org/10.1016/j.rse.2015.10.022" target="_blank" rel="noopener">Revilla-Romero et al. 2015</a>, 2016) or MODIS band 7 (<a href="https://doi.org/10.1016/j.rse.2019.111629" target="_blank" rel="noopener">Hou et al. 2020</a>).</li><li>Ready-made Landsat water map, Global Surface Water: Meyer Oliveira et al. 2023.</li><li>Not stated: <a href="https://doi.org/10.1002/2015WR016971" target="_blank" rel="noopener">Liu et al. 2015</a>.</li></ul></li><li><strong>How it becomes discharge.</strong> No common method:<ul><li>Cumulative distribution matching against gauged or global-model flow: Hou.</li><li>Scaling calibrated with the model, the scale from climate: Han.</li><li>Manning from model flow to water area, the other way round: Liu.</li><li>Rescaling into the range of simulated flow, for assimilation: <a href="https://doi.org/10.1016/j.jhydrol.2016.10.041" target="_blank" rel="noopener">Revilla-Romero 2016</a>.</li><li>No conversion, only ranks or correlation: Meyer Oliveira; the raw-signal variant of <a href="https://doi.org/10.1016/j.rse.2015.10.022" target="_blank" rel="noopener">Revilla-Romero 2015</a> (its regression variant is fitted to gauged flow).</li></ul></li><li><strong>Used to calibrate a hydrological model?</strong> Five of six:<ul><li>Calibrate a model: LISFLOOD (<a href="https://doi.org/10.1016/j.rse.2015.10.022" target="_blank" rel="noopener">Revilla-Romero 2015</a>), SWAT (<a href="https://doi.org/10.1002/2015WR016971" target="_blank" rel="noopener">Liu 2015</a>), HBV (Meyer Oliveira 2023), GR4J inside SRM (<a href="https://doi.org/10.1109/JSTARS.2026.3735355" target="_blank" rel="noopener">Han 2026</a>).</li><li>Assimilate instead, updating LISFLOOD’s states: <a href="https://doi.org/10.1016/j.jhydrol.2016.10.041" target="_blank" rel="noopener">Revilla-Romero 2016</a>.</li><li>No model, a direct extent–discharge relation: <a href="https://doi.org/10.1016/j.rse.2019.111629" target="_blank" rel="noopener">Hou 2020</a>, which can train it on global-model flow where there is no gauge.</li></ul></li><li><strong>Main limitations.</strong><ul><li>The signal has no unit, so the size of the flow must come from elsewhere: a global model or climate.</li><li>Coarse pixels miss narrow rivers: only 76 of 671 Brazilian catchments usable.</li><li>Weakened by forest canopy (<a href="https://doi.org/10.1016/j.jhydrol.2016.10.041" target="_blank" rel="noopener">Revilla-Romero 2016</a>), levees, low-flow and steep reaches (Han), and cloud on optical images.</li><li>Compared with and without gauged flow: Hou’s model-based reaches are often as skilful as the gauge-based ones; the raw-signal variant of <a href="https://doi.org/10.1016/j.rse.2015.10.022" target="_blank" rel="noopener">Revilla-Romero 2015</a> against its regression variant.</li></ul></li></ul></div>
+    </details>
   </div>
 
   <div class="card wide" data-vi="sur_cmp_other">
+    <p class="role">Comparing methods</p>
     <h2>Comparing surrogates (3 of 3): other signals</h2>
     <p class="dlegend">Beside each satellite dataset: <span class="dcost dfree">free</span> can be downloaded at no cost today; <span class="dcost dpaid">paid</span> commercial images that must be bought.</p>
     <p class="dlegend">In the conversion column: <span class="gcost gnone">no gauge needed</span> <span class="gcost gpart">gauge in some variants</span> <span class="gcost gneed">gauge needed</span> (whether ground data are still needed to get discharge: gauged discharge, water level measured on the ground, or surveyed channel geometry; validation data and relations built on other rivers do not count).</p>
@@ -3061,12 +3173,16 @@
         </tbody>
       </table>
     </div>
+    <details class="fold"><summary><span class="sh">Show the summary of this table</span><span class="hd">Hide the summary</span></summary>
     <div class="note tblsum"><span class="lbl">Summary of this table</span><ul><li><strong>How the surrogate is derived.</strong> Two kinds of signal:<ul><li>Ratios that compare the river with a reference: passive-microwave C/M (<a href="https://doi.org/10.1029/2021WR031287" target="_blank" rel="noopener">Yoon et al. 2022</a>); SMOS L-band SR, each day against the record’s own extremes (<a href="https://doi.org/10.1088/1748-9326/acb8cb" target="_blank" rel="noopener">Yoon et al. 2023</a>, 2024, 2025); Landsat near-infrared multiple pixel ratio (<a href="https://doi.org/10.1016/j.jhydrol.2023.129158" target="_blank" rel="noopener">Yu et al. 2023</a>); multispectral CM and CMW indices (<a href="https://doi.org/10.1016/j.rse.2025.114919" target="_blank" rel="noopener">Filippucci et al. 2025</a>).</li><li>Water level straight from radar altimetry: Sun et al. 2011; <a href="https://doi.org/10.5194/hess-24-3331-2020" target="_blank" rel="noopener">Hulsman et al. 2020</a>.</li></ul></li><li><strong>How it becomes discharge.</strong> Four routes:<ul><li>Linear rating \(Q = a\cdot SR + b\) calibrated with the model, the scale from a Budyko mean flow (<a href="https://doi.org/10.1088/1748-9326/acb8cb" target="_blank" rel="noopener">Yoon 2023</a>, 2024, 2025) or a prior on flow magnitude (<a href="https://doi.org/10.1029/2021WR031287" target="_blank" rel="noopener">Yoon 2022</a>).</li><li>Cumulative distribution matching: Filippucci.</li><li>Model flow turned into water level: \(H = c\,Q^{f} + H_{0}\) (Sun 2011), or Manning with terrain cross-sections (Hulsman).</li><li>No conversion: rank correlation with a water-balance filter (Yu).</li></ul></li><li><strong>Used to calibrate a hydrological model?</strong> Seven of eight:<ul><li>Calibrate a model: <a href="https://doi.org/10.1029/2021WR031287" target="_blank" rel="noopener">Yoon 2022</a>, 2023, 2024, 2025; <a href="https://doi.org/10.1016/j.jhydrol.2023.129158" target="_blank" rel="noopener">Yu 2023</a>; Sun 2011; <a href="https://doi.org/10.5194/hess-24-3331-2020" target="_blank" rel="noopener">Hulsman 2020</a>.</li><li>No model, the ratio turned into discharge directly: <a href="https://doi.org/10.1016/j.rse.2025.114919" target="_blank" rel="noopener">Filippucci 2025</a>.</li></ul></li><li><strong>Main limitations.</strong><ul><li>Ratio signals have no unit, so the size of the flow comes from Budyko or a prior.</li><li>Microwave pixels are about 25 km.</li><li>Small or single-region tests: three catchments; Australia only; one basin.</li><li>Altimetry sees only large rivers, where a track crosses.</li><li>Optical ratios fail on frozen, cloudy and narrow rivers.</li><li>Compared with and without a gauge: mean KGE 0.41 calibrated, 0.29 uncalibrated (Filippucci).</li><li>Compared with and without ground data: Hulsman runs altimetry strategies against strategies on in-situ outlet water levels with Google Earth or ADCP-surveyed sections (NSE 0.60 with altimetry, 0.78 when calibrated on gauged discharge).</li></ul></li></ul></div>
+    </details>
   </div>
 
   <div class="card readfirst" data-vi="sur_ranked">
+    <p class="role">All papers, ranked</p>
     <h2>All 25 Family 5 papers, ranked for this research programme</h2>
     <p class="muted"><span class="unv">The order is this review’s judgement for a programme that uses Sentinel-1 water extent and takes its scale from geometry, not a ranking by the sources. <strong>Key points</strong> opens each paper’s research question, what it uses in place of measured discharge, method, advance, findings and limitations, in plain language.</span></p>
+    <details class="fold"><summary><span class="sh">Show all 25 papers, in 4 tiers</span><span class="hd">Hide the list</span></summary>
     <h3 class="rftier">Must know: the papers this work builds on or answers to</h3>
     <ol class="rflist">
       <li class="rfitem"><span class="rn">1</span><span class="rfmain"><a href="https://doi.org/10.1109/JSTARS.2026.3735355" target="_blank" rel="noopener">Han et al. 2026</a> <cite>IEEE JSTARS</cite><span class="rfwhy">The method this work grows from: river water seen in radar images, used in place of a flow gauge.</span></span><button type="button" class="rfbtn" aria-haspopup="dialog">Key points</button><div class="rfsum" hidden data-title="Han et al. 2026 · Key points"><h3>Research question</h3><p>Can radar satellite images show how river flow rises and falls over time, even in small and complex rivers that older, coarser satellites could not see?</p><h3>What stands in for discharge</h3><p>The number of water pixels in a fixed stretch of river on Sentinel-1 radar images (10 m pixels), so in effect the area of water. The paper calls this series SR and stresses it has no unit and is not a discharge. Sentinel-1 gives an image only every several days, so SR exists only on image dates. It becomes flow inside a rainfall–runoff model (GR4J), whose settings and the SR scaling are tuned together; the model supplies the days between images.</p><h3>How they did it</h3><p>They pick out water in each radar image with an automatic brightness threshold, keep only pixels that are connected, river-shaped and stable over time, and count them. They then check carefully how much of the match with real flow is genuine and how much is just both series changing slowly over time.</p><h3>What it advanced</h3><p>Earlier surrogate work used microwave pixels about 25–45 km wide. Radar at 10 m brings small rivers into reach, and the paper tests ordinary rises and falls in flow, not only floods.</p><h3>Findings</h3><p>Over 19 rivers in 13 countries, the water count matched gauged flow with a typical correlation of 0.71 (1 is perfect). But for the change from one image to the next (divided by the days between them) it fell to 0.28, and the authors say the higher number overstates the link. Used to calibrate a model, it reached NSE 0.47 and 0.53 in two basins (NSE: 1 is perfect, 0 is no better than always guessing the average flow).</p><h3>Limitations</h3><p>Works worse where rivers are held in by levees, where water is stored and released, where flow stays low for long periods, and on steep rivers. There is no single flow size above which it works. In one basin the model could not be calibrated at all. Images come only every several days (using both ascending and descending passes adds more), so daily flow between images comes from the model, not the satellite.</p><h3>Why it matters here</h3><p>The method this work grows from: river water seen in radar images, used in place of a flow gauge.</p></div></li>
@@ -3104,6 +3220,7 @@
       <li class="rfitem"><span class="rn">24</span><span class="rfmain"><a href="https://doi.org/10.1029/2019WR026085" target="_blank" rel="noopener">Dembélé et al. 2020</a> <cite>WRR</cite><span class="rfwhy">Satellite maps help a model, but alongside gauges, not instead of them.</span></span><button type="button" class="rfbtn" aria-haspopup="dialog">Key points</button><div class="rfsum" hidden data-title="Dembélé et al. 2020 · Key points"><h3>Research question</h3><p>Satellite products have errors in their values. Can their spatial patterns alone, which are more reliable, make a model better?</p><h3>What stands in for discharge</h3><p>Nothing stands in for discharge here: measured flow at 11 gauges is still used. Satellite maps of evaporation, soil moisture and water storage are added, comparing only their patterns, not their values.</p><h3>How they did it</h3><p>Tune the mHM model for the Volta basin in West Africa using the gauges plus a score for how well the model reproduces the satellite patterns.</p><h3>What it advanced</h3><p>Uses what satellite maps do best, the pattern, so their errors do not leak into the model.</p><h3>Findings</h3><p>River flow got 7% worse, but soil moisture got 105% better and evaporation 26% better. The authors: flow “is a necessary variable, but alone it is not sufficient”.</p><h3>Limitations</h3><p>Not a no-gauge method: the satellite data are added to gauges, not used instead of them.</p><h3>Why it matters here</h3><p>Satellite maps help a model, but alongside gauges, not instead of them.</p></div></li>
       <li class="rfitem"><span class="rn">25</span><span class="rfmain"><a href="https://doi.org/10.1029/2020WR028205" target="_blank" rel="noopener">Huang et al. 2020</a> <cite>WRR</cite><span class="rfwhy">Tunes a model to satellite evaporation, needing only one gauge.</span></span><button type="button" class="rfbtn" aria-haspopup="dialog">Key points</button><div class="rfsum" hidden data-title="Huang et al. 2020 · Key points"><h3>Research question</h3><p>Can satellite maps of evaporation and water storage replace flow data when tuning a model for ungauged catchments?</p><h3>What stands in for discharge</h3><p>Nothing measures the river itself: the model is tuned to satellite evaporation (PML), with GRACE storage in some versions. The evaporation data are first bias-corrected using a water balance fitted at a single gauge.</p><h3>How they did it</h3><p>Seven satellite-based tuning schemes on 30 catchments of the Yalong River, China, compared with tuning on real flow and with borrowing settings from the nearest gauged catchment.</p><h3>What it advanced</h3><p>Tuning that is almost flow-free: one gauge for the whole region.</p><h3>Findings</h3><p>Corrected evaporation worked much better than raw. Running the model on a grid beat treating each catchment as one unit, and beat borrowing from neighbours, especially in headwater and large catchments. Adding GRACE helped very little.</p><h3>Limitations</h3><p>One basin. Still needs one gauge to correct the evaporation data.</p><h3>Why it matters here</h3><p>Tunes a model to satellite evaporation, needing only one gauge.</p></div></li>
     </ol>
+    </details>
   </div>
 
   <div class="card" data-vi="sur_led">
@@ -3205,6 +3322,7 @@
     <p class="kpsrc">From the side-by-side table in <a href="#compare">&sect;03</a>; the evidence is in this section.</p>
   </div>
   <div class="card" data-vi="f5_lede">
+    <p class="role">How it works</p>
     <p class="lede">This is where the field changed.</p>
     <p>The mechanism is simple to state: train <strong>one</strong> model across hundreds of catchments at once, feeding it both meteorological time series and static catchment attributes. The network learns the attribute-to-behaviour mapping internally, so regionalisation stops being a separate post-processing step and becomes part of the model.</p>
   </div>
@@ -3340,6 +3458,7 @@
     <p class="mapnote">Solid arrows mark a documented build-on or extension; dashed arrows mark a study that tests, benchmarks or limits another. Where an arrow reflects this review&rsquo;s reading rather than an explicit statement in the papers, the text below says so.</p>
   </div>
   <div class="card" data-vi="f5_began">
+    <p class="role">In depth</p>
     <h2>Where this began</h2>
     <p>The strand starts with <a href="https://doi.org/10.5194/hess-22-6005-2018" target="_blank" rel="noopener">Kratzert, Klotz, Brenner, Schulz and Herrnegger (2018)</a>, <em>HESS</em> 22, 6005 &mdash; now past 2,000 citations. They proposed the LSTM for rainfall&ndash;runoff modelling on the argument that its ability to learn long-term dependencies suits catchment storage effects, snow in particular, and tested it on 241 CAMELS catchments against SAC-SMA coupled with Snow-17.</p>
     <p>That paper is about <em>gauged</em> modelling. The ungauged claim arrives the following year, in the two companion papers below.</p>
@@ -3351,6 +3470,7 @@
     </ul>
   </div>
   <div class="card" data-vi="tab_f54">
+    <p class="role">Evidence</p>
     <h2>The result that reframed the problem</h2>
     <p class="scrollhint">Table scrolls sideways &rarr;</p>
     <div class="tablewrap">
@@ -3395,6 +3515,7 @@
     <p><strong>Why it works.</strong> Kratzert et al. put the interpretation precisely: the result shows there is <em>typically enough information in available catchment attributes</em> about similarities and differences in rainfall&ndash;runoff behaviour to produce out-of-sample simulations more accurate than calibrated conventional models. The information PUB was looking for was there all along; the conventional transfer methods were not extracting it.</p>
   </div>
   <div class="card" data-vi="f5_gnn">
+    <p class="role">In depth</p>
     <h2>Another architecture: the catchment network as a graph</h2>
     <p>An LSTM treats each catchment as an independent sequence and learns similarity only through static attributes. A graph neural network instead represents the basins themselves as <strong>nodes in a graph</strong>, learns the spatiotemporal dependencies between them, and predicts across all nodes at once.</p>
     <p><a href="https://doi.org/10.1029/2021wr030394" target="_blank" rel="noopener">Sun, Jiang, Mudunuru and Chen (2021)</a>, <em>WRR</em> 57(12), adapt and benchmark several GNN architectures &mdash; ChebNet, Graph Convolutional Network and GraphWaveNet &mdash; for end-to-end graph learning on CAMELS. The design detail that matters for this review is their two settings:</p>
@@ -3406,6 +3527,7 @@
     <p><strong>Deep learning on Family 4&rsquo;s signal.</strong> <a href="https://doi.org/10.1029/2023WR036880" target="_blank" rel="noopener">Hao et al. (2024)</a>, <em>WRR</em>, trained a Transformer on time-series Landsat reflectance at 2,036 gauges. In rivers held out as ungauged it gave positive KGE in 68.6%, against 28.4% for BAM and 33.1% for geoBAM, although two-thirds were under 100&nbsp;m wide. The price is this family&rsquo;s usual one, a large gauged training sample (&sect;07).</p>
   </div>
   <div class="card" data-vi="f5_transfer">
+    <p class="role">In depth</p>
     <h2>Transfer learning: borrowing a trained network instead of a donor catchment</h2>
     <p>The answer to the data paradox: instead of a donor <em>catchment</em>, transfer a network pre-trained on a data-rich <em>region</em> and fine-tune it on whatever the target has.</p>
     <ul>
@@ -3415,6 +3537,13 @@
     <h2>A coupling that is not differentiable: the LSTM as post-processor</h2>
     <p>The physical model runs, then an LSTM corrects its output. For the US National Water Model, post-processing helped a lot, but an LSTM on <em>forcing alone</em> matched it and beat it in ungauged basins (<a href="https://doi.org/10.1111/1752-1688.12964" target="_blank" rel="noopener">Frame et al. 2021</a>). <a href="https://doi.org/10.5194/hess-30-757-2026" target="_blank" rel="noopener">Shokri et al. (2026)</a> tested the same question on 218 CAMELS-AUS catchments (LSTM post-processing AWRA-L against a precipitation-and-PET LSTM), including a <strong>spatially out-of-sample</strong> test, the most relevant Australian benchmark here.</p>
   </div>
+  <div class="card" data-vi="edge_f6">
+    <p class="role">Strengths</p>
+    <h2>Where Family 6 is strongest</h2>
+    <p><strong>The question it answers:</strong> Is there enough information in catchment attributes to skip regionalisation entirely?</p>
+    <div class="note"><span class="lbl">Strengths, from the long version in <a href="#compare">&sect;03</a></span>Best demonstrated accuracy for ungauged basins inside large gauged samples (CAMELS); differentiable models overtake it when whole regions are held out (<a href="https://doi.org/10.5194/hess-27-2357-2023" target="_blank" rel="noopener">Feng et al. 2023</a>)</div>
+  </div>
+
   <div class="card" data-vi="f5_led">
     <h2>Where this family stands</h2>
     <div class="ledger">
@@ -3493,7 +3622,8 @@
     </div>
     <p class="kpsrc">From the side-by-side table in <a href="#compare">&sect;03</a>; the evidence is in this section.</p>
   </div>
-  <div class="card">
+  <div class="card" data-vi="f6_lede">
+    <p class="role">How it works</p>
     <p class="lede">The most active frontier, and the one most relevant to anyone who has built a conceptual model and does not want to abandon it.</p>
     <p>The idea: keep the process equations, but make the whole model differentiable so a neural network can learn its parameters &mdash; or parts of its internal structure &mdash; by gradient descent on regional data. The payoff is that you get the LSTM&rsquo;s regionalisation ability <em>and</em> the process model&rsquo;s internal states, mass balance, and extrapolation behaviour.</p>
     <p>The proof that this is not a consolation prize came in <a href="https://doi.org/10.1029/2022wr032404" target="_blank" rel="noopener">Feng, Liu, Lawson and Shen (2022)</a>, <em>WRR</em> 58(10), which built &delta; models on an HBV backbone with embedded neural networks and reached median NSE <span class="num">0.732</span> across 671 US basins on Daymet forcing against <span class="num">0.748</span> for a state-of-the-art LSTM with the same setup &mdash; and <span class="num">0.715</span> against <span class="num">0.722</span> on a second forcing set. Essentially the LSTM&rsquo;s accuracy, while also outputting soil and groundwater storage, snowpack, evapotranspiration and baseflow, none of which the network was trained on. Simulated ET and baseflow fraction agreed decently with independent estimates.</p>
@@ -3501,6 +3631,8 @@
       <span class="lbl">Read this one first</span>
       <p>The orienting reference for this family sits in the strongest venue of anything cited here: <a href="https://doi.org/10.1038/s43017-023-00450-9" target="_blank" rel="noopener">Shen, Appling, Gentine, Bandai, Gupta, Tartakovsky, Baity-Jesi, Fenicia and co-authors (2023)</a>, <em>Nature Reviews Earth &amp; Environment</em> &mdash; <strong>Differentiable modelling to unify machine learning and physical models for geosciences</strong>. It is the field&rsquo;s own statement of what differentiable modelling is for. Its abstract states the case plainly: process-based modelling offers interpretability and physical consistency but struggles to use large datasets efficiently, while deep networks predict well yet cannot answer specific scientific questions &mdash; and differentiable modelling is offered as the path that dissolves that barrier.</p>
     </div>
+  </div>
+
   <div class="card wide" data-vi="map_f7">
     <h2>Family 7 at a glance</h2>
     <p>The newest family, and the only one assembled almost entirely since 2022. Read it left to right as scope widening: from one basin, to regions, to the channel network, to events no model has seen.</p>
@@ -3612,8 +3744,8 @@
     </div>
     <p class="mapnote">Solid arrows mark a documented build-on or extension; dashed arrows mark a study that tests, benchmarks or limits another. Where an arrow reflects this review&rsquo;s reading rather than an explicit statement in the papers, the text below says so.</p>
   </div>
-  </div>
   <div class="card" data-vi="tab_f62">
+    <p class="role">Evidence</p>
     <h2>The key results</h2>
     <p class="scrollhint">Table scrolls sideways &rarr;</p>
     <div class="tablewrap">
@@ -3673,12 +3805,14 @@
     </div>
   </div>
   <div class="card" data-vi="f6_arg">
+    <p class="role">In depth</p>
     <h2>The argument that matters most for a process modeller</h2>
     <p><a href="https://doi.org/10.5194/hess-27-2357-2023" target="_blank" rel="noopener">Feng et al. (2023)</a> tested something the pure-ML literature mostly does not: whether the model still works when the <em>physics</em> has to do the extrapolating. Their trend results are the striking part. For high-flow (Q98) trends, the LSTM&rsquo;s R<sup>2</sup> fell from <span class="num">0.76</span> in the gauged setting to <strong><span class="num">0.27</span></strong> in the ungauged regional holdout, while the differentiable models stayed near <strong><span class="num">0.77</span></strong>. For annual mean flow trends, R<sup>2</sup> was <span class="num">0.64</span> (LSTM) against <span class="num">0.88</span> (differentiable with dynamic parameters).</p>
     <p>The &delta; models also reproduced evapotranspiration seasonality against MODIS with median correlation around <span class="num">0.84</span>, despite <strong>never being trained on ET</strong>. A pure LSTM trained on discharge cannot do this at all.</p>
     <p>That is the structural argument for hybrid models in ungauged basins: the process structure constrains behaviour where data do not, and it produces internal variables &mdash; storage, ET, flow depth &mdash; that a discharge-trained network never learns.</p>
   </div>
   <div class="card" data-vi="f6_heading">
+    <p class="role">In depth</p>
     <h2>Where this is heading</h2>
     <p>The 2024&ndash;2026 literature has moved from proof-of-concept to operational scale, and two papers mark the shift.</p>
     <p><a href="https://doi.org/10.1029/2024wr038928" target="_blank" rel="noopener">Song, Bindas, Shen, Ji, Knoben, Lonzarich, Clark and co-authors (2025)</a>, <em>WRR</em>, built high-resolution (~37&nbsp;km&sup2;) differentiable versions of the US National Water Model &mdash; naming calibration and parameter regionalisation under big data as the NWM&rsquo;s key challenges. One version routes implicitly, unit-hydrograph style, and predicts at basin outlets; the other uses explicit Muskingum&ndash;Cunge routing to produce a discretised product covering rivers across the conterminous United States.</p>
@@ -3686,6 +3820,13 @@
     <p>The direction of travel is consistent across both: regionalisation is being absorbed into the model as a differentiable mapping, and the models are becoming continental. This is also where Family 1&rsquo;s transfer-function line ends up: MPR (&sect;04, &sect;06) fits attribute-to-parameter functions by calibration, and these models learn them end to end. For an inundation modeller the second paper is the more interesting of the two, because its target is distributed flood behaviour rather than outlet discharge.</p>
     <p>The satellite side is arriving at the same machinery. <a href="https://doi.org/10.1029/2024WR038455" target="_blank" rel="noopener">Larnier et al. (2025)</a>, <em>WRR</em>, assimilate SWOT water levels into a 1D Saint-Venant network model fed by a hydrological model, in the poorly gauged Maroni basin, and reach discharge NRMSE of 0.05&ndash;0.18 at five gauges, starting from inflows of a hydrological model calibrated on those gauges. They close by calling for &ldquo;fully differentiable hydrological-hydraulic models&rdquo; with learnable parts, which is this family&rsquo;s approach applied to Family 4&rsquo;s observations (&sect;07).</p>
   </div>
+  <div class="card" data-vi="edge_f7">
+    <p class="role">Strengths</p>
+    <h2>Where Family 7 is strongest</h2>
+    <p><strong>The question it answers:</strong> Can we keep the process physics <em>and</em> get the regionalisation power of deep learning?</p>
+    <div class="note"><span class="lbl">Strengths, from the long version in <a href="#compare">&sect;03</a></span><ul><li>Keeps mass balance and internal states</li><li>Better trend extrapolation than LSTM, and better on rare events</li><li>Predicts untrained variables such as ET, storage and baseflow</li><li>Now extends to channel routing, not just rainfall&ndash;runoff</li></ul></div>
+  </div>
+
   <div class="card" data-vi="f6_led">
     <h2>Where this family stands</h2>
     <div class="ledger">
@@ -4983,14 +5124,14 @@
   </button>
 </div>
 
-<script src="js/app.js?v=20261020a"></script>
-<script src="js/vi-data.js?v=20261020a"></script>
-<script src="js/vi.js?v=20261020a"></script>
-<script src="js/glossary-data.js?v=20261020a"></script>
-<script src="js/glossary.js?v=20261020a"></script>
-<script src="js/refs-data.js?v=20261020a"></script>
+<script src="js/app.js?v=20261020b"></script>
+<script src="js/vi-data.js?v=20261020b"></script>
+<script src="js/vi.js?v=20261020b"></script>
+<script src="js/glossary-data.js?v=20261020b"></script>
+<script src="js/glossary.js?v=20261020b"></script>
+<script src="js/refs-data.js?v=20261020b"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
-<script defer src="js/math.js?v=20261020a"></script>
+<script defer src="js/math.js?v=20261020b"></script>
 </body>
 </html>
